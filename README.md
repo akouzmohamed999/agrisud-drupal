@@ -18,6 +18,7 @@ puis docker-compose stop puis docker-compose start
 
 - Commandes utiles : 
 acceder au container drupal et composer la commande pour contourner le pb des memory_limit php -d memory_limit=-1 /usr/local/bin/composer require drush/drush
+- sudo chmod -R 755 web/sites/default
 
 
 
