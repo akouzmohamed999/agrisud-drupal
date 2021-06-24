@@ -6,7 +6,7 @@ $ docker-compose up -d
 
 - Se connecter au container php-ssl puis dans le root directory, executer les commandes 
 
-$ sudo chown -R soukaina:www-data .
+$ sudo chown -R $USER:www-data .
 $ find . -type d -exec chmod u=rwx,g=rx,o= '{}' \;
 $ find . -type f -exec chmod u=rw,g=r,o= '{}' \;
 
