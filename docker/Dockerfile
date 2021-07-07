@@ -73,8 +73,16 @@ RUN { \
 		echo 'opcache.fast_shutdown=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
-COPY --from=composer:1 /usr/bin/composer /usr/local/bin/
+COPY --from=composer:2 /usr/bin/composer /usr/local/bin/
+# Install Drush
+# Set the Drush version.
+ENV DRUSH_VERSION 8.4.6
 
+# Install Drush 8 with the phar file.
+RUN curl -fsSL -o /usr/local/bin/drush "https://github.com/drush-ops/drush/releases/download/$DRUSH_VERSION/drush.phar" && \
+  chmod +x /usr/local/bin/drush
+# Clean repository
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 # <<End of drupal recommanded configurations
 
 # Work directory

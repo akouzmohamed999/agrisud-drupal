@@ -15,10 +15,22 @@
         }
     ],
     "require": {
+        "ext-pdo": "*",
         "composer/installers": "^1.2",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/chosen": "^3.0",
+        "drupal/config_ignore": "^2.3",
+        "drupal/config_split": "^1.7",
+        "drupal/construction_zymphonies_theme": "^1.0",
         "drupal/core-composer-scaffold": "^8.8",
         "drupal/core-project-message": "^8.8",
-        "drupal/core-recommended": "^8.8"
+        "drupal/core-recommended": "^8.8",
+        "drupal/devel": "^4.1",
+        "drupal/drush": "^6.0@RC",
+        "drupal/ds": "^3.13",
+        "drupal/easy_breadcrumb": "^1.15",
+        "drupal/env_variables": "^2.1",
+        "drupal/views_bootstrap": "^4.3"
     },
     "conflict": {
         "drupal/drupal": "*"
