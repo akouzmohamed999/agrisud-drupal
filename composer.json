@@ -30,7 +30,8 @@
         "drupal/ds": "^3.13",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/env_variables": "^2.1",
-        "drupal/views_bootstrap": "^4.3"
+        "drupal/views_bootstrap": "^4.3",
+        "vlucas/phpdotenv": "^5.3"
     },
     "conflict": {
         "drupal/drupal": "*"
