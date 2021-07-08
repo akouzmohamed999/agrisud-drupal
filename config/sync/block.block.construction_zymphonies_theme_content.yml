@@ -1,0 +1,22 @@
+uuid: ad9788a0-d678-498c-a0f3-19c8b03471a7
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - construction_zymphonies_theme
+_core:
+  default_config_hash: fZxUGBXg-4JcdpJ0ZSWzehmMrI9qfEws2KWPuEz_RC0
+id: construction_zymphonies_theme_content
+theme: construction_zymphonies_theme
+region: content
+weight: 1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }
