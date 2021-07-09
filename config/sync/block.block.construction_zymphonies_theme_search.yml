@@ -1,0 +1,23 @@
+uuid: 68cb4c86-1ac7-431a-b905-eb8ff52b4e82
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - construction_zymphonies_theme
+_core:
+  default_config_hash: u2qTB_opzvdnn01pm6kVcIpXGJp5SqZqOYFDsa_slWI
+id: construction_zymphonies_theme_search
+theme: construction_zymphonies_theme
+region: search
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

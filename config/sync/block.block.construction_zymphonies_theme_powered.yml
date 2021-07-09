@@ -1,0 +1,22 @@
+uuid: c14a1d93-7bb6-4e11-a71b-09b671846b52
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - construction_zymphonies_theme
+_core:
+  default_config_hash: twO3XL5N1Ma9cBWTB_5DKqZcnUbIls9oOHgaW9_jy6g
+id: construction_zymphonies_theme_powered
+theme: construction_zymphonies_theme
+region: auto_hidden_block
+weight: -10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }
