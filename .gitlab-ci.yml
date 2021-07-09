@@ -1,11 +1,56 @@
 variables:
+  # Build stage vars.
+  # With the automatic git pull, we get file permission problems.
+  GIT_STRATEGY: none
+  # Docker image used to build the project theme and code.
+  # @see <a href="https://gitlab.com/guillaumeduveau/docker-build-drupal8">https://gitlab.com/guillaumeduveau/docker-build-drupal8</a>
   DOCKER_IMAGE_DRUPAL_BUILD: guillaumeduveau/build-drupal8
+  # Drupal theme build.
+#  DRUPAL_THEME_DIR: web/themes/custom/gd8
+  # Drupal theme cleanup.
+#  DRUPAL_THEME_DEL_DIRS: 'node_modules bower_components scss css/maps'
+#  DRUPAL_THEME_DEL_EXTS: '*.md *.json'
+#  DRUPAL_THEME_DEL_FILES: 'gulpfile.js'
+  # Drupal code cleanup.
+#  DRUPAL_DEL_DIRS: '.git config/dev drush features scripts web/sites/default/files'
+#  DRUPAL_DEL_FILES: '.gitignore .gitlab-ci.yml behat.yml composer.json composer.lock phpunit.xml.dist README.md web/sites/default/settings.php'
+
+stages:
+  - build
+
 build:
+  stage: build
   only:
+    # Only for commits or MR in the 'staging' branch (staging server).
     - staging
   image: $DOCKER_IMAGE_DRUPAL_BUILD
   script:
+    # Clone repository.
+    - git clone -b staging $CI_REPOSITORY_URL
+    # Build and clean theme.
+#    - cd $CI_PROJECT_NAME/$DRUPAL_THEME_DIR
+    # Theme build.
+#    - npm install
+#    - bower install
+#    - gulp
+    # Theme cleanup.
+#    - rm -rf $DRUPAL_THEME_DEL_DIRS
+#    - rm -r $DRUPAL_THEME_DEL_EXTS
+#    - rm $DRUPAL_THEME_DEL_FILES
+    # Code build.
+    - cd $CI_PROJECT_DIR/$CI_PROJECT_NAME
+    # Don't install things that were composer require --dev.
     - composer install --no-dev
+    # Code cleanup.
+    - rm -rf $DRUPAL_DEL_DIRS
+    - rm $DRUPAL_DEL_FILES
+    # Store the job ID in a file to get the artifact later.
+    - cd $CI_PROJECT_DIR
+    - echo -e "$CI_JOB_ID" > job_id
+  # Now, let's make a .zip of the whole build.
   artifacts:
+    # @see <a href="https://docs.gitlab.com/ee/ci/yaml/#artifacts">https://docs.gitlab.com/ee/ci/yaml/#artifacts</a>
+    name: "${CI_PROJECT_NAME}_${CI_COMMIT_REF_NAME}_${CI_JOB_ID}"
     paths:
     - ./
+    expire_in: 1 week
