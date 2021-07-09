@@ -1,0 +1,25 @@
+uuid: afae2eab-4501-412d-9c17-f0dad586726f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - construction_zymphonies_theme
+_core:
+  default_config_hash: U7PzmxzhrxXuftQQM4gWyVk07phpzr4flxt6YIeepFE
+id: construction_zymphonies_theme_branding
+theme: construction_zymphonies_theme
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }
