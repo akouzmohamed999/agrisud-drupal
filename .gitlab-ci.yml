@@ -4,7 +4,7 @@ variables:
   GIT_STRATEGY: none
   # Docker image used to build the project theme and code.
   # @see <a href="https://gitlab.com/guillaumeduveau/docker-build-drupal8">https://gitlab.com/guillaumeduveau/docker-build-drupal8</a>
-  DOCKER_IMAGE_DRUPAL_BUILD: guillaumeduveau/build-drupal8
+  DOCKER_IMAGE_DRUPAL_BUILD: php:7.4-apache-buster
   # Drupal theme build.
 #  DRUPAL_THEME_DIR: web/themes/custom/gd8
   # Drupal theme cleanup.
