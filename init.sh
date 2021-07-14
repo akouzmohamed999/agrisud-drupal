@@ -5,7 +5,7 @@ echo ">> Working on missing files and file permissions ..."
 echo ">> chown -R $USER:www-data ."
 sudo chown -R $USER:www-data .
 sudo mkdir -p web/sites/default/files
-sudo mkdir -p web/sites/default/translations
+sudo mkdir -p web/sites/default/files/translations
 
 sudo chmod a+w web/sites/default/files
 sudo chmod -R 755 .
@@ -14,7 +14,6 @@ cp web/sites/default/default.settings.php web/sites/default/settings.php
 sudo chmod 444 web/sites/default/settings.php
 
 echo ">> Importing the initial database..."
-#docker exec -i drupal-8-socle_db_1 mysql -unorsys2021 -p1 agrisudweb < db/bkup-20210707.sql
+#docker exec -i drupal-8-socle_db_1 mysql -unorsys2021 -p1 agrisudweb < database/bkup-20210708.sql
 
 echo ">> fin"
-

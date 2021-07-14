@@ -1,5 +1,5 @@
 #Installation in dev environement
-`cp .env.axample .env`
+`cp .env.example .env`
 
 `docker-compose build`
 
