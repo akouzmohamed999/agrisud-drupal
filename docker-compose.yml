@@ -41,6 +41,15 @@ services:
         networks:
             - php
 
+  # Service Node/Gulp
+#  gulp:
+#        build: ./web/themes/custom/norsys_base/docker
+#        volumes:
+#            - ./web/themes/custom/norsys_base:/home/node/app
+#        command: gulp
+#        networks:
+#            - php
+
 networks:
     php:
 

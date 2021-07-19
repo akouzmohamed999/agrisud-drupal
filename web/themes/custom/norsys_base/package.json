@@ -1,0 +1,28 @@
+{
+  "name": "norsys_base",
+  "version": "1.0.0",
+  "description": "Gulp dependencies for Norsys Zymphonies theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "author": "@emrehoumi",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-scss-lint": "^1.0.0",
+    "gulp-clean-css": "3.9.4",
+    "gulp-concat": "^2.6.1",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-postcss": "^8.0.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp-livereload": "^3.8.1"
+  }
+}
