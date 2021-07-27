@@ -41,14 +41,14 @@ services:
         networks:
             - php
 
-  # Service Node/Gulp
-#  gulp:
-#        build: ./web/themes/custom/norsys_base/docker
-#        volumes:
-#            - ./web/themes/custom/norsys_base:/home/node/app
-#        command: gulp
-#        networks:
-#            - php
+    gulp:
+        build:
+            context: ./web/themes/custom/norsys_base
+            dockerfile: ./docker/Dockerfile
+        volumes:
+            - ./web/themes/custom/norsys_base:/home/node/app
+        networks:
+            - php
 
 networks:
     php:

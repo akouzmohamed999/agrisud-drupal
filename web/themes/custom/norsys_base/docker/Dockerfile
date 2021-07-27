@@ -5,7 +5,5 @@ FROM node:14.17.3-alpine3.13
 RUN npm install -g gulp
 
 WORKDIR /home/node/app
-COPY ../package*.json ./
+COPY package*.json ./
 RUN npm install
-
-CMD ["gulp", "watch"]
