@@ -1,16 +1,12 @@
 #Installation in dev environement
-`cp .env.axample .env`
-
-`docker-compose build`
-
-`docker-compose up -d`
-
-
-
 `sudo chmod +x init.sh`
 
 `./init.sh`
+#Visualiser le site 
+Aller sur `localhost:8443/web`
 
+#Import de la BDD
+Voir dans le fichier init.sh
 ##Troubleshooting
 En cas de blocage ssl côté BDD
 ajouter la ligne 'skip-grant-tables' au fichier /etc/mysql/mysql.conf.d/mysqld.cnf

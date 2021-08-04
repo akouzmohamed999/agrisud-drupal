@@ -1,9 +1,7 @@
 version: "3.7"
 services:
     php-ssl:
-        build:
-            context: ./docker/
-            dockerfile: Dockerfile
+        build: ./docker/php-ssl
         depends_on:
             - db
         ports:
@@ -19,9 +17,9 @@ services:
             - php
 
     db:
-        image: mysql:5.7
+        build: ./docker/mysql
         env_file:
-          - .env
+            - .env
         volumes:
             - ./mysql-datas:/var/lib/mysql
             - ./database:/docker-entrypoint-initdb.d
