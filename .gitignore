@@ -118,3 +118,6 @@ Thumbs.db
 
 mysql-datas
 
+
+# Ignore node_modules
+web/themes/custom/norsys_base/node_modules

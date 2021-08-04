@@ -1,0 +1,25 @@
+uuid: bb75f85a-4a3a-46cf-9c2c-d50af5b9c31f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: U7PzmxzhrxXuftQQM4gWyVk07phpzr4flxt6YIeepFE
+id: norsys_base_branding
+theme: norsys_base
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'AGRISUD INTERNATIONAL'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

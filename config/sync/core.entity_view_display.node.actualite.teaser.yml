@@ -1,0 +1,81 @@
+uuid: 27d50ccb-372b-4f04-85f8-cccf542c3b0f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_actualite_date
+    - field.field.node.actualite.field_actualite_image
+    - field.field.node.actualite.field_actualite_liens_utils
+    - field.field.node.actualite.field_actualite_type
+    - image.style.large
+    - node.type.actualite
+  module:
+    - ds
+    - image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_actualite_image
+      right:
+        - node_title
+        - body
+        - links
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+id: node.actualite.teaser
+targetEntityType: node
+bundle: actualite
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    weight: 2
+    region: right
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  field_actualite_image:
+    type: image
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 3
+    region: right
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_actualite_date: true
+  field_actualite_liens_utils: true
+  field_actualite_type: true
+  langcode: true

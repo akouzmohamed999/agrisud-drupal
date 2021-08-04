@@ -1,0 +1,76 @@
+uuid: 8d423e8c-d657-44dc-824d-985d7b76c15c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_actualite_date
+    - field.field.node.actualite.field_actualite_image
+    - field.field.node.actualite.field_actualite_liens_utils
+    - field.field.node.actualite.field_actualite_type
+    - image.style.large
+    - node.type.actualite
+  module:
+    - datetime
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.actualite.default
+targetEntityType: node
+bundle: actualite
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 3
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_actualite_date:
+    weight: 0
+    label: hidden
+    settings:
+      timezone_override: Europe/Paris
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_actualite_image:
+    weight: 2
+    label: hidden
+    settings:
+      image_style: large
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_actualite_liens_utils:
+    weight: 4
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_actualite_type:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

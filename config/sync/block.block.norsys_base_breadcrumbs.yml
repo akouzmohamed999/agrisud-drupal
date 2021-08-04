@@ -1,0 +1,22 @@
+uuid: f6b5e82d-c2af-46b6-9a97-4b4e10998db0
+langcode: fr
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: FYN9DTTnf2YaUvezjZMDzfNbx5WDzkjFN7wUFSHOQs8
+id: norsys_base_breadcrumbs
+theme: norsys_base
+region: breadcrumb
+weight: -100
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

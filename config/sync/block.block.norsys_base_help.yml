@@ -1,0 +1,22 @@
+uuid: 79e49ea7-caae-4cce-a4e7-0f7b3694c96f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: 0BbJN29_duim0xYv20GX0Mv_WisJu-3jxSJ04LW-7Js
+id: norsys_base_help
+theme: norsys_base
+region: highlighted
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

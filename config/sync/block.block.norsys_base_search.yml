@@ -1,0 +1,23 @@
+uuid: 26f5cbd1-dc63-41a2-aa5c-0c1d71bdb5c9
+langcode: fr
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: u2qTB_opzvdnn01pm6kVcIpXGJp5SqZqOYFDsa_slWI
+id: norsys_base_search
+theme: norsys_base
+region: sidebar_first
+weight: -4
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+  page_id: ''
+visibility: {  }

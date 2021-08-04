@@ -291,13 +291,7 @@ $databases = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-
-require_once $app_root . '/../vendor/autoload.php';
-#include $app_root . '/' . $site_path . '/settings.local.php';
-$dotEnv = Dotenv\Dotenv::createImmutable('/var/www/html');
-$dotEnv->load();
-
-$settings['hash_salt'] = $_ENV['salt_hash'];
+$settings['hash_salt'] = 'ElsjQAduX2gzyaM-x_x1x7xJvb1MBGeYmcvk_4-KRRMSqEOoGYx-_7WH3rhZJSAOuApvegf9Hg';
 
 /**
  * Deployment identifier.
@@ -799,20 +793,17 @@ $settings['migrate_node_migrate_type_classic'] = FALSE;
  * Keep this code block at the end of this file to take full effect.
  */
 #
-# if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
-#   include $app_root . '/' . $site_path . '/settings.local.php';
-# }
-
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
+}
 $databases['default']['default'] = array (
-  'database' => $_ENV['DATABASE_NAME'],
-  'username' => $_ENV['MYSQL_USER'],
-  'password' => $_ENV['MYSQL_PASSWORD'],
+  'database' => 'agrisudweb',
+  'username' => 'norsys2021',
+  'password' => 'MDP2NAF',
   'prefix' => '',
-  'host' => $_ENV['DATABASE_HOST'],
+  'host' => 'db',
   'port' => '3306',
   'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
   'driver' => 'mysql',
 );
-#$settings['config_sync_directory'] = 'sites/default/files/config_PB-yokhTI-FErAinfmWvw7QaFA4PaY5nfED_ZHu-3RMOhgdpiPrTeoJVXUZ-s1HVmFV_4FVHwA/sync';
-$settings['config_sync_directory'] = '../config/sync';
-$config['config_split.config_split.dev']['status'] = TRUE;
+$settings['config_sync_directory'] = 'sites/default/files/config_d_EiJsOG9jhd-Zrp6EJzKwkV1od8KwrV2HArJZct-KLU3rxogmZu470PdioybPCmdNrZ2DSk7Q/sync';

@@ -1,0 +1,21 @@
+uuid: 80936a16-aad8-48e6-a866-ffb28a14d984
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actualite_type
+    - node.type.actualite
+  module:
+    - options
+id: node.actualite.field_actualite_type
+field_name: field_actualite_type
+entity_type: node
+bundle: actualite
+label: Type
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

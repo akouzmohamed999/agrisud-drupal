@@ -1,0 +1,19 @@
+uuid: 044f9012-51fe-4452-b4ad-eae3309451c1
+langcode: fr
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_actualite_liens_utils
+field_name: field_actualite_liens_utils
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

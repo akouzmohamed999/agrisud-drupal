@@ -1,0 +1,30 @@
+uuid: 836ee45b-1b0e-4b3a-81aa-de76798ad2b1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.nos_actualites
+  module:
+    - system
+    - views
+  theme:
+    - norsys_base
+id: views_block__nos_actualites_block_1
+theme: norsys_base
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:nos_actualites-block_1'
+settings:
+  id: 'views_block:nos_actualites-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /nos-actualites
+    negate: false
+    context_mapping: {  }

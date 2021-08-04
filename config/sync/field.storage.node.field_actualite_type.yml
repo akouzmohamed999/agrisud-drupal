@@ -1,0 +1,33 @@
+uuid: b30b5f15-21f3-42ed-b99f-2493a3864a66
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_actualite_type
+field_name: field_actualite_type
+entity_type: node
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: actualite_projet
+      label: Projet
+    -
+      value: actualite_formation
+      label: Formation
+    -
+      value: actualite_communication
+      label: Communication
+    -
+      value: actualite_lire_voir
+      label: 'À lire et à voir'
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
