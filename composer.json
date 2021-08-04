@@ -95,6 +95,9 @@
         }
     },
     "require-dev": {
-        "drupal/devel": "^4.1"
+        "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
+        "drupal/devel": "^4.1",
+        "sirbrillig/phpcs-variable-analysis": "^2.11",
+        "squizlabs/php_codesniffer": "^3.6"
     }
 }
