@@ -38,7 +38,13 @@ services:
             - --skip-grant-tables
         networks:
             - php
-
+    gulp:
+        build: ./docker/gulp
+        volumes:
+            - ./web/themes/custom/norsys_base:/home/node/app
+            - ./web/themes/custom/norsys_base/package.json:/home/node/app/package.json
+        networks:
+            - php
 networks:
     php:
 

@@ -15,4 +15,6 @@ puis docker-compose stop puis docker-compose start
 `echo 'skip-grant-tables' >> /etc/mysql/mysql.conf.d/mysqld.cnf`
 `docker-compose restart`
 
-
+#Building sass
+`docker-compose run --rm gulp gulp watch`
+`docker-compose run --rm gulp npm install`

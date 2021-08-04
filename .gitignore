@@ -119,3 +119,8 @@ Thumbs.db
 
 mysql-datas
 
+#gulp related
+web/themes/custom/norsys_base/node_modules/
+web/themes/custom/norsys_base/package-lock.json
+
+.editorconfig
