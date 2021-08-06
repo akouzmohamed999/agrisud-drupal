@@ -87,3 +87,4 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Work directory
 WORKDIR /var/www/html
+RUN TOUCH /var/www/html/index.php
