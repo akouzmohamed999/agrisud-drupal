@@ -19,7 +19,7 @@ cp web/sites/default/settings.example.php web/sites/default/settings.php
 sudo chmod 444 web/sites/default/settings.php
 
 #echo ">> Importing the initial database..."
-#docker exec -i agrisud-web_db_1 mysql -unorsys2021 -p1 agrisudweb < database/dump-*.sql
+#docker exec -i agrisud-web_db_1 mysql -unorsys2021 -p1 agrisudweb < database/bkup-20210708.sql
 docker-compose run --rm gulp npm install
 docker-compose run --rm gulp gulp sass
 echo ">> fin"
