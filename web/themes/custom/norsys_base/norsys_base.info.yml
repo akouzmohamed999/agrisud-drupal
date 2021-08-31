@@ -1,0 +1,8 @@
+name: Norsys Zymphonies
+type: theme
+description: 'Thème Norsys Zymphonies'
+core: 8.x
+base theme: construction_zymphonies_theme
+
+libraries:
+  - norsys_base/global-styling
