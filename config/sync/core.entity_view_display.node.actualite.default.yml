@@ -1,0 +1,74 @@
+uuid: b47ad3be-57cc-4c43-96cd-2dd055b915d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_actualite_date
+    - field.field.node.actualite.field_actualite_image
+    - field.field.node.actualite.field_actualite_liens_utils
+    - field.field.node.actualite.field_actualite_type
+    - node.type.actualite
+  module:
+    - datetime
+    - image
+    - link
+    - options
+    - text
+    - user
+id: node.actualite.default
+targetEntityType: node
+bundle: actualite
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actualite_date:
+    weight: 3
+    label: above
+    settings:
+      timezone_override: ''
+      format_type: html_date
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_actualite_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_actualite_liens_utils:
+    weight: 5
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_actualite_type:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 4
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true

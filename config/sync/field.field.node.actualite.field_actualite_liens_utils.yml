@@ -1,0 +1,23 @@
+uuid: f5b4b5ea-91ca-4350-ae4a-278751007ed7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_actualite_liens_utils
+    - node.type.actualite
+  module:
+    - link
+id: node.actualite.field_actualite_liens_utils
+field_name: field_actualite_liens_utils
+entity_type: node
+bundle: actualite
+label: 'Liens utils'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 1
+field_type: link

@@ -1,0 +1,29 @@
+uuid: 88ac6567-b005-4f6c-8e3b-b533cf5887fe
+langcode: en
+status: true
+dependencies:
+  config:
+    - facets.facet.facet_actualite_type
+  module:
+    - facets
+    - system
+  theme:
+    - norsys_base
+id: norsys_base_facetactualitetype
+theme: norsys_base
+region: content
+weight: 0
+provider: null
+plugin: 'facet_block:facet_actualite_type'
+settings:
+  id: 'facet_block:facet_actualite_type'
+  label: 'Facet Actualité Type'
+  provider: facets
+  label_display: '0'
+  block_id: norsys_base_facetactualitetype
+visibility:
+  request_path:
+    id: request_path
+    pages: /nos-actualites
+    negate: false
+    context_mapping: {  }
