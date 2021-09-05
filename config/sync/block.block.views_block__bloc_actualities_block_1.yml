@@ -1,0 +1,39 @@
+uuid: 866354f5-efed-47ea-bfdb-ebf0f857327c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.bloc_actualities
+  module:
+    - language
+    - system
+    - views
+  theme:
+    - norsys_base
+id: views_block__bloc_actualities_block_1
+theme: norsys_base
+region: content
+weight: -4
+provider: null
+plugin: 'views_block:bloc_actualities-block_1'
+settings:
+  id: 'views_block:bloc_actualities-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  language:
+    id: language
+    langcodes:
+      fr: fr
+      en: en
+    negate: false
+    context_mapping:
+      language: '@language.current_language_context:language_interface'
+  request_path:
+    id: request_path
+    pages: /node
+    negate: false
+    context_mapping: {  }
