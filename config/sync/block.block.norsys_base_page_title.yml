@@ -1,0 +1,20 @@
+uuid: cafbfb18-039e-49fb-aab3-529c48979b14
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: s9gYVJj1A1cSq8gT95-MhoFQhe70Fkr3H7UPx8zy3d4
+id: norsys_base_page_title
+theme: norsys_base
+region: page_title
+weight: 0
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

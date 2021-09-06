@@ -1,0 +1,31 @@
+uuid: a6b3abaf-6dd7-4524-a27c-373ff1511556
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:40385694-32d0-492e-badb-d0c8d61f89d2'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: carte
+theme: norsys_base
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:40385694-32d0-492e-badb-d0c8d61f89d2'
+settings:
+  id: 'block_content:40385694-32d0-492e-badb-d0c8d61f89d2'
+  label: carte
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

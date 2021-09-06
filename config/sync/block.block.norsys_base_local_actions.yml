@@ -1,0 +1,20 @@
+uuid: 9e0dd058-fdce-491c-b17f-085b19194c9a
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: cd7-aUtGdMLsKxlzhHdyJfaJs4bkDj1neF5PmP-j-Bc
+id: norsys_base_local_actions
+theme: norsys_base
+region: auto_hidden_block
+weight: 20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

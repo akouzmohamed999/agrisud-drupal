@@ -1,0 +1,31 @@
+uuid: d6197240-1b9e-45a7-a3e0-fe8d43b5a0b6
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7ff2fb16-488a-407c-8204-8aea6e332398'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: chiffres
+theme: norsys_base
+region: updates_first
+weight: -7
+provider: null
+plugin: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
+settings:
+  id: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
+  label: chiffres
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

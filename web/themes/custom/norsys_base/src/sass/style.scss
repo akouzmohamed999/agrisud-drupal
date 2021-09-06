@@ -14,3 +14,89 @@ h1.page-header {
   font-size: 4em;
   font-weight: bold;
 }
+
+.path-frontpage {
+  #chiffres-container {
+    background-image: url("images/image-chiffres.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+  }
+  #chiffres {
+    padding: 5rem 0;
+    margin-top: 1rem;
+    opacity: 0.8;
+
+    .chiffres {
+      font-size: 4rem !important;
+      font-weight: bold;
+    }
+    .chiffres-desc {
+      font-size: 1.1rem;
+    }
+    .chiffre-item {
+      padding: 2rem;
+    }
+  }
+
+  .updates .region {
+    padding: 0 !important;
+  }
+  /*.carte-svg {
+    padding: 5rem 0;
+  }*/
+
+  .front-svg {
+    padding: 3rem 10rem;
+  }
+}
+
+//Global scss
+.region.region-header {
+  background-color: #fff !important;
+  padding: 0 !important;
+  img {
+    width: 254px !important;
+  }
+}
+//mobile and small devices
+@media (max-width: 767px) {
+  .path-frontpage {
+    #chiffres-container {
+      padding: 0;
+      background-size: cover;
+    }
+
+    .front-svg {
+      padding: 3rem 10rem;
+    }
+    .updates {
+      padding: 0 !important;
+    }
+  }
+
+}
+
+//tablettes
+@media (max-width: 992px) {
+.path-frontpage {
+  .front-svg {
+    padding: 3rem 0 !important;
+  }
+}
+}
+
+@media screen and (min-width:767px) and (max-width:1200px){
+  .path-frontpage {
+    .flexslider .slides img {
+      min-height : 650px;
+    }
+    .flex-active-slide {
+      .slider-caption {
+        top: 5% !important;
+      }
+    }
+
+  }
+}

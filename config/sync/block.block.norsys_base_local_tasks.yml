@@ -1,0 +1,22 @@
+uuid: cdaada43-56a7-41fe-bee7-64bf35a93439
+langcode: fr
+status: true
+dependencies:
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: lSCMs48BvNzIEeDENQj2eLelJ6o9y5jzWKeuYEy6_y0
+id: norsys_base_local_tasks
+theme: norsys_base
+region: content
+weight: -7
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }
