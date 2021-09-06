@@ -142,7 +142,7 @@
 {% endif %}
 <!--End: Top widget -->
 
-    
+
 <!--Start: Highlighted -->
 {% if page.highlighted %}
   <div class="highlighted">
@@ -194,10 +194,10 @@
                 </div>
               {% endif %}
               <!--End: Breadcrumb -->
-              
+
               {{ page.content }}
-              
-            </div>              
+
+            </div>
           </div>
         {% endif %}
         <!-- End: Content -->
@@ -211,7 +211,7 @@
           </div>
         {% endif %}
         <!-- End: Right SideBar -->
-        
+
       </div>
     </div>
   </div>
@@ -257,7 +257,7 @@
 <!-- Start: Updates widgets -->
 {% if page.updates_first or page.updates_second or page.updates_third %}
 
-  <div class="updates" id="updates">    
+  <div class="updates" id="updates">
     <div class="container-">
 
       {% if page.updates_title %}
@@ -266,7 +266,7 @@
         </h2>
       {% endif %}
 
-      <div class="row updates-list">    
+      <div class="row updates-list">
         {% if page.updates_first %}
           <div class = {{ updates_class }}>
             {{ page.updates_first }}
@@ -296,7 +296,7 @@
 
 <!-- Start: Middle widgets -->
 {% if page.midwidget_first or page.midwidget_second or page.midwidget_third or page.midwidget_forth %}
-  <div class="midwidget" id="midwidget">    
+  <div class="midwidget" id="midwidget">
     <div class="container">
 
       {% if page.midwidget_title %}
@@ -335,7 +335,7 @@
 
 <!-- Start: Bottom widgets -->
 {% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
-  <div class="bottom-widget" id="bottom-widget">    
+  <div class="bottom-widget" id="bottom-widget">
     <div class="container">
 
       {% if page.bottom_title %}
@@ -354,7 +354,7 @@
           <div class = {{ bottom_class }}>
             {{ page.bottom_second }}
           </div>
-        {% endif %}       
+        {% endif %}
         {% if page.bottom_third %}
           <div class = {{ bottom_class }}>
             {{ page.bottom_third }}
@@ -373,7 +373,7 @@
 
 
 <!-- Start: Clients -->
-{% if page.clients %} 
+{% if page.clients %}
   <div class="clients" id="clients">
     {% if page.clients_title %}
       <h2 class="custom-block-title" >
@@ -423,7 +423,7 @@
 <!-- Start: Copyright -->
 <div class="copyright">
   <div class="container">
-    <span>Copyright © {{ "now"|date("Y") }}. All rights reserved.</span>
+    <span> © {{ "now"|date("Y") }} Norsys Afrique. All rights reserved.</span>
     {% if show_social_icon %}
         <p class="social-media">
           {% if facebook_url %}
@@ -443,9 +443,9 @@
           {% endif %}
         </p>
       {% endif %}
-      {% if show_credit_link %}
-        <span class="credit-link">Designed By <a href="https://www.zymphonies.com" target="_blank">Zymphonies</a></span>
-      {% endif %}
+
+        <span class="credit-link">Designed By <a href="https://www.zymphonies.com" target="_blank">Norsys Afrique</a></span>
+
   </div>
 </div>
 <!-- End: Copyright -->
