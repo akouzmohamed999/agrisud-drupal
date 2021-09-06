@@ -29,6 +29,10 @@
         "drupal/ds": "^3.13",
         "drupal/easy_breadcrumb": "^1.15",
         "drupal/env_variables": "^2.1",
+        "drupal/imce": "^2.1",
+        "drupal/svg_image": "^1.15",
+        "drupal/svg_image_field": "^1.0",
+        "drupal/vefl": "^2.1",
         "drupal/views_bootstrap": "^4.3",
         "vlucas/phpdotenv": "^5.3"
     },

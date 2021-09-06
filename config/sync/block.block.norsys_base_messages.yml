@@ -1,0 +1,22 @@
+uuid: e68f5df0-ef47-40dd-aeb6-b4eed5eaf36f
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - norsys_base
+_core:
+  default_config_hash: fOBrOP6B4zp3LATdmkJFnPY1jPA7QfnHPakDL-R5U5k
+id: norsys_base_messages
+theme: norsys_base
+region: highlighted
+weight: -50
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

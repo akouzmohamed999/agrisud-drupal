@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5bcc22593e7b7e2e25222eec6f796327",
+    "content-hash": "4216dbaf3a4b81240ac15f856654a05b",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1834,6 +1834,222 @@
             }
         },
         {
+            "name": "drupal/imce",
+            "version": "2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/imce.git",
+                "reference": "8.x-2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/imce-8.x-2.4.zip",
+                "reference": "8.x-2.4",
+                "shasum": "2797d6a669b739490edd00c753303cd9263f8dc3"
+            },
+            "require": {
+                "drupal/core": "^8.8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.4",
+                    "datestamp": "1618251147",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/2841111/committers",
+                    "role": "Developer"
+                },
+                {
+                    "name": "ufku",
+                    "homepage": "https://www.drupal.org/user/9910"
+                }
+            ],
+            "description": "Provides a file manager supporting personal folders.",
+            "homepage": "https://drupal.org/project/imce",
+            "support": {
+                "source": "https://git.drupalcode.org/project/imce",
+                "issues": "https://www.drupal.org/project/issues/imce?version=8.x"
+            }
+        },
+        {
+            "name": "drupal/svg_image",
+            "version": "1.15.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_image.git",
+                "reference": "8.x-1.15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image-8.x-1.15.zip",
+                "reference": "8.x-1.15",
+                "shasum": "368d0189bb3c59ea40cf52d83c8551b6358aa161"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9",
+                "enshrined/svg-sanitize": ">=0.9 <1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.15",
+                    "datestamp": "1629259130",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Yaroslav Lushnikov",
+                    "homepage": "https://www.drupal.org/user/2870933",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/2887125/committers"
+                }
+            ],
+            "description": "Overrides the standard image formatter and widget to support SVG files.",
+            "homepage": "http://drupal.org/project/svg_image",
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_image",
+                "issues": "http://drupal.org/project/svg_image"
+            }
+        },
+        {
+            "name": "drupal/svg_image_field",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_image_field.git",
+                "reference": "8.x-1.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image_field-8.x-1.3.zip",
+                "reference": "8.x-1.3",
+                "shasum": "ba1e7e2486a01ee40e96aebca2a4873ad3936503"
+            },
+            "require": {
+                "drupal/core": "^8 || ^9"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.3",
+                    "datestamp": "1605964145",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "donne93",
+                    "homepage": "https://www.drupal.org/user/3569136"
+                },
+                {
+                    "name": "dunot",
+                    "homepage": "https://www.drupal.org/user/3562626"
+                },
+                {
+                    "name": "jwilson3",
+                    "homepage": "https://www.drupal.org/user/220177"
+                },
+                {
+                    "name": "mandclu",
+                    "homepage": "https://www.drupal.org/user/52136"
+                },
+                {
+                    "name": "romychvk",
+                    "homepage": "https://www.drupal.org/user/361734"
+                },
+                {
+                    "name": "shmel210",
+                    "homepage": "https://www.drupal.org/user/2600028"
+                }
+            ],
+            "description": "Provides svg image field",
+            "homepage": "https://www.drupal.org/project/svg_image_field",
+            "support": {
+                "source": "https://git.drupalcode.org/project/svg_image_field"
+            }
+        },
+        {
+            "name": "drupal/vefl",
+            "version": "2.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/vefl.git",
+                "reference": "8.x-2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/vefl-8.x-2.1.zip",
+                "reference": "8.x-2.1",
+                "shasum": "fdb34774490e02934bb2324e4e4d672ba6fc81d8"
+            },
+            "require": {
+                "drupal/core": "^8"
+            },
+            "require-dev": {
+                "drupal/better_exposed_filters": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-2.1",
+                    "datestamp": "1562869089",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "dima.iluschenko",
+                    "homepage": "https://www.drupal.org/user/3181949"
+                },
+                {
+                    "name": "skorzh",
+                    "homepage": "https://www.drupal.org/user/813560"
+                }
+            ],
+            "description": "Provides functionality to output Views exposed filters in layout.",
+            "homepage": "https://www.drupal.org/project/vefl",
+            "support": {
+                "source": "https://git.drupalcode.org/project/vefl"
+            }
+        },
+        {
             "name": "drupal/views_bootstrap",
             "version": "4.3.0",
             "source": {
@@ -2022,6 +2238,52 @@
                 "source": "https://github.com/egulias/EmailValidator/tree/2.1.17"
             },
             "time": "2020-02-13T22:36:52+00:00"
+        },
+        {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.14.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/307b42066fb0b76b5119f5e1f0826e18fefabe95",
+                "reference": "307b42066fb0b76b5119f5e1f0826e18fefabe95",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "^0.1.2",
+                "phpunit/phpunit": "^6.5 || ^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.14.1"
+            },
+            "time": "2021-08-09T23:46:54+00:00"
         },
         {
             "name": "graham-campbell/result-type",
