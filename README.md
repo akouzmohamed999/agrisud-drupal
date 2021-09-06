@@ -18,3 +18,13 @@ puis docker-compose stop puis docker-compose start
 #Building sass
 `docker-compose run --rm gulp gulp watch`
 `docker-compose run --rm gulp npm install`
+
+#Import des configurations de base
+##Import des menus items
+Aller dans structure-> menu_export->import puis importer le main_menu
+
+#Export 
+##Export des menus items
+Aller dans structure-> menu_export puis exporter le menu de navigation
+Aller dans Configuration-> developpement->synchronisation-> export individuel sélectionner : configuration simple et menu_export.export_data
+`drush cex`
