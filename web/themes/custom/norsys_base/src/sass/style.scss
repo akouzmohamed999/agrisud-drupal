@@ -130,3 +130,19 @@ h1.page-header {
 .row {
   justify-content: space-evenly !important;
 }
+
+// CT Acrualité
+.node--type-actualite {
+  text-align: center !important;
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 5rem !important;
+  }
+  #liens-utils {
+    text-align: left !important;
+  }
+}
