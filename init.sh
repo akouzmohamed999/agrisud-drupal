@@ -18,9 +18,11 @@ sudo chmod -R 775 web/sites/default
 cp web/sites/default/settings.example.php web/sites/default/settings.php
 sudo chmod 444 web/sites/default/settings.php
 
+echo ">> Copying slider images..."
+cp web/sites/default/slider-images/* web/sites/default/files
+
 #echo ">> Importing the initial database..."
 #docker exec -i agrisud-web_db_1 mysql -unorsys2021 -p1 agrisudweb < database/bkup-20210708.sql
 docker-compose run --rm gulp npm install
 docker-compose run --rm gulp gulp sass
 echo ">> fin"
-
