@@ -21,9 +21,11 @@
  * @ingroup themeable
  */
 #}
+<div id="date-actu">
 Date de l'actualité :
 <span{{ attributes }}>
   {%- for item in items -%}
     {{ item.content }}
   {%- endfor -%}
 </span>
+</div>

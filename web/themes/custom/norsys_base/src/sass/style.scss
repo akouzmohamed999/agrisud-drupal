@@ -40,8 +40,11 @@ h1.page-header {
     }
   }
 
-  .updates .region {
+  .updates {
     padding: 0 !important;
+    .region {
+      padding: 0 !important;
+    }
   }
   /*.carte-svg {
     padding: 5rem 0;
@@ -50,6 +53,29 @@ h1.page-header {
   .front-svg {
     padding: 3rem 10rem;
   }
+  #midwidget {
+
+    background-image: url("images/portrait-farmer-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+    padding: 5rem 0;
+    /*.region-midwidget-forth {
+      margin-left: 10% !important;
+      margin-right: -10% !important;
+    }
+*/
+    .elpacho {
+      position: relative;
+      background: #fff;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      border-bottom: 4px solid #ff5e14;
+      text-align: center !important;
+    }
+  }
+
 }
 
 //Global scss
@@ -60,44 +86,7 @@ h1.page-header {
     width: 254px !important;
   }
 }
-//mobile and small devices
-@media (max-width: 767px) {
-  .path-frontpage {
-    #chiffres-container {
-      padding: 0;
-      background-size: cover;
-    }
 
-    .front-svg {
-      padding: 3rem 10rem;
-    }
-    .updates {
-      padding: 0 !important;
-    }
-  }
-}
-
-//tablettes
-@media (max-width: 992px) {
-  .path-frontpage {
-    .front-svg {
-      padding: 3rem 0 !important;
-    }
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1200px) {
-  .path-frontpage {
-    .flexslider .slides img {
-      min-height: 650px;
-    }
-    .flex-active-slide {
-      .slider-caption {
-        top: 5% !important;
-      }
-    }
-  }
-}
 .facets-widget-links {
   display: flex;
   justify-content: space-evenly;
@@ -132,7 +121,7 @@ h1.page-header {
 }
 
 // CT Acrualité
-.node--type-actualite {
+.node--type-actualite.node--view-mode-full.ds-1col {
   text-align: center !important;
   .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
@@ -144,5 +133,143 @@ h1.page-header {
   }
   #liens-utils {
     text-align: left !important;
+    margin-top: 3rem !important;
+  }
+
+  #date-actu, #type-actu {
+    float: left !important;
+  }
+  .clearBoth { clear:both; }
+  .field--name-field-actualite-image {
+    margin-top: 3rem !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+}
+
+.node--type-actualite.node--view-mode-teaser.ds-2col {
+  text-align: center !important;
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 1rem !important;
+  }
+
+  #date-actu, #type-actu {
+    float: left !important;
+  }
+  .clearBoth { clear:both; }
+  .field--name-field-actualite-image {
+    margin-top: 3rem !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+    .group-left {
+      width: 20% !important;
+      margin: 1rem !important;
+    }
+  .group-right {
+    width: 75% !important;
+  }
+
+}
+
+
+//pagination
+.pager {
+  text-align: center !important;
+  margin-top: 3rem !important;
+
+  ul.pager__items {
+    display: inline-block !important;
+    li {
+      display: inline !important;
+    }
+    li > a, li > span {
+      position: relative !important;
+      float: left !important;;
+      padding: 6px 12px !important;;
+      line-height: 1.42857 !important;;
+      text-decoration: none !important;;
+      color: #7dbe2f !important;;
+      background-color: #fff !important;;
+      border: 1px solid #ddd !important;;
+      margin-left: -1px !important;;
+    }
+  }
+}
+
+a.more-link {
+  display: table;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #d3522f;
+  padding: 5px 60px;
+  border: 1px solid #d3522f;
+  background-color: white;
+  font-weight: 600;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+//responsive management
+
+//mobile and small devices
+@media (max-width: 767px) {
+  .path-frontpage {
+    #chiffres-container {
+      padding: 0;
+      background-size: cover;
+    }
+
+    .front-svg {
+      padding: 3rem 10rem;
+    }
+    .updates {
+      padding: 0 !important;
+    }
+  }
+
+  //page de liste des actualités
+  .node--type-actualite.node--view-mode-teaser.ds-2col {
+    .group-left {
+      width: 100% !important;
+    }
+    .group-right {
+      width: 100% !important;
+    }
+  }
+}
+
+//tablettes
+@media (max-width: 992px) {
+  .path-frontpage {
+    .front-svg {
+      padding: 3rem 0 !important;
+    }
+  }
+
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+  .path-frontpage {
+    .flexslider .slides img {
+      min-height: 650px;
+    }
+    .flex-active-slide {
+      .slider-caption {
+        top: 5% !important;
+      }
+    }
   }
 }
