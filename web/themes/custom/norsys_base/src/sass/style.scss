@@ -46,6 +46,8 @@ h1.page-header {
       padding: 0 !important;
     }
   }
+
+
   /*.carte-svg {
     padding: 5rem 0;
   }*/
@@ -59,7 +61,7 @@ h1.page-header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: inherit;
-    padding: 5rem 0;
+    padding: 5rem 0 15rem 0 !important;
     /*.region-midwidget-forth {
       margin-left: 10% !important;
       margin-right: -10% !important;
@@ -76,6 +78,26 @@ h1.page-header {
     }
   }
 
+}
+
+//////////////////////////////////slider!!!!!!!!!
+#views-bootstrap-temoignage-block-1 {
+  background-color: yellow !important;
+  //slider of views
+  .carousel-inner {
+    overflow: inherit !important;
+  }
+  .carousel-caption {
+    background: none !important;
+    /*background-color: #fff;
+    background: rgba(0,0,0,0.84);*/
+    left: 0 !important;
+    width: 100% !important;
+    /* left: 10%; */
+    bottom: auto;
+    /* width: 30%; */
+
+  }
 }
 
 //Global scss

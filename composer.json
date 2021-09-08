@@ -38,6 +38,7 @@
         "drupal/svg_image_field": "^1.0",
         "drupal/vefl": "^2.1",
         "drupal/views_bootstrap": "^4.3",
+        "drupal/views_slideshow": "^4.6",
         "vlucas/phpdotenv": "^5.3"
     },
     "conflict": {
