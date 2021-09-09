@@ -9,7 +9,8 @@ docker-compose run --rm php-ssl php -d memory_limit=-1 /usr/local/bin/composer i
 echo ">> Working on missing files and file permissions ..."
 echo ">> chown -R $USER:www-data ."
 sudo chown -R $USER:www-data .
-sudo mkdir -p web/sites/default/files
+#sudo mkdir -p web/sites/default/files
+sudo cp -R config/dev/files-bkup -p web/sites/default/files
 sudo mkdir -p web/sites/default/translations
 
 sudo chmod a+w web/sites/default/files
