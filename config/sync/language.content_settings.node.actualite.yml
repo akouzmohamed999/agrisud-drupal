@@ -1,0 +1,11 @@
+uuid: 10b18739-47ba-4084-a4a0-a643d971fda3
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actualite
+id: node.actualite
+target_entity_type_id: node
+target_bundle: actualite
+default_langcode: fr
+language_alterable: false

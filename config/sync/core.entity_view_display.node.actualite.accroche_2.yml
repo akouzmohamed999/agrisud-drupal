@@ -1,0 +1,80 @@
+uuid: 18365ee4-cc8b-42a5-bb0c-d1742b01a6c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.accroche_2
+    - field.field.node.actualite.body
+    - field.field.node.actualite.field_actualite_date
+    - field.field.node.actualite.field_actualite_image
+    - field.field.node.actualite.field_actualite_liens_utils
+    - field.field.node.actualite.field_actualite_type
+    - image.style.max_325x325
+    - node.type.actualite
+  module:
+    - ds
+    - layout_builder
+    - svg_image
+    - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_actualite_image
+        - node_title
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          wrapper: h3
+          class: ''
+id: node.actualite.accroche_2
+targetEntityType: node
+bundle: actualite
+mode: accroche_2
+content:
+  field_actualite_image:
+    type: image
+    weight: 0
+    region: ds_content
+    label: hidden
+    settings:
+      image_style: max_325x325
+      image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_actualite_date: true
+  field_actualite_liens_utils: true
+  field_actualite_type: true
+  langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true

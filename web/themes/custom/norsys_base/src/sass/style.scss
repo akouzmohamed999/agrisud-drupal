@@ -40,15 +40,87 @@ h1.page-header {
     }
   }
 
-  .updates .region {
+  .updates {
     padding: 0 !important;
+    .region {
+      padding: 0 !important;
+    }
   }
+
+
   /*.carte-svg {
     padding: 5rem 0;
   }*/
 
   .front-svg {
     padding: 3rem 10rem;
+  }
+  #midwidget {
+    background-image: url("images/portrait-farmer-3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: inherit;
+    padding: 5rem 0 20rem 0 !important;
+    /*.region-midwidget-forth {
+      margin-left: 10% !important;
+      margin-right: -10% !important;
+    }
+*/
+    .elpacho {
+      position: relative;
+      background: #fff;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      border-bottom: 4px solid #ff5e14;
+      text-align: center !important;
+    }
+  }
+  #block-message {
+    margin: 0 25% 7%;
+    width: 50%;
+    text-align: center;
+    h2 {
+      line-height: 2;
+    }
+  }
+  .sticky {
+    color: #fff !important;
+    background: #c83e2c !important;
+    position:fixed;
+    top:50%;
+    z-index:9999;
+  }
+  #bouton-sticky {
+    right:5%;
+  }
+  #espace-presse {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    left: 0 !important;
+    padding: 1.25rem 0.5rem;
+  }
+}
+
+//////////////////////////////////slider!!!!!!!!!
+#block-views-block-temoignage-block-1 {
+  margin: 0 10% 0 10%;
+}
+#views-bootstrap-temoignage-block-1 {
+  //slider of views
+  .carousel-inner {
+    overflow: inherit !important;
+  }
+  .carousel-caption {
+    background: none !important;
+    /*background-color: #fff;
+    background: rgba(0,0,0,0.84);*/
+    left: 0 !important;
+    width: 100% !important;
+    /* left: 10%; */
+    bottom: auto;
+    /* width: 30%; */
+
   }
 }
 
@@ -60,6 +132,144 @@ h1.page-header {
     width: 254px !important;
   }
 }
+
+.facets-widget-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0 25px 0;
+}
+
+.facet-item {
+  padding: 10px;
+}
+
+.facet-item a {
+  font-family: "Poppins", sans-serif;
+  color: #001659;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.facet-item__value-active {
+  color: #001659;
+}
+
+.facet-item__bottom-horizontal-line {
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  border-top: 2px solid #001659;
+  text-align: center;
+}
+
+.row {
+  justify-content: space-evenly !important;
+}
+
+// CT Acrualité
+.node--type-actualite.node--view-mode-full.ds-1col {
+  text-align: center !important;
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 5rem !important;
+  }
+  #liens-utils {
+    text-align: left !important;
+    margin-top: 3rem !important;
+  }
+
+  #date-actu, #type-actu {
+    float: left !important;
+  }
+  .clearBoth { clear:both; }
+  .field--name-field-actualite-image {
+    margin-top: 3rem !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+}
+
+.node--type-actualite.node--view-mode-teaser.ds-2col {
+  text-align: center !important;
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 1rem !important;
+  }
+
+  #date-actu, #type-actu {
+    float: left !important;
+  }
+  .clearBoth { clear:both; }
+  .field--name-field-actualite-image {
+    margin-top: 3rem !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+    .group-left {
+      width: 20% !important;
+      margin: 1rem !important;
+    }
+  .group-right {
+    width: 75% !important;
+  }
+
+}
+
+
+//pagination
+.pager {
+  text-align: center !important;
+  margin-top: 3rem !important;
+
+  ul.pager__items {
+    display: inline-block !important;
+    li {
+      display: inline !important;
+    }
+    li > a, li > span {
+      position: relative !important;
+      float: left !important;;
+      padding: 6px 12px !important;;
+      line-height: 1.42857 !important;;
+      text-decoration: none !important;;
+      color: #7dbe2f !important;;
+      background-color: #fff !important;;
+      border: 1px solid #ddd !important;;
+      margin-left: -1px !important;;
+    }
+  }
+}
+
+a.more-link {
+  display: table;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #d3522f;
+  padding: 5px 60px;
+  border: 1px solid #d3522f;
+  background-color: white;
+  font-weight: 600;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+//responsive management
+
 //mobile and small devices
 @media (max-width: 767px) {
   .path-frontpage {
@@ -76,21 +286,40 @@ h1.page-header {
     }
   }
 
+  //page de liste des actualités
+  .node--type-actualite.node--view-mode-teaser.ds-2col {
+    .group-left {
+      width: 100% !important;
+    }
+    .group-right {
+      width: 100% !important;
+    }
+  }
+
+  #block-message {
+    margin: 0 10% 7% !important;
+    width: 80% !important;
+    text-align: center;
+    font-size: 0.55rem !important;
+    h2 {
+      line-height: 2;
+    }
+  }
 }
 
 //tablettes
 @media (max-width: 992px) {
-.path-frontpage {
-  .front-svg {
-    padding: 3rem 0 !important;
+  .path-frontpage {
+    .front-svg {
+      padding: 3rem 0 !important;
+    }
   }
 }
-}
 
-@media screen and (min-width:767px) and (max-width:1200px){
+@media screen and (min-width: 767px) and (max-width: 1200px) {
   .path-frontpage {
     .flexslider .slides img {
-      min-height : 650px;
+      min-height: 650px;
     }
     .flex-active-slide {
       .slider-caption {
@@ -98,5 +327,34 @@ h1.page-header {
       }
     }
 
+    #block-message {
+      margin: 0 10% 7%;
+      width: 80% !important;
+      text-align: center;
+      h2 {
+        line-height: 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+.updates, .midwidget, .main-content {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4{
+    color: #286839 !important;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 120%;
+  }
+  .carousel-caption {
+    h3, p {
+      color: #fff !important;
+    }
   }
 }

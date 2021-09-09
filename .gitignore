@@ -11,6 +11,8 @@
 /vendor/
 /web/core/
 /web/modules/contrib/
+/web/modules/facets
+/web/modules/search_api
 /web/modules/README.txt
 /web/themes/contrib/
 /web/themes/README.txt

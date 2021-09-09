@@ -1,0 +1,22 @@
+uuid: e2048e20-b379-4506-962e-352e2c36e52b
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.actualite
+id: node.actualite.promote
+field_name: promote
+entity_type: node
+bundle: actualite
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

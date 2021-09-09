@@ -1,0 +1,10 @@
+uuid: 47fb8c43-ce4c-4965-b6df-bda0dbef3566
+langcode: fr
+status: true
+dependencies:
+  module:
+    - block_content
+id: block_content.accroche_perso
+label: accroche-perso
+targetEntityType: block_content
+cache: true
