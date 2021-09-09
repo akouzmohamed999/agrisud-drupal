@@ -1,25 +1,25 @@
-uuid: d6197240-1b9e-45a7-a3e0-fe8d43b5a0b6
+uuid: cdc979c7-cc16-4b9d-b0c8-1f1298308e4b
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:basic:7ff2fb16-488a-407c-8204-8aea6e332398'
+    - 'block_content:basic:19fe4c0b-ffc6-4f65-bcc7-ad5feaa4c939'
   module:
     - block_content
     - system
   theme:
     - norsys_base
-id: chiffres
+id: message
 theme: norsys_base
-region: updates_first
+region: content
 weight: -8
 provider: null
-plugin: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
+plugin: 'block_content:19fe4c0b-ffc6-4f65-bcc7-ad5feaa4c939'
 settings:
-  id: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
-  label: 'Nos chiffres'
+  id: 'block_content:19fe4c0b-ffc6-4f65-bcc7-ad5feaa4c939'
+  label: message
   provider: block_content
-  label_display: visible
+  label_display: '0'
   status: true
   info: ''
   view_mode: full

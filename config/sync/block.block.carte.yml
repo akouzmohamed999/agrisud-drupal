@@ -12,7 +12,7 @@ dependencies:
 id: carte
 theme: norsys_base
 region: content
-weight: 0
+weight: -7
 provider: null
 plugin: 'block_content:40385694-32d0-492e-badb-d0c8d61f89d2'
 settings:

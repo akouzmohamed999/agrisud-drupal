@@ -15,7 +15,7 @@ bundle: basic
 mode: default
 content:
   body:
-    label: above
+    label: hidden
     type: text_default
     weight: 0
     region: content
@@ -23,3 +23,4 @@ content:
     third_party_settings: {  }
 hidden:
   langcode: true
+  search_api_excerpt: true

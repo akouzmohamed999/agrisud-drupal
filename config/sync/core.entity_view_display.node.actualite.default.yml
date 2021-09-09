@@ -8,67 +8,99 @@ dependencies:
     - field.field.node.actualite.field_actualite_image
     - field.field.node.actualite.field_actualite_liens_utils
     - field.field.node.actualite.field_actualite_type
+    - image.style.large
     - node.type.actualite
   module:
     - datetime
-    - image
+    - ds
+    - layout_builder
     - link
     - options
+    - svg_image
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: false
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_actualite_date
+        - field_actualite_type
+        - field_actualite_image
+        - body
+        - field_actualite_liens_utils
 id: node.actualite.default
 targetEntityType: node
 bundle: actualite
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    weight: 3
+    region: ds_content
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    region: content
   field_actualite_date:
-    weight: 3
-    label: above
-    settings:
-      timezone_override: ''
-      format_type: html_date
-    third_party_settings: {  }
     type: datetime_default
-    region: content
+    weight: 0
+    region: ds_content
+    label: inline
+    settings:
+      timezone_override: UTC
+      format_type: medium
+    third_party_settings: {  }
   field_actualite_image:
-    weight: 1
+    type: image
+    weight: 2
+    region: ds_content
     label: hidden
     settings:
-      image_style: ''
+      image_style: large
       image_link: ''
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
     third_party_settings: {  }
-    type: image
-    region: content
   field_actualite_liens_utils:
-    weight: 5
-    label: hidden
+    type: link
+    weight: 4
+    region: ds_content
+    label: above
     settings:
       trim_length: 80
+      rel: nofollow
+      target: _blank
       url_only: false
       url_plain: false
-      rel: ''
-      target: ''
     third_party_settings: {  }
-    type: link
-    region: content
   field_actualite_type:
-    weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
     type: list_default
-    region: content
-  links:
-    weight: 4
-    region: content
+    weight: 1
+    region: ds_content
+    label: inline
     settings: {  }
     third_party_settings: {  }
 hidden:
   langcode: true
+  layout_builder__layout: true
+  links: true
+  search_api_excerpt: true
