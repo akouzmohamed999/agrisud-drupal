@@ -56,12 +56,11 @@ h1.page-header {
     padding: 3rem 10rem;
   }
   #midwidget {
-
     background-image: url("images/portrait-farmer-3.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: inherit;
-    padding: 5rem 0 15rem 0 !important;
+    padding: 5rem 0 20rem 0 !important;
     /*.region-midwidget-forth {
       margin-left: 10% !important;
       margin-right: -10% !important;
@@ -77,12 +76,21 @@ h1.page-header {
       text-align: center !important;
     }
   }
-
+  #block-message {
+    margin: 0 25% 7%;
+    width: 50%;
+    text-align: center;
+    h2 {
+      line-height: 2;
+    }
+  }
 }
 
 //////////////////////////////////slider!!!!!!!!!
+#block-views-block-temoignage-block-1 {
+  margin: 0 10% 0 10%;
+}
 #views-bootstrap-temoignage-block-1 {
-  background-color: yellow !important;
   //slider of views
   .carousel-inner {
     overflow: inherit !important;
@@ -271,6 +279,16 @@ a.more-link {
       width: 100% !important;
     }
   }
+
+  #block-message {
+    margin: 0 10% 7% !important;
+    width: 80% !important;
+    text-align: center;
+    font-size: 0.55rem !important;
+    h2 {
+      line-height: 2;
+    }
+  }
 }
 
 //tablettes
@@ -280,7 +298,6 @@ a.more-link {
       padding: 3rem 0 !important;
     }
   }
-
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
@@ -292,6 +309,36 @@ a.more-link {
       .slider-caption {
         top: 5% !important;
       }
+    }
+
+    #block-message {
+      margin: 0 10% 7%;
+      width: 80% !important;
+      text-align: center;
+      h2 {
+        line-height: 2;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+
+}
+
+.updates, .midwidget, .main-content {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4{
+    color: #286839 !important;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 120%;
+  }
+  .carousel-caption {
+    h3, p {
+      color: #fff !important;
     }
   }
 }
