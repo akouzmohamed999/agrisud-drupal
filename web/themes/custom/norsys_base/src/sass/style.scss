@@ -84,6 +84,22 @@ h1.page-header {
       line-height: 2;
     }
   }
+  .sticky {
+    color: #fff !important;
+    background: #c83e2c !important;
+    position:fixed;
+    top:30%;
+    z-index:9999;
+  }
+  #bouton-sticky {
+    right:5%;
+  }
+  #espace-presse {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    left: 0 !important;
+    padding: 1.25rem 0.5rem;
+  }
 }
 
 //////////////////////////////////slider!!!!!!!!!
