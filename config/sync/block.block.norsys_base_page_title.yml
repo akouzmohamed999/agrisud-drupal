@@ -9,7 +9,7 @@ _core:
 id: norsys_base_page_title
 theme: norsys_base
 region: page_title
-weight: 0
+weight: -6
 provider: null
 plugin: page_title_block
 settings:

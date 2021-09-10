@@ -12,12 +12,12 @@ dependencies:
 id: chiffres
 theme: norsys_base
 region: updates_first
-weight: -7
+weight: -8
 provider: null
 plugin: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
 settings:
   id: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
-  label: chiffres
+  label: 'Nos chiffres'
   provider: block_content
   label_display: visible
   status: true

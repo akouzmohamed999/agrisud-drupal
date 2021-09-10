@@ -1,0 +1,23 @@
+uuid: 83be3b8b-d2cc-4ca2-b2ea-1a1e77b7d11e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.temoignage
+  module:
+    - text
+id: node.temoignage.body
+field_name: body
+entity_type: node
+bundle: temoignage
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

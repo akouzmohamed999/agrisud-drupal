@@ -8,7 +8,7 @@ _core:
   default_config_hash: lSCMs48BvNzIEeDENQj2eLelJ6o9y5jzWKeuYEy6_y0
 id: norsys_base_local_tasks
 theme: norsys_base
-region: content
+region: page_title
 weight: -7
 provider: null
 plugin: local_tasks_block

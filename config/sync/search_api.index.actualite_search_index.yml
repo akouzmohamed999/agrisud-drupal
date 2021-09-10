@@ -1,0 +1,71 @@
+uuid: 84debea4-638d-4a9b-b72e-6069df4e1459
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_actualite_image
+    - field.storage.node.field_actualite_type
+    - search_api.server.actualite_search_server
+  module:
+    - node
+    - search_api
+id: actualite_search_index
+name: 'Actualité Search Index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_actualite_image:
+    label: Image
+    datasource_id: 'entity:node'
+    property_path: field_actualite_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_actualite_image
+  field_actualite_type:
+    label: Type
+    datasource_id: 'entity:node'
+    property_path: field_actualite_type
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_actualite_type
+  title:
+    label: Title
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - actualite
+    languages:
+      default: false
+      selected:
+        - fr
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: actualite_search_server

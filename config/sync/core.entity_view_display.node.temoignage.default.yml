@@ -1,0 +1,51 @@
+uuid: abc4f6e3-ebfd-4b74-97a1-7f696f586ba6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.temoignage.body
+    - field.field.node.temoignage.field_type
+    - node.type.temoignage
+  module:
+    - smart_trim
+    - user
+id: node.temoignage.default
+targetEntityType: node
+bundle: temoignage
+mode: default
+content:
+  body:
+    label: hidden
+    type: smart_trim
+    weight: 101
+    settings:
+      trim_length: 250
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_link: true
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    region: content
+  field_type:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  search_api_excerpt: true

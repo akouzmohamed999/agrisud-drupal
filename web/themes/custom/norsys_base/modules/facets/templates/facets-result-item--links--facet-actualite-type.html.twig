@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default theme implementation of a facet result item.
+ *
+ * Available variables:
+ * - value: The item value.
+ * - raw_value: The raw item value.
+ * - show_count: If this facet provides count.
+ * - count: The amount of results.
+ * - is_active: The item is active.
+ * - facet: The facet for this result item.
+ *   - id: the machine name for the facet.
+ *   - label: The facet label.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% if is_active %}
+  {% if value == 'À lire et à voir' %}
+    <span class="facet-item__value facet-item__value-active">{{ value }} ({{ count }})</span>
+  {%- else -%}
+    <span class="facet-item__value facet-item__value-active">Actualités {{ value }} ({{ count }})</span>
+  {%- endif -%}
+  <hr class="facet-item__bottom-horizontal-line"/>
+{% endif %}
+
+{% if not is_active %}
+  {% if value == 'À lire et à voir' %}
+    <span class="facet-item__value">{{ value }} ({{ count }})</span>
+  {%- else -%}
+    <span class="facet-item__value">Actualités {{ value }} ({{ count }})</span>
+  {%- endif -%}
+{% endif %}
