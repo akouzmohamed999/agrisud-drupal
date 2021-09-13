@@ -1,0 +1,70 @@
+uuid: 380c6467-ca3b-4b3e-b130-b6f5ba27b4f2
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - field.storage.node.field_pays
+    - field.storage.node.field_statut
+    - search_api.server.action_search_server
+  module:
+    - node
+    - search_api
+id: action_search_index
+name: 'Action search index'
+description: ''
+read_only: false
+field_settings:
+  field_image:
+    label: Image
+    datasource_id: 'entity:node'
+    property_path: field_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image
+  field_pays:
+    label: Pays
+    datasource_id: 'entity:node'
+    property_path: field_pays
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_pays
+  field_statut:
+    label: Statut
+    datasource_id: 'entity:node'
+    property_path: field_statut
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_statut
+  type:
+    label: 'Type de contenu'
+    datasource_id: 'entity:node'
+    property_path: type
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - action
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: lifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: action_search_server

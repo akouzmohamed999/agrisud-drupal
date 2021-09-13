@@ -11,7 +11,7 @@ _core:
 id: norsys_base_content
 theme: norsys_base
 region: bottom_third
-weight: -6
+weight: -9
 provider: null
 plugin: system_main_block
 settings:

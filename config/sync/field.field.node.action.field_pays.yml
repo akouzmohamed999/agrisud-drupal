@@ -1,0 +1,29 @@
+uuid: 70604eb0-ec79-45c0-a40c-47db97cef894
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pays
+    - node.type.action
+    - taxonomy.vocabulary.pays
+id: node.action.field_pays
+field_name: field_pays
+entity_type: node
+bundle: action
+label: Pays
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      pays: pays
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

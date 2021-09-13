@@ -1,0 +1,8 @@
+uuid: 511466a8-803d-44a0-be19-cfd008884bd6
+langcode: fr
+status: true
+dependencies: {  }
+name: Statut
+vid: statut
+description: ''
+weight: 0

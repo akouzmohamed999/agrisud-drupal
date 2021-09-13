@@ -1,0 +1,29 @@
+uuid: 292e89c7-8435-46d3-ae06-9ea676a71645
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_programme
+    - node.type.action
+    - taxonomy.vocabulary.programme
+id: node.action.field_programme
+field_name: field_programme
+entity_type: node
+bundle: action
+label: Programme
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      programme: programme
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference
