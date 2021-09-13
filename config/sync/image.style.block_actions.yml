@@ -1,0 +1,15 @@
+uuid: c3d10e0a-4db0-4c0f-ba46-eb743470c0e0
+langcode: fr
+status: true
+dependencies: {  }
+name: block_actions
+label: 'block-actions (300x400)'
+effects:
+  e0bdb383-c1e1-4a14-aef0-6dc8f480946b:
+    uuid: e0bdb383-c1e1-4a14-aef0-6dc8f480946b
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 300
+      height: 400
+      anchor: center-center

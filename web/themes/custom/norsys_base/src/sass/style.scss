@@ -60,7 +60,7 @@ h1.page-header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: inherit;
-    padding: 5rem 0 20rem 0 !important;
+    padding: 5rem 0 40rem 0 !important;
     /*.region-midwidget-forth {
       margin-left: 10% !important;
       margin-right: -10% !important;
@@ -74,6 +74,36 @@ h1.page-header {
       border: 1px solid #eee;
       border-bottom: 4px solid #ff5e14;
       text-align: center !important;
+    }
+  }
+
+  #clients {
+    h2 {
+      box-shadow: 3px 5px 40px 90px #fff;
+      opacity: 0.6;
+      background-color: #fff;
+      color: #286839 !important;
+    }
+    #block-views-block-liste-actions-block-1 {
+      margin-top: -20rem !important;
+    }
+    background-image: url("images/portrait-farmer-3-bg2.png");
+    //background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: inherit;
+    background-repeat: repeat-y !important;
+    .node--view-mode-accroche-2.ds-1col {
+      .field--name-node-title {
+        height: 6rem !important;
+      }
+      position: relative;
+      background: #fff;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      border-bottom: 4px solid #ff5e14;
+      text-align: center !important;
+      height: 35rem !important;
     }
   }
   #block-message {
@@ -227,6 +257,73 @@ h1.page-header {
 
 }
 
+//CT action
+.node--type-action.node--view-mode-teaser.ds-2col {
+  text-align: center !important;
+  .field--name-field-action-date, .field--name-field-action-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 1rem !important;
+  }
+
+  .clearBoth { clear:both; }
+  .field--name-field-image {
+    margin-top: 3rem !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+
+  .group-left {
+    width: 20% !important;
+    margin: 1rem !important;
+  }
+  .group-right {
+    width: 75% !important;
+  }
+}
+
+.node--type-action.node--view-mode-full.ds-1col {
+
+  .field--name-field-programme, .field--name-field-pays, .field--name-field-statut{
+
+    .field__label, .field__item {
+      float:left !important;
+    }
+    .field__item {
+      margin-left: 0.5rem !important;
+      a {
+        color: inherit !important;
+      }
+    }
+    .field__label {
+      margin-left: 2rem !important;
+    }
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 5rem !important;
+  }
+  #liens-utils {
+    text-align: left !important;
+    margin-top: 3rem !important;
+  }
+
+  .clearBoth { clear:both; }
+  .field--name-field-image {
+    text-align: center;
+    margin-top: 5rem !important;
+    display: inline-block !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+}
 
 //pagination
 .pager {
@@ -296,6 +393,16 @@ a.more-link {
     }
   }
 
+  //page de liste des actions
+  .node--type-action.node--view-mode-teaser.ds-2col {
+    .group-left {
+      width: 100% !important;
+    }
+    .group-right {
+      width: 100% !important;
+    }
+  }
+
   #block-message {
     margin: 0 10% 7% !important;
     width: 80% !important;
@@ -354,7 +461,7 @@ a.more-link {
   }
   .carousel-caption {
     h3, p {
-      color: #fff !important;
+      color: #286839 !important;
     }
   }
 }

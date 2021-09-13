@@ -1,0 +1,8 @@
+uuid: 66ffdbef-c244-486b-9a5a-979de4b2324e
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type action'
+vid: type_action
+description: ''
+weight: 0

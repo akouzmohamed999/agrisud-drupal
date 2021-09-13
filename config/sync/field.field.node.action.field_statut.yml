@@ -1,0 +1,29 @@
+uuid: a8bb77a4-b0ed-4038-a191-666148c019e4
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_statut
+    - node.type.action
+    - taxonomy.vocabulary.statut
+id: node.action.field_statut
+field_name: field_statut
+entity_type: node
+bundle: action
+label: Statut
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      statut: statut
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

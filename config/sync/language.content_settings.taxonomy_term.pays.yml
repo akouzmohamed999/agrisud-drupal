@@ -1,0 +1,11 @@
+uuid: e1383438-5d87-4f3b-a03b-01acc8e68f76
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.pays
+id: taxonomy_term.pays
+target_entity_type_id: taxonomy_term
+target_bundle: pays
+default_langcode: site_default
+language_alterable: true
