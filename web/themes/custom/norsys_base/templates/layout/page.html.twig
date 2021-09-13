@@ -386,8 +386,48 @@
   </div>
 {% endif %}
 <!--End: Clients -->
-
-
+<div class="bg-dark text-align-center">
+  {% if show_social_icon %}
+    <div class="social-media py-2">
+      {% if facebook_url %}
+        <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+      {% endif %}
+      {% if twitter_url %}
+        <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
+      {% endif %}
+      {% if linkedin_url %}
+        <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      {% endif %}
+      {% if instagram_url %}
+        <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-instagram"></i></a>
+      {% endif %}
+      {% if rss_url %}
+        <a href="{{ rss_url }}" class="rss" target="_blank" ><i class="fa fa-rss"></i></a>
+      {% endif %}
+    </div>
+  {% endif %}
+</div>
+<div class="bg-success">
+<div class="container">
+  <div class="row py-5">
+  <div class="">
+    <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
+    <p class="text-white">Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et<br> dans les Caraïbes
+      Son action vise à promouvoir un développement économique durable <br>dans le secteur agricole
+      Avec ses partenaires, ell e forme et accompagne des hommes et des <br>femmes dans la maîtrise de
+      leurs activités et met en place des projets multi-acteurs pour des <br>territoires socialement équitables
+      économiquement viables et écologiquement responsables.
+    </p>
+  </div>
+  <div class="">
+    <h5 class="text-white font-weight-bold">CONTACTEZ-NOUS</h5>
+    <p class="text-white">7, avenue du Maréchal Foch - 33500 Libourne</p>
+    <p class="text-white">Tel :<br>+33 (0)5 57 25 17 06</p>
+    <p class="text-white">Fax:<br>+33 (0)5 57 25 17 06</p>
+  </div>
+  </div>
+</div>
+</div>
 <!-- Start: Footer widgets -->
 {% if page.footer_first or page.footer_second or page.footer_third %}
   <div class="footer" id="footer">
