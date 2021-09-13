@@ -1,0 +1,21 @@
+uuid: 4057e184-72e9-42f9-84f3-2363f0785309
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_titre
+field_name: field_titre
+entity_type: node
+type: list_string
+settings:
+  allowed_values: {  }
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

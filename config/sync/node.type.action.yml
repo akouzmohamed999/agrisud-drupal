@@ -1,0 +1,18 @@
+uuid: 8eeb4276-930c-4a48-b242-ad83052a3ef5
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Action
+type: action
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

@@ -1,0 +1,83 @@
+uuid: 4f283ab9-9a5e-458a-96e3-4ab593170f54
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.accroche_2
+    - field.field.node.action.body
+    - field.field.node.action.field_image
+    - field.field.node.action.field_pays
+    - field.field.node.action.field_programme
+    - field.field.node.action.field_region
+    - field.field.node.action.field_statut
+    - field.field.node.action.field_titre
+    - image.style.block_actions
+    - node.type.action
+  module:
+    - ds
+    - layout_builder
+    - svg_image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - node_title
+        - field_image
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 0
+        label: hidden
+        formatter: default
+        settings:
+          link: true
+          'link class': ''
+          wrapper: h3
+          class: ''
+  layout_builder:
+    allow_custom: false
+    enabled: false
+id: node.action.accroche_2
+targetEntityType: node
+bundle: action
+mode: accroche_2
+content:
+  field_image:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: block_actions
+      image_link: content
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
+    type: image
+    region: ds_content
+hidden:
+  body: true
+  field_pays: true
+  field_programme: true
+  field_region: true
+  field_statut: true
+  field_titre: true
+  langcode: true
+  links: true
+  search_api_excerpt: true
