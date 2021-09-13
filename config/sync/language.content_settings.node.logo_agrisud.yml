@@ -1,0 +1,11 @@
+uuid: 906c9847-56a5-47e9-be9c-a8237de902d8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.logo_agrisud
+id: node.logo_agrisud
+target_entity_type_id: node
+target_bundle: logo_agrisud
+default_langcode: site_default
+language_alterable: false
