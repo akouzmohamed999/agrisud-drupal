@@ -3,3 +3,5 @@ global-styling:
   css:
     component:
       src/css/style.css: {}
+  js:
+    src/js/custom.js: {}
