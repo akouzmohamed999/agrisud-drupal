@@ -1,0 +1,23 @@
+uuid: 63e99329-68e8-4794-99b4-c0cd108e8ef8
+langcode: fr
+status: false
+dependencies:
+  config:
+    - views.view.liste_actions
+  module:
+    - views
+  theme:
+    - norsys_base
+id: formulaireexposeliste_actionspage_1
+theme: norsys_base
+region: content
+weight: -8
+provider: null
+plugin: 'views_exposed_filter_block:liste_actions-page_1'
+settings:
+  id: 'views_exposed_filter_block:liste_actions-page_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+visibility: {  }

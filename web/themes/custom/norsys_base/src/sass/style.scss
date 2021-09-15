@@ -15,6 +15,26 @@ h1.page-header {
   font-weight: bold;
 }
 
+#clients {
+  background: none !important;
+  h2 {
+    color: #286839 !important;
+  }
+  .node--view-mode-accroche-2.ds-1col {
+    .field--name-node-title {
+      height: 6rem !important;
+    }
+    background: #fff !important;
+    position: relative;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-bottom: 4px solid #ff5e14;
+    text-align: center !important;
+    height: 35rem !important;
+  }
+}
+//for front pages
 .path-frontpage {
   #chiffres-container {
     background-image: url("images/image-chiffres.png");
@@ -114,24 +134,26 @@ h1.page-header {
       line-height: 2;
     }
   }
-  .sticky {
-    color: #fff !important;
-    background: #c83e2c !important;
-    position:fixed;
-    top:50%;
-    z-index:9999;
-  }
-  #bouton-sticky {
-    right:5%;
-  }
-  #espace-presse {
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    left: 0 !important;
-    padding: 1.25rem 0.5rem;
-  }
 }
 
+//////////////////////////sticky buttons in all pages
+.sticky {
+  color: #fff !important;
+  background: #c83e2c !important;
+  position:fixed;
+  top:50%;
+  z-index:9999;
+}
+
+#bouton-sticky {
+  right:5%;
+}
+#espace-presse {
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  left: 0 !important;
+  padding: 1.25rem 0.5rem;
+}
 //////////////////////////////////slider!!!!!!!!!
 #block-views-block-temoignage-block-1 {
   margin: 0 10% 0 10%;
@@ -226,6 +248,7 @@ h1.page-header {
 }
 
 .node--type-actualite.node--view-mode-teaser.ds-2col {
+  margin-top: 5rem !important;
   text-align: center !important;
   .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
@@ -324,7 +347,16 @@ h1.page-header {
     }
   }
 }
-
+#views-bootstrap-programmes-multi-pays-block-1 {
+  margin: 0 10rem;
+  .node--type-programme.node--view-mode-teaser.ds-2col {
+    background-color: #fff !important;
+    padding: 3rem !important;
+    img {
+      margin-right: 1rem !important;
+    }
+  }
+}
 //pagination
 .pager {
   text-align: center !important;
@@ -412,6 +444,17 @@ a.more-link {
       line-height: 2;
     }
   }
+
+  //page nos actions : programme multi-pays
+  #views-bootstrap-programmes-multi-pays-block-1 {
+    .field--name-field-image {
+      text-align: center;
+    }
+    margin: 0 !important;
+    .text-justify {
+      margin-bottom: 2rem !important;
+    }
+  }
 }
 
 //tablettes
@@ -443,12 +486,37 @@ a.more-link {
       }
     }
   }
+
+  //page nos actions : programme multi-pays
+  #views-bootstrap-programmes-multi-pays-block-1 {
+    .field--name-field-image {
+      text-align: center;
+    }
+    margin: 0 !important;
+    .node--type-programme.node--view-mode-teaser.ds-2col {
+      .group-left {
+        width: 100%;
+      }
+      .group-right {
+        width: 100%;
+      }
+    }
+  }
 }
-
-@media (max-width: 1200px) {
-
+//tablettes
+@media (max-width: 992px) {
+  //page nos actions : programme multi-pays
+  #views-bootstrap-programmes-multi-pays-block-1 {
+    .node--type-programme.node--view-mode-teaser.ds-2col {
+      .group-left {
+        width: 100%;
+      }
+      .group-right {
+        width: 100%;
+      }
+    }
+  }
 }
-
 .updates, .midwidget, .main-content {
   h1, .h1,
   h2, .h2,

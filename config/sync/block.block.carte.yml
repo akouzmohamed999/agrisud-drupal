@@ -12,7 +12,7 @@ dependencies:
 id: carte
 theme: norsys_base
 region: content
-weight: -7
+weight: -9
 provider: null
 plugin: 'block_content:40385694-32d0-492e-badb-d0c8d61f89d2'
 settings:
@@ -26,6 +26,6 @@ settings:
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
+    pages: "<front>\r\n/liste-actions"
     negate: false
     context_mapping: {  }

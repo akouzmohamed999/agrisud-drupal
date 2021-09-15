@@ -1,0 +1,9 @@
+uuid: 94c475f0-448b-4cd1-87bc-e8fe32ad5b45
+langcode: fr
+status: true
+dependencies: {  }
+id: search_api__views_page__nos_actualites_view__page_1
+name: 'search_api:views_page__nos_actualites_view__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

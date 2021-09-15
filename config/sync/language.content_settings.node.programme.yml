@@ -1,0 +1,11 @@
+uuid: b6640748-19db-4156-815b-5a89c5e6667a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.programme
+id: node.programme
+target_entity_type_id: node
+target_bundle: programme
+default_langcode: site_default
+language_alterable: false
