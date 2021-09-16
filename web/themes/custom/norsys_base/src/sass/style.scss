@@ -5,7 +5,16 @@
 #block-norsys-base-branding img {
   width: 43px;
 }
-
+a {
+  color: #286839 !important;
+}
+.custom-title {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  h2 {
+    font-weight: 600 !important;
+  }
+}
 h1.page-header {
   text-align: center;
   color: #fff;
@@ -36,8 +45,11 @@ h1.page-header {
 }
 //for front pages
 .path-frontpage {
+  .region {
+      background: none !important;
+  }
   #chiffres-container {
-    background-image: url("images/image-chiffres.png");
+    background-image: url("images/bg_nos_chiffres.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -47,7 +59,7 @@ h1.page-header {
     padding: 5rem 0;
     margin-top: 1rem;
     opacity: 0.8;
-
+    background-color: #286839 !important;
     .chiffres {
       font-size: 4rem !important;
       font-weight: bold;
@@ -76,9 +88,9 @@ h1.page-header {
     padding: 3rem 10rem;
   }
   #midwidget {
-    background-image: url("images/portrait-farmer-3.png");
+    background-image: url("images/fermier-rescaled.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: inherit;
     padding: 5rem 0 40rem 0 !important;
     /*.region-midwidget-forth {
@@ -107,9 +119,9 @@ h1.page-header {
     #block-views-block-liste-actions-block-1 {
       margin-top: -20rem !important;
     }
-    background-image: url("images/portrait-farmer-3-bg2.png");
+    background-image: url("images/images/fermier-rescaled.png") !important;
     //background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: inherit;
     background-repeat: repeat-y !important;
     .node--view-mode-accroche-2.ds-1col {
@@ -157,8 +169,16 @@ h1.page-header {
 //////////////////////////////////slider!!!!!!!!!
 #block-views-block-temoignage-block-1 {
   margin: 0 10% 0 10%;
+  .title {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
 }
 #views-bootstrap-temoignage-block-1 {
+  a {
+    color: #286839 !important;
+  }
   //slider of views
   .carousel-inner {
     overflow: inherit !important;
