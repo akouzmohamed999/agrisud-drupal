@@ -1,0 +1,24 @@
+uuid: e00cfa09-121c-4346-85f1-235d75031236
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.logo_agrisud.field_logo_agrisud
+    - node.type.logo_agrisud
+  module:
+    - user
+id: node.logo_agrisud.teaser
+targetEntityType: node
+bundle: logo_agrisud
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_logo_agrisud: true
+  langcode: true
+  search_api_excerpt: true

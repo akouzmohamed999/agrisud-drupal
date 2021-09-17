@@ -533,3 +533,16 @@ a.more-link {
     }
   }
 }
+
+//footer style
+#footer{
+  background: #000000;
+  .menu ul li a {
+    color: #FFFFFF;
+  }
+}
+// à propos de nous style
+.block-a-propos-nous{
+  background: url("../css/images/agrisudBGfooter.png");
+
+}

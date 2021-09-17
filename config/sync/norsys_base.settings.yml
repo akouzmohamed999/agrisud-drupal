@@ -9,11 +9,11 @@ logo:
 favicon:
   use_default: 0
   path: ''
-show_social_icon: 0
-facebook_url: ''
-twitter_url: ''
-linkedin_url: ''
-instagram_url: ''
+show_social_icon: 1
+facebook_url: '#'
+twitter_url: '#'
+linkedin_url: '#'
+instagram_url: '#'
 rss_url: ''
 show_credit_link: 0
 no_of_slides: '2'
