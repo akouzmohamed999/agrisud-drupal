@@ -1,4 +1,4 @@
-/** 
+/**
 	* Filename:     custom.js
 	* Version:      1.0.0 (2019-09-20)
 	* Website:      https://www.zymphonies.com
@@ -16,4 +16,5 @@ function stickyBtnAnimation(){
 
 jQuery(document).ready(function($){
 	stickyBtnAnimation();
+  $("#block-views-block-block-nos-partenaires-block-1 .content div").eq(1).addClass("row");
 });
