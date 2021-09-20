@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_libelle
+    - image.style.thumbnail
   module:
     - node
     - svg_image
@@ -50,12 +51,17 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 8
           offset: 0
       style:
         type: default
       row:
         type: fields
+        options:
+          default_field_elements: true
+          inline: {  }
+          separator: ''
+          hide_empty: false
       fields:
         field_libelle:
           id: field_libelle
@@ -108,12 +114,12 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
-            image_link: ''
+            image_style: thumbnail
+            image_link: content
             svg_render_as_image: true
             svg_attributes:
-              width: 200
-              height: 200
+              width: null
+              height: null
           group_column: ''
           group_columns: {  }
           group_rows: true
