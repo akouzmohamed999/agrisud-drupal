@@ -386,26 +386,15 @@
   </div>
 {% endif %}
 <!--End: Clients -->
-<div class="bg-dark text-align-center">
-  {% if show_social_icon %}
-    <div class="social-media py-2">
-      {% if facebook_url %}
-        <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-      {% endif %}
-      {% if twitter_url %}
-        <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
-      {% endif %}
-      {% if linkedin_url %}
-        <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-      {% endif %}
-      {% if instagram_url %}
-        <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-instagram"></i></a>
-      {% endif %}
-      {% if rss_url %}
-        <a href="{{ rss_url }}" class="rss" target="_blank" ><i class="fa fa-rss"></i></a>
-      {% endif %}
+<div class="bg-white row text-align-center">
+  <div class="col-lg-4  col-md-6 row col-sm-12 col-12">
+    <div class="col-lg-9 col-md-10 col-sm-12 col-12 py-3 text-align-right">
+      <span class="m-0">Agrisud fait partie des associations agréées en France</span>
     </div>
-  {% endif %}
+    <div class="col-lg-3 col-md-2 col-sm-12 col-12 text-align-left px-0 pt-2">
+        <img src="/web/themes/custom/norsys_base/images/Membre_HorizontalLogo_Color.jpg"/>
+    </div>
+  </div>
 </div>
 <div class="block-a-propos-nous">
 <div class="container py-5">
@@ -461,28 +450,15 @@
 
 
 <!-- Start: Copyright -->
-<div class="copyright">
+<div class="text-align-center bg-white">
   <div class="container">
     <span> © {{ "now"|date("Y") }} Norsys Afrique. All rights reserved.</span>
-    {% if show_social_icon %}
         <p class="social-media">
-          {% if facebook_url %}
             <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-          {% endif %}
-          {% if twitter_url %}
+            <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-youtube"></i></a>
             <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
-          {% endif %}
-          {% if linkedin_url %}
             <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-          {% endif %}
-          {% if instagram_url %}
-            <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-instagram"></i></a>
-          {% endif %}
-          {% if rss_url %}
-            <a href="{{ rss_url }}" class="rss" target="_blank" ><i class="fa fa-rss"></i></a>
-          {% endif %}
         </p>
-      {% endif %}
 
         <span class="credit-link">Designed By <a href="https://www.zymphonies.com" target="_blank">Zymphonies</a></span>
 
