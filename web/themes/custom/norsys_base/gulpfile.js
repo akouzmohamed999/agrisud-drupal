@@ -4,13 +4,14 @@ const gulp = require('gulp'),
   autoprefixer = require('gulp-autoprefixer'),
   sourcemaps = require('gulp-sourcemaps');
 
-gulp.task('sass', function () {
+gulp.task('sass', function (done) {
   gulp.src('./src/sass/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(autoprefixer('last 2 version'))
     .pipe(sourcemaps.write('./'))
     .pipe(gulp.dest('./src/css'));
+  done();
 });
 
 gulp.task('watch', function() {
