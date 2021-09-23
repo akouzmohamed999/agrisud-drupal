@@ -92,5 +92,17 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN php -d memory_limit=-1 /usr/local/bin/composer install
 COPY --from=gulp /home/node/app/src/css /var/www/html/web/themes/custom/norsys_base/src/css
 
+RUN chown -R www-data:www-data .
+RUN cp -R config/dev/files-bkup -p web/sites/default/files
+RUN mkdir -p web/sites/default/translations
+
+RUN chmod a+w web/sites/default/files
+RUN chmod -R 755 .
+RUN chmod -R 775 web/sites/default
+RUN cp web/sites/default/settings.example.php web/sites/default/settings.php
+RUN chmod 444 web/sites/default/settings.php
+
+RUN cp web/sites/default/slider-images/* web/sites/default/files
+
 # Work directory
 WORKDIR /var/www/html
