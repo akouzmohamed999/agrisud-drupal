@@ -96,8 +96,7 @@ RUN cp -R /var/www/html/config/dev/files-bkup -p /var/www/html/web/sites/default
 RUN mkdir -p /var/www/html/web/sites/default/translations
 
 RUN chmod a+w /var/www/html/web/sites/default/files
-RUN chmod -R 755 /var/www/html
-RUN chmod -R 775 /var/www/html/web/sites/default
+RUN chmod 775 /var/www/html/web/sites/default
 RUN cp /var/www/html/web/sites/default/settings.example.php /var/www/html/web/sites/default/settings.php
 RUN chmod 444 /var/www/html/web/sites/default/settings.php
 
