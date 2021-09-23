@@ -13,7 +13,7 @@ RUN gulp sass
 
 FROM php:7.4-apache-buster
 
-COPY . /var/www/html/
+COPY --chown=www-data:www-data . /var/www/html/
 COPY ./deploy/config/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Prepare apt
@@ -92,7 +92,6 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN php -d memory_limit=-1 /usr/local/bin/composer install
 COPY --from=gulp /home/node/app/src/css /var/www/html/web/themes/custom/norsys_base/src/css
 
-RUN chown -R www-data:www-data /var/www/html
 RUN cp -R /var/www/html/config/dev/files-bkup -p /var/www/html/web/sites/default/files
 RUN mkdir -p /var/www/html/web/sites/default/translations
 
