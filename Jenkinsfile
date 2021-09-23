@@ -5,8 +5,8 @@ def dockerImageTag = "${dockerRepoUrl}/agrisud/${dockerImageName}:latest"
 def mysqlRootPassword = "secretintpassword"
 def mysqlDatabaseName = "agrisud_website"
 def mysqlDatabaseHost = "agrisud-mysql"
-def mysqlUser = "root"
-def mysqlPassword = "secretintpassword"
+def mysqlUser = "norsys2021"
+def mysqlPassword = "MDP2NAF"
 
 pipeline {
 	  agent any
