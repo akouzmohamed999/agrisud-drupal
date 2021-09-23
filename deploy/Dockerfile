@@ -13,7 +13,7 @@ RUN gulp sass
 
 FROM php:7.4-apache-buster
 
-COPY --chown=www-data:www-data . /var/www/html/
+COPY --chown=www-data:www-data --chmod=775 . /var/www/html/
 COPY ./deploy/config/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Prepare apt
@@ -92,15 +92,12 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN php -d memory_limit=-1 /usr/local/bin/composer install
 COPY --from=gulp /home/node/app/src/css /var/www/html/web/themes/custom/norsys_base/src/css
 
-RUN cp -R /var/www/html/config/dev/files-bkup -p /var/www/html/web/sites/default/files
+COPY --chown=www-data:www-data --chmod=775 ./config/dev/files-bkup /var/www/html/web/sites/default/files
 RUN mkdir -p /var/www/html/web/sites/default/translations
 
-RUN chmod a+w /var/www/html/web/sites/default/files
-RUN chmod 775 /var/www/html/web/sites/default
-RUN cp /var/www/html/web/sites/default/settings.example.php /var/www/html/web/sites/default/settings.php
-RUN chmod 444 /var/www/html/web/sites/default/settings.php
+COPY --chown=www-data:www-data --chmod=444 ./web/sites/default/settings.example.php /var/www/html/web/sites/default/settings.php
 
-RUN cp /var/www/html/web/sites/default/slider-images/* /var/www/html/web/sites/default/files
+COPY --chown=www-data:www-data --chmod=775 ./web/sites/default/slider-images/* /var/www/html/web/sites/default/files
 
 # Work directory
 WORKDIR /var/www/html
