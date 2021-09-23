@@ -23,7 +23,7 @@ pipeline {
 			  }
 			  stage('Docker Build and Tag') {
 				   steps {
-				    sh("docker build -f docker/Dockerfile -t ${dockerImageName} .")
+				    sh("docker build -f deploy/Dockerfile -t ${dockerImageName} .")
 				   }
 			  }
 			  stage('Push') {
