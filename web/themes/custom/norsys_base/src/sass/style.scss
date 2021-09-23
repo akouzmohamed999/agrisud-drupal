@@ -603,5 +603,10 @@ a.more-link {
   //}
   //
   path[class~="country"]:hover{
-    fill: #951915 !important;
+    fill: #226432 !important;
   }
+
+  // visual update
+.btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
+  background: #c83e2c;
+}
