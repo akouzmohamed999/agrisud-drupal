@@ -5,16 +5,6 @@ MAINTAINER NAF
 # Prepare apt
 RUN apt-get update
 
-# Prepare selfsigned SSL certificate
-RUN apt-get install -y ssl-cert
-
-# Setup Apache2 mod_ssl
-RUN a2enmod ssl
-
-# Setup Apache2 HTTPS env
-RUN a2ensite default-ssl.conf
-
-
 # >> start of drupal recommanded configurations
 RUN apt-get install default-mysql-client -y
 

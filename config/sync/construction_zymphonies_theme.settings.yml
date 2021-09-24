@@ -15,12 +15,12 @@ show_social_icon: 1
 show_credit_link: 1
 show_slideshow: 1
 no_of_slides: '4'
-slide_title_1: 'The Easiest Way to Get suitable Property'
-slide_description_1: 'Find Flats, Apartments & Real Estate'
+slide_title_1: 'Entreprendre contre la pauvreté'
+slide_description_1: ''
 slide_url_1: '#'
 slide_image_path_1: /images/slider/slide_01.jpg
-slide_title_2: 'Make a Difference in Your Career Track'
-slide_description_2: 'Find Jobs, Employment & Career Opportunities'
+slide_title_2: 'Entreprendre pour des systèmes agricoles performants et durables'
+slide_description_2: ''
 slide_url_2: '#'
 slide_image_path_2: /images/slider/slide_02.jpg
 _core:
@@ -28,21 +28,21 @@ _core:
 langcode: fr
 logo:
   use_default: 0
-  path: 'public://logo-agrisud--''_width.jpg'
+  path: 'public://logo-agrisud-20X8-cmjn-HD.jpg'
 favicon:
   use_default: 0
   path: ''
 slide_image_path1:
-  - '2'
+  - '45'
 slide_image_path2:
-  - '3'
+  - '40'
 slide_image_path3:
-  - '4'
-slide_title_3: ''
+  - '41'
+slide_title_3: 'Entreprendre pour un développement économique équitable'
 slide_description_3: ''
 slide_url_3: ''
 slide_image_path4:
-  - '5'
-slide_title_4: ''
+  - '42'
+slide_title_4: 'Entreprendre pour la transition agro-écologique des territoires '
 slide_description_4: ''
-slide_url_4: ''
+slide_url_4: '#'
