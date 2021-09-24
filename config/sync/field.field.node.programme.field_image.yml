@@ -28,11 +28,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: ''
+    uuid: 7dbbccb4-a377-45ec-b20d-f955fee61c16
     alt: ''
     title: ''
-    width: null
-    height: null
+    width: 591
+    height: 591
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

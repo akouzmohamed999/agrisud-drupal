@@ -23,7 +23,7 @@ echo ">> Copying slider images..."
 cp web/sites/default/slider-images/* web/sites/default/files
 
 #echo ">> Importing the initial database..."
-#docker exec -i agrisud-web_db_1 mysql -unorsys2021 -pMDP2NAF agrisudweb < database/bkup-multi_programmes.sql
+#docker exec -i agrisud-web_db_1 mysql -unorsys2021 -pMDP2NAF agrisudweb < database/bkup-20210708.sql
 docker-compose run --rm gulp npm install
 docker-compose run --rm gulp gulp sass
 echo ">> fin"

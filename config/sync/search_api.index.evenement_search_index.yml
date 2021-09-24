@@ -1,0 +1,71 @@
+uuid: dc4681cf-b483-499d-9e83-a8c851c5b8f0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - field.storage.node.field_date_event
+    - field.storage.node.field_image_event
+    - field.storage.node.field_lien_event
+    - search_api.server.evenement_search_api
+  module:
+    - search_api
+    - node
+id: evenement_search_index
+name: 'Evénement Search Index'
+description: ''
+read_only: false
+field_settings:
+  body:
+    label: Description
+    datasource_id: 'entity:node'
+    property_path: body
+    type: text
+    dependencies:
+      config:
+        - field.storage.node.body
+  field_date_event:
+    label: 'Date '
+    datasource_id: 'entity:node'
+    property_path: field_date_event
+    type: date
+    dependencies:
+      config:
+        - field.storage.node.field_date_event
+  field_image_event:
+    label: Image
+    datasource_id: 'entity:node'
+    property_path: field_image_event
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image_event
+  field_lien_event:
+    label: Lien
+    datasource_id: 'entity:node'
+    property_path: field_lien_event
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_lien_event
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - evenement
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: evenement_search_api

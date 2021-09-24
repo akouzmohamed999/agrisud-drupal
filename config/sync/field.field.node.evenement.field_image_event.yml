@@ -1,16 +1,16 @@
-uuid: 2c59c445-4fa2-4660-9dcb-fe3fd42bcde3
-langcode: en
+uuid: ad8d40c7-440c-434c-8fb8-cc3b7c4d20f8
+langcode: fr
 status: true
 dependencies:
   config:
-    - field.storage.node.field_actualite_image
-    - node.type.actualite
+    - field.storage.node.field_image_event
+    - node.type.evenement
   module:
     - image
-id: node.actualite.field_actualite_image
-field_name: field_actualite_image
+id: node.evenement.field_image_event
+field_name: field_image_event
 entity_type: node
-bundle: actualite
+bundle: evenement
 label: Image
 description: ''
 required: false
@@ -28,11 +28,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 57cb8b02-b7ee-4a75-8947-5bd0725cd79c
+    uuid: ''
     alt: ''
     title: ''
-    width: 600
-    height: 454
+    width: null
+    height: null
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

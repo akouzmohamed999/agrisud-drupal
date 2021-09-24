@@ -1,33 +1,39 @@
+$green-agrisud : #286839;
+$red-agrisud : #ff5e14;
+
 .header {
   border-bottom: none !important;
 }
 
-#block-norsys-base-branding img {
-  width: 43px;
-}
-a {
-  color: #286839 !important;
-}
-.custom-title {
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  h2 {
-    font-weight: 600 !important;
+.container, .container-fluid {
+  #block-norsys-base-branding img {
+    width: 43px;
   }
-}
-h1.page-header {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  padding: 6rem 1rem;
-  font-size: 4em;
-  font-weight: bold;
+  a {
+    color: $green-agrisud !important;
+  }
+  .custom-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    h2 {
+      font-weight: 600 !important;
+    }
+  }
+  h1.page-header {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 6rem 1rem;
+    font-size: 4em;
+    font-weight: bold;
+  }
+
 }
 
 #clients {
   background: none !important;
   h2 {
-    color: #286839 !important;
+    color: $green-agrisud !important;
   }
   .node--view-mode-accroche-2.ds-1col {
     .field--name-node-title {
@@ -38,7 +44,7 @@ h1.page-header {
     padding: 20px 20px;
     margin-bottom: 30px;
     border: 1px solid #eee;
-    border-bottom: 4px solid #ff5e14;
+    border-bottom: 4px solid $red-agrisud;
     text-align: center !important;
     height: 35rem !important;
   }
@@ -55,18 +61,21 @@ h1.page-header {
     background-size: cover;
     padding: 5rem 0;
   }
+
   #chiffres {
     padding: 5rem 0;
     margin-top: 1rem;
     opacity: 0.8;
-    background-color: #286839 !important;
+    background-color: $green-agrisud !important;
     .chiffres {
       font-size: 4rem !important;
       font-weight: bold;
     }
+
     .chiffres-desc {
       font-size: 1.1rem;
     }
+
     .chiffre-item {
       padding: 2rem;
     }
@@ -74,6 +83,7 @@ h1.page-header {
 
   .updates {
     padding: 0 !important;
+
     .region {
       padding: 0 !important;
     }
@@ -87,6 +97,7 @@ h1.page-header {
   .front-svg {
     padding: 3rem 10rem;
   }
+
   #midwidget {
     background-image: url("images/fermier-rescaled.png");
     background-repeat: no-repeat;
@@ -104,17 +115,14 @@ h1.page-header {
       padding: 20px 20px;
       margin-bottom: 30px;
       border: 1px solid #eee;
-      border-bottom: 4px solid #ff5e14;
+      border-bottom: 4px solid $red-agrisud;
       text-align: center !important;
     }
   }
 
   #clients {
     h2 {
-      box-shadow: 3px 5px 40px 90px #fff;
-      opacity: 0.6;
-      background-color: #fff;
-      color: #286839 !important;
+      color: $green-agrisud !important;
     }
     #block-views-block-liste-actions-block-1 {
       margin-top: -20rem !important;
@@ -133,7 +141,7 @@ h1.page-header {
       padding: 20px 20px;
       margin-bottom: 30px;
       border: 1px solid #eee;
-      border-bottom: 4px solid #ff5e14;
+      border-bottom: 4px solid $red-agrisud;
       text-align: center !important;
       height: 35rem !important;
     }
@@ -142,9 +150,29 @@ h1.page-header {
     margin: 0 25% 7%;
     width: 50%;
     text-align: center;
+
     h2 {
       line-height: 2;
     }
+  }
+
+  .sticky {
+    color: #fff !important;
+    background: #c83e2c !important;
+    position: fixed;
+    top: 50%;
+    z-index: 9999;
+  }
+
+  #bouton-sticky {
+    right: 5%;
+  }
+
+  #espace-presse {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    left: 0 !important;
+    padding: 1.25rem 0.5rem;
   }
 }
 
@@ -175,14 +203,16 @@ h1.page-header {
     font-weight: bold;
   }
 }
+
 #views-bootstrap-temoignage-block-1 {
   a {
-    color: #286839 !important;
+    color: $green-agrisud !important;
   }
   //slider of views
   .carousel-inner {
     overflow: inherit !important;
   }
+
   .carousel-caption {
     background: none !important;
     /*background-color: #fff;
@@ -200,6 +230,7 @@ h1.page-header {
 .region.region-header {
   background-color: #fff !important;
   padding: 0 !important;
+
   img {
     width: 254px !important;
   }
@@ -241,14 +272,17 @@ h1.page-header {
 // CT Acrualité
 .node--type-actualite.node--view-mode-full.ds-1col {
   text-align: center !important;
+
   .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
     text-align: left !important;
   }
+
   .field--name-body {
     text-align: justify !important;
     margin-top: 5rem !important;
   }
+
   #liens-utils {
     text-align: left !important;
     margin-top: 3rem !important;
@@ -257,9 +291,14 @@ h1.page-header {
   #date-actu, #type-actu {
     float: left !important;
   }
-  .clearBoth { clear:both; }
+
+  .clearBoth {
+    clear: both;
+  }
+
   .field--name-field-actualite-image {
     margin-top: 3rem !important;
+
     img {
       border-top-left-radius: 1.25rem !important;
       border-bottom-right-radius: 1.25rem !important;
@@ -270,10 +309,12 @@ h1.page-header {
 .node--type-actualite.node--view-mode-teaser.ds-2col {
   margin-top: 5rem !important;
   text-align: center !important;
+
   .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
     text-align: left !important;
   }
+
   .field--name-body {
     text-align: justify !important;
     margin-top: 1rem !important;
@@ -282,18 +323,25 @@ h1.page-header {
   #date-actu, #type-actu {
     float: left !important;
   }
-  .clearBoth { clear:both; }
+
+  .clearBoth {
+    clear: both;
+  }
+
   .field--name-field-actualite-image {
     margin-top: 3rem !important;
+
     img {
       border-top-left-radius: 1.25rem !important;
       border-bottom-right-radius: 1.25rem !important;
     }
   }
-    .group-left {
-      width: 20% !important;
-      margin: 1rem !important;
-    }
+
+  .group-left {
+    width: 20% !important;
+    margin: 1rem !important;
+  }
+
   .group-right {
     width: 75% !important;
   }
@@ -384,9 +432,11 @@ h1.page-header {
 
   ul.pager__items {
     display: inline-block !important;
+
     li {
       display: inline !important;
     }
+
     li > a, li > span {
       position: relative !important;
       float: left !important;;
@@ -430,6 +480,7 @@ a.more-link {
     .front-svg {
       padding: 3rem 10rem;
     }
+
     .updates {
       padding: 0 !important;
     }
@@ -440,6 +491,7 @@ a.more-link {
     .group-left {
       width: 100% !important;
     }
+
     .group-right {
       width: 100% !important;
     }
@@ -460,6 +512,7 @@ a.more-link {
     width: 80% !important;
     text-align: center;
     font-size: 0.55rem !important;
+
     h2 {
       line-height: 2;
     }
@@ -491,6 +544,7 @@ a.more-link {
     .flexslider .slides img {
       min-height: 650px;
     }
+
     .flex-active-slide {
       .slider-caption {
         top: 5% !important;
@@ -501,6 +555,7 @@ a.more-link {
       margin: 0 10% 7%;
       width: 80% !important;
       text-align: center;
+
       h2 {
         line-height: 2;
       }
@@ -541,15 +596,16 @@ a.more-link {
   h1, .h1,
   h2, .h2,
   h3, .h3,
-  h4, .h4{
-    color: #286839 !important;
+  h4, .h4 {
+    color: $green-agrisud !important;
     font-weight: 400;
     margin: 10px 0;
     line-height: 120%;
   }
+
   .carousel-caption {
     h3, p {
-      color: #286839 !important;
+      color: $green-agrisud !important;
     }
   }
 }
@@ -558,11 +614,34 @@ a.more-link {
 #footer{
   background: #FFFFFF;
   .menu ul li a {
-    color: #000000;
+    color: #000000 !important;
+    font-size: 0.8rem !important;
+  }
+  .container-fluid {
+    padding: 0 15rem 0 15rem;
   }
 }
-// à propos de nous style
-.block-a-propos-nous{
-  background: url("../css/images/agrisudBGfooter.png");
+.block-a-propos-nous {
+  background-image: url("images/bg_pied_page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 
+
+ // map svg
+  //path[class="country"] {
+  //  stroke-width: 1;
+  //  stroke: #951915;
+  //  stroke-linecap: round;
+  //  stroke-linejoin: round;
+  //}
+  //
+  path[class~="country"]:hover{
+    fill: #226432 !important;
+  }
+
+  // visual update
+.btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
+  background: #c83e2c;
 }

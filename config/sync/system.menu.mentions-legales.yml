@@ -1,0 +1,8 @@
+uuid: 44f2ad49-fc18-4e03-8524-b8c9795d39c7
+langcode: fr
+status: true
+dependencies: {  }
+id: mentions-legales
+label: 'mentions légales'
+description: ''
+locked: false
