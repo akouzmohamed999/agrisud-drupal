@@ -4,7 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_logo_agrisud
-    - image.style.thumbnail
+    - image.style.medium
   module:
     - node
     - svg_image
@@ -109,7 +109,7 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: thumbnail
+            image_style: medium
             image_link: content
             svg_render_as_image: true
             svg_attributes:
