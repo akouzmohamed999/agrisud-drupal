@@ -585,14 +585,12 @@ a.more-link {
       color: #286839 !important;
     }
   }
-
+}
 //footer style
-#footer{
-  background: #FFFFFF;
-  .menu ul li a {
+#block-norsys-base-footer{
+  ul li ul li a {
     color: #000000;
   }
-}
 }
  // map svg
   //path[class="country"] {
