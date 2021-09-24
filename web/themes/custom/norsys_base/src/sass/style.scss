@@ -43,6 +43,7 @@ h1.page-header {
     background-size: cover;
     padding: 5rem 0;
   }
+
   #chiffres {
     padding: 5rem 0;
     margin-top: 1rem;
@@ -52,9 +53,11 @@ h1.page-header {
       font-size: 4rem !important;
       font-weight: bold;
     }
+
     .chiffres-desc {
       font-size: 1.1rem;
     }
+
     .chiffre-item {
       padding: 2rem;
     }
@@ -62,6 +65,7 @@ h1.page-header {
 
   .updates {
     padding: 0 !important;
+
     .region {
       padding: 0 !important;
     }
@@ -75,6 +79,7 @@ h1.page-header {
   .front-svg {
     padding: 3rem 10rem;
   }
+
   #midwidget {
     background-image: url("images/portrait-farmer-3.png");
     background-repeat: no-repeat;
@@ -130,9 +135,29 @@ h1.page-header {
     margin: 0 25% 7%;
     width: 50%;
     text-align: center;
+
     h2 {
       line-height: 2;
     }
+  }
+
+  .sticky {
+    color: #fff !important;
+    background: #c83e2c !important;
+    position: fixed;
+    top: 50%;
+    z-index: 9999;
+  }
+
+  #bouton-sticky {
+    right: 5%;
+  }
+
+  #espace-presse {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+    left: 0 !important;
+    padding: 1.25rem 0.5rem;
   }
 }
 
@@ -158,11 +183,13 @@ h1.page-header {
 #block-views-block-temoignage-block-1 {
   margin: 0 10% 0 10%;
 }
+
 #views-bootstrap-temoignage-block-1 {
   //slider of views
   .carousel-inner {
     overflow: inherit !important;
   }
+
   .carousel-caption {
     background: none !important;
     /*background-color: #fff;
@@ -180,6 +207,7 @@ h1.page-header {
 .region.region-header {
   background-color: #fff !important;
   padding: 0 !important;
+
   img {
     width: 254px !important;
   }
@@ -221,14 +249,17 @@ h1.page-header {
 // CT Acrualité
 .node--type-actualite.node--view-mode-full.ds-1col {
   text-align: center !important;
+
   .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
     text-align: left !important;
   }
+
   .field--name-body {
     text-align: justify !important;
     margin-top: 5rem !important;
   }
+
   #liens-utils {
     text-align: left !important;
     margin-top: 3rem !important;
@@ -237,9 +268,14 @@ h1.page-header {
   #date-actu, #type-actu {
     float: left !important;
   }
-  .clearBoth { clear:both; }
+
+  .clearBoth {
+    clear: both;
+  }
+
   .field--name-field-actualite-image {
     margin-top: 3rem !important;
+
     img {
       border-top-left-radius: 1.25rem !important;
       border-bottom-right-radius: 1.25rem !important;
@@ -250,10 +286,12 @@ h1.page-header {
 .node--type-actualite.node--view-mode-teaser.ds-2col {
   margin-top: 5rem !important;
   text-align: center !important;
+
   .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
     text-align: left !important;
   }
+
   .field--name-body {
     text-align: justify !important;
     margin-top: 1rem !important;
@@ -262,18 +300,25 @@ h1.page-header {
   #date-actu, #type-actu {
     float: left !important;
   }
-  .clearBoth { clear:both; }
+
+  .clearBoth {
+    clear: both;
+  }
+
   .field--name-field-actualite-image {
     margin-top: 3rem !important;
+
     img {
       border-top-left-radius: 1.25rem !important;
       border-bottom-right-radius: 1.25rem !important;
     }
   }
-    .group-left {
-      width: 20% !important;
-      margin: 1rem !important;
-    }
+
+  .group-left {
+    width: 20% !important;
+    margin: 1rem !important;
+  }
+
   .group-right {
     width: 75% !important;
   }
@@ -364,9 +409,11 @@ h1.page-header {
 
   ul.pager__items {
     display: inline-block !important;
+
     li {
       display: inline !important;
     }
+
     li > a, li > span {
       position: relative !important;
       float: left !important;;
@@ -410,6 +457,7 @@ a.more-link {
     .front-svg {
       padding: 3rem 10rem;
     }
+
     .updates {
       padding: 0 !important;
     }
@@ -420,6 +468,7 @@ a.more-link {
     .group-left {
       width: 100% !important;
     }
+
     .group-right {
       width: 100% !important;
     }
@@ -440,6 +489,7 @@ a.more-link {
     width: 80% !important;
     text-align: center;
     font-size: 0.55rem !important;
+
     h2 {
       line-height: 2;
     }
@@ -471,6 +521,7 @@ a.more-link {
     .flexslider .slides img {
       min-height: 650px;
     }
+
     .flex-active-slide {
       .slider-caption {
         top: 5% !important;
@@ -481,6 +532,7 @@ a.more-link {
       margin: 0 10% 7%;
       width: 80% !important;
       text-align: center;
+
       h2 {
         line-height: 2;
       }
@@ -521,18 +573,18 @@ a.more-link {
   h1, .h1,
   h2, .h2,
   h3, .h3,
-  h4, .h4{
+  h4, .h4 {
     color: #286839 !important;
     font-weight: 400;
     margin: 10px 0;
     line-height: 120%;
   }
+
   .carousel-caption {
     h3, p {
       color: #286839 !important;
     }
   }
-}
 
 //footer style
 #footer{
@@ -541,8 +593,20 @@ a.more-link {
     color: #000000;
   }
 }
-// à propos de nous style
-.block-a-propos-nous{
-  background: url("../css/images/agrisudBGfooter.png");
+}
+ // map svg
+  //path[class="country"] {
+  //  stroke-width: 1;
+  //  stroke: #951915;
+  //  stroke-linecap: round;
+  //  stroke-linejoin: round;
+  //}
+  //
+  path[class~="country"]:hover{
+    fill: #226432 !important;
+  }
 
+  // visual update
+.btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
+  background: #c83e2c;
 }
