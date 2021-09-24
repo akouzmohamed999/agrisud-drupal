@@ -99,5 +99,7 @@ COPY --chown=www-data:www-data --chmod=444 ./web/sites/default/settings.example.
 
 COPY --chown=www-data:www-data --chmod=775 ./web/sites/default/slider-images/* /var/www/html/web/sites/default/files
 
+VOLUME /var/www/html/web/sites/default/files
+
 # Work directory
 WORKDIR /var/www/html
