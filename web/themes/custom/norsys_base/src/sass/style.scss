@@ -37,7 +37,7 @@ h1.page-header {
 //for front pages
 .path-frontpage {
   #chiffres-container {
-    background-image: url("images/image-chiffres.png");
+    background-image: url("../../images/image-chiffres.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -610,3 +610,12 @@ a.more-link {
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
   background: #c83e2c;
 }
+
+//for footer background
+.block-a-propos-nous {
+    background-image: url("../css/images/agrisudBGfooter.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 5rem 0;
+  }
