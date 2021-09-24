@@ -1,24 +1,39 @@
+$green-agrisud : #286839;
+$red-agrisud : #ff5e14;
+
 .header {
   border-bottom: none !important;
 }
 
-#block-norsys-base-branding img {
-  width: 43px;
-}
+.container, .container-fluid {
+  #block-norsys-base-branding img {
+    width: 43px;
+  }
+  a {
+    color: $green-agrisud !important;
+  }
+  .custom-title {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    h2 {
+      font-weight: 600 !important;
+    }
+  }
+  h1.page-header {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 6rem 1rem;
+    font-size: 4em;
+    font-weight: bold;
+  }
 
-h1.page-header {
-  text-align: center;
-  color: #fff;
-  margin: 0;
-  padding: 6rem 1rem;
-  font-size: 4em;
-  font-weight: bold;
 }
 
 #clients {
   background: none !important;
   h2 {
-    color: #286839 !important;
+    color: $green-agrisud !important;
   }
   .node--view-mode-accroche-2.ds-1col {
     .field--name-node-title {
@@ -29,15 +44,18 @@ h1.page-header {
     padding: 20px 20px;
     margin-bottom: 30px;
     border: 1px solid #eee;
-    border-bottom: 4px solid #ff5e14;
+    border-bottom: 4px solid $red-agrisud;
     text-align: center !important;
     height: 35rem !important;
   }
 }
 //for front pages
 .path-frontpage {
+  .region {
+      background: none !important;
+  }
   #chiffres-container {
-    background-image: url("../../images/image-chiffres.png");
+    background-image: url("images/bg_nos_chiffres.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -48,7 +66,7 @@ h1.page-header {
     padding: 5rem 0;
     margin-top: 1rem;
     opacity: 0.8;
-
+    background-color: $green-agrisud !important;
     .chiffres {
       font-size: 4rem !important;
       font-weight: bold;
@@ -81,9 +99,9 @@ h1.page-header {
   }
 
   #midwidget {
-    background-image: url("images/portrait-farmer-3.png");
+    background-image: url("images/fermier-rescaled.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-size: inherit;
     padding: 5rem 0 40rem 0 !important;
     /*.region-midwidget-forth {
@@ -97,24 +115,21 @@ h1.page-header {
       padding: 20px 20px;
       margin-bottom: 30px;
       border: 1px solid #eee;
-      border-bottom: 4px solid #ff5e14;
+      border-bottom: 4px solid $red-agrisud;
       text-align: center !important;
     }
   }
 
   #clients {
     h2 {
-      box-shadow: 3px 5px 40px 90px #fff;
-      opacity: 0.6;
-      background-color: #fff;
-      color: #286839 !important;
+      color: $green-agrisud !important;
     }
     #block-views-block-liste-actions-block-1 {
       margin-top: -20rem !important;
     }
-    background-image: url("images/portrait-farmer-3-bg2.png");
+    background-image: url("images/images/fermier-rescaled.png") !important;
     //background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: top;
     background-size: inherit;
     background-repeat: repeat-y !important;
     .node--view-mode-accroche-2.ds-1col {
@@ -126,7 +141,7 @@ h1.page-header {
       padding: 20px 20px;
       margin-bottom: 30px;
       border: 1px solid #eee;
-      border-bottom: 4px solid #ff5e14;
+      border-bottom: 4px solid $red-agrisud;
       text-align: center !important;
       height: 35rem !important;
     }
@@ -182,9 +197,17 @@ h1.page-header {
 //////////////////////////////////slider!!!!!!!!!
 #block-views-block-temoignage-block-1 {
   margin: 0 10% 0 10%;
+  .title {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
 }
 
 #views-bootstrap-temoignage-block-1 {
+  a {
+    color: $green-agrisud !important;
+  }
   //slider of views
   .carousel-inner {
     overflow: inherit !important;
@@ -574,7 +597,7 @@ a.more-link {
   h2, .h2,
   h3, .h3,
   h4, .h4 {
-    color: #286839 !important;
+    color: $green-agrisud !important;
     font-weight: 400;
     margin: 10px 0;
     line-height: 120%;
@@ -582,16 +605,30 @@ a.more-link {
 
   .carousel-caption {
     h3, p {
-      color: #286839 !important;
+      color: $green-agrisud !important;
     }
   }
 }
+
 //footer style
-#block-norsys-base-footer{
-  ul li ul li a {
-    color: #000000;
+#footer{
+  background: #FFFFFF;
+  .menu ul li a {
+    color: #000000 !important;
+    font-size: 0.8rem !important;
+  }
+  .container-fluid {
+    padding: 0 15rem 0 15rem;
   }
 }
+.block-a-propos-nous {
+  background-image: url("images/bg_pied_page.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+
  // map svg
   //path[class="country"] {
   //  stroke-width: 1;
@@ -608,12 +645,3 @@ a.more-link {
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
   background: #c83e2c;
 }
-
-//for footer background
-.block-a-propos-nous {
-    background-image: url("../css/images/agrisudBGfooter.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 5rem 0;
-  }

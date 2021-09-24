@@ -1,3 +1,9 @@
+{{ title_prefix }}
+{% if label %}
+    <div class="custom-title container"><h2{{ title_attributes }}>{{ label }}</h2></div>
+{% endif %}
+{{ title_suffix }}
+
 <div id="chiffres-container" class="container-fluid">
     <div id="chiffres" class="container-fluid bottom-widget">
         <div class="row text-center">
