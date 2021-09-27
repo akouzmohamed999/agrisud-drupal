@@ -32,7 +32,12 @@
     {% if menu_level == 0 %}
       <ul{{ attributes.addClass('menu row list-unstyled') }}>
     {% else %}
-      <ul class="menu pl-0">
+        {% if menu_level == 2 %}
+        <ul class="menu pl-3">
+          {% else %}
+          <ul class="menu pl-0">
+            {% endif %}
+
     {% endif %}
     {% for item in items %}
       {%
@@ -44,8 +49,8 @@
         ]
       %}
       {% if menu_level == 0 %}
-      <li class="col-sm-2 col-md-2 col-lg-2">
-        <h4>{{ item.title }}</h4>
+      <li class="col-12 col-sm-12 col-md-2 col-lg-2">
+        <h4 class="text-dark font-weight-bold">{{ item.title }}</h4>
       {% else %}
       <li{{ item.attributes.addClass(classes) }}>
         {{ link(item.title, item.url) }}
