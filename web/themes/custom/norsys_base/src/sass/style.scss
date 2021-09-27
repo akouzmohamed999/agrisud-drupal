@@ -96,9 +96,9 @@ $red-agrisud : #ff5e14;
   }
 
   #midwidget {
-    background-image: url("images/fermier-rescaled.png");
+    background-image: url("images/symbole-agrisud-2.png"), url("images/fermier-rescaled.png");
     background-repeat: no-repeat;
-    background-position: top;
+    background-position: right, top;
     background-size: inherit;
     padding: 5rem 0 40rem 0 !important;
     /*.region-midwidget-forth {
@@ -469,6 +469,9 @@ a.more-link {
 //mobile and small devices
 @media (max-width: 767px) {
   .path-frontpage {
+    #midwidget {
+      background-position: right, top;
+    }
     #chiffres-container {
       padding: 0;
       background-size: cover;
