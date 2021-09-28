@@ -512,10 +512,10 @@ a.more-link {
   }
 
   #block-message {
-    margin: 0 10% 7% !important;
-    width: 80% !important;
+    margin: 0% 15% 10% !important;
     text-align: center;
-    font-size: 0.55rem !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7;
 
     h2 {
       line-height: 2;
@@ -531,6 +531,10 @@ a.more-link {
     .text-justify {
       margin-bottom: 2rem !important;
     }
+  }
+
+  #block-carte {
+    margin-top: 3rem;
   }
 }
 
