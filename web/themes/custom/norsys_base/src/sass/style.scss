@@ -48,6 +48,13 @@ $red-agrisud : #ff5e14;
 }
 //for front pages
 .path-frontpage {
+  .main-content {
+    //background-image: url("images/fond-phrase-accroche.png");
+    background-image: url("images/icone-agri.png");
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-size: cover;
+  }
   .region {
       background: none !important;
   }
@@ -138,10 +145,13 @@ $red-agrisud : #ff5e14;
     }
   }
   #block-message {
-    margin: 0 25% 7%;
-    width: 50%;
+    /*margin: 0 25% 7%;
+    width: 50%;*/
+    width: 70%;
+    margin: 8% 15% 20%;
+    font-size: 2rem;
+    line-height: 1.4;
     text-align: center;
-
     h2 {
       line-height: 2;
     }
@@ -502,10 +512,10 @@ a.more-link {
   }
 
   #block-message {
-    margin: 0 10% 7% !important;
-    width: 80% !important;
+    margin: 0% 15% 10% !important;
     text-align: center;
-    font-size: 0.55rem !important;
+    font-size: 1.1rem !important;
+    line-height: 1.7;
 
     h2 {
       line-height: 2;
@@ -521,6 +531,10 @@ a.more-link {
     .text-justify {
       margin-bottom: 2rem !important;
     }
+  }
+
+  #block-carte {
+    margin-top: 3rem;
   }
 }
 
