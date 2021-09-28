@@ -52,17 +52,11 @@ $red-agrisud : #ff5e14;
       background: none !important;
   }
   #chiffres-container {
-    background-image: url("images/bg_nos_chiffres.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    padding: 5rem 0;
+    background-color: $green-agrisud !important;
   }
 
   #chiffres {
-    padding: 5rem 0;
     margin-top: 1rem;
-    opacity: 0.8;
     background-color: $green-agrisud !important;
     .chiffres {
       font-size: 4rem !important;
@@ -644,4 +638,11 @@ a.more-link {
   // visual update
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
   background: #c83e2c;
+}
+collab-icon{
+  background-image: url("images/picto-collaborateurs.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
 }
