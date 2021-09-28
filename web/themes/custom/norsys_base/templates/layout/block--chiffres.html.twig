@@ -1,6 +1,6 @@
 {{ title_prefix }}
 {% if label %}
-    <div class="custom-title container"><h2{{ title_attributes }}>{{ label }}</h2></div>
+    <div class="custom-title container mb-5"><h2{{ title_attributes.addClass('font-weight-bold') }}>{{ label }}</h2></div>
 {% endif %}
 {{ title_suffix }}
 
