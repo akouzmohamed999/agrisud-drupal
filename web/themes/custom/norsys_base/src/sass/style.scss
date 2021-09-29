@@ -428,21 +428,6 @@ $red-agrisud : #ff5e14;
   }
 }
 
-#block-views-block-evenement-block-1 {
-  margin: 5rem 0 5rem 0 !important;
-  #views-bootstrap-evenement-block-1 {
-    width: 50%;
-    margin-left: 25%;
-    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
-      background-color: #fff !important;
-      padding: 3rem !important;
-      img {
-        margin-right: 1rem !important;
-      }
-    }
-  }
-}
-
 .path-nos-actualites {
   #page-title {
     text-align: center;
@@ -458,6 +443,23 @@ $red-agrisud : #ff5e14;
     }
   }
 }
+
+
+#block-views-block-evenement-block-1 {
+  margin: 5rem 0 5rem 0 !important;
+  #views-bootstrap-evenement-block-1 {
+    width: 50%;
+    margin-left: 25%;
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+      background-color: #fff !important;
+      padding: 3rem !important;
+      img {
+        margin-right: 1rem !important;
+      }
+    }
+  }
+}
+
 //pagination
 .pager {
   text-align: center !important;
@@ -611,11 +613,17 @@ a.more-link {
     .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       .group-left {
         width: 100%;
+        text-align: center;
       }
       .group-right {
         width: 100%;
       }
     }
+  }
+
+  #views-bootstrap-evenement-block-1 {
+    margin-left: 10% !important;
+    width: 80% !important;
   }
 }
 //tablettes
