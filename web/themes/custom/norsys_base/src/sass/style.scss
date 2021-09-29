@@ -50,10 +50,10 @@ $red-agrisud : #ff5e14;
 .path-frontpage {
   .main-content {
     //background-image: url("images/fond-phrase-accroche.png");
-    background-image: url("images/icone-agri.png");
+    background-image: url("images/icone-agrisud.png");
     background-repeat: no-repeat;
     background-position: unset;
-    background-size: cover;
+    background-size: contain;
   }
   .region {
       background: none !important;
@@ -271,7 +271,7 @@ $red-agrisud : #ff5e14;
 }
 
 // CT Acrualité
-.node--type-actualite.node--view-mode-full.ds-1col {
+.node--type-actualite.node--view-mode-full.ds-1col, .node--type-evenement.node--view-mode-full.ds-1col {
   text-align: center !important;
 
   .field--name-field-actualite-date, .field--name-field-actualite-type {
@@ -416,9 +416,10 @@ $red-agrisud : #ff5e14;
     }
   }
 }
+
 #views-bootstrap-programmes-multi-pays-block-1 {
   margin: 0 10rem;
-  .node--type-programme.node--view-mode-teaser.ds-2col {
+  .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
     background-color: #fff !important;
     padding: 3rem !important;
     img {
@@ -426,6 +427,37 @@ $red-agrisud : #ff5e14;
     }
   }
 }
+
+.path-nos-actualites {
+  #page-title {
+    text-align: center;
+    padding: 10rem;
+    background-image: url("images/bg_actualites-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1 {
+      color: #f7f7fa;
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+#block-views-block-evenement-block-1 {
+  #views-bootstrap-evenement-block-1 {
+    width: 50%;
+    margin-left: 25%;
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+      background-color: #fff !important;
+      padding: 3rem !important;
+      img {
+        margin-right: 1rem !important;
+      }
+    }
+  }
+}
+
 //pagination
 .pager {
   text-align: center !important;
@@ -523,7 +555,7 @@ a.more-link {
   }
 
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1 {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1  {
     .field--name-field-image {
       text-align: center;
     }
@@ -571,26 +603,32 @@ a.more-link {
   }
 
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1 {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
     .field--name-field-image {
       text-align: center;
     }
     margin: 0 !important;
-    .node--type-programme.node--view-mode-teaser.ds-2col {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       .group-left {
         width: 100%;
+        text-align: center;
       }
       .group-right {
         width: 100%;
       }
     }
   }
+
+  #views-bootstrap-evenement-block-1 {
+    margin-left: 10% !important;
+    width: 80% !important;
+  }
 }
 //tablettes
 @media (max-width: 992px) {
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1 {
-    .node--type-programme.node--view-mode-teaser.ds-2col {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       .group-left {
         width: 100%;
       }
