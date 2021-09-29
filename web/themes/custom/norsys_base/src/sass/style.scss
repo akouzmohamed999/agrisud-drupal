@@ -50,10 +50,10 @@ $red-agrisud : #ff5e14;
 .path-frontpage {
   .main-content {
     //background-image: url("images/fond-phrase-accroche.png");
-    background-image: url("images/icone-agri.png");
+    background-image: url("images/icone-agrisud.png");
     background-repeat: no-repeat;
     background-position: unset;
-    background-size: cover;
+    background-size: contain;
   }
   .region {
       background: none !important;
@@ -446,7 +446,6 @@ $red-agrisud : #ff5e14;
 
 
 #block-views-block-evenement-block-1 {
-  margin: 5rem 0 5rem 0 !important;
   #views-bootstrap-evenement-block-1 {
     width: 50%;
     margin-left: 25%;
