@@ -271,7 +271,7 @@ $red-agrisud : #ff5e14;
 }
 
 // CT Acrualité
-.node--type-actualite.node--view-mode-full.ds-1col {
+.node--type-actualite.node--view-mode-full.ds-1col, .node--type-evenement.node--view-mode-full.ds-1col {
   text-align: center !important;
 
   .field--name-field-actualite-date, .field--name-field-actualite-type {
@@ -416,9 +416,10 @@ $red-agrisud : #ff5e14;
     }
   }
 }
+
 #views-bootstrap-programmes-multi-pays-block-1 {
   margin: 0 10rem;
-  .node--type-programme.node--view-mode-teaser.ds-2col {
+  .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
     background-color: #fff !important;
     padding: 3rem !important;
     img {
@@ -426,6 +427,19 @@ $red-agrisud : #ff5e14;
     }
   }
 }
+
+#views-bootstrap-evenement-block-1 {
+  margin: 5rem 0 5rem 25% !important;
+  width: 50%;
+  .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+    background-color: #fff !important;
+    padding: 3rem !important;
+    img {
+      margin-right: 1rem !important;
+    }
+  }
+}
+
 //pagination
 .pager {
   text-align: center !important;
@@ -523,7 +537,7 @@ a.more-link {
   }
 
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1 {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1  {
     .field--name-field-image {
       text-align: center;
     }
@@ -571,12 +585,12 @@ a.more-link {
   }
 
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1 {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
     .field--name-field-image {
       text-align: center;
     }
     margin: 0 !important;
-    .node--type-programme.node--view-mode-teaser.ds-2col {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       .group-left {
         width: 100%;
       }
@@ -589,8 +603,8 @@ a.more-link {
 //tablettes
 @media (max-width: 992px) {
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1 {
-    .node--type-programme.node--view-mode-teaser.ds-2col {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       .group-left {
         width: 100%;
       }
