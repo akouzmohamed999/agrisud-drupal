@@ -428,18 +428,36 @@ $red-agrisud : #ff5e14;
   }
 }
 
-#views-bootstrap-evenement-block-1 {
-  margin: 5rem 0 5rem 25% !important;
-  width: 50%;
-  .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
-    background-color: #fff !important;
-    padding: 3rem !important;
-    img {
-      margin-right: 1rem !important;
+#block-views-block-evenement-block-1 {
+  margin: 5rem 0 5rem 0 !important;
+  #views-bootstrap-evenement-block-1 {
+    width: 50%;
+    margin-left: 25%;
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+      background-color: #fff !important;
+      padding: 3rem !important;
+      img {
+        margin-right: 1rem !important;
+      }
     }
   }
 }
 
+.path-nos-actualites {
+  #page-title {
+    text-align: center;
+    padding: 10rem;
+    background-image: url("images/bg_actualites-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1 {
+      color: #f7f7fa;
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+}
 //pagination
 .pager {
   text-align: center !important;
