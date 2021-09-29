@@ -651,7 +651,7 @@ a.more-link {
 
   // visual update
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
-  background: #c83e2c;
+  background: #c83e2c !important;
 }
 collab-icon{
   background-image: url("images/picto-collaborateurs.png");
@@ -660,3 +660,32 @@ collab-icon{
   background-size: cover;
   padding: 5rem 0;
 }
+.flexslider .flex-direction-nav a.flex-next:before {
+  color: #c83e2c !important;
+}
+.flexslider .flex-direction-nav li {
+  list-style: none;
+  vertical-align: middle;
+  display: inline-block;
+  background: #c83e2c !important;
+}
+.path-liste-actions {
+  .region.region-content {
+    .views-element-container .contextual-region {
+        background-image: url("images/actualite-background.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding : 5em;
+      }
+    .contextual-region.node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
+      background: white;
+      margin-bottom: 3em;
+      margin-top: 3em;
+      padding: 1em;
+    }
+  }
+  }
+
+
