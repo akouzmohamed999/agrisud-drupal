@@ -259,13 +259,13 @@ $grey-agrisud: #343534;
 
 .facet-item a {
   font-family: "Poppins", sans-serif;
-  color: #001659;
+  color: $green-agrisud;
   font-weight: 400;
   line-height: 120%;
 }
 
 .facet-item__value-active {
-  color: #001659;
+  color: $red-agrisud;
 }
 
 .facet-item__bottom-horizontal-line {
@@ -486,7 +486,7 @@ $grey-agrisud: #343534;
       padding: 6px 12px !important;;
       line-height: 1.42857 !important;;
       text-decoration: none !important;;
-      color: #7dbe2f !important;;
+      color: $green-agrisud !important;;
       background-color: #fff !important;;
       border: 1px solid #ddd !important;;
       margin-left: -1px !important;;
@@ -769,7 +769,7 @@ collab-icon{
 }
 
 #block-views-block-liste-actions-block-1, #views-bootstrap-bloc-actualities-block-1{
-  h3>a {
+  h2>a, h3>a {
     color: $green-agrisud !important;
   }
   h3>a:hover{
@@ -782,6 +782,12 @@ collab-icon{
     border: 1px solid $red-agrisud !important;
   }
   h3,h2{
+    color: $green-agrisud !important;
+  }
+}
+
+.contextual-region {
+  a {
     color: $green-agrisud !important;
   }
 }
