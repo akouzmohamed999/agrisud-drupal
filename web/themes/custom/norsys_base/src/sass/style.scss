@@ -209,6 +209,10 @@ $red-agrisud : #ff5e14;
   a {
     color: $green-agrisud !important;
   }
+  a.more-link{
+    color: $red-agrisud !important;
+    border: 1px solid $red-agrisud !important;
+  }
   //slider of views
   .carousel-inner {
     overflow: inherit !important;
@@ -736,3 +740,20 @@ collab-icon{
  color :#343534 !important;
 }
 
+#block-views-block-liste-actions-block-1, #views-bootstrap-bloc-actualities-block-1{
+  h3>a {
+    color: $green-agrisud !important;
+  }
+  h3>a:hover{
+    color: $red-agrisud !important;
+  }
+}
+.liste-actions.views-row, #views-bootstrap-programmes-multi-pays-block-1{
+  a.more-link {
+    color: $red-agrisud !important;
+    border: 1px solid $red-agrisud !important;
+  }
+  h3,h2{
+    color: $green-agrisud !important;
+  }
+}
