@@ -50,7 +50,7 @@
       %}
       {% if menu_level == 0 %}
       <li class="col-12 col-sm-6 col-md-3 col-lg-3 pt-5">
-        <a class="text-dark font-weight-bold">{{ item.title }}</a>
+        <a class="font-weight-bold">{{ item.title }}</a>
       {% else %}
       <li{{ item.attributes.addClass(classes) }}>
         {{ link(item.title, item.url) }}

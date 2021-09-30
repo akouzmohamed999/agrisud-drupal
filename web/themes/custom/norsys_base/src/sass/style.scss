@@ -1,5 +1,6 @@
 $green-agrisud : #286839;
 $red-agrisud : #ff5e14;
+$grey-agrisud: #343534;
 
 .header {
   border-bottom: none !important;
@@ -10,8 +11,8 @@ $red-agrisud : #ff5e14;
     width: 43px;
   }
   .custom-title {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
     h2 {
       font-weight: 600 !important;
     }
@@ -207,7 +208,7 @@ $red-agrisud : #ff5e14;
 
 #views-bootstrap-temoignage-block-1 {
   a {
-    color: $green-agrisud !important;
+    color: $grey-agrisud !important;
   }
   a.more-link{
     color: $red-agrisud !important;
@@ -227,6 +228,9 @@ $red-agrisud : #ff5e14;
     /* left: 10%; */
     bottom: auto;
     /* width: 30%; */
+    p {
+      color: $grey-agrisud !important;
+    }
 
   }
 }
@@ -664,7 +668,7 @@ a.more-link {
 #footer{
   background: #FFFFFF;
   .menu ul li a {
-    color: #000000 !important;
+    color: $grey-agrisud !important;
     font-size: 0.8rem !important;
   }
   .container-fluid {
@@ -677,7 +681,18 @@ a.more-link {
   background-position: center;
   background-size: cover;
 }
-
+#footer-icons {
+  color: $red-agrisud !important;
+  display: table;
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: xx-large;
+  }
+}
+#block-pieddepage {
+  color: $grey-agrisud !important;
+}
 
  // map svg
   //path[class="country"] {
@@ -695,6 +710,10 @@ a.more-link {
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
   background: #c83e2c !important;
 }
+div.more-link {
+  float: right !important;
+}
+
 collab-icon{
   background-image: url("images/picto-collaborateurs.png");
   background-repeat: no-repeat;
@@ -718,7 +737,6 @@ collab-icon{
         background-repeat: no-repeat;
         background-position: top;
         background-size: cover;
-        background-repeat: no-repeat;
         padding : 5em;
       }
     .contextual-region.node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{

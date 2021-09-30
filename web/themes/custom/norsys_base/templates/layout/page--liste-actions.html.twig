@@ -170,7 +170,6 @@
 <div class="main-content">
   <div class="front-svg container-fluid">
     <div class="">
-
       <div class="row layout">
         <!--- Start: Left SideBar -->
         {% if page.sidebar_first %}
@@ -184,7 +183,7 @@
 
         <!--- Start Content -->
         {% if page.content %}
-          <div class={{contentlayout}}>
+          <div class={{contentlayout}} style="padding: 0 !important">
             <div class="content_layout">
 
               <!--Start: Breadcrumb -->
@@ -453,6 +452,12 @@
 <div class="text-align-center bg-white">
   <div class="container">
     <span> © {{ "now"|date("Y") }} Agrisud. All rights reserved.</span>
+        <p class="social-media">
+            <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+            <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-youtube"></i></a>
+            <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
+            <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+        </p>
   </div>
 </div>
 <!-- End: Copyright -->
