@@ -249,6 +249,8 @@ $grey-agrisud: #343534;
   display: flex;
   justify-content: space-evenly;
   margin: 25px 0 25px 0;
+  width: 40%;
+  margin-left: 30%;
 }
 
 .facet-item {
@@ -588,6 +590,7 @@ a.more-link {
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
+
   .path-frontpage {
     .flexslider .slides img {
       min-height: 650px;
@@ -630,6 +633,11 @@ a.more-link {
   #views-bootstrap-evenement-block-1 {
     margin-left: 10% !important;
     width: 80% !important;
+  }
+
+  .facets-widget-links {
+    width: 60%;
+    margin-left: 15%;
   }
 }
 //tablettes
@@ -681,6 +689,7 @@ a.more-link {
   background-position: center;
   background-size: cover;
 }
+
 #footer-icons {
   color: $red-agrisud !important;
   display: table;
@@ -710,6 +719,7 @@ a.more-link {
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
   background: #c83e2c !important;
 }
+
 div.more-link {
   float: right !important;
 }
