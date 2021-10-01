@@ -15,6 +15,7 @@ function stickyBtnAnimation() {
 }
 
 jQuery(document).ready(function ($) {
+    $(".slider-caption a").text("Découvrir");
     stickyBtnAnimation();
     $("#block-views-block-block-nos-partenaires-block-1 .content div").eq(1).addClass("row");
     var pays = ["maroc", "bresil", "france", "senegal", "guinee-bissau", "malaisie", "cambodge", "laos", "vietnam", "chine",

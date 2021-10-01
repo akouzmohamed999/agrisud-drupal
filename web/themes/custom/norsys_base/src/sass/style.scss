@@ -103,7 +103,7 @@ $light-grey: #f7f7fa;
     background-repeat: no-repeat;
     background-position: right, top;
     background-size: inherit;
-    padding: 5rem 0 40rem 0 !important;
+    padding: 5rem 0 30rem 0 !important;
     /*.region-midwidget-forth {
       margin-left: 10% !important;
       margin-right: -10% !important;
@@ -590,6 +590,13 @@ a.more-link {
   #block-carte {
     margin-top: 3rem;
   }
+
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+    visibility: hidden;
+  }
+  #views-bootstrap-evenement-block-1 {
+    width: 80% !important;
+  }
 }
 
 //tablettes
@@ -700,6 +707,8 @@ a.more-link {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 0 2rem;
+  text-align: justify;
 }
 
 #footer-icons {
@@ -753,14 +762,23 @@ collab-icon{
   background: #c83e2c !important;
 }
 .path-liste-actions {
+  #liste-actions {
+    .views-element-container {
+      background-image: url("images/actualite-background.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      padding : 5em;
+    }
+  }
   .region.region-content {
-    .views-element-container .contextual-region {
-        background-image: url("images/actualite-background.png");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        padding : 5em;
-      }
+    /*.views-element-container .contextual-region {
+      background-image: url("images/actualite-background.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      padding : 5em;
+      }*/
     .contextual-region.node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
       background: $light-grey;
       margin-bottom: 3em;
@@ -770,13 +788,20 @@ collab-icon{
   }
 
 .path-nos-actualites {
-  .content_layout .views-element-container .contextual-region {
+  #views-bootstrap-nos-actualites-view-page-1 {
+    background-image: url("images/actualite-background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding : 5em;
+  }
+  /*.content_layout .views-element-container .contextual-region {
       background-image: url("images/actualite-background.png");
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
       padding : 5em;
-    }
+    }*/
   #views-bootstrap-nos-actualites-view-page-1 .node--type-actualite.node--view-mode-teaser.ds-2col{
     background: $light-grey;
     margin-bottom: 3em;
@@ -786,7 +811,7 @@ collab-icon{
 
 .chiffre-item {
   img {
-    max-width: 36%;
+    max-width: 6rem;
   }
 }
 
