@@ -198,8 +198,9 @@ $light-grey: #f7f7fa;
   padding: 1.25rem 0.5rem;
 }
 //////////////////////////////////slider!!!!!!!!!
-#block-views-block-temoignage-block-1 {
-  margin: 0 10% 0 10%;
+#block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+  margin: 0 10% 15% 10%;
+ // margin: 0 10% 0 10%;
   .title {
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -207,7 +208,7 @@ $light-grey: #f7f7fa;
   }
 }
 
-#views-bootstrap-temoignage-block-1 {
+#views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
   a {
     color: $grey-agrisud !important;
   }
@@ -804,7 +805,12 @@ collab-icon{
 }
 
 .contextual-region {
-  a {
+  h2>a, span.field--name-title {
     color: $green-agrisud !important;
+  }
+  #liens-utils ul a {
+    color: $grey-agrisud !important;
+    font-weight: bold;
+    text-decoration: underline;
   }
 }
