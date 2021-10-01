@@ -410,11 +410,19 @@ $light-grey: #f7f7fa;
   }
   .field--name-body {
     text-align: justify !important;
-    margin-top: 5rem !important;
   }
   #liens-utils {
     text-align: left !important;
     margin-top: 3rem !important;
+  }
+
+  .list-localization {
+    margin-top: 5rem !important;
+    display: table !important;
+    text-align: left;
+    .desc-item {
+      display: inline-flex;
+    }
   }
 
   .clearBoth { clear:both; }
