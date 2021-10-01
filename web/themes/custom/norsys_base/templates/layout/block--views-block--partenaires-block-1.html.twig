@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a block.
+ * Default theme implementation to display a block.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -23,35 +23,19 @@
  *   displayed after the main title tag that appears in the template.
  *
  * @see template_preprocess_block()
+ *
+ * @ingroup themeable
  */
 #}
-{%
-    set classes = [
-    'block',
-    'block-' ~ configuration.provider|clean_class,
-    'block-' ~ plugin_id|clean_class,
-]
-%}
-<div{{ attributes.addClass(classes) }}>
+
+<div {{ attributes.addClass('block-partenaires-accueil') }}>
     {{ title_prefix }}
     {% if label %}
-        <h2{{ title_attributes }} class="title">{{ label }}</h2>
+        <div class="custom-title container"><h2{{ title_attributes }}>{{ label }}</h2></div>
     {% endif %}
     {{ title_suffix }}
     {% block content %}
-        <div class="content row">
-            <div class="col-6 col-xs-6 col-sm-6 col-md-2 col-lg-2" >
-                <img src="{{ directory }}/images/logo-footer.jpg" />
-            </div>
-            <div class="col-md-8 col-lg-8" >
-
-            </div>
-            <div id="footer-icons" class="col-6 col-xs-6 col-sm-6 col-md-2 col-lg-2">
-                <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-                <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-youtube"></i></a>
-                <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
-                <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-        </div>
+        {{ content }}
     {% endblock %}
 </div>
+

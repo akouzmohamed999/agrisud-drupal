@@ -1,6 +1,7 @@
 $green-agrisud : #286839;
 $red-agrisud : #ff5e14;
 $grey-agrisud: #343534;
+$light-grey: #f7f7fa;
 
 .header {
   border-bottom: none !important;
@@ -73,6 +74,7 @@ $grey-agrisud: #343534;
 
     .chiffres-desc {
       font-size: 1.1rem;
+      text-transform: uppercase;
     }
 
     .chiffre-item {
@@ -102,7 +104,7 @@ $grey-agrisud: #343534;
     background-repeat: no-repeat;
     background-position: right, top;
     background-size: inherit;
-    padding: 5rem 0 40rem 0 !important;
+    padding: 5rem 0 30rem 0 !important;
     /*.region-midwidget-forth {
       margin-left: 10% !important;
       margin-right: -10% !important;
@@ -176,6 +178,10 @@ $grey-agrisud: #343534;
     left: 0 !important;
     padding: 1.25rem 0.5rem;
   }
+
+  #block-views-block-partenaires-block-1 {
+    padding: 0 5rem !important;
+  }
 }
 
 //////////////////////////sticky buttons in all pages
@@ -197,8 +203,9 @@ $grey-agrisud: #343534;
   padding: 1.25rem 0.5rem;
 }
 //////////////////////////////////slider!!!!!!!!!
-#block-views-block-temoignage-block-1 {
-  margin: 0 10% 0 10%;
+#block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+  margin: 0 10% 15% 10%;
+ // margin: 0 10% 0 10%;
   .title {
     margin-top: 5rem;
     margin-bottom: 2rem;
@@ -206,7 +213,11 @@ $grey-agrisud: #343534;
   }
 }
 
-#views-bootstrap-temoignage-block-1 {
+#block-views-block-temoignage-block-2 {
+  width: 60% !important;
+  margin-left: 20% !important;
+ }
+#views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
   a {
     color: $grey-agrisud !important;
   }
@@ -259,13 +270,13 @@ $grey-agrisud: #343534;
 
 .facet-item a {
   font-family: "Poppins", sans-serif;
-  color: #001659;
+  color: $green-agrisud;
   font-weight: 400;
   line-height: 120%;
 }
 
 .facet-item__value-active {
-  color: #001659;
+  color: $red-agrisud;
 }
 
 .facet-item__bottom-horizontal-line {
@@ -350,7 +361,7 @@ $grey-agrisud: #343534;
 
   .group-left {
     width: 20% !important;
-    margin: 1rem !important;
+    margin: 0 1rem !important;
   }
 
   .group-right {
@@ -382,7 +393,7 @@ $grey-agrisud: #343534;
 
   .group-left {
     width: 20% !important;
-    margin: 1rem !important;
+    margin: 0 1rem !important;
   }
   .group-right {
     width: 75% !important;
@@ -408,11 +419,19 @@ $grey-agrisud: #343534;
   }
   .field--name-body {
     text-align: justify !important;
-    margin-top: 5rem !important;
   }
   #liens-utils {
     text-align: left !important;
     margin-top: 3rem !important;
+  }
+
+  .list-localization {
+    margin-top: 5rem !important;
+    display: table !important;
+    text-align: left;
+    .desc-item {
+      display: inline-flex;
+    }
   }
 
   .clearBoth { clear:both; }
@@ -447,7 +466,7 @@ $grey-agrisud: #343534;
     background-position: center;
     background-size: cover;
     h1 {
-      color: #f7f7fa;
+      color: $light-grey;
       font-size: 5rem;
       font-weight: bold;
     }
@@ -486,7 +505,7 @@ $grey-agrisud: #343534;
       padding: 6px 12px !important;;
       line-height: 1.42857 !important;;
       text-decoration: none !important;;
-      color: #7dbe2f !important;;
+      color: $green-agrisud !important;;
       background-color: #fff !important;;
       border: 1px solid #ddd !important;;
       margin-left: -1px !important;;
@@ -536,6 +555,7 @@ a.more-link {
   .node--type-actualite.node--view-mode-teaser.ds-2col {
     .group-left {
       width: 100% !important;
+      margin: 0 1rem;
     }
 
     .group-right {
@@ -547,6 +567,7 @@ a.more-link {
   .node--type-action.node--view-mode-teaser.ds-2col {
     .group-left {
       width: 100% !important;
+      margin: 0 1rem;
     }
     .group-right {
       width: 100% !important;
@@ -577,6 +598,13 @@ a.more-link {
 
   #block-carte {
     margin-top: 3rem;
+  }
+
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+    visibility: hidden;
+  }
+  #views-bootstrap-evenement-block-1 {
+    width: 80% !important;
   }
 }
 
@@ -688,6 +716,8 @@ a.more-link {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding: 0 2rem;
+  text-align: justify;
 }
 
 #footer-icons {
@@ -741,26 +771,48 @@ collab-icon{
   background: #c83e2c !important;
 }
 .path-liste-actions {
-  .region.region-content {
-    .views-element-container .contextual-region {
-        background-image: url("images/actualite-background.png");
-        background-repeat: no-repeat;
-        background-position: top;
-        background-size: cover;
-        padding : 5em;
-      }
-    .contextual-region.node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
-      background: white;
-      margin-bottom: 3em;
-      margin-top: 3em;
-      padding: 1em;
+  #liste-actions {
+    .views-element-container {
+      background-image: url("images/actualite-background.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      padding : 5em;
     }
   }
+  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
+    background: $light-grey;
+    margin-bottom: 3em;
+    padding: 2rem 1rem 0rem 1rem;
   }
+
+  }
+
+.path-nos-actualites {
+  #views-bootstrap-nos-actualites-view-page-1 {
+    background-image: url("images/actualite-background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding : 5em;
+  }
+  /*.content_layout .views-element-container .contextual-region {
+      background-image: url("images/actualite-background.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      padding : 5em;
+    }*/
+  #views-bootstrap-nos-actualites-view-page-1 .node--type-actualite.node--view-mode-teaser.ds-2col{
+    background: $light-grey;
+    margin-bottom: 3em;
+    padding: 2rem 1rem 0rem 1rem;
+    }
+}
 
 .chiffre-item {
   img {
-    max-width: 36%;
+    max-width: 6rem;
   }
 }
 
@@ -769,7 +821,7 @@ collab-icon{
 }
 
 #block-views-block-liste-actions-block-1, #views-bootstrap-bloc-actualities-block-1{
-  h3>a {
+  h2>a, h3>a {
     color: $green-agrisud !important;
   }
   h3>a:hover{
@@ -783,5 +835,78 @@ collab-icon{
   }
   h3,h2{
     color: $green-agrisud !important;
+  }
+}
+
+  h2>a, span.field--name-title {
+    color: $green-agrisud !important;
+  }
+  #liens-utils ul a {
+    color: $grey-agrisud !important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+.node-programme {
+  .field--type-image {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  text-align: justify;
+}
+
+.path-user {
+  div.main-content{
+    background-image: url(images/connexion-agrisud.png);
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-size: cover;
+    position: relative;
+    bottom: 12.3em;
+    padding: 10em;
+    margin-bottom: -18em;
+  }
+  ul.tabs.primary {
+    display: none;
+  }
+
+  .region-page-title h1 {
+    margin: 30px 0;
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  #edit-submit{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+    width: 100%;
+  }
+
+  label.js-form-required.form-required {
+    color: $green-agrisud;
+  }
+
+  #block-norsys-base-page-title {
+    h1{
+      text-transform: uppercase;
+      color: $grey-agrisud;
+    }
+  }
+
+  .user-login-form {
+    border-radius: 25px;
   }
 }
