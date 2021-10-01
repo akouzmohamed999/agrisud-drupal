@@ -177,6 +177,10 @@ $light-grey: #f7f7fa;
     left: 0 !important;
     padding: 1.25rem 0.5rem;
   }
+
+  #block-views-block-partenaires-block-1 {
+    padding: 0 5rem !important;
+  }
 }
 
 //////////////////////////sticky buttons in all pages
@@ -833,7 +837,6 @@ collab-icon{
   }
 }
 
-.contextual-region {
   h2>a, span.field--name-title {
     color: $green-agrisud !important;
   }
@@ -842,4 +845,11 @@ collab-icon{
     font-weight: bold;
     text-decoration: underline;
   }
+
+.node-programme {
+  .field--type-image {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  text-align: justify;
 }
