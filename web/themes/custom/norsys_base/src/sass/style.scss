@@ -208,6 +208,10 @@ $light-grey: #f7f7fa;
   }
 }
 
+#block-views-block-temoignage-block-2 {
+  width: 60% !important;
+  margin-left: 20% !important;
+ }
 #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
   a {
     color: $grey-agrisud !important;
@@ -771,20 +775,12 @@ collab-icon{
       padding : 5em;
     }
   }
-  .region.region-content {
-    /*.views-element-container .contextual-region {
-      background-image: url("images/actualite-background.png");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      padding : 5em;
-      }*/
-    .contextual-region.node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
-      background: $light-grey;
-      margin-bottom: 3em;
-      padding: 2rem 1rem 0rem 1rem;
-    }
-   }
+  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
+    background: $light-grey;
+    margin-bottom: 3em;
+    padding: 2rem 1rem 0rem 1rem;
+  }
+
   }
 
 .path-nos-actualites {
