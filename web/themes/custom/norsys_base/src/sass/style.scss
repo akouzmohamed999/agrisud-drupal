@@ -398,6 +398,15 @@ $light-grey: #f7f7fa;
   .group-right {
     width: 75% !important;
   }
+  //managing three fields pays, programme, Statut
+  .field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
+    text-align: left;
+    text-decoration: underline;
+    .field__label, .field__item {
+      display: inline !important;
+      font-weight: bold;
+    }
+  }
 }
 
 .node--type-action.node--view-mode-full.ds-1col {
@@ -783,7 +792,7 @@ collab-icon{
   .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
     background: $light-grey;
     margin-bottom: 3em;
-    padding: 2rem 1rem 0rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   }
