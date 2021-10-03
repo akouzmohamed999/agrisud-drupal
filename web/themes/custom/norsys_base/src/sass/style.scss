@@ -3,6 +3,9 @@ $red-agrisud : #ff5e14;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 
+.main-content * :not(i){
+  font-family: 'Roboto', sans-serif !important;
+}
 .header {
   border-bottom: none !important;
 }
@@ -269,7 +272,7 @@ $light-grey: #f7f7fa;
 }
 
 .facet-item a {
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: $green-agrisud;
   font-weight: 400;
   line-height: 120%;
@@ -283,7 +286,7 @@ $light-grey: #f7f7fa;
   width: 80%;
   margin-top: 5px;
   margin-bottom: 1px;
-  border-top: 2px solid #001659;
+  border-top: 2px solid $red-agrisud;
   text-align: center;
 }
 
@@ -312,6 +315,7 @@ $light-grey: #f7f7fa;
 
   #date-actu, #type-actu {
     float: left !important;
+    margin-left: 1rem;
   }
 
   .clearBoth {
@@ -344,6 +348,7 @@ $light-grey: #f7f7fa;
 
   #date-actu, #type-actu {
     float: left !important;
+    margin-left: 1rem;
   }
 
   .clearBoth {
@@ -397,6 +402,15 @@ $light-grey: #f7f7fa;
   }
   .group-right {
     width: 75% !important;
+  }
+  //managing three fields pays, programme, Statut
+  .field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
+    text-align: left;
+    text-decoration: underline;
+    .field__label, .field__item {
+      display: inline !important;
+      font-weight: bold;
+    }
   }
 }
 
@@ -783,7 +797,7 @@ collab-icon{
   .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
     background: $light-grey;
     margin-bottom: 3em;
-    padding: 2rem 1rem 0rem 1rem;
+    padding: 2rem 1rem 2rem 1rem;
   }
 
   }
