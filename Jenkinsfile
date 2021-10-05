@@ -8,36 +8,54 @@ def mysqlDatabaseHost = "agrisud-mysql"
 def mysqlUser = "norsys2021"
 def mysqlPassword = "MDP2NAF"
 
-pipeline {
-	  agent any
-		 stages {
-              stage('Injecting int Env vars') {
-				   steps {
-				   	sh("sed -i '''s@\\[MYSQL_ROOT_PASSWORD\\]@'''\"${mysqlRootPassword}\"'''@''' .env.prod")
-				   	sh("sed -i '''s@\\[DATABASE_NAME\\]@'''\"${mysqlDatabaseName}\"'''@''' .env.prod")
-				   	sh("sed -i '''s@\\[DATABASE_HOST\\]@'''\"${mysqlDatabaseHost}\"'''@''' .env.prod")
-				   	sh("sed -i '''s@\\[MYSQL_USER\\]@'''\"${mysqlUser}\"'''@''' .env.prod")
-                    sh("sed -i '''s@\\[MYSQL_PASSWORD\\]@'''\"${mysqlPassword}\"'''@''' .env.prod")
-				   	sh("cat .env.prod > .env")
-				   }
-			  }
-			  stage('Docker Build and Tag') {
-				   steps {
-				    sh("docker build -f deploy/Dockerfile -t ${dockerImageName} .")
-				   }
-			  }
-			  stage('Push') {
-				   environment {
-				    DOCKER = credentials("naf-docker-registry")
-				   }
-				   steps {
-				    sh("docker tag ${dockerImageName} ${dockerImageTag}")
-				    sh("docker login -u $DOCKER_USR -p $DOCKER_PSW ${dockerRepoUrl}")
+def rancherHost = "192.168.1.235"
 
-				    sh("docker push ${dockerImageTag}")
-				   }
-			  }
-			  
-	 }
+pipeline {
+   agent any
+   stages {
+      stage('Injecting int Env vars') {
+         steps {
+            sh("sed -i '''s@\\[MYSQL_ROOT_PASSWORD\\]@'''\"${mysqlRootPassword}\"'''@''' .env.prod")
+            sh("sed -i '''s@\\[DATABASE_NAME\\]@'''\"${mysqlDatabaseName}\"'''@''' .env.prod")
+            sh("sed -i '''s@\\[DATABASE_HOST\\]@'''\"${mysqlDatabaseHost}\"'''@''' .env.prod")
+            sh("sed -i '''s@\\[MYSQL_USER\\]@'''\"${mysqlUser}\"'''@''' .env.prod")
+            sh("sed -i '''s@\\[MYSQL_PASSWORD\\]@'''\"${mysqlPassword}\"'''@''' .env.prod")
+            sh("cat .env.prod > .env")
+         }
+      }
+      stage('Docker Build and Tag') {
+         steps {
+            sh("docker build -f deploy/Dockerfile -t ${dockerImageName} .")
+         }
+      }
+      stage('Push') {
+         environment {
+            DOCKER = credentials("naf-docker-registry")
+         }
+         steps {
+            sh("docker tag ${dockerImageName} ${dockerImageTag}")
+            sh("docker login -u $DOCKER_USR -p $DOCKER_PSW ${dockerRepoUrl}")
+
+            sh("docker push ${dockerImageTag}")
+         }
+      }
+      stage('Deploy') {
+         environment {
+            OPS = credentials("naf-ops-deploy")
+         }
+         steps {
+            script {
+               def remote = [: ]
+               remote.name = 'ops'
+               remote.host = "$rancherHost"
+               remote.user = "$OPS_USR"
+               remote.password = "$OPS_PSW"
+               remote.allowAnyHosts = true
+               sshCommand remote: remote, command: 'export PATH=$PATH:/var/lib/rancher/rke2/bin KUBECONFIG=int-config && kubectl patch deployment agrisud-website -n agrisud-integration -p "{\\"spec\\": {\\"template\\": {\\"metadata\\": { \\"labels\\": {  \\"redeploy\\": \\"$(date +%s)\\"}}}}}"'
+            }
+         }
+      }
+
+   }
 
 }
