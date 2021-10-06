@@ -8,6 +8,9 @@ $light-grey: #f7f7fa;
 }
 .header {
   border-bottom: none !important;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }
 
 .container, .container-fluid {
@@ -129,7 +132,7 @@ $light-grey: #f7f7fa;
       color: $green-agrisud !important;
     }
     #block-views-block-liste-actions-block-1 {
-      margin-top: -20rem !important;
+      //margin-top: -20rem !important;
     }
     background-image: url("images/images/fermier-rescaled.png") !important;
     //background-repeat: no-repeat;
@@ -235,20 +238,28 @@ $light-grey: #f7f7fa;
 
   .carousel-caption {
     background: none !important;
-    /*background-color: #fff;
-    background: rgba(0,0,0,0.84);*/
     left: 0 !important;
     width: 100% !important;
-    /* left: 10%; */
     bottom: auto;
-    /* width: 30%; */
+    padding-top: 3rem;
     p {
       color: $grey-agrisud !important;
     }
+  }
 
+  ol li {
+    list-style-type: circle;
+  }
+
+  ol li.active {
+    list-style-type: disc;
   }
 }
-
+#views-bootstrap-temoignage-block-2 {
+  .carousel-caption {
+    background: #fff !important;
+  }
+}
 //Global scss
 .region.region-header {
   background-color: #fff !important;
@@ -800,7 +811,12 @@ collab-icon{
     padding: 2rem 1rem 2rem 1rem;
   }
 
+  #block-views-block-liste-actions-block-1 {
+    .custom-title {
+      margin-top: 23rem !important;
+    }
   }
+}
 
 .path-nos-actualites {
   #views-bootstrap-nos-actualites-view-page-1 {
