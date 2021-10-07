@@ -92,5 +92,19 @@ RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 RUN php -d memory_limit=-1 /usr/local/bin/composer install
 COPY --from=gulp /home/node/app/src/css /var/www/html/web/themes/custom/norsys_base/src/css
 
-# Work directory
+COPY --chown=www-data:www-data --chmod=775 ./config/dev/files-bkup /var/www/html/web/sites/default/files
+RUN mkdir -p /var/www/html/web/sites/default/translations
+
+COPY --chown=www-data:www-data --chmod=444 ./web/sites/default/settings.example.php /var/www/html/web/sites/default/settings.php
+
+COPY --chown=www-data:www-data --chmod=775 ./web/sites/default/slider-images/* /var/www/html/web/sites/default/files
+
+VOLUME /var/www/html/web/sites/default/files
+
+COPY ./docker/docker-entrypoint.sh /usr/local/bin/
+
+RUN chmod +x /docker-entrypoint.sh
+
 WORKDIR /var/www/html
+
+ENTRYPOINT ["docker-entrypoint.sh"]
