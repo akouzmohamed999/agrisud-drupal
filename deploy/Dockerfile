@@ -101,7 +101,7 @@ COPY --chown=www-data:www-data --chmod=775 ./web/sites/default/slider-images/* /
 
 VOLUME /var/www/html/web/sites/default/files
 
-COPY ./docker/docker-entrypoint.sh /usr/local/bin/
+COPY ./deploy/docker-entrypoint.sh /usr/local/bin/
 
 RUN chmod +x /docker-entrypoint.sh
 
