@@ -5,4 +5,5 @@ sed -i 's@\[DATABASE_HOST\]@'"$DATABASE_HOST"'@' .env.prod
 sed -i 's@\[MYSQL_USER\]@'"$MYSQL_USER"'@' .env.prod
 sed -i 's@\[MYSQL_PASSWORD\]@'"$MYSQL_PASSWORD"'@' .env.prod
 cat .env.prod > .env
-exec /upstream-entrypoint.sh "$@"
+service apache2 restart && tail -F /var/log/apache2/access.log && bash
+#exec /upstream-entrypoint.sh "$@"
