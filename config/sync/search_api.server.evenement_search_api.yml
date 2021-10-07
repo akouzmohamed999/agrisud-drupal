@@ -1,0 +1,14 @@
+uuid: ce1e98be-eeba-4ebb-8d94-86e3da4773bc
+langcode: fr
+status: true
+dependencies:
+  module:
+    - search_api_db
+id: evenement_search_api
+name: 'Evénement Search Server'
+description: ''
+backend: search_api_db
+backend_config:
+  database: 'default:default'
+  min_chars: 1
+  matching: words

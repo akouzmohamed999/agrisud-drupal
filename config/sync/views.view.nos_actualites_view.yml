@@ -7,7 +7,6 @@ dependencies:
     - field.storage.node.field_actualite_image
     - field.storage.node.field_actualite_type
     - search_api.index.actualite_search_index
-    - system.menu.main
   module:
     - options
     - search_api
@@ -403,8 +402,13 @@ display:
       display_extenders: {  }
       path: nos-actualites
       menu:
-        type: normal
+        type: none
         title: 'Nos Actualités'
+        description: ''
+        expanded: false
+        parent: ''
+        weight: 0
+        context: '0'
         menu_name: main
       cache:
         type: none

@@ -27,12 +27,11 @@
  * @ingroup themeable
  */
 #}
-
 <div {{ attributes.addClass('block-programmes', 'container-fluid') }}>
     {{ title_prefix }}
     {% if label %}
-        <div class="container">
-        <h2{{ title_attributes.addClass('container') }}>{{ label }}</h2>
+        <div class="container custom-title">
+        <h2{{ title_attributes.addClass('container', 'font-weight-bold') }}>{{ label }}</h2>
         </div>
     {% endif %}
     {{ title_suffix }}

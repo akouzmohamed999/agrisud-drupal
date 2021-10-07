@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_logo_agrisud
+    - image.style.medium
   module:
     - node
     - svg_image
@@ -50,7 +51,7 @@ display:
       pager:
         type: some
         options:
-          items_per_page: 5
+          items_per_page: 1
           offset: 0
       style:
         type: default
@@ -108,8 +109,8 @@ display:
           click_sort_column: target_id
           type: image
           settings:
-            image_style: ''
-            image_link: ''
+            image_style: medium
+            image_link: content
             svg_render_as_image: true
             svg_attributes:
               width: null

@@ -13,8 +13,8 @@ RUN gulp sass
 
 FROM php:7.4-apache-buster
 
-COPY . /var/www/html/
-COPY ./deploy/config/apache.conf /etc/apache2/sites-enabled/000-default.conf
+COPY --chown=www-data:www-data --chmod=775 . /var/www/html/
+#COPY ./deploy/config/apache.conf /etc/apache2/sites-enabled/000-default.conf
 
 # Prepare apt
 RUN apt-get update
