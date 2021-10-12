@@ -1,31 +1,30 @@
-uuid: 8f57aa25-def2-45ea-9f94-d8c9a0594557
+uuid: b59de2c8-346b-454a-9226-6498c9791fb4
 langcode: fr
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.evenement.body
-    - field.field.node.evenement.field_date_event
-    - field.field.node.evenement.field_image_event
-    - field.field.node.evenement.field_lien_event
-    - field.field.node.evenement.field_titre_events
-    - image.style.block_actions
+    - field.field.node.evenement.field_actualite_image
+    - image.style.medium
     - node.type.evenement
   module:
     - ds
     - svg_image
+    - text
     - user
 third_party_settings:
   ds:
     layout:
-      id: ds_1col
-      library: null
+      id: ds_2col
+      library: ds/ds_2col
       disable_css: false
       entity_classes: all_classes
       settings:
         label: ''
         wrappers:
-          ds_content: div
+          left: div
+          right: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
@@ -33,43 +32,44 @@ third_party_settings:
         classes:
           layout_class: {  }
     regions:
-      ds_content:
+      left:
+        - field_actualite_image
+      right:
         - node_title
-        - field_image_event
+        - body
     fields:
       node_title:
         plugin_id: node_title
-        weight: 0
+        weight: 1
         label: hidden
         formatter: default
-        settings:
-          link: true
-          'link class': ''
-          wrapper: h3
-          class: ''
 id: node.evenement.teaser
 targetEntityType: node
 bundle: evenement
 mode: teaser
 content:
-  field_image_event:
-    type: image
-    weight: 1
-    region: ds_content
+  body:
+    type: text_summary_or_trimmed
+    weight: 2
+    region: right
     label: hidden
     settings:
-      image_style: block_actions
-      image_link: ''
+      trim_length: 250
+    third_party_settings: {  }
+  field_actualite_image:
+    type: image
+    weight: 0
+    region: left
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
       svg_render_as_image: true
       svg_attributes:
         width: null
         height: null
     third_party_settings: {  }
 hidden:
-  body: true
-  field_date_event: true
-  field_lien_event: true
-  field_titre_events: true
   langcode: true
   links: true
   search_api_excerpt: true

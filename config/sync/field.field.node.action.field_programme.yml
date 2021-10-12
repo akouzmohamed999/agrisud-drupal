@@ -10,10 +10,10 @@ id: node.action.field_programme
 field_name: field_programme
 entity_type: node
 bundle: action
-label: Programme
+label: 'Programme:'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value: {  }
 default_value_callback: ''
 settings:

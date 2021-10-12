@@ -4,11 +4,36 @@ status: true
 dependencies:
   config:
     - field.field.node.temoignage.body
+    - field.field.node.temoignage.field_image_temoignage
     - field.field.node.temoignage.field_type
     - node.type.temoignage
   module:
-    - smart_trim
+    - ds
+    - svg_image
+    - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - body
+        - field_type
+        - links
 id: node.temoignage.default
 targetEntityType: node
 bundle: temoignage
@@ -16,34 +41,35 @@ mode: default
 content:
   body:
     label: hidden
-    type: smart_trim
-    weight: 101
-    settings:
-      trim_length: 250
-      trim_type: chars
-      trim_suffix: ''
-      wrap_class: trimmed
-      more_link: true
-      more_text: More
-      more_class: more-link
-      summary_handler: full
-      wrap_output: false
-      trim_options:
-        text: false
-        trim_zero: false
+    type: text_default
+    weight: 0
+    settings: {  }
     third_party_settings: {  }
+    region: ds_content
+  field_image_temoignage:
+    weight: 3
+    label: above
+    settings:
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
     region: content
   field_type:
-    weight: 102
+    weight: 1
     label: above
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
-    region: content
+    region: ds_content
   links:
-    weight: 100
-    region: content
+    weight: 2
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:

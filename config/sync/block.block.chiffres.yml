@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
 settings:
   id: 'block_content:7ff2fb16-488a-407c-8204-8aea6e332398'
-  label: 'Nos chiffres'
+  label: 'Nos chiffres clés (année en cours)'
   provider: block_content
   label_display: visible
   status: true

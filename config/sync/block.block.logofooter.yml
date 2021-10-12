@@ -1,0 +1,25 @@
+uuid: c5a098df-7d81-4fe1-b00b-540754f9de25
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:35c85e65-f3a4-4809-bb28-7385cae15a7b'
+  module:
+    - block_content
+  theme:
+    - norsys_base
+id: logofooter
+theme: norsys_base
+region: footer_first
+weight: 0
+provider: null
+plugin: 'block_content:35c85e65-f3a4-4809-bb28-7385cae15a7b'
+settings:
+  id: 'block_content:35c85e65-f3a4-4809-bb28-7385cae15a7b'
+  label: Logo-footer
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

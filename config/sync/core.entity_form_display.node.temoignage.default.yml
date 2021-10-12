@@ -4,10 +4,13 @@ status: true
 dependencies:
   config:
     - field.field.node.temoignage.body
+    - field.field.node.temoignage.field_image_temoignage
     - field.field.node.temoignage.field_type
+    - image.style.thumbnail
     - node.type.temoignage
   module:
     - path
+    - svg_image
     - text
 id: node.temoignage.default
 targetEntityType: node
@@ -30,6 +33,14 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_image_temoignage:
+    weight: 123
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
   field_type:
     weight: 122
     settings:

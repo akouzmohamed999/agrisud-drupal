@@ -9,7 +9,7 @@ _core:
 id: norsys_base_local_tasks
 theme: norsys_base
 region: page_title
-weight: -7
+weight: -12
 provider: null
 plugin: local_tasks_block
 settings:
