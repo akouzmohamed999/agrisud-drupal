@@ -149,7 +149,7 @@ display:
             display_methods: {  }
       filters: {  }
       sorts: {  }
-      title: 'Liste actions'
+      title: ''
       header: {  }
       footer: {  }
       empty: {  }

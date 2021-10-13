@@ -6,7 +6,14 @@ dependencies:
     - field.storage.node.field_image
     - node.type.action
   module:
+    - content_translation
     - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
 id: node.action.field_image
 field_name: field_image
 entity_type: node
@@ -28,11 +35,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: c8771d7d-a32a-4597-bb7b-de232ad5293e
+    uuid: e30c622f-cf5c-453f-9136-30084014687c
     alt: ''
     title: ''
-    width: 660
-    height: 480
+    width: 600
+    height: 454
   handler: 'default:file'
   handler_settings: {  }
 field_type: image

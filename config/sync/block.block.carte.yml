@@ -17,7 +17,7 @@ provider: null
 plugin: 'block_content:40385694-32d0-492e-badb-d0c8d61f89d2'
 settings:
   id: 'block_content:40385694-32d0-492e-badb-d0c8d61f89d2'
-  label: carte
+  label: 'Nos actions dans le monde'
   provider: block_content
   label_display: visible
   status: true

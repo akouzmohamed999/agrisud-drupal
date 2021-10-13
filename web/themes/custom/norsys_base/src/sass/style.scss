@@ -866,6 +866,39 @@ collab-icon{
   h3,h2{
     color: $green-agrisud !important;
   }
+
+  div[class="field field--name-node-link field--type-ds field--label-hidden field__item"]{
+    float: right;
+    display: table;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    padding: 5px 60px;
+    border: 1px solid #d3522f !important;
+    background-color: white;
+    font-weight: 600;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    a{
+      color: #d3522f !important;
+    }
+  }
+//managing three fields pays, programme, Statut
+.field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
+  text-align: left;
+  float:left !important;
+  margin-right: 1em;
+  text-decoration: none !important;
+  .field__label, .field__item {
+    display: inline !important;
+    font-weight: normal !important;
+  }
+}
+  .field--name-body.field--type-text-with-summary {
+    float:left !important;
+  }
 }
 
   h2>a, span.field--name-title {

@@ -10,12 +10,11 @@ dependencies:
     - field.field.node.action.field_region
     - field.field.node.action.field_statut
     - field.field.node.action.field_titre
-    - image.style.large
     - node.type.action
   module:
     - ds
     - options
-    - svg_image
+    - svg_image_responsive
     - text
     - user
 third_party_settings:
@@ -38,18 +37,18 @@ third_party_settings:
     regions:
       ds_content:
         - field_titre
-        - node_post_date
-        - field_image
-        - field_programme
         - field_pays
         - field_region
+        - field_image
+        - field_programme
         - field_statut
+        - node_post_date
         - body
         - links
     fields:
       node_post_date:
         plugin_id: node_post_date
-        weight: 1
+        weight: 6
         label: hidden
         formatter: ds_post_date_long
 id: node.action.default
@@ -65,44 +64,44 @@ content:
     third_party_settings: {  }
     region: ds_content
   field_image:
-    weight: 2
+    type: responsive_image
+    weight: 3
+    region: ds_content
     label: hidden
     settings:
-      image_style: large
-      image_link: content
-      svg_render_as_image: true
       svg_attributes:
-        width: null
-        height: null
+        width: ''
+        height: ''
+      svg_render_as_image: true
+      responsive_image_style: ''
+      image_link: ''
     third_party_settings: {  }
-    type: image
-    region: ds_content
   field_pays:
-    weight: 4
-    label: above
+    weight: 1
+    label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
   field_programme:
-    weight: 3
-    label: inline
+    weight: 4
+    label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: ds_content
   field_region:
-    weight: 5
-    label: above
+    weight: 2
+    label: visually_hidden
     settings: {  }
     third_party_settings: {  }
     type: list_default
     region: ds_content
   field_statut:
-    weight: 6
-    label: above
+    weight: 5
+    label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }

@@ -5,9 +5,12 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.temoignage.body
+    - field.field.node.temoignage.field_image_temoignage
     - field.field.node.temoignage.field_type
+    - image.style.medium
     - node.type.temoignage
   module:
+    - svg_image
     - text
     - user
 id: node.temoignage.teaser
@@ -18,17 +21,26 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    weight: 1
     settings:
       trim_length: 600
     third_party_settings: {  }
     region: content
-  links:
-    weight: 100
-    settings: {  }
-    third_party_settings: {  }
+  field_image_temoignage:
+    type: image
+    weight: 0
     region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+      svg_render_as_image: true
+      svg_attributes:
+        width: null
+        height: null
+    third_party_settings: {  }
 hidden:
   field_type: true
   langcode: true
+  links: true
   search_api_excerpt: true

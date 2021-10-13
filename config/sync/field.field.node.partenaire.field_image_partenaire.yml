@@ -1,0 +1,45 @@
+uuid: 2e7803c5-73f2-46c3-a09c-58b274b5184e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_partenaire
+    - node.type.partenaire
+  module:
+    - content_translation
+    - image
+third_party_settings:
+  content_translation:
+    translation_sync:
+      alt: alt
+      title: title
+      file: '0'
+id: node.partenaire.field_image_partenaire
+field_name: field_image_partenaire
+entity_type: node
+bundle: partenaire
+label: image
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

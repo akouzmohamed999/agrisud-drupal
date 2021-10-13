@@ -12,8 +12,8 @@ _core:
   default_config_hash: '-L0N7fgzhWOnj9gW7sUaDFLxDg0n1kkDi5YZqNC415M'
 id: norsys_base_footer
 theme: norsys_base
-region: footer_first
-weight: -10
+region: auto_hidden_block
+weight: 0
 provider: null
 plugin: 'system_menu_block:footer'
 settings:

@@ -63,7 +63,7 @@ content:
       trim_suffix: ''
       wrap_class: trimmed
       more_link: true
-      more_text: Plus
+      more_text: Découvrir
       more_class: more-link
       summary_handler: full
       wrap_output: false

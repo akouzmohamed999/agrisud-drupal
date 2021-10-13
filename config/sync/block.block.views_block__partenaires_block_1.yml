@@ -1,0 +1,30 @@
+uuid: 029b0779-ab5a-4184-b261-f15b43d831b1
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.partenaires
+  module:
+    - system
+    - views
+  theme:
+    - norsys_base
+id: views_block__partenaires_block_1
+theme: norsys_base
+region: clients
+weight: 0
+provider: null
+plugin: 'views_block:partenaires-block_1'
+settings:
+  id: 'views_block:partenaires-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }
