@@ -1,11 +1,18 @@
-uuid: 7e8bd1a4-8a54-427c-a8a2-1e77b0a12b4f
+uuid: 649355ea-3baf-4438-9e35-239438531cd1
 langcode: fr
 status: true
 dependencies:
   config:
     - node.type.evenement
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
 id: node.evenement
 target_entity_type_id: node
 target_bundle: evenement
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

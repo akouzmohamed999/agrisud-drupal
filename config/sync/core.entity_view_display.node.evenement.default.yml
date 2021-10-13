@@ -1,77 +1,67 @@
-uuid: 8ddd9e80-f8de-4447-9589-b3444528b47e
+uuid: 57387e9c-23c0-44af-938d-476f5bea791f
 langcode: fr
 status: true
 dependencies:
   config:
     - field.field.node.evenement.body
-    - field.field.node.evenement.field_date_event
-    - field.field.node.evenement.field_image_event
-    - field.field.node.evenement.field_lien_event
-    - field.field.node.evenement.field_titre_events
+    - field.field.node.evenement.field_actualite_image
+    - image.style.large
     - node.type.evenement
   module:
-    - datetime
-    - link
+    - ds
     - svg_image
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      ds_content:
+        - field_actualite_image
+        - body
+        - links
 id: node.evenement.default
 targetEntityType: node
 bundle: evenement
 mode: default
 content:
   body:
-    label: above
+    label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
-    region: content
-  field_date_event:
-    weight: 102
-    label: above
+    region: ds_content
+  field_actualite_image:
+    weight: 0
+    label: hidden
     settings:
-      format_type: medium
-      timezone_override: ''
-    third_party_settings: {  }
-    type: datetime_default
-    region: content
-  field_image_event:
-    weight: 103
-    label: above
-    settings:
+      image_style: large
+      image_link: ''
+      svg_render_as_image: true
       svg_attributes:
         width: null
         height: null
-      svg_render_as_image: true
-      image_style: ''
-      image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
-  field_lien_event:
-    weight: 104
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
-    region: content
-  field_titre_events:
-    weight: 105
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
+    region: ds_content
   links:
-    weight: 100
-    region: content
+    weight: 2
+    region: ds_content
     settings: {  }
     third_party_settings: {  }
 hidden:

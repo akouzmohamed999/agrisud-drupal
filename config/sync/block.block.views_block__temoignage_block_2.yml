@@ -1,0 +1,30 @@
+uuid: 054457e8-c048-45ed-b7f2-f6da9a354d6a
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.temoignage
+  module:
+    - system
+    - views
+  theme:
+    - norsys_base
+id: views_block__temoignage_block_2
+theme: norsys_base
+region: clients
+weight: -11
+provider: null
+plugin: 'views_block:temoignage-block_2'
+settings:
+  id: 'views_block:temoignage-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: /liste-actions
+    negate: false
+    context_mapping: {  }

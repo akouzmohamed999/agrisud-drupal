@@ -41,7 +41,11 @@ third_party_settings:
         - field_image
       right:
         - node_title
+        - field_statut
+        - field_pays
+        - field_programme
         - body
+        - node_link
     fields:
       node_title:
         plugin_id: node_title
@@ -49,10 +53,15 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: true
           'link class': ''
           wrapper: h2
           class: text-left
-          link: false
+      node_link:
+        plugin_id: node_link
+        weight: 6
+        label: hidden
+        formatter: default
 id: node.action.teaser
 targetEntityType: node
 bundle: action
@@ -61,17 +70,17 @@ content:
   body:
     label: hidden
     type: smart_trim
-    weight: 2
+    weight: 5
     settings:
       trim_length: 600
       trim_type: chars
       trim_suffix: ''
       wrap_class: trimmed
-      more_link: true
-      more_text: Plus
+      more_text: Découvrir
       more_class: more-link
       summary_handler: full
       wrap_output: false
+      more_link: false
       trim_options:
         text: false
         trim_zero: false
@@ -90,11 +99,32 @@ content:
         width: null
         height: null
     third_party_settings: {  }
+  field_pays:
+    type: entity_reference_label
+    weight: 3
+    region: right
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_programme:
+    type: entity_reference_label
+    weight: 4
+    region: right
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
+  field_statut:
+    type: entity_reference_label
+    weight: 2
+    region: right
+    label: inline
+    settings:
+      link: false
+    third_party_settings: {  }
 hidden:
-  field_pays: true
-  field_programme: true
   field_region: true
-  field_statut: true
   field_titre: true
   langcode: true
   links: true

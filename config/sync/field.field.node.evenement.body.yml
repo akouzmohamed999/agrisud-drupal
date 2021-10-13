@@ -1,4 +1,4 @@
-uuid: 093016e1-6e5a-43b3-89c7-2dce5b621972
+uuid: 9e62456e-006b-4bc0-b7fd-51e80de6d351
 langcode: fr
 status: true
 dependencies:
@@ -11,7 +11,7 @@ id: node.evenement.body
 field_name: body
 entity_type: node
 bundle: evenement
-label: Description
+label: Body
 description: ''
 required: false
 translatable: true

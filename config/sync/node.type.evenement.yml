@@ -1,4 +1,4 @@
-uuid: f5c5d559-ca0c-48c5-884b-25f1292e3efd
+uuid: 39d49134-d60c-4873-938c-a81fb6f099df
 langcode: fr
 status: true
 dependencies:
@@ -9,10 +9,10 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: Evénement
+name: Evènement
 type: evenement
 description: ''
 help: ''
-new_revision: true
+new_revision: false
 preview_mode: 1
 display_submitted: true

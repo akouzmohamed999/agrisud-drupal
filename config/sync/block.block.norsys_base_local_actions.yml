@@ -9,7 +9,7 @@ _core:
 id: norsys_base_local_actions
 theme: norsys_base
 region: auto_hidden_block
-weight: -10
+weight: 20
 provider: null
 plugin: local_actions_block
 settings:

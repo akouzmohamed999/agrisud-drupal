@@ -1,0 +1,25 @@
+uuid: cdd3e356-00e7-4ca4-85e1-597a248caf17
+langcode: fr
+status: true
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - norsys_base
+id: pieddepage
+theme: norsys_base
+region: footer_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: 'Pied de page'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

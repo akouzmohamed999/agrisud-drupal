@@ -18,10 +18,10 @@ provider: null
 plugin: 'views_block:bloc_actualities-block_1'
 settings:
   id: 'views_block:bloc_actualities-block_1'
-  label: ''
+  label: 'Notre actualité'
   provider: views
   label_display: visible
-  views_label: ''
+  views_label: 'Notre actualité'
   items_per_page: none
 visibility:
   language:
