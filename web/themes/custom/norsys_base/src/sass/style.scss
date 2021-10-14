@@ -217,6 +217,12 @@ $light-grey: #f7f7fa;
     margin-bottom: 2rem;
     font-weight: bold;
   }
+
+  .carousel-caption.d-none.d-md-block{
+    position: fixed;
+    top :-4em;
+    padding-left: 10em;
+  }
 }
 
 #block-views-block-temoignage-block-2 {
