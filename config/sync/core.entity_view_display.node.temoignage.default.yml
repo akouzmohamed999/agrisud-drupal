@@ -6,6 +6,7 @@ dependencies:
     - field.field.node.temoignage.body
     - field.field.node.temoignage.field_image_temoignage
     - field.field.node.temoignage.field_type
+    - image.style.thumbnail
     - node.type.temoignage
   module:
     - ds
@@ -34,6 +35,7 @@ third_party_settings:
         - body
         - field_type
         - links
+        - field_image_temoignage
 id: node.temoignage.default
 targetEntityType: node
 bundle: temoignage
@@ -48,17 +50,17 @@ content:
     region: ds_content
   field_image_temoignage:
     weight: 3
-    label: above
+    label: inline
     settings:
+      image_style: thumbnail
+      image_link: file
+      svg_render_as_image: true
       svg_attributes:
         width: null
         height: null
-      svg_render_as_image: true
-      image_style: ''
-      image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
+    region: ds_content
   field_type:
     weight: 1
     label: above

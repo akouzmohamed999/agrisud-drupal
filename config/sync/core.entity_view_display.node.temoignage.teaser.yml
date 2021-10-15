@@ -10,9 +10,33 @@ dependencies:
     - image.style.medium
     - node.type.temoignage
   module:
+    - ds
     - svg_image
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        classes:
+          layout_class: {  }
+    regions:
+      left:
+        - field_image_temoignage
+      right:
+        - body
 id: node.temoignage.teaser
 targetEntityType: node
 bundle: temoignage
@@ -25,11 +49,11 @@ content:
     settings:
       trim_length: 600
     third_party_settings: {  }
-    region: content
+    region: right
   field_image_temoignage:
     type: image
     weight: 0
-    region: content
+    region: left
     label: hidden
     settings:
       image_style: medium
