@@ -2,6 +2,7 @@ $green-agrisud : #286839;
 $red-agrisud : #ff5e14;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
+$white: #fff;
 
 .main-content * :not(i){
   font-family: 'Roboto', sans-serif !important;
@@ -815,9 +816,9 @@ collab-icon{
     }
   }
   .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
-    background: $light-grey;
-    margin-bottom: 3em;
-    padding: 2rem 1rem 2rem 1rem;
+    background: $white;
+    margin-bottom: 2em;
+    padding: 0rem 2rem 1rem 0rem;
   }
 
   #block-views-block-liste-actions-block-1 {
@@ -843,8 +844,8 @@ collab-icon{
       padding : 5em;
     }*/
   #views-bootstrap-nos-actualites-view-page-1 .node--type-actualite.node--view-mode-teaser.ds-2col{
-    background: $light-grey;
-    margin-bottom: 3em;
+    background: $white;
+    margin-bottom: 0em;
     padding: 2rem 1rem 0rem 1rem;
     }
 }
