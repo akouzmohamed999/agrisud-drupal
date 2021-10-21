@@ -786,6 +786,9 @@ collab-icon{
   background-size: cover;
   padding: 5rem 0;
 }
+.flexslider .slides li:after {
+  background: none !important;
+}
 .flexslider .flex-direction-nav a.flex-next:before {
   color: #c83e2c !important;
 }
