@@ -5,7 +5,7 @@ $light-grey: #f7f7fa;
 $white: #fff;
 
 .main-content * :not(i) {
-  font-family: "Roboto", sans-serif !important;
+  font-family: "Roboto" !important;
 }
 .header {
   border-bottom: none !important;
@@ -524,6 +524,7 @@ $white: #fff;
 
 #block-views-block-evenement-block-1 {
   #views-bootstrap-evenement-block-1 {
+    font-family: "Roboto" !important;
     width: 50%;
     margin-left: 25%;
     .node--type-programme.node--view-mode-teaser.ds-2col,
@@ -782,7 +783,9 @@ a.more-link {
   padding: 0 2rem;
   text-align: justify;
 }
-
+.block-a-propos-nous:nth-child(2) {
+  font-family: "Roboto" !important;
+}
 #footer-icons {
   color: $red-agrisud !important;
   display: table;
