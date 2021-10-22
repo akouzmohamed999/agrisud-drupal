@@ -41,11 +41,10 @@ third_party_settings:
         - field_image
       right:
         - node_title
+        - body
         - field_statut
         - field_pays
         - field_programme
-        - body
-        - node_link
     fields:
       node_title:
         plugin_id: node_title
@@ -57,11 +56,6 @@ third_party_settings:
           'link class': ''
           wrapper: h2
           class: text-left
-      node_link:
-        plugin_id: node_link
-        weight: 6
-        label: hidden
-        formatter: default
 id: node.action.teaser
 targetEntityType: node
 bundle: action
@@ -70,7 +64,7 @@ content:
   body:
     label: hidden
     type: smart_trim
-    weight: 5
+    weight: 2
     settings:
       trim_length: 600
       trim_type: chars
@@ -101,7 +95,7 @@ content:
     third_party_settings: {  }
   field_pays:
     type: entity_reference_label
-    weight: 3
+    weight: 4
     region: right
     label: inline
     settings:
@@ -109,7 +103,7 @@ content:
     third_party_settings: {  }
   field_programme:
     type: entity_reference_label
-    weight: 4
+    weight: 5
     region: right
     label: inline
     settings:
@@ -117,7 +111,7 @@ content:
     third_party_settings: {  }
   field_statut:
     type: entity_reference_label
-    weight: 2
+    weight: 3
     region: right
     label: inline
     settings:

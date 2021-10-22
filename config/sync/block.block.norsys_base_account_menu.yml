@@ -13,7 +13,7 @@ _core:
 id: norsys_base_account_menu
 theme: norsys_base
 region: header
-weight: -11
+weight: 11
 provider: null
 plugin: 'system_menu_block:account'
 settings:

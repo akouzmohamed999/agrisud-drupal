@@ -6,14 +6,7 @@ dependencies:
     - field.storage.node.field_image_temoignage
     - node.type.temoignage
   module:
-    - content_translation
     - image
-third_party_settings:
-  content_translation:
-    translation_sync:
-      alt: alt
-      title: title
-      file: '0'
 id: node.temoignage.field_image_temoignage
 field_name: field_image_temoignage
 entity_type: node
@@ -21,7 +14,7 @@ bundle: temoignage
 label: image
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings:
@@ -35,11 +28,11 @@ settings:
   title_field: false
   title_field_required: false
   default_image:
-    uuid: 5eab4b79-0912-467e-9532-c1f72e054b45
+    uuid: ''
     alt: ''
     title: ''
-    width: 95
-    height: 72
+    width: null
+    height: null
   handler: 'default:file'
   handler_settings: {  }
 field_type: image
