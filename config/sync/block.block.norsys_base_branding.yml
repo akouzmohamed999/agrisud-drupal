@@ -11,7 +11,7 @@ _core:
 id: norsys_base_branding
 theme: norsys_base
 region: header
-weight: 0
+weight: -14
 provider: null
 plugin: system_branding_block
 settings:
