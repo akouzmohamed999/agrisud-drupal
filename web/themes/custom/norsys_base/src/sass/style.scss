@@ -1,31 +1,31 @@
-$green-agrisud: #286839;
-$red-agrisud: #ff5e14;
+$green-agrisud : #286839;
+$red-agrisud : #ff5e14;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
+
 body{
   font-family: "Roboto" !important;
 }
-.main-content * :not(i) {
+
+.main-content * :not(i){
   font-family: "Roboto" !important;
 }
 .header {
-  font-family: "Roboto" !important;
   border-bottom: none !important;
+  font-family: "Roboto";
   position: fixed;
   width: 100%;
   z-index: 1;
 }
 
-
-.container,
-.container-fluid {
+.container, .container-fluid {
   #block-norsys-base-branding img {
     width: 43px;
   }
   .custom-title {
     margin-top: 5rem;
-    margin-bottom: 2rem;    
+    margin-bottom: 2rem;
     h2 {
       font-family: "Roboto";
       font-weight: 600 !important;
@@ -39,6 +39,7 @@ body{
     font-size: 4em;
     font-weight: bold;
   }
+
 }
 
 #clients {
@@ -70,7 +71,7 @@ body{
     background-size: contain;
   }
   .region {
-    background: none !important;
+      background: none !important;
   }
   #chiffres-container {
     background-color: $green-agrisud !important;
@@ -102,6 +103,7 @@ body{
     }
   }
 
+
   /*.carte-svg {
     padding: 5rem 0;
   }*/
@@ -111,8 +113,7 @@ body{
   }
 
   #midwidget {
-    background-image: url("images/symbole-agrisud-2.png"),
-      url("images/fermier-rescaled.png");
+    background-image: url("images/symbole-agrisud-2.png"), url("images/fermier-rescaled.png");
     background-repeat: no-repeat;
     background-position: right, top;
     background-size: inherit;
@@ -200,13 +201,13 @@ body{
 .sticky {
   color: #fff !important;
   background: #c83e2c !important;
-  position: fixed;
-  top: 50%;
-  z-index: 9999;
+  position:fixed;
+  top:50%;
+  z-index:9999;
 }
 
 #bouton-sticky {
-  right: 5%;
+  right:5%;
 }
 #espace-presse {
   writing-mode: vertical-lr;
@@ -215,19 +216,18 @@ body{
   padding: 1.25rem 0.5rem;
 }
 //////////////////////////////////slider!!!!!!!!!
-#block-views-block-temoignage-block-1,
-#block-views-block-temoignage-block-2 {
+#block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
   margin: 0 10% 15% 10%;
-  // margin: 0 10% 0 10%;
+ // margin: 0 10% 0 10%;
   .title {
     margin-top: 5rem;
     margin-bottom: 2rem;
     font-weight: bold;
   }
 
-  .carousel-caption.d-none.d-md-block {
+  .carousel-caption.d-none.d-md-block{
     position: fixed;
-    top: -4em;
+    top :-4em;
     padding-left: 10em;
   }
 }
@@ -235,13 +235,12 @@ body{
 #block-views-block-temoignage-block-2 {
   width: 60% !important;
   margin-left: 20% !important;
-}
-#views-bootstrap-temoignage-block-1,
-#views-bootstrap-temoignage-block-2 {
+ }
+#views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
   a {
     color: $grey-agrisud !important;
   }
-  a.more-link {
+  a.more-link{
     color: $red-agrisud !important;
     border: 1px solid $red-agrisud !important;
   }
@@ -320,12 +319,10 @@ body{
 }
 
 // CT Acrualité
-.node--type-actualite.node--view-mode-full.ds-1col,
-.node--type-evenement.node--view-mode-full.ds-1col {
+.node--type-actualite.node--view-mode-full.ds-1col, .node--type-evenement.node--view-mode-full.ds-1col {
   text-align: center !important;
 
-  .field--name-field-actualite-date,
-  .field--name-field-actualite-type {
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
     text-align: left !important;
   }
@@ -340,8 +337,7 @@ body{
     margin-top: 3rem !important;
   }
 
-  #date-actu,
-  #type-actu {
+  #date-actu, #type-actu {
     float: left !important;
     margin-left: 1rem;
   }
@@ -364,8 +360,7 @@ body{
   margin-top: 5rem !important;
   text-align: center !important;
 
-  .field--name-field-actualite-date,
-  .field--name-field-actualite-type {
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
     display: flex !important;
     text-align: left !important;
   }
@@ -375,8 +370,7 @@ body{
     margin-top: 1rem !important;
   }
 
-  #date-actu,
-  #type-actu {
+  #date-actu, #type-actu {
     float: left !important;
     margin-left: 1rem;
   }
@@ -402,13 +396,13 @@ body{
   .group-right {
     width: 75% !important;
   }
+
 }
 
 //CT action
 .node--type-action.node--view-mode-teaser.ds-2col {
   text-align: center !important;
-  .field--name-field-action-date,
-  .field--name-field-action-type {
+  .field--name-field-action-date, .field--name-field-action-type {
     display: flex !important;
     text-align: left !important;
   }
@@ -417,9 +411,7 @@ body{
     margin-top: 1rem !important;
   }
 
-  .clearBoth {
-    clear: both;
-  }
+  .clearBoth { clear:both; }
   .field--name-field-image {
     margin-top: 3rem !important;
     img {
@@ -436,13 +428,10 @@ body{
     width: 75% !important;
   }
   //managing three fields pays, programme, Statut
-  .field--name-field-pays,
-  .field--name-field-programme,
-  .field--name-field-statut {
+  .field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
     text-align: left;
     text-decoration: underline;
-    .field__label,
-    .field__item {
+    .field__label, .field__item {
       display: inline !important;
       font-weight: bold;
     }
@@ -451,12 +440,10 @@ body{
 
 .node--type-action.node--view-mode-full.ds-1col {
   text-align: center;
-  .field--name-field-programme,
-  .field--name-field-pays,
-  .field--name-field-statut {
-    .field__label,
-    .field__item {
-      float: left !important;
+  .field--name-field-programme, .field--name-field-pays, .field--name-field-statut{
+
+    .field__label, .field__item {
+      float:left !important;
     }
     .field__item {
       margin-left: 0.5rem !important;
@@ -485,9 +472,7 @@ body{
     }
   }
 
-  .clearBoth {
-    clear: both;
-  }
+  .clearBoth { clear:both; }
   .field--name-field-image {
     text-align: center;
     margin-top: 5rem !important;
@@ -501,8 +486,7 @@ body{
 
 #views-bootstrap-programmes-multi-pays-block-1 {
   margin: 0 10rem;
-  .node--type-programme.node--view-mode-teaser.ds-2col,
-  .node--type-evenement.node--view-mode-teaser.ds-2col {
+  .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
     background-color: #fff !important;
     padding: 3rem !important;
     img {
@@ -532,8 +516,7 @@ body{
     font-family: "Roboto" !important;
     width: 50%;
     margin-left: 25%;
-    .node--type-programme.node--view-mode-teaser.ds-2col,
-    .node--type-evenement.node--view-mode-teaser.ds-2col {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       background-color: #fff !important;
       padding: 3rem !important;
       img {
@@ -555,25 +538,24 @@ body{
       display: inline !important;
     }
 
-    li > a,
-    li > span {
+    li > a, li > span {
       position: relative !important;
-      float: left !important;
-      padding: 6px 12px !important;
-      line-height: 1.42857 !important;
-      text-decoration: none !important;
-      color: $green-agrisud !important;
-      background-color: #fff !important;
-      border: 1px solid #ddd !important;
-      margin-left: -1px !important;
+      float: left !important;;
+      padding: 6px 12px !important;;
+      line-height: 1.42857 !important;;
+      text-decoration: none !important;;
+      color: $green-agrisud !important;;
+      background-color: #fff !important;;
+      border: 1px solid #ddd !important;;
+      margin-left: -1px !important;;
     }
   }
 }
 
 a.more-link {
   display: table;
-  margin-top: -1rem;
-  margin-bottom: 1rem;
+  margin-top: 15px;
+  margin-bottom: 30px;
   text-align: center;
   color: #d3522f;
   padding: 5px 60px;
@@ -643,8 +625,7 @@ a.more-link {
   }
 
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1,
-  #views-bootstrap-evenement-block-1 {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1  {
     .field--name-field-image {
       text-align: center;
     }
@@ -658,8 +639,7 @@ a.more-link {
     margin-top: 3rem;
   }
 
-  #block-views-block-temoignage-block-1,
-  #block-views-block-temoignage-block-2 {
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
     visibility: hidden;
   }
   #views-bootstrap-evenement-block-1 {
@@ -677,6 +657,7 @@ a.more-link {
 }
 
 @media screen and (min-width: 767px) and (max-width: 1200px) {
+
   .path-frontpage {
     .flexslider .slides img {
       min-height: 650px;
@@ -700,14 +681,12 @@ a.more-link {
   }
 
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1,
-  #views-bootstrap-evenement-block-1 {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
     .field--name-field-image {
       text-align: center;
     }
     margin: 0 !important;
-    .node--type-programme.node--view-mode-teaser.ds-2col,
-    .node--type-evenement.node--view-mode-teaser.ds-2col {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       .group-left {
         width: 100%;
         text-align: center;
@@ -731,10 +710,8 @@ a.more-link {
 //tablettes
 @media (max-width: 992px) {
   //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1,
-  #views-bootstrap-evenement-block-1 {
-    .node--type-programme.node--view-mode-teaser.ds-2col,
-    .node--type-evenement.node--view-mode-teaser.ds-2col {
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
       .group-left {
         width: 100%;
       }
@@ -744,17 +721,11 @@ a.more-link {
     }
   }
 }
-.updates,
-.midwidget,
-.main-content {
-  h1,
-  .h1,
-  h2,
-  .h2,
-  h3,
-  .h3,
-  h4,
-  .h4 {
+.updates, .midwidget, .main-content {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4 {
     color: $green-agrisud !important;
     font-weight: 400;
     margin: 10px 0;
@@ -762,15 +733,14 @@ a.more-link {
   }
 
   .carousel-caption {
-    h3,
-    p {
+    h3, p {
       color: $green-agrisud !important;
     }
   }
 }
 
 //footer style
-#footer {
+#footer{
   background: #ffffff;
   font-family: "Roboto" !important;
   .menu ul li a {
@@ -789,9 +759,11 @@ a.more-link {
   padding: 0 2rem;
   text-align: justify;
 }
+
 .block-a-propos-nous:nth-child(2) {
   font-family: "Roboto" !important;
 }
+
 #footer-icons {
   color: $red-agrisud !important;
   display: table;
@@ -805,23 +777,20 @@ a.more-link {
   color: $grey-agrisud !important;
 }
 
-// map svg
-//path[class="country"] {
-//  stroke-width: 1;
-//  stroke: #951915;
-//  stroke-linecap: round;
-//  stroke-linejoin: round;
-//}
-//
-path[class~="country"]:hover {
-  fill: #226432 !important;
-}
+ // map svg
+  //path[class="country"] {
+  //  stroke-width: 1;
+  //  stroke: #951915;
+  //  stroke-linecap: round;
+  //  stroke-linejoin: round;
+  //}
+  //
+  path[class~="country"]:hover{
+    fill: #226432 !important;
+  }
 
-// visual update
-.btn,
-.node-readmore a,
-.flexslider .more-link,
-input[type="submit"] {
+  // visual update
+.btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
   background: #c83e2c !important;
 }
 
@@ -829,36 +798,40 @@ div.more-link {
   float: right !important;
 }
 
-collab-icon {
+collab-icon{
   background-image: url("images/picto-collaborateurs.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 5rem 0;
 }
+.flexslider .slides li:after {
+  background: none !important;
+}
 .flexslider .flex-direction-nav a.flex-next:before {
-  color: #c83e2c !important;
+  color: $green-agrisud !important;
 }
 .flexslider .flex-direction-nav li {
   list-style: none;
   vertical-align: middle;
   display: inline-block;
-  background: #c83e2c !important;
+  background: $green-agrisud !important;
 }
 .path-liste-actions {
   #liste-actions {
+   margin-top: 16rem;
     .views-element-container {
       background-image: url("images/actualite-background.png");
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
-      padding: 5em;
+      padding : 5em;
     }
   }
-  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page {
-    background: #f7f7fa;
+  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
+    background: $white;
     margin-bottom: 2em;
-    padding: 0rem 3rem 1rem 0rem;
+    padding: 0rem 2rem 1rem 0rem;
   }
 
   #block-views-block-liste-actions-block-1 {
@@ -874,7 +847,7 @@ collab-icon {
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    padding: 5em;
+    padding : 5em;
   }
   /*.content_layout .views-element-container .contextual-region {
       background-image: url("images/actualite-background.png");
@@ -883,12 +856,11 @@ collab-icon {
       background-size: cover;
       padding : 5em;
     }*/
-  #views-bootstrap-nos-actualites-view-page-1
-    .node--type-actualite.node--view-mode-teaser.ds-2col {
+  #views-bootstrap-nos-actualites-view-page-1 .node--type-actualite.node--view-mode-teaser.ds-2col{
     background: $white;
     margin-bottom: 0em;
-    padding: 1rem 3rem 0rem 1rem;
-  }
+    padding: 2rem 1rem 0rem 1rem;
+    }
 }
 
 .chiffre-item {
@@ -897,77 +869,69 @@ collab-icon {
   }
 }
 
-.region-primary-menu li a {
-  color: #343534 !important;
+.region-primary-menu li a{
+ color :#343534 !important;
 }
 
-#block-views-block-liste-actions-block-1,
-#views-bootstrap-bloc-actualities-block-1 {
-  h2 > a,
-  h3 > a {
+#block-views-block-liste-actions-block-1, #views-bootstrap-bloc-actualities-block-1{
+  h2>a, h3>a {
     color: $green-agrisud !important;
   }
-  h3 > a:hover {
+  h3>a:hover{
     color: $red-agrisud !important;
   }
 }
-.liste-actions.views-row,
-#views-bootstrap-programmes-multi-pays-block-1 {
+.liste-actions.views-row, #views-bootstrap-programmes-multi-pays-block-1{
   a.more-link {
     color: $red-agrisud !important;
     border: 1px solid $red-agrisud !important;
   }
-  h3,
-  h2 {
+  h3,h2{
     color: $green-agrisud !important;
   }
 
-  div[class="field field--name-node-link field--type-ds field--label-hidden field__item"] {
+  div[class="field field--name-node-link field--type-ds field--label-hidden field__item"]{
     float: right;
     display: table;
-    margin-top: 15px;
-    margin-bottom: 30px;
+    margin-top: -19px;
+    margin-bottom: -6px;
     text-align: center;
     padding: 5px 60px;
-    border: 1px solid #d3522f !important;
-    background-color: white;
+    border: 1px solid $green-agrisud !important;
+    background-color: $green-agrisud;
     font-weight: 600;
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
     a {
-      color: #d3522f !important;
+      color: #fff !important;
     }
   }
-  //managing three fields pays, programme, Statut
-  .field--name-field-pays,
-  .field--name-field-programme,
-  .field--name-field-statut {
-    text-align: left;
-    float: left !important;
-    margin-right: 1em;
-    text-decoration: none !important;
-    .field__label,
-    .field__item {
-      display: inline !important;
-      font-weight: normal !important;
-    }
+//managing three fields pays, programme, Statut
+.field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
+  text-align: left;
+  float:left !important;
+  margin-right: 1em;
+  text-decoration: none !important;
+  .field__label, .field__item {
+    display: inline !important;
+    font-weight: normal !important;
   }
+}
   .field--name-body.field--type-text-with-summary {
-    float: left !important;
+    float:left !important;
   }
 }
 
-h2 > a,
-span.field--name-title {
-  color: $green-agrisud !important;
-}
-#liens-utils ul a {
-  color: $grey-agrisud !important;
-  font-weight: bold;
-  text-decoration: underline;
-}
+  h2>a, span.field--name-title {
+    color: $green-agrisud !important;
+  }
+  #liens-utils ul a {
+    color: $grey-agrisud !important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
 
 .node-programme {
   .field--type-image {
@@ -978,7 +942,7 @@ span.field--name-title {
 }
 
 .path-user {
-  div.main-content {
+  div.main-content{
     background-image: url(images/connexion-agrisud.png);
     background-repeat: no-repeat;
     background-position: unset;
@@ -998,7 +962,7 @@ span.field--name-title {
     padding-top: 2em;
   }
 
-  #edit-submit {
+  #edit-submit{
     border: 0;
     line-height: 2.5;
     padding: 0 20px;
@@ -1008,14 +972,12 @@ span.field--name-title {
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
     background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(
-      to top left,
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2) 30%,
-      rgba(0, 0, 0, 0)
-    );
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
-      inset -2px -2px 3px rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
     width: 100%;
   }
 
@@ -1024,7 +986,7 @@ span.field--name-title {
   }
 
   #block-norsys-base-page-title {
-    h1 {
+    h1{
       text-transform: uppercase;
       color: $grey-agrisud;
     }
