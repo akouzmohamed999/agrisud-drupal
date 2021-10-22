@@ -1,0 +1,18 @@
+uuid: 76f86a9d-081a-4a7f-aa67-fd6be915acec
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.temoignage
+id: node.temoignage.title
+field_name: title
+entity_type: node
+bundle: temoignage
+label: Title
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

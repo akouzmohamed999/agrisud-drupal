@@ -1,0 +1,18 @@
+uuid: 5fcbfbbc-b8d9-4a57-9575-5a4be4b58924
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.programme
+id: node.programme.created
+field_name: created
+entity_type: node
+bundle: programme
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

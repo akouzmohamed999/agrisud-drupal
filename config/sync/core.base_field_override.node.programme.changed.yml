@@ -1,0 +1,18 @@
+uuid: aa3bb864-3937-4d7e-97b9-ee13e7ae96bf
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.programme
+id: node.programme.changed
+field_name: changed
+entity_type: node
+bundle: programme
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed
