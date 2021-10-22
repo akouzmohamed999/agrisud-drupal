@@ -3,16 +3,20 @@ $red-agrisud: #ff5e14;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
-
+body{
+  font-family: "Roboto" !important;
+}
 .main-content * :not(i) {
   font-family: "Roboto" !important;
 }
 .header {
+  font-family: "Roboto" !important;
   border-bottom: none !important;
   position: fixed;
   width: 100%;
   z-index: 1;
 }
+
 
 .container,
 .container-fluid {
@@ -21,8 +25,9 @@ $white: #fff;
   }
   .custom-title {
     margin-top: 5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem;    
     h2 {
+      font-family: "Roboto";
       font-weight: 600 !important;
     }
   }
@@ -767,6 +772,7 @@ a.more-link {
 //footer style
 #footer {
   background: #ffffff;
+  font-family: "Roboto" !important;
   .menu ul li a {
     color: $grey-agrisud !important;
     font-size: 0.8rem !important;
