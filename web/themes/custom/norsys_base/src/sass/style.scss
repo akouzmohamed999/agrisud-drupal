@@ -202,7 +202,7 @@ $white: #fff;
 
   .sticky {
     color: #fff !important;
-    background: #c83e2c !important;
+    background: $green-agrisud !important;
     position: fixed;
     top: 50%;
     z-index: 9999;
@@ -837,7 +837,7 @@ a.more-link {
 
   // visual update
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
-  background: #c83e2c !important;
+  background: $green-agrisud !important;
 }
 
 div.more-link {
