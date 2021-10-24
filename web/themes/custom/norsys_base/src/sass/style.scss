@@ -20,6 +20,24 @@ $white: #fff;
   top: 0;
 }
 
+#language {
+  .region-search {
+    width: 100%;
+
+    ul.links {
+      li.fr {
+        list-style-image: url('images/france-icone.png');
+      }
+      li.en {
+        list-style-image: url('images/english-icone.png');
+      }
+      a {
+        color: $grey-agrisud;
+      }
+    }
+  }
+}
+
 .container, .container-fluid {
   #block-norsys-base-branding img {
     width: 43px;
