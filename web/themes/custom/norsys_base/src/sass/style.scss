@@ -9,7 +9,7 @@ $white: #fff;
 }
 .header {
   border-bottom: none !important;
-  position: fixed;
+  //position: fixed;
   width: 100%;
   z-index: 1;
 }
@@ -973,5 +973,21 @@ collab-icon{
 
   .user-login-form {
     border-radius: 25px;
+  }
+}
+
+#soutenir-title{
+  text-align: center;
+  padding: 10rem;
+  background-image: url(images/bg_actualites-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
   }
 }
