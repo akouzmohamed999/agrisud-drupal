@@ -204,18 +204,24 @@ $white: #fff;
     color: #fff !important;
     background: $green-agrisud !important;
     position: fixed;
-    top: 50%;
+    top: 85%;
+    /*background-image: url("images/hand-holding-heart-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    right: 0;
     z-index: 9999;
   }
 
   #bouton-sticky {
-    right: 5%;
   }
 
+  #bouton-sticky-presse {
+    top: 90%;
+  }
   #espace-presse {
     writing-mode: vertical-lr;
     text-orientation: mixed;
-    left: 0 !important;
     padding: 1.25rem 0.5rem;
   }
 
@@ -247,9 +253,6 @@ $white: #fff;
   z-index:9999;
 }
 
-#bouton-sticky {
-  right:5%;
-}
 #espace-presse {
   writing-mode: vertical-lr;
   text-orientation: mixed;
