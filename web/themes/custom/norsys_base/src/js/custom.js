@@ -10,7 +10,10 @@
 jQuery(document).ready(function ($) {
     $(".slider-caption a").text("Découvrir");
     $(".slider-caption a").addClass("more-link");
-    $("#donate-key").on("click", function (e) {
+    $("#donate-link").animate({width:'toggle'},350);
+    $("#presse-link").animate({width:'toggle'},350);
+
+  $("#donate-key").on("click", function (e) {
       $("#donate-link").animate({width:'toggle'},350);
       /*$(this).slideToggle( "slow", function() {
       });*/
