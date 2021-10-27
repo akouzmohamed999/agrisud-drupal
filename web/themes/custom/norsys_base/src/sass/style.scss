@@ -4,14 +4,20 @@ $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
 
+body{
+  font-family: "Roboto" !important;
+}
+
 .main-content * :not(i){
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto" !important;
 }
 .header {
   border-bottom: none !important;
+  font-family: "Roboto";
   position: fixed;
   width: 100%;
   z-index: 1;
+  top: 0;
 }
 
 .container, .container-fluid {
@@ -22,6 +28,7 @@ $white: #fff;
     margin-top: 5rem;
     margin-bottom: 2rem;
     h2 {
+      font-family: "Roboto";
       font-weight: 600 !important;
     }
   }
@@ -507,6 +514,7 @@ $white: #fff;
 
 #block-views-block-evenement-block-1 {
   #views-bootstrap-evenement-block-1 {
+    font-family: "Roboto" !important;
     width: 50%;
     margin-left: 25%;
     .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
@@ -730,7 +738,8 @@ a.more-link {
 
 //footer style
 #footer{
-  background: #FFFFFF;
+  background: #ffffff;
+  font-family: "Roboto" !important;
   .menu ul li a {
     color: $grey-agrisud !important;
     font-size: 0.8rem !important;
@@ -746,6 +755,10 @@ a.more-link {
   background-size: cover;
   padding: 0 2rem;
   text-align: justify;
+}
+
+.block-a-propos-nous:nth-child(2) {
+  font-family: "Roboto" !important;
 }
 
 #footer-icons {
@@ -803,6 +816,7 @@ collab-icon{
 }
 .path-liste-actions {
   #liste-actions {
+   margin-top: 16rem;
     .views-element-container {
       background-image: url("images/actualite-background.png");
       background-repeat: no-repeat;
@@ -883,8 +897,12 @@ collab-icon{
     border: 1px solid $green-agrisud !important;
     background-color: $green-agrisud;
     font-weight: 600;
-    a{
-      color: #d3522f !important;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    a {
+      color: #fff !important;
     }
   }
 //managing three fields pays, programme, Statut
