@@ -4,9 +4,12 @@ $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
 
-.main-content * :not(i){
-  font-family: 'Roboto', sans-serif !important;
-}
+.clients, .header, .flexslider, .container, .container-fluid {
+  * {
+    font-family: "Roboto" !important;
+  }
+ }
+
 .header {
   border-bottom: none !important;
   position: fixed;
