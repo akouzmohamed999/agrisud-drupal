@@ -1,5 +1,6 @@
 $green-agrisud : #286839;
 $red-agrisud : #ff5e14;
+$dark-red_agrisud: #c83e2c;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
@@ -217,6 +218,7 @@ $white: #fff;
     margin-top: 5rem;
     margin-bottom: 2rem;
     font-weight: bold;
+    padding-top: 0.5em;
   }
 
   .carousel-caption.d-none.d-md-block{
@@ -229,6 +231,9 @@ $white: #fff;
 #block-views-block-temoignage-block-2 {
   width: 60% !important;
   margin-left: 20% !important;
+  background-color: white;
+  padding-bottom: 8em;
+  padding-left: 2em;
  }
 #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
   a {
@@ -262,11 +267,7 @@ $white: #fff;
     list-style-type: disc;
   }
 }
-#views-bootstrap-temoignage-block-2 {
-  .carousel-caption {
-    background: #fff !important;
-  }
-}
+
 //Global scss
 .region.region-header {
   background-color: #fff !important;
@@ -753,12 +754,13 @@ a.more-link {
 }
 
 #footer-icons {
-  color: $red-agrisud !important;
+  color: $dark-red_agrisud !important;
   display: table;
   a {
     display: table-cell;
     vertical-align: middle;
     font-size: xx-large;
+    color: $dark-red_agrisud !important;
   }
 }
 #block-pieddepage {
