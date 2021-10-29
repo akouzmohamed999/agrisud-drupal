@@ -9,9 +9,16 @@ $white: #fff;
 }
 .header {
   border-bottom: none !important;
-  position: fixed;
   width: 100%;
   z-index: 1;
+}
+
+.fas.fa-bars {
+  color: $grey-agrisud !important;
+}
+
+.sm.menu-base-theme {
+  background-color: $white;
 }
 
 #language {
