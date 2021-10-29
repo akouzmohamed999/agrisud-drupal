@@ -1,0 +1,31 @@
+uuid: dc2b951d-878e-4f5f-a9d3-85ac45ea8814
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:bc7036f0-cca1-49c1-ab2b-4f1260df0359'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: faireundonparchequeouvirement
+theme: norsys_base
+region: features_second
+weight: -15
+provider: null
+plugin: 'block_content:bc7036f0-cca1-49c1-ab2b-4f1260df0359'
+settings:
+  id: 'block_content:bc7036f0-cca1-49c1-ab2b-4f1260df0359'
+  label: 'Faire un don par chéque ou virement'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /soutenir
+    negate: false
+    context_mapping: {  }

@@ -996,3 +996,46 @@ collab-icon{
     border-radius: 25px;
   }
 }
+
+#soutenir-title{
+  text-align: center;
+  padding: 10rem;
+  background-image: url(images/bg_actualites-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h2{
+    font-size: 6em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+#soutenir-content{
+  background-image: url(images/fond-phrase-accroche.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  blockquote {
+    font-size: 2.4em;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+}
+
+.soutenir-feature-title{
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.soutenir-feature-content{
+  color: $grey-agrisud;
+  font-weight: bolder;
+}
