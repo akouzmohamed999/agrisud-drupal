@@ -1,5 +1,6 @@
 $green-agrisud : #286839;
 $red-agrisud : #ff5e14;
+$dark-red_agrisud: #c83e2c;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
@@ -12,9 +13,11 @@ $white: #fff;
 
 .header {
   border-bottom: none !important;
+  font-family: "Roboto";
   position: fixed;
   width: 100%;
   z-index: 1;
+  top: 0;
 }
 
 .container, .container-fluid {
@@ -25,6 +28,7 @@ $white: #fff;
     margin-top: 5rem;
     margin-bottom: 2rem;
     h2 {
+      font-family: "Roboto";
       font-weight: 600 !important;
     }
   }
@@ -220,6 +224,7 @@ $white: #fff;
     margin-top: 5rem;
     margin-bottom: 2rem;
     font-weight: bold;
+    padding-top: 0.5em;
   }
 
   .carousel-caption.d-none.d-md-block{
@@ -232,6 +237,9 @@ $white: #fff;
 #block-views-block-temoignage-block-2 {
   width: 60% !important;
   margin-left: 20% !important;
+  background-color: white;
+  padding-bottom: 8em;
+  padding-left: 2em;
  }
 #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
   a {
@@ -265,11 +273,7 @@ $white: #fff;
     list-style-type: disc;
   }
 }
-#views-bootstrap-temoignage-block-2 {
-  .carousel-caption {
-    background: #fff !important;
-  }
-}
+
 //Global scss
 .region.region-header {
   background-color: #fff !important;
@@ -486,6 +490,7 @@ $white: #fff;
   .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
     background-color: #fff !important;
     padding: 3rem !important;
+    margin-top: 1em;
     img {
       margin-right: 1rem !important;
     }
@@ -510,6 +515,7 @@ $white: #fff;
 
 #block-views-block-evenement-block-1 {
   #views-bootstrap-evenement-block-1 {
+    font-family: "Roboto" !important;
     width: 50%;
     margin-left: 25%;
     .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
@@ -733,7 +739,8 @@ a.more-link {
 
 //footer style
 #footer{
-  background: #FFFFFF;
+  background: #ffffff;
+  font-family: "Roboto" !important;
   .menu ul li a {
     color: $grey-agrisud !important;
     font-size: 0.8rem !important;
@@ -751,13 +758,18 @@ a.more-link {
   text-align: justify;
 }
 
+.block-a-propos-nous:nth-child(2) {
+  font-family: "Roboto" !important;
+}
+
 #footer-icons {
-  color: $red-agrisud !important;
+  color: $dark-red_agrisud !important;
   display: table;
   a {
     display: table-cell;
     vertical-align: middle;
     font-size: xx-large;
+    color: $dark-red_agrisud !important;
   }
 }
 #block-pieddepage {
@@ -806,6 +818,7 @@ collab-icon{
 }
 .path-liste-actions {
   #liste-actions {
+   margin-top: 16rem;
     .views-element-container {
       background-image: url("images/actualite-background.png");
       background-repeat: no-repeat;
@@ -886,8 +899,12 @@ collab-icon{
     border: 1px solid $green-agrisud !important;
     background-color: $green-agrisud;
     font-weight: 600;
-    a{
-      color: #d3522f !important;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    a {
+      color: #fff !important;
     }
   }
 //managing three fields pays, programme, Statut
@@ -977,4 +994,47 @@ collab-icon{
   .user-login-form {
     border-radius: 25px;
   }
+}
+
+#soutenir-title{
+  text-align: center;
+  padding: 10rem;
+  background-image: url(images/bg_actualites-min.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  h2{
+    font-size: 6em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+#soutenir-content{
+  background-image: url(images/fond-phrase-accroche.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  blockquote {
+    font-size: 2.4em;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+}
+
+.soutenir-feature-title{
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: larger;
+}
+
+.soutenir-feature-content{
+  color: $grey-agrisud;
+  font-weight: bolder;
 }

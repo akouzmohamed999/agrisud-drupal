@@ -58,10 +58,7 @@
  */
 #}
 
-
 <!-- Start: Header -->
-
-<div class="main-content">
 <div class="header">
   <div class="container-">
     <div class="row align-items-center">
@@ -74,7 +71,6 @@
           {{ page.header }}
         {% endif %}
       </div>
-
       {% if page.primary_menu or page.search %}
         <div class="col-md-9 menu-wrap">
           {% if page.search %}
@@ -88,7 +84,6 @@
 
     </div>
   </div>
-</div>
 </div>
 <!-- End: Header -->
 
@@ -129,17 +124,17 @@
         </div>
       {% endif %}
 
-        <div class="row topwidget-list clearfix">
-          {% if page.topwidget_first %}
-            <div class = {{ topwidget_class }}>{{ page.topwidget_first }}</div>
-          {% endif %}
-          {% if page.topwidget_second %}
-            <div class = {{ topwidget_class }}>{{ page.topwidget_second }}</div>
-          {% endif %}
-          {% if page.topwidget_third %}
-            <div class = {{ topwidget_class }}>{{ page.topwidget_third }}</div>
-          {% endif %}
-        </div>
+      <div class="row topwidget-list clearfix">
+        {% if page.topwidget_first %}
+          <div class = {{ topwidget_class }}>{{ page.topwidget_first }}</div>
+        {% endif %}
+        {% if page.topwidget_second %}
+          <div class = {{ topwidget_class }}>{{ page.topwidget_second }}</div>
+        {% endif %}
+        {% if page.topwidget_third %}
+          <div class = {{ topwidget_class }}>{{ page.topwidget_third }}</div>
+        {% endif %}
+      </div>
     </div>
   </div>
 {% endif %}
@@ -186,37 +181,37 @@
 
         <!--- Start Content -->
         {% if page.content %}
-          <div id="liste-actions" class={{contentlayout}} style="padding: 0 !important">
-            <div class="content_layout">
+        <div class={{contentlayout}} style="padding: 0 !important">
+        <div class="content_layout">
 
-              <!--Start: Breadcrumb -->
-              {% if not is_front %}
-                <div class="row">
-                  <div class="col-md-12">{{ page.breadcrumb }}</div>
-                </div>
-              {% endif %}
-              <!--End: Breadcrumb -->
-
-              {{ page.content }}
-
+          <!--Start: Breadcrumb -->
+          {% if not is_front %}
+            <div class="row">
+              <div class="col-md-12">{{ page.breadcrumb }}</div>
             </div>
-          </div>
-        {% endif %}
-        <!-- End: Content -->
+          {% endif %}
+          <!--End: Breadcrumb -->
 
-        <!-- Start: Right SideBar -->
-        {% if page.sidebar_second %}
-          <div class={{sidebarsecond}}>
-            <div class="sidebar">
-              {{ page.sidebar_second }}
-            </div>
-          </div>
-        {% endif %}
-        <!-- End: Right SideBar -->
+          {{ page.content }}
 
+        </div>
       </div>
+      {% endif %}
+      <!-- End: Content -->
+
+      <!-- Start: Right SideBar -->
+      {% if page.sidebar_second %}
+        <div class={{sidebarsecond}}>
+          <div class="sidebar">
+            {{ page.sidebar_second }}
+          </div>
+        </div>
+      {% endif %}
+      <!-- End: Right SideBar -->
+
     </div>
   </div>
+</div>
 </div>
 <!-- End: Main content -->
 
@@ -394,30 +389,30 @@
       <span class="m-0">Agrisud fait partie des associations agréées en France</span>
     </div>
     <div class="col-lg-3 col-md-2 col-sm-12 col-12 text-align-left px-0 pt-2">
-        <img src="/web/themes/custom/norsys_base/images/Membre_HorizontalLogo_Color.jpg"/>
+      <img src="/web/themes/custom/norsys_base/images/Membre_HorizontalLogo_Color.jpg"/>
     </div>
   </div>
 </div>
 <div class="block-a-propos-nous">
-<div class="container py-5">
-  <div class="row py-5">
-  <div class="">
-    <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
-    <p class="text-white">Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et<br> dans les Caraïbes
-      Son action vise à promouvoir un développement économique durable <br>dans le secteur agricole
-      Avec ses partenaires, ell e forme et accompagne des hommes et des <br>femmes dans la maîtrise de
-      leurs activités et met en place des projets multi-acteurs pour des <br>territoires socialement équitables
-      économiquement viables et écologiquement responsables.
-    </p>
+  <div class="container py-5">
+    <div class="row py-5">
+      <div class="">
+        <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
+        <p class="text-white">Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et<br> dans les Caraïbes
+          Son action vise à promouvoir un développement économique durable <br>dans le secteur agricole
+          Avec ses partenaires, ell e forme et accompagne des hommes et des <br>femmes dans la maîtrise de
+          leurs activités et met en place des projets multi-acteurs pour des <br>territoires socialement équitables
+          économiquement viables et écologiquement responsables.
+        </p>
+      </div>
+      <div class="">
+        <h5 class="text-white font-weight-bold">CONTACTEZ-NOUS</h5>
+        <p class="text-white">7, avenue du Maréchal Foch - 33500 Libourne</p>
+        <p class="text-white">Tel :<br>+33 (0)5 57 25 17 06</p>
+        <p class="text-white">Fax:<br>+33 (0)5 57 25 17 06</p>
+      </div>
+    </div>
   </div>
-  <div class="">
-    <h5 class="text-white font-weight-bold">CONTACTEZ-NOUS</h5>
-    <p class="text-white">7, avenue du Maréchal Foch - 33500 Libourne</p>
-    <p class="text-white">Tel :<br>+33 (0)5 57 25 17 06</p>
-    <p class="text-white">Fax:<br>+33 (0)5 57 25 17 06</p>
-  </div>
-  </div>
-</div>
 </div>
 <!-- Start: Footer widgets -->
 {% if page.footer_first or page.footer_second or page.footer_third %}
@@ -455,12 +450,12 @@
 <div class="text-align-center bg-white">
   <div class="container">
     <span> © {{ "now"|date("Y") }} Agrisud. All rights reserved.</span>
-        <p class="social-media">
-            <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-            <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-youtube"></i></a>
-            <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
-            <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </p>
+    <p class="social-media">
+      <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
+      <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-youtube"></i></a>
+      <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
+      <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </p>
   </div>
 </div>
 <!-- End: Copyright -->
