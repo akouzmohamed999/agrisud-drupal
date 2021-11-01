@@ -56,7 +56,7 @@ third_party_settings:
           link: true
           'link class': ''
           wrapper: h2
-          class:
+          class: text-left
       node_link:
         plugin_id: node_link
         weight: 6
