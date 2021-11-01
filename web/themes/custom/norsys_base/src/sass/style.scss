@@ -7,7 +7,6 @@ $white: #fff;
 .main-content * :not(i){
   font-family: 'Roboto', sans-serif !important;
 }
-
 .header {
   border-bottom: none !important;
   position: fixed;
@@ -263,13 +262,11 @@ $white: #fff;
     list-style-type: disc;
   }
 }
-
 #views-bootstrap-temoignage-block-2 {
   .carousel-caption {
     background: #fff !important;
   }
 }
-
 //Global scss
 .region.region-header {
   background-color: #fff !important;
