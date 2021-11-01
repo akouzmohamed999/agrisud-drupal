@@ -58,27 +58,12 @@
  */
 #}
 
+
 <!-- Start: Header -->
-<div id="header-block" class="header">
-  <div id="mobile-menu" class="pos-f-t d-sm-none">
-    <nav class="navbar navbar-dark">
-      {% if page.header %}
-        {{ page.header }}
-      {% endif %}
-      <button id="btn-toggler" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span id="custom-toggler-icon" class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="p-4 text-right">
-        {% if page.primary_menu %}
-          {{ page.primary_menu }}
-        {% endif %}
-      </div>
-    </div>
-  </div>
-  <div class="d-none d-lg-block container-">
-    <div class="row align-items-center">
+<div class="header">
+  <div class="container-">
+    <div class="row">
+
       <div class="navbar-header col-md-2">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
           <i class="fas fa-bars"></i>
@@ -89,13 +74,13 @@
       </div>
 
       {% if page.primary_menu or page.search %}
-        <div class="col-md-9 menu-wrap text-right">
+        <div class="col-md-9 menu-wrap">
           {% if page.primary_menu %}
             {{ page.primary_menu }}
           {% endif %}
+
         </div>
       {% endif %}
-
       {% if page.search %}
         <div id="language" class="col-md-1 menu-wrap">
           {% if page.search %}

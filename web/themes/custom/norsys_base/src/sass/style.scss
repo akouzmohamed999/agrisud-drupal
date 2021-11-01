@@ -219,16 +219,6 @@ $white: #fff;
     z-index: 9999;
   }
 
-  #bouton-sticky {
-  }
-
-  #bouton-sticky-presse {
-    top: 90%;
-  }
-  #presse-key {
-    font-size: 1.3rem !important;
-  }
-
   #block-views-block-partenaires-block-1 {
     padding: 0 5rem !important;
   }
@@ -253,16 +243,23 @@ $white: #fff;
   color: #fff !important;
   background: #c83e2c !important;
   position:fixed;
-  top:50%;
-  z-index:9999;
+  background: $green-agrisud !important;
+  right: 0;
+  z-index: 9999;
 }
 
-#espace-presse {
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  left: 0 !important;
-  padding: 1.25rem 0.5rem;
+#bouton-sticky {
+  top: 85%;
 }
+
+#bouton-sticky-presse {
+  top: 90%;
+}
+
+#presse-key {
+  font-size: 1.3rem !important;
+}
+
 //////////////////////////////////slider!!!!!!!!!
 #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
   margin: 0 10% 15% 10%;
@@ -278,53 +275,51 @@ $white: #fff;
     top :-4em;
     padding-left: 10em;
   }
+
+  #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
+    a {
+      color: $grey-agrisud !important;
+    }
+    a.more-link{
+      color: $red-agrisud !important;
+      border: 1px solid $red-agrisud !important;
+    }
+    //slider of views
+    .carousel-inner {
+      overflow: inherit !important;
+    }
+
+    .carousel-caption {
+      background: none !important;
+      width: 100% !important;
+      bottom: auto;
+      padding-top: 3rem;
+      text-align: justify;
+      p {
+        color: $grey-agrisud !important;
+      }
+    }
+
+    .carousel-item .col-md-3 {
+      padding: 1rem 0;
+    }
+
+    ol li {
+      list-style-type: circle;
+    }
+
+    ol li.active {
+      list-style-type: disc;
+    }
+  }
 }
 
 #block-views-block-temoignage-block-2 {
+  margin-top: 10rem !important;
   width: 60% !important;
   margin-left: 20% !important;
  }
-#views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
-  a {
-    color: $grey-agrisud !important;
-  }
-  a.more-link{
-    color: $red-agrisud !important;
-    border: 1px solid $red-agrisud !important;
-  }
-  //slider of views
-  .carousel-inner {
-    overflow: inherit !important;
-  }
 
-  .carousel-caption {
-    background: none !important;
-    width: 100% !important;
-    bottom: auto;
-    padding-top: 3rem;
-    text-align: justify;
-    p {
-      color: $grey-agrisud !important;
-    }
-  }
-
-  .carousel-item .col-md-3 {
-    padding: 1rem 0;
-  }
-
-  ol li {
-    list-style-type: circle;
-  }
-
-  ol li.active {
-    list-style-type: disc;
-  }
-}
-#views-bootstrap-temoignage-block-2 {
-  .carousel-caption {
-    background: #fff !important;
-  }
-}
 //Global scss
 .region.region-header {
   background-color: #fff !important;

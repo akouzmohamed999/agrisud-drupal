@@ -60,9 +60,10 @@
 
 
 <!-- Start: Header -->
-<div id="header-block" class="header">
+<div class="header">
   <div class="container-">
-    <div class="row align-items-center">
+    <div class="row">
+
       <div class="navbar-header col-md-2">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
           <i class="fas fa-bars"></i>
@@ -77,6 +78,7 @@
           {% if page.primary_menu %}
             {{ page.primary_menu }}
           {% endif %}
+
         </div>
       {% endif %}
       {% if page.search %}
@@ -91,7 +93,6 @@
   </div>
 </div>
 <!-- End: Header -->
-
 
 <!-- Start: Slides -->
 {% if is_front and show_slideshow %}
