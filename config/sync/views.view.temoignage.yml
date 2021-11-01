@@ -534,10 +534,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-          body:
-            id: body
-            table: node__body
-            field: body
+        body:
+          id: body
+          table: node__body
+          field: body
           relationship: none
           group_type: group
           admin_label: ''
