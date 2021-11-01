@@ -22,7 +22,7 @@ jQuery(document).ready(function ($) {
 
         $("#" + value).on("click", function (e) {
             index = index + 1;
-            window.location.href = baseUrl + "/liste-actions?f%5B0%5D=pays%3A" + "#test-id";
+            window.location.href = baseUrl + "/liste-actions?5B05D=pays%3A#block-actions";
         });
     });
 });
