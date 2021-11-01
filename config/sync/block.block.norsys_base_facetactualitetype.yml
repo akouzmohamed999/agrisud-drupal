@@ -1,6 +1,6 @@
 uuid: 88ac6567-b005-4f6c-8e3b-b533cf5887fe
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.facet_actualite_type
@@ -12,7 +12,7 @@ dependencies:
 id: norsys_base_facetactualitetype
 theme: norsys_base
 region: content
-weight: -11
+weight: -14
 provider: null
 plugin: 'facet_block:facet_actualite_type'
 settings:
