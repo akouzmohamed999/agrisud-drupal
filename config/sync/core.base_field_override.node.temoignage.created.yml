@@ -1,0 +1,18 @@
+uuid: ae823f13-02db-45e9-ae4f-17f64180b935
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.temoignage
+id: node.temoignage.created
+field_name: created
+entity_type: node
+bundle: temoignage
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

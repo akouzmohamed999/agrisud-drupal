@@ -36,7 +36,14 @@ third_party_settings:
       left:
         - field_image_temoignage
       right:
+        - node_title
         - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
 id: node.temoignage.teaser
 targetEntityType: node
 bundle: temoignage
@@ -45,7 +52,7 @@ content:
   body:
     label: hidden
     type: text_summary_or_trimmed
-    weight: 1
+    weight: 2
     settings:
       trim_length: 600
     third_party_settings: {  }

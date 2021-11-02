@@ -1,4 +1,4 @@
-uuid: 09485ef7-2e95-46be-8814-81b8704b6df0
+uuid: bd3ae681-6deb-4263-8c3d-39b0dd70499c
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: comment
 label: Email
 description: 'The comment author''s email address.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

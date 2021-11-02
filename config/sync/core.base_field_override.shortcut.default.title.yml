@@ -1,4 +1,4 @@
-uuid: 9d86fa8b-d16a-461d-9931-75ef4ad40347
+uuid: 05350237-135a-4192-88d6-bf7aa3eedf17
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: default
 label: Name
 description: 'The name of the shortcut.'
 required: true
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

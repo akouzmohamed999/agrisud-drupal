@@ -1,0 +1,18 @@
+uuid: b102e4dc-9b5c-4aaf-bbac-9f43b96ab213
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.programme
+id: node.programme.title
+field_name: title
+entity_type: node
+bundle: programme
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

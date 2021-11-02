@@ -1,4 +1,4 @@
-uuid: b463ad14-6c3d-4fa6-8caf-560efcdbec74
+uuid: f38582c0-63f8-4083-b404-fb6ed4a58899
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: comment
 label: Homepage
 description: 'The comment author''s home page address.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

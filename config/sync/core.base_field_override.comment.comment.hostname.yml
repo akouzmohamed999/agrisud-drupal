@@ -1,4 +1,4 @@
-uuid: 303f3c5c-5fbd-4130-bcc3-255c592b3671
+uuid: 71b635cd-7924-4fd8-a435-0ba907c4827a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: comment
 label: Hostname
 description: 'The comment author''s hostname.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: 'Drupal\comment\Entity\Comment::getDefaultHostname'
 settings: {  }

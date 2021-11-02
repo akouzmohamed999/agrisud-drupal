@@ -1,0 +1,22 @@
+uuid: 4d1e3286-4075-427e-8515-cdbad443a7d0
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.temoignage
+id: node.temoignage.sticky
+field_name: sticky
+entity_type: node
+bundle: temoignage
+label: 'Sticky at top of lists'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

@@ -15,4 +15,4 @@ id: node.action
 target_entity_type_id: node
 target_bundle: action
 default_langcode: site_default
-language_alterable: false
+language_alterable: true

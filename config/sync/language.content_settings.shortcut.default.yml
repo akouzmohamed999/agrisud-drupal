@@ -1,4 +1,4 @@
-uuid: 02de932c-29f6-489d-8e61-c049942c504a
+uuid: 10c0b15e-afbb-4fa7-922f-46dcf77e7bfc
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
 id: shortcut.default
 target_entity_type_id: shortcut
 target_bundle: default
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

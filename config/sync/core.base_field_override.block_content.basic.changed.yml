@@ -1,4 +1,4 @@
-uuid: f7ee93f6-4420-4d6f-bb64-7e7c88bb0da7
+uuid: 14a50ce8-2e92-49b1-9b4e-42cdba30dc4b
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: basic
 label: Changed
 description: 'The time that the custom block was last edited.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

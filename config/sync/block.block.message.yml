@@ -12,7 +12,7 @@ dependencies:
 id: message
 theme: norsys_base
 region: content
-weight: -10
+weight: -13
 provider: null
 plugin: 'block_content:19fe4c0b-ffc6-4f65-bcc7-ad5feaa4c939'
 settings:

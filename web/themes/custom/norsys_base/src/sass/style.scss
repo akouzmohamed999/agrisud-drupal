@@ -1,23 +1,46 @@
 $green-agrisud : #286839;
 $red-agrisud : #ff5e14;
-$dark-red_agrisud: #c83e2c;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
 
 .clients, .header, .flexslider, .container, .container-fluid {
-  * {
+  *:not(i) {
     font-family: "Roboto" !important;
   }
- }
+}
 
 .header {
   border-bottom: none !important;
-  font-family: "Roboto";
-  position: fixed;
   width: 100%;
   z-index: 1;
-  top: 0;
+
+  .fas.fa-bars {
+    color: $grey-agrisud !important;
+  }
+
+  .sm.menu-base-theme {
+    background-color: $white;
+  }
+
+  #language {
+    .region-search {
+      width: 100%;
+
+      ul.links {
+        margin-bottom: 0 !important;
+        li.fr {
+          list-style-image: url('images/france-icone.png');
+        }
+        li.en {
+          list-style-image: url('images/english-icone.png');
+        }
+        a {
+          color: $grey-agrisud;
+        }
+      }
+    }
+  }
 }
 
 .container, .container-fluid {
@@ -28,7 +51,6 @@ $white: #fff;
     margin-top: 5rem;
     margin-bottom: 2rem;
     h2 {
-      font-family: "Roboto";
       font-weight: 600 !important;
     }
   }
@@ -118,7 +140,6 @@ $white: #fff;
     background-repeat: no-repeat;
     background-position: right, top;
     background-size: inherit;
-    padding: 5rem 0 30rem 0 !important;
     /*.region-midwidget-forth {
       margin-left: 10% !important;
       margin-right: -10% !important;
@@ -176,25 +197,33 @@ $white: #fff;
 
   .sticky {
     color: #fff !important;
-    background: #c83e2c !important;
+    background: $green-agrisud !important;
     position: fixed;
-    top: 50%;
+    top: 85%;
+    /*background-image: url("images/hand-holding-heart-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    right: 0;
     z-index: 9999;
-  }
-
-  #bouton-sticky {
-    right: 5%;
-  }
-
-  #espace-presse {
-    writing-mode: vertical-lr;
-    text-orientation: mixed;
-    left: 0 !important;
-    padding: 1.25rem 0.5rem;
   }
 
   #block-views-block-partenaires-block-1 {
     padding: 0 5rem !important;
+  }
+
+  .flexslider {
+    .slider-caption {
+      .slider-title, .slider-description{
+        font-size: 3rem !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        line-height: 1.5;
+      }
+     /* font-size: 3rem !important;
+      font-weight: bold !important;
+      text-transform: uppercase !important;*/
+    }
   }
 }
 
@@ -203,19 +232,23 @@ $white: #fff;
   color: #fff !important;
   background: #c83e2c !important;
   position:fixed;
-  top:50%;
-  z-index:9999;
+  background: $green-agrisud !important;
+  right: 0;
+  z-index: 9999;
 }
 
 #bouton-sticky {
-  right:5%;
+  top: 85%;
 }
-#espace-presse {
-  writing-mode: vertical-lr;
-  text-orientation: mixed;
-  left: 0 !important;
-  padding: 1.25rem 0.5rem;
+
+#bouton-sticky-presse {
+  top: 90%;
 }
+
+#presse-key {
+  font-size: 1.3rem !important;
+}
+
 //////////////////////////////////slider!!!!!!!!!
 #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
   margin: 0 10% 15% 10%;
@@ -224,7 +257,6 @@ $white: #fff;
     margin-top: 5rem;
     margin-bottom: 2rem;
     font-weight: bold;
-    padding-top: 0.5em;
   }
 
   .carousel-caption.d-none.d-md-block{
@@ -232,47 +264,50 @@ $white: #fff;
     top :-4em;
     padding-left: 10em;
   }
+
+  #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
+    a {
+      color: $grey-agrisud !important;
+    }
+    a.more-link{
+      color: $red-agrisud !important;
+      border: 1px solid $red-agrisud !important;
+    }
+    //slider of views
+    .carousel-inner {
+      overflow: inherit !important;
+    }
+
+    .carousel-caption {
+      background: none !important;
+      width: 100% !important;
+      bottom: auto;
+      padding-top: 3rem;
+      text-align: justify;
+      p {
+        color: $grey-agrisud !important;
+      }
+    }
+
+    .carousel-item .col-md-3 {
+      padding: 1rem 0;
+    }
+
+    ol li {
+      list-style-type: circle;
+    }
+
+    ol li.active {
+      list-style-type: disc;
+    }
+  }
 }
 
 #block-views-block-temoignage-block-2 {
+  margin-top: 10rem !important;
   width: 60% !important;
   margin-left: 20% !important;
-  background-color: white;
-  padding-bottom: 8em;
-  padding-left: 2em;
  }
-#views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
-  a {
-    color: $grey-agrisud !important;
-  }
-  a.more-link{
-    color: $red-agrisud !important;
-    border: 1px solid $red-agrisud !important;
-  }
-  //slider of views
-  .carousel-inner {
-    overflow: inherit !important;
-  }
-
-  .carousel-caption {
-    background: none !important;
-    left: 0 !important;
-    width: 100% !important;
-    bottom: auto;
-    padding-top: 3rem;
-    p {
-      color: $grey-agrisud !important;
-    }
-  }
-
-  ol li {
-    list-style-type: circle;
-  }
-
-  ol li.active {
-    list-style-type: disc;
-  }
-}
 
 //Global scss
 .region.region-header {
@@ -297,7 +332,6 @@ $white: #fff;
 }
 
 .facet-item a {
-  font-family: "Roboto", sans-serif;
   color: $green-agrisud;
   font-weight: 400;
   line-height: 120%;
@@ -490,7 +524,6 @@ $white: #fff;
   .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
     background-color: #fff !important;
     padding: 3rem !important;
-    margin-top: 1em;
     img {
       margin-right: 1rem !important;
     }
@@ -515,7 +548,6 @@ $white: #fff;
 
 #block-views-block-evenement-block-1 {
   #views-bootstrap-evenement-block-1 {
-    font-family: "Roboto" !important;
     width: 50%;
     margin-left: 25%;
     .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
@@ -564,6 +596,10 @@ a.more-link {
   border: 1px solid #d3522f;
   background-color: white;
   font-weight: 600;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
 }
 
 //responsive management
@@ -657,8 +693,15 @@ a.more-link {
 @media screen and (min-width: 767px) and (max-width: 1200px) {
 
   .path-frontpage {
-    .flexslider .slides img {
-      min-height: 650px;
+    .flexslider {
+      .slides img {
+        min-height: 650px;
+      }
+      .slider-caption {
+        font-size: 3rem !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+      }
     }
 
     .flex-active-slide {
@@ -739,8 +782,7 @@ a.more-link {
 
 //footer style
 #footer{
-  background: #ffffff;
-  font-family: "Roboto" !important;
+  background: #FFFFFF;
   .menu ul li a {
     color: $grey-agrisud !important;
     font-size: 0.8rem !important;
@@ -758,18 +800,13 @@ a.more-link {
   text-align: justify;
 }
 
-.block-a-propos-nous:nth-child(2) {
-  font-family: "Roboto" !important;
-}
-
 #footer-icons {
-  color: $dark-red_agrisud !important;
+  color: $red-agrisud !important;
   display: table;
   a {
     display: table-cell;
     vertical-align: middle;
     font-size: xx-large;
-    color: $dark-red_agrisud !important;
   }
 }
 #block-pieddepage {
@@ -790,7 +827,7 @@ a.more-link {
 
   // visual update
 .btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
-  background: #c83e2c !important;
+  background: $green-agrisud !important;
 }
 
 div.more-link {
@@ -818,7 +855,6 @@ collab-icon{
 }
 .path-liste-actions {
   #liste-actions {
-   margin-top: 16rem;
     .views-element-container {
       background-image: url("images/actualite-background.png");
       background-repeat: no-repeat;
@@ -903,8 +939,8 @@ collab-icon{
     border-top-left-radius: 25px;
     border-bottom-right-radius: 25px;
     border-top-right-radius: 25px;
-    a {
-      color: #fff !important;
+    a{
+      color: #d3522f !important;
     }
   }
 //managing three fields pays, programme, Statut
@@ -994,47 +1030,4 @@ collab-icon{
   .user-login-form {
     border-radius: 25px;
   }
-}
-
-#soutenir-title{
-  text-align: center;
-  padding: 10rem;
-  background-image: url(images/bg_actualites-min.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  h2{
-    font-size: 6em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    color: #fff;
-    text-transform: uppercase;
-  }
-}
-
-#soutenir-content{
-  background-image: url(images/fond-phrase-accroche.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-
-  blockquote {
-    font-size: 2.4em;
-    line-height: 1.4;
-    text-align: center;
-  }
-
-}
-
-.soutenir-feature-title{
-  color: black;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: larger;
-}
-
-.soutenir-feature-content{
-  color: $grey-agrisud;
-  font-weight: bolder;
 }

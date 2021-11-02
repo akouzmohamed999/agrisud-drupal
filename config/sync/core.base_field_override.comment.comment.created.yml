@@ -1,4 +1,4 @@
-uuid: 318b10fd-efc8-4c3f-a82b-d07a792a3366
+uuid: e4a98276-c754-4ae8-a9eb-326514656eba
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: comment
 label: Created
 description: 'The time that the comment was created.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

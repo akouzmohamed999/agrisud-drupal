@@ -1,0 +1,18 @@
+uuid: 4ce5560a-a443-4907-9bf3-aa8e1efd2e8e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.temoignage
+id: node.temoignage.changed
+field_name: changed
+entity_type: node
+bundle: temoignage
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

@@ -1,4 +1,4 @@
-uuid: c4021540-16cb-4947-bfaa-f991896191ef
+uuid: 4037d933-df41-44da-aae4-1176e005242a
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
 id: block_content.basic
 target_entity_type_id: block_content
 target_bundle: basic
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

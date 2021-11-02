@@ -19,22 +19,12 @@ show_credit_link: 0
 no_of_slides: '4'
 show_slideshow: 1
 slide_image_path1:
-  - '25'
-slide_title_1: 'Entreprendre contre la Pauvreté'
-slide_description_1: ''
+  - '2'
+slide_title_1: 'The Easiest Way to Get suitable Property'
+slide_description_1: 'Find Flats, Apartments & Real Estate'
 slide_url_1: '#'
 slide_image_path2:
-  - '21'
-slide_title_2: 'Entreprendre pour des systèmes agricoles performants et durables'
-slide_description_2: ''
+  - '3'
+slide_title_2: 'Make a Difference in Your Career Track'
+slide_description_2: 'Find Jobs, Employment & Career Opportunities'
 slide_url_2: '#'
-slide_image_path3:
-  - '22'
-slide_title_3: 'Entreprendre pour un développement économique équitable'
-slide_description_3: ''
-slide_url_3: '#'
-slide_image_path4:
-  - '23'
-slide_title_4: 'Entreprendre pour la transition agro-écologique des territoires '
-slide_description_4: ''
-slide_url_4: '#'

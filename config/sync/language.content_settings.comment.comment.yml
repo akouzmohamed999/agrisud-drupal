@@ -1,4 +1,4 @@
-uuid: 28d3c774-bbd6-4bf0-a0f0-2e93c2faef8c
+uuid: 3b2deb76-b434-4885-b95e-12a47e993214
 langcode: en
 status: true
 dependencies:
@@ -8,11 +8,11 @@ dependencies:
     - content_translation
 third_party_settings:
   content_translation:
-    enabled: true
+    enabled: false
     bundle_settings:
       untranslatable_fields_hide: '0'
 id: comment.comment
 target_entity_type_id: comment
 target_bundle: comment
 default_langcode: site_default
-language_alterable: true
+language_alterable: false

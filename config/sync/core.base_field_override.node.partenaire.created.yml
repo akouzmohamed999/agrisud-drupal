@@ -1,0 +1,18 @@
+uuid: 024eb695-3e2d-479b-8fa5-711ab2347c57
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.partenaire
+id: node.partenaire.created
+field_name: created
+entity_type: node
+bundle: partenaire
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

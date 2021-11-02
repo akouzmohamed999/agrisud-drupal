@@ -1,4 +1,4 @@
-uuid: fd93aae4-9772-42cc-83f6-6bfcb2f9406a
+uuid: be150f38-411a-4e95-a155-56f27364721a
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: menu_link_content
 label: Description
 description: 'Shown when hovering over the menu link.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

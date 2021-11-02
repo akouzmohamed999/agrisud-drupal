@@ -1,4 +1,4 @@
-uuid: 96929fb5-623d-454b-a82e-bd3981453d0c
+uuid: 9ae53f6d-c046-4d00-9698-2e48b06dc300
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: user
 label: Changed
 description: 'The time that the user was last edited.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }

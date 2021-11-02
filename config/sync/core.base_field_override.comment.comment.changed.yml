@@ -1,4 +1,4 @@
-uuid: cc521505-ebe8-41e6-ac3c-17bd6e63df0b
+uuid: 7550101b-ec04-473d-98ff-c307f5021f86
 langcode: en
 status: true
 dependencies:
@@ -11,7 +11,7 @@ bundle: comment
 label: Changed
 description: 'The time that the comment was last edited.'
 required: false
-translatable: true
+translatable: false
 default_value: {  }
 default_value_callback: ''
 settings: {  }
