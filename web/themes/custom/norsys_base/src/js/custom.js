@@ -15,13 +15,9 @@ jQuery(document).ready(function ($) {
 
   $("#donate-key").on("click", function (e) {
       $("#donate-link").animate({width:'toggle'},350);
-      /*$(this).slideToggle( "slow", function() {
-      });*/
     });
   $("#presse-key").on("click", function (e) {
     $("#presse-link").animate({width:'toggle'},350);
-    /*$(this).slideToggle( "slow", function() {
-    });*/
   });
     $("#block-views-block-block-nos-partenaires-block-1 .content div").eq(1).addClass("row");
     var pays = ["maroc", "bresil", "france", "senegal", "guinee-bissau", "malaisie", "cambodge", "laos", "vietnam", "chine",
