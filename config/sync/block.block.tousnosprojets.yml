@@ -1,0 +1,31 @@
+uuid: 0871fdac-6189-43e2-9938-74025d46a1fc
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c6be64fe-23ec-4795-9807-1fa6d6eab0cb'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: tousnosprojets
+theme: norsys_base
+region: bottom_third
+weight: -17
+provider: null
+plugin: 'block_content:c6be64fe-23ec-4795-9807-1fa6d6eab0cb'
+settings:
+  id: 'block_content:c6be64fe-23ec-4795-9807-1fa6d6eab0cb'
+  label: 'Tous nos projets'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /liste-actions
+    negate: false
+    context_mapping: {  }
