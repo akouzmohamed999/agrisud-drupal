@@ -1,0 +1,109 @@
+blocks:
+  -
+    info: 'Sensibilisationet plaidoyer'
+    langcode: fr
+    uuid: 9b121afd-d92a-435e-aea4-e6cec3143e9a
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a class=\"btn btn-light\" href=\"#\">Sensibilisation et plaidoyer</a></p>\r\n"
+          summary: ''
+          format: full_html
+      field_logo: {  }
+  -
+    info: 'Tous nos projets'
+    langcode: fr
+    uuid: c6be64fe-23ec-4795-9807-1fa6d6eab0cb
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a class=\"btn btn-light\" href=\"/web/liste-actions#block-actions\">Tous nos projets</a></p>\r\n"
+          summary: ''
+          format: full_html
+      field_logo: {  }
+  -
+    info: 'Programmes multi-pays'
+    langcode: fr
+    uuid: 4272b3a5-d8dc-443d-8740-4eb86b7e06a7
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a class=\"btn btn-light\" href=\"#\">Programmes multi-pays</a></p>\r\n"
+          summary: ''
+          format: full_html
+      field_logo: {  }
+  -
+    info: 'Transfert de compétences'
+    langcode: fr
+    uuid: f12d667e-67b5-47cf-b2ae-9e81d28ce0dc
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p><a class=\"btn btn-light\" href=\"#\">Transfert de compétences</a></p>\r\n"
+          summary: ''
+          format: full_html
+      field_logo: {  }
+  -
+    info: Logo-footer
+    langcode: fr
+    uuid: 35c85e65-f3a4-4809-bb28-7385cae15a7b
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: " <p class=\"social-media\">\r\n            <a href=\"{{ facebook_url }}\"  class=\"facebook\" target=\"_blank\" ><i class=\"fab fa-facebook-f\"></i></a>\r\n            <a href=\"{{ instagram_url }}\" class=\"instagram\" target=\"_blank\" ><i class=\"fab fa-youtube\"></i></a>\r\n            <a href=\"{{ twitter_url }}\" class=\"twitter\" target=\"_blank\" ><i class=\"fab fa-twitter\"></i></a>\r\n            <a href=\"{{ linkedin_url }}\" class=\"linkedin\" target=\"_blank\"><i class=\"fab fa-linkedin-in\"></i></a>\r\n        </p>"
+          summary: ''
+          format: basic_html
+      field_logo: {  }
+  -
+    info: message
+    langcode: fr
+    uuid: 19fe4c0b-ffc6-4f65-bcc7-ad5feaa4c939
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<blockquote>\r\n<p>Agrisud International évolue depuis 30 ans au cœur d’enjeux économiques, sociaux et environnementaux pour construire un monde plus <strong>durable</strong>, plus <strong>prospère</strong> et plus <strong>égalitaire</strong>.</p>\r\n</blockquote>\r\n"
+          summary: ''
+          format: basic_html
+      field_logo: {  }
+  -
+    info: carte
+    langcode: fr
+    uuid: 40385694-32d0-492e-badb-d0c8d61f89d2
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body: {  }
+      field_logo: {  }
+  -
+    info: chiffres
+    langcode: fr
+    uuid: 7ff2fb16-488a-407c-8204-8aea6e332398
+    bundle: basic
+    revision_id: null
+    rev_id_current: null
+    fields:
+      body:
+        -
+          value: "<p>cxcxcx</p>\r\n"
+          summary: ''
+          format: basic_html
+      field_logo: {  }
