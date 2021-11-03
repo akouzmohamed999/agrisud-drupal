@@ -194,7 +194,7 @@ display:
         type: views_bootstrap_carousel
         options:
           grouping: {  }
-          interval: ''
+          interval: '5000'
           keyboard: 0
           ride: 1
           navigation: 1
@@ -659,7 +659,7 @@ display:
             trim_suffix: ''
             wrap_output: false
             wrap_class: trimmed
-            more_link: true
+            more_link: false
             more_text: More
             more_class: more-link
             summary_handler: full
