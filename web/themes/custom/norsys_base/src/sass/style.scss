@@ -14,9 +14,12 @@ $white: #fff;
   border-bottom: none !important;
   width: 100%;
   z-index: 1;
-
+  position: fixed;
   .fas.fa-bars {
     color: $grey-agrisud !important;
+  }
+  .container-{
+    margin-top: 1rem;
   }
 
   .sm.menu-base-theme {
@@ -315,7 +318,8 @@ $white: #fff;
   padding: 0 !important;
 
   img {
-    width: 254px !important;
+    width: 14rem !important;
+    margin-top: -16px;
   }
 }
 
