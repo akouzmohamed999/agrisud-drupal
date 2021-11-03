@@ -18,7 +18,7 @@ $white: #fff;
   .fas.fa-bars {
     color: $grey-agrisud !important;
   }
-  .container-{
+  .header-marge{
     margin-top: 1rem;
   }
 
@@ -316,11 +316,15 @@ $white: #fff;
 .region.region-header {
   background-color: #fff !important;
   padding: 0 !important;
-
   img {
     width: 14rem !important;
-    margin-top: -16px;
+    margin-top: 0rem;
   }
+}
+
+.menu-wrap{
+  padding-left: 0;
+  margin-top: 1rem;
 }
 
 .facets-widget-links {
