@@ -1,0 +1,31 @@
+uuid: 57a10243-0089-4704-86a7-9fc0c9ad03ed
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:4272b3a5-d8dc-443d-8740-4eb86b7e06a7'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: programmesmultipays
+theme: norsys_base
+region: bottom_second
+weight: -17
+provider: null
+plugin: 'block_content:4272b3a5-d8dc-443d-8740-4eb86b7e06a7'
+settings:
+  id: 'block_content:4272b3a5-d8dc-443d-8740-4eb86b7e06a7'
+  label: 'Programmes multi-pays'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /liste-actions
+    negate: false
+    context_mapping: {  }

@@ -202,6 +202,40 @@
 
               {{ page.content }}
 
+              <!-- Start: Bottom widgets -->
+              {% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
+                <div class="bottom-widget container" id="bottom-widget">
+                  <div class="container">
+                    <h2 class="custom-block-title" >
+                      {{ "En savoir plus"|trans }}
+                    </h2>
+
+                    <div class="row bottom-widget-list">
+                      {% if page.bottom_first %}
+                        <div class = {{ bottom_class }}>
+                          {{ page.bottom_first }}
+                        </div>
+                      {% endif %}
+                      {% if page.bottom_second %}
+                        <div class = {{ bottom_class }}>
+                          {{ page.bottom_second }}
+                        </div>
+                      {% endif %}
+                      {% if page.bottom_third %}
+                        <div class = {{ bottom_class }}>
+                          {{ page.bottom_third }}
+                        </div>
+                      {% endif %}
+                      {% if page.bottom_forth %}
+                        <div class = {{ bottom_class }}>
+                          {{ page.bottom_forth }}
+                        </div>
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+              <!--End: Bottom widgets -->
             </div>
           </div>
         {% endif %}
@@ -336,45 +370,6 @@
   </div>
 {% endif %}
 <!--End: Middle widgets -->
-
-
-<!-- Start: Bottom widgets -->
-{% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
-  <div class="bottom-widget" id="bottom-widget">
-    <div class="container">
-
-      {% if page.bottom_title %}
-        <h2 class="custom-block-title" >
-          {{ page.bottom_title }}
-        </h2>
-      {% endif %}
-
-      <div class="row bottom-widget-list">
-        {% if page.bottom_first %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_first }}
-          </div>
-        {% endif %}
-        {% if page.bottom_second %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_second }}
-          </div>
-        {% endif %}
-        {% if page.bottom_third %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_third }}
-          </div>
-        {% endif %}
-        {% if page.bottom_forth %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_forth }}
-          </div>
-        {% endif %}
-      </div>
-    </div>
-  </div>
-{% endif %}
-<!--End: Bottom widgets -->
 
 
 <!-- Start: Clients -->

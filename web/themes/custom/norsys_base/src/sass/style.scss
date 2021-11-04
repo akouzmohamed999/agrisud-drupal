@@ -868,13 +868,21 @@ collab-icon{
   background: $green-agrisud !important;
 }
 .path-liste-actions {
-  #liste-actions {
-    .views-element-container {
+  #liste-actions{
       background-image: url("images/actualite-background.png");
+      background-color: rgba(255, 255, 255, 0.8);
       background-repeat: no-repeat;
       background-position: top;
       background-size: cover;
       padding : 5em;
+    #block-carte {
+      background-color: #fff !important;
+      margin-top: -0.8rem !important;
+      padding: 1rem 0 !important;
+    }
+
+    .views-element-container {
+      padding-top: 5rem;
     }
   }
   .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
@@ -886,6 +894,30 @@ collab-icon{
   #block-views-block-liste-actions-block-1 {
     .custom-title {
       margin-top: 23rem !important;
+    }
+  }
+
+  #bottom-widget {
+    width: 50% !important;
+    background: none !important;
+    margin-top: 3rem;
+    h2.title, .content * {
+      color: $green-agrisud !important;
+    }
+    h2.custom-block-title {
+      font-weight: bold !important;
+      margin-bottom: 2rem;
+    }
+    a {
+      padding: 2rem;
+      width: 20rem;
+      font-size: 1.5rem;
+      position: relative;
+      background: #fff !important;
+      border: 1px solid #eee;
+      border-bottom: 4px solid #ff5e14;
+      text-align: center !important;
+      color: $green-agrisud;
     }
   }
 }

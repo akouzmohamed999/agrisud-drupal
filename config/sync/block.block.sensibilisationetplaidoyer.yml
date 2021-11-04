@@ -1,0 +1,31 @@
+uuid: ce3cd202-3010-4923-b59c-20f2fa405b57
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:9b121afd-d92a-435e-aea4-e6cec3143e9a'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: sensibilisationetplaidoyer
+theme: norsys_base
+region: bottom_third
+weight: -16
+provider: null
+plugin: 'block_content:9b121afd-d92a-435e-aea4-e6cec3143e9a'
+settings:
+  id: 'block_content:9b121afd-d92a-435e-aea4-e6cec3143e9a'
+  label: 'Sensibilisationet plaidoyer'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: /liste-actions
+    negate: false
+    context_mapping: {  }
