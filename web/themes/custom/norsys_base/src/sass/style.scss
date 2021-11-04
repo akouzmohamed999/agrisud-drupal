@@ -282,7 +282,7 @@ $white: #fff;
       background: none !important;
       width: 100% !important;
       bottom: auto;
-      padding-top: 3rem;
+      padding-top: 5rem;
       text-align: justify;
       p {
         color: $grey-agrisud !important;
@@ -291,6 +291,20 @@ $white: #fff;
 
     .carousel-item .col-md-3 {
       padding: 1rem 0;
+    }
+
+    a.carousel-control-prev {
+      left: -10%;
+      span.carousel-control-prev-icon {
+        background-color: $green-agrisud !important;
+      }
+    }
+
+    a.carousel-control-next {
+      left: 100%;
+      span.carousel-control-next-icon {
+        background-color: $green-agrisud !important;
+      }
     }
 
     ol li {
