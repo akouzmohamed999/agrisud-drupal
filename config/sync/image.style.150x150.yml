@@ -1,0 +1,14 @@
+uuid: 551df3ac-82a2-4474-8248-e0637bb8b7ae
+langcode: fr
+status: true
+dependencies: {  }
+name: 150x150
+label: 150x150
+effects:
+  6c586b8a-9fb6-47de-aa3a-6ea435935f0b:
+    uuid: 6c586b8a-9fb6-47de-aa3a-6ea435935f0b
+    id: image_resize
+    weight: 1
+    data:
+      width: 150
+      height: 150
