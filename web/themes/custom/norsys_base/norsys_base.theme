@@ -1,0 +1,11 @@
+<?php
+
+/**
+ * @param $variables
+ */
+function norsys_base_preprocess_block(&$variables) {
+  if($variables['attributes']['id'] == 'block-carte' && \Drupal::service('path.current')->getPath() == 'liste-actions') {
+    $variables['label'] = 'Projets de terrain';
+  }
+  return $variables;
+}

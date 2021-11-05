@@ -269,8 +269,8 @@ display:
           empty: true
           tokenize: false
           content:
-            value: '<span id="actions-views-intro">Particuliers, entreprises, collectivités…découvrez comment vous pouvez agir à nos côtés</span>'
-            format: basic_html
+            value: '<div class="container" id="actions-views-intro">Particuliers, entreprises, collectivités…découvrez comment vous pouvez agir à nos côtés</span>'
+            format: full_html
           plugin_id: text
     cache_metadata:
       max-age: -1
