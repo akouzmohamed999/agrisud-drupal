@@ -317,12 +317,6 @@ $white: #fff;
   }
 }
 
-#block-views-block-temoignage-block-2 {
-  margin-top: 10rem !important;
-  width: 60% !important;
-  margin-left: 20% !important;
- }
-
 //Global scss
 .region.region-header {
   background-color: #fff !important;
@@ -891,12 +885,6 @@ collab-icon{
     padding: 0rem 2rem 1rem 0rem;
   }
 
-  #block-views-block-liste-actions-block-1 {
-    .custom-title {
-      margin-top: 23rem !important;
-    }
-  }
-
   #bottom-widget {
     width: 50% !important;
     background: none !important;
@@ -919,6 +907,15 @@ collab-icon{
       text-align: center !important;
       color: $green-agrisud;
     }
+  }
+  #block-views-block-temoignage-block-2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    width: 60% !important;
+    margin-left: 20% !important;
+  }
+  .custom-title {
+    margin-top: 7rem !important;
   }
 }
 
