@@ -3,7 +3,6 @@ $red-agrisud : #ff5e14;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
 $white: #fff;
-$grey: #F8F8F8;
 
 .clients, .header, .flexslider, .container, .container-fluid {
   *:not(i) {
@@ -873,7 +872,7 @@ collab-icon{
       background-size: cover;
       padding : 5em;
     #block-carte {
-      background-color: $grey !important;
+      background-color: $light-grey !important;
       margin-top: -1rem !important;
     }
 
