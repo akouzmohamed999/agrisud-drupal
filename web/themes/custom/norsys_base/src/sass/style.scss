@@ -364,6 +364,13 @@ $white: #fff;
   justify-content: space-evenly !important;
 }
 
+.breadcrumb {
+  background: none !important;
+  li > a, li {
+    color: $grey-agrisud !important;
+  }
+}
+
 // CT Acrualité
 .node--type-actualite.node--view-mode-full.ds-1col, .node--type-evenement.node--view-mode-full.ds-1col {
   text-align: center !important;
@@ -1083,3 +1090,4 @@ collab-icon{
     border-radius: 25px;
   }
 }
+
