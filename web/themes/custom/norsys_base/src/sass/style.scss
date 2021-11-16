@@ -466,10 +466,10 @@ $white: #fff;
 
   .clearBoth { clear:both; }
   .field--name-field-image {
+    margin-top: 3rem !important;
     img {
-      height: 16rem;
-      width: 16rem;
-
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
     }
   }
 
