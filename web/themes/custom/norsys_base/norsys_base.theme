@@ -1,11 +1,46 @@
 <?php
+use Drupal\image\Entity\ImageStyle;
 
 /**
  * @param $variables
  */
 function norsys_base_preprocess_block(&$variables) {
-  if($variables['attributes']['id'] == 'block-carte' && \Drupal::service('path.current')->getPath() == 'liste-actions') {
+  if($variables['attributes']['id'] == 'block-carte' && \Drupal::service('path.current')->getPath() == '/liste-actions') {
     $variables['label'] = 'Projets de terrain';
   }
+  if($variables['attributes']['id'] == 'block-agrisud') {
+    $node = \Drupal::routeMatch()->getParameter('node');
+    $countryTaxonomy = $node->get('field_pays')->entity->getName();
+    $idTaxonomy = $node->get('field_pays')->getValue()[0]['target_id'];
+    $variables['content']['body'][0]['#text'] = '<p><a href="/liste-actions?field_pays=' . $idTaxonomy . '#block-actions">Agrisud au ' . $countryTaxonomy . '</a></p>';
+  }
+
   return $variables;
+}
+
+function norsys_base_preprocess_page(&$variables) {
+  $default = '/web/themes/custom/norsys_base/src/css/images/bg_actualites-min.jpg';
+  $imageUrl = '';
+//  dump($variables);
+  if ($variables['node']) {
+    if (in_array($variables['node']->getType(), ['action', 'programme']) && $variables['node']->get('field_image')) {
+      $imageUrl = $variables['node']->get('field_image')->entity->uri->value;
+    } elseif (in_array($variables['node']->getType(), ['actualite', 'evenement']) && $variables['node']->get('field_actualite_image')) {
+      $imageUrl = $variables['node']->get('field_actualite_image')->entity->uri->value;
+    }
+  }
+  $variables['banner'] = empty($imageUrl) ? $default : $imageUrl;
+
+  return $variables;
+}
+
+/**
+ * Use language code for the language switcher
+ */
+function norsys_base_preprocess_links__language_block(&$variables) {
+  foreach ($variables['links'] as $i => $link) {
+    // @var \Drupal\language\Entity\ConfigurableLanguage $linkLanguage
+    $linkLanguage = $link['link']['#options']['language'];
+    $variables['links'][$i]['link']['#title'] = $linkLanguage->get('id');
+  }
 }

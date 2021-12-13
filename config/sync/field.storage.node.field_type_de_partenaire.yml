@@ -1,0 +1,20 @@
+uuid: ec612e8d-222a-4d29-b87c-e1f7b65cf49a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_type_de_partenaire
+field_name: field_type_de_partenaire
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

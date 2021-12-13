@@ -1,0 +1,30 @@
+uuid: a8e6382a-fbc9-4e5b-a4b4-82ab8a731bbb
+langcode: fr
+status: true
+dependencies:
+  module:
+    - file
+    - image
+    - taxonomy
+id: taxonomy_term.field_icone
+field_name: field_icone
+entity_type: taxonomy_term
+type: image
+settings:
+  uri_scheme: public
+  default_image:
+    uuid: ea454d07-2bb3-40db-a49f-c84fe11b7547
+    alt: ''
+    title: ''
+    width: 110
+    height: 68
+  target_type: file
+  display_field: false
+  display_default: false
+module: image
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

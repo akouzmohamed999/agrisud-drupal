@@ -1,0 +1,14 @@
+uuid: 73a4634d-1357-4f00-8142-3f843fb43c81
+langcode: fr
+status: true
+dependencies: {  }
+name: 540x240
+label: 540x240
+effects:
+  7aa84e65-2cf0-41fd-9e74-9116fac2d0bf:
+    uuid: 7aa84e65-2cf0-41fd-9e74-9116fac2d0bf
+    id: image_resize
+    weight: 1
+    data:
+      width: 540
+      height: 240

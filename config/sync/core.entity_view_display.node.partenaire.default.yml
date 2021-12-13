@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.partenaire.body
     - field.field.node.partenaire.field_image_partenaire
+    - field.field.node.partenaire.field_type_de_partenaire
     - node.type.partenaire
   module:
     - ds
@@ -59,6 +60,14 @@ content:
     third_party_settings: {  }
     type: image
     region: ds_content
+  field_type_de_partenaire:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   langcode:
     type: language
     weight: 0

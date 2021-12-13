@@ -1,0 +1,1383 @@
+$green-agrisud : #286839;
+$red-agrisud : #ff5e14;
+$grey-agrisud: #343534;
+$light-grey: #f7f7fa;
+$light-green: #afca0b;
+$white: #fff;
+
+html {
+  font-size: 18px !important;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(0,0,0,.87);
+}
+
+.normal {
+  font-size: 18px !important;
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  color: rgba(0,0,0,.87);
+}
+
+.lead {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 100;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-top: 2rem;
+}
+h1 {
+  font-family: "Roboto Condensed", Arial, sans-serif;
+  font-weight: 300;
+  font-size: 1.78rem;//32px
+  line-height: 1.05;
+  color: #eee;
+  padding: 17px 0;
+}
+
+h2 { font-family: "Roboto", sans-serif; font-weight: 100; font-size: 48px; line-height: 1.15; margin: 0; }
+h3 { font-family: "Roboto Condensed", sans-serif; font-weight: 300; font-size: 32px; line-height: 1.1; margin-top: 40px; }
+h4 { font-family: "Roboto Condensed", sans-serif; font-weight: 300; font-size: 25px; line-height: 1.5; margin-top: 30px; }
+h5 { font-family: "Roboto Condensed", sans-serif; font-weight: 400; font-size: 20px; line-height: 1.5; margin-top: 30px; }
+h6 { font-family: "Roboto Condensed", sans-serif; font-weight: 400; font-size: 16px; line-height: 1.5; text-transform: uppercase; margin-top: 30px; }
+
+
+.clients, .header, .flexslider, .container, .container-fluid {
+  *:not(i) {
+    font-family: "Roboto" !important;
+  }
+}
+
+.header {
+  border-bottom: none !important;
+  width: 100%;
+  z-index: 1;
+
+  .fas.fa-bars {
+    color: $grey-agrisud !important;
+  }
+
+  .sm.menu-base-theme {
+    background-color: $white;
+  }
+
+  #language {
+    .region-search {
+      display: inline-flex;
+      width: 100%;
+
+      #block-norsys-base-search {
+        width: 50%;
+      }
+
+      ul.links {
+        margin-bottom: 0 !important;
+        li.fr {
+          list-style-image: url('images/france-icone.png');
+        }
+        li.en {
+          list-style-image: url('images/english-icone.png');
+        }
+        a {
+          color: $grey-agrisud;
+        }
+      }
+    }
+  }
+}
+
+.container, .container-fluid {
+  #block-norsys-base-branding img {
+    width: 43px;
+  }
+  .custom-title {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    h2 {
+      font-weight: 600 !important;
+    }
+  }
+  h1.page-header {
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    padding: 6rem 1rem;
+    font-size: 4em;
+    font-weight: bold;
+  }
+
+}
+
+#clients {
+  background: none !important;
+  h2 {
+    color: $green-agrisud !important;
+  }
+  .node--view-mode-accroche-2.ds-1col {
+    .field--name-node-title {
+      height: 6rem !important;
+    }
+    background: #fff !important;
+    position: relative;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-bottom: 4px solid $red-agrisud;
+    text-align: center !important;
+    height: 35rem !important;
+  }
+}
+//for front pages
+.path-frontpage {
+  .main-content {
+    //background-image: url("images/fond-phrase-accroche.png");
+    background-image: url("images/symbole-agrisud-2.png");
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-size: inherit;
+  }
+  .region {
+      background: none !important;
+  }
+  #chiffres-container {
+    background-color: $green-agrisud !important;
+  }
+
+  #chiffres {
+    margin-top: 1rem;
+    background-color: $green-agrisud !important;
+    .chiffres {
+      font-size: 4rem !important;
+      font-weight: bold;
+    }
+
+    .chiffres-desc {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+    }
+
+    .chiffre-item {
+      padding: 2rem;
+    }
+  }
+
+  .updates {
+    padding: 0 !important;
+
+    .region {
+      padding: 0 !important;
+    }
+  }
+
+
+  /*.carte-svg {
+    padding: 5rem 0;
+  }*/
+
+  .front-svg {
+    padding: 3rem 10rem;
+  }
+
+  #midwidget {
+    background-image: url("images/symbole-agrisud-2.png"), url("images/fermier-rescaled.png");
+    background-repeat: no-repeat;
+    background-position: right, top;
+    background-size: inherit;
+    /*.region-midwidget-forth {
+      margin-left: 10% !important;
+      margin-right: -10% !important;
+    }
+*/
+    .elpacho {
+      position: relative;
+      background: #fff;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      border-bottom: 4px solid $red-agrisud;
+      text-align: center !important;
+    }
+  }
+
+  #clients {
+    h2 {
+      color: $green-agrisud !important;
+    }
+    #block-views-block-liste-actions-block-1 {
+      //margin-top: -20rem !important;
+    }
+    background-image: url("images/images/fermier-rescaled.png") !important;
+    //background-repeat: no-repeat;
+    background-position: top;
+    background-size: inherit;
+    background-repeat: repeat-y !important;
+    .node--view-mode-accroche-2.ds-1col {
+      .field--name-node-title {
+        height: 6rem !important;
+      }
+      position: relative;
+      background: #fff;
+      padding: 20px 20px;
+      margin-bottom: 30px;
+      border: 1px solid #eee;
+      border-bottom: 4px solid $red-agrisud;
+      text-align: center !important;
+      height: 35rem !important;
+    }
+  }
+  #block-message {
+    width: 70%;
+    margin: 8% 15% 20%;
+    font-size: 2rem;
+    line-height: 1.4;
+    text-align: center;
+  }
+
+  .sticky {
+    color: #fff !important;
+    background: $green-agrisud !important;
+    position: fixed;
+    top: 85%;
+    /*background-image: url("images/hand-holding-heart-solid.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+    right: 0;
+    z-index: 9999;
+  }
+
+  #block-views-block-partenaires-block-1 {
+    padding: 0 5rem !important;
+    .image-style-thumbnail:hover{
+      -moz-transform:scale(1.25);
+    }
+  }
+
+  .flexslider {
+    .slider-caption {
+      .slider-title, .slider-description{
+        font-size: 3rem !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+        line-height: 1.5;
+      }
+     /* font-size: 3rem !important;
+      font-weight: bold !important;
+      text-transform: uppercase !important;*/
+    }
+  }
+}
+
+#block-messagepartenaires {
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  h2 {
+    line-height: 2;
+  }
+}
+
+//////////////////////////sticky buttons in all pages
+.sticky {
+  color: #fff !important;
+  background: #c83e2c !important;
+  position:fixed;
+  background: $green-agrisud !important;
+  right: 0;
+  z-index: 9999;
+}
+
+#bouton-sticky {
+  top: 85%;
+}
+
+#bouton-sticky-presse {
+  top: 90%;
+}
+
+#presse-key {
+  font-size: 1.3rem !important;
+}
+
+//////////////////////////////////slider!!!!!!!!!
+#block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+  margin: 0 10% 15% 10%;
+ // margin: 0 10% 0 10%;
+  .title {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    font-weight: bold;
+  }
+
+  .carousel-caption.d-none.d-md-block{
+    position: fixed;
+    top :-4em;
+    padding-left: 10em;
+  }
+
+  #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
+    a {
+      color: $grey-agrisud !important;
+    }
+    a.more-link{
+      color: $red-agrisud !important;
+      border: 1px solid $red-agrisud !important;
+    }
+    //slider of views
+    .carousel-inner {
+      overflow: inherit !important;
+    }
+
+    .carousel-caption {
+      background: none !important;
+      width: 100% !important;
+      bottom: auto;
+      padding-top: 5rem;
+      text-align: justify;
+      p {
+        color: $grey-agrisud !important;
+      }
+    }
+
+    .carousel-item .col-md-3 {
+      padding: 1rem 0;
+    }
+
+    a.carousel-control-prev {
+      left: -10%;
+      span.carousel-control-prev-icon {
+        background-color: $green-agrisud !important;
+      }
+    }
+
+    a.carousel-control-next {
+      left: 100%;
+      span.carousel-control-next-icon {
+        background-color: $green-agrisud !important;
+      }
+    }
+
+    ol li {
+      list-style-type: circle;
+    }
+
+    ol li.active {
+      list-style-type: disc;
+    }
+  }
+}
+
+//Global scss
+.region.region-header {
+  background-color: #fff !important;
+  padding: 0 !important;
+
+  img {
+    width: 254px !important;
+  }
+}
+
+.facets-widget-links {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 25px 0 25px 0;
+  width: 40%;
+  margin-left: 30%;
+}
+
+.facet-item {
+  padding: 10px;
+}
+
+.facet-item a {
+  color: $green-agrisud;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+.facet-item__value-active {
+  color: $red-agrisud;
+}
+
+.facet-item__bottom-horizontal-line {
+  width: 80%;
+  margin-top: 5px;
+  margin-bottom: 1px;
+  border-top: 2px solid $red-agrisud;
+  text-align: center;
+}
+
+.row {
+  justify-content: space-evenly !important;
+}
+
+.breadcrumb {
+  background: none !important;
+  li > a, li {
+    color: $grey-agrisud !important;
+  }
+}
+.main-content {
+  background-color: $light-grey;
+}
+#views-bootstrap-liste-type-partenaires-block-1 {
+  .row {
+    .views-field.views-field-name {
+      background-color: $white;
+      padding: 1rem;
+      text-align: center;
+      a {
+        color: $light-green;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+#page-title {
+  text-align: center;
+  padding: 5rem;
+  max-height: 512px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  h1, span.field--name-title {
+    color: $light-grey !important;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+}
+
+#bottom-widget {
+  width: 50% !important;
+  background: none !important;
+  margin-top: 3rem;
+  h2.title, .content * {
+    color: $green-agrisud !important;
+  }
+  h2.custom-block-title {
+    font-weight: bold !important;
+    margin-bottom: 2rem;
+    color: $green-agrisud;
+  }
+  p {
+    min-width: 20rem;
+    background: #fff !important;
+    border: 1px solid #eee;
+    border-bottom: 4px solid #ff5e14;
+    text-align: center !important;
+    padding: 2rem;
+    a, a.btn {
+      font-size: 1.5rem;
+      color: $green-agrisud;
+      background: none !important;
+    }
+  }
+}
+
+.features {
+  background: none !important;
+  h2 {
+    text-align: center;
+  }
+  #block-views-block-evenement-block-2 {
+    background-color: $white;
+    padding: 1rem;
+  }
+}
+
+.node--view-mode-teaser.ds-2col{
+  background: $white;
+  margin-bottom: 0em;
+  padding: 2rem 1rem 0rem 1rem;
+  .group-left {
+    width: 100% !important;
+    margin: 0 1rem;
+  }
+
+  .group-right {
+    width: 100% !important;
+  }
+}
+
+.region-content {
+  [id^="block"] {
+    margin-top: 7rem !important;
+  }
+}
+
+.block-content.block-content--type-block-image.block-content--view-mode-full.ds-2col {
+  background-color: white;
+  .group-left {
+    width: 30% !important;
+    background: #444;
+    margin: 0 auto;
+    img.wide {
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
+    }
+    img.tall {
+      max-height: 100%;
+      max-width: 100%;
+      width: auto;
+    }
+  }
+  .group-right {
+    width: 70% !important;
+    text-align: justify;
+    padding: 2rem !important;
+    .field--name-body.field {
+      a {
+        display: table;
+        margin-top: 15px;
+        margin-bottom: 30px;
+        text-align: center;
+        color: white;
+        padding: 0.3rem 3rem;
+        border: 1px solid $green-agrisud;
+        background-color: $green-agrisud;
+        font-weight: 600;
+        float: right;
+      }
+    }
+  }
+}
+.block-content.block-content--type-block-links.block-content--view-mode-full.ds-1col {
+  text-align: center;
+  margin: 5rem 0;
+  .field--name-body.field a {
+    text-align: center;
+    color: white;
+    padding: 2rem 3rem;
+    border: 1px solid #afca0b;
+    background-color: #afca0b;
+    font-weight: 600;
+    margin: 1rem 1rem;
+  }
+}
+#block-charteagrisud {
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 5rem;
+  .field--name-body.field a {
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    padding: 2rem 3rem;
+    border: 1px solid #286839;
+    background-color: #286839;
+    font-size: 0.7rem;
+    font-weight: 600;
+  }
+}
+
+.path-node.not-front.page-node-type-nous-connaitre {
+  .updates .region {
+    padding: 0 !important;
+    background: none !important;
+  }
+
+  .region.region-updates-first {
+    #title-chiffres-2 {
+      margin: 0 !important;
+      h2{
+        display: none !important;
+      }
+    }
+  }
+
+  #chiffres-container {
+    background-color: $green-agrisud !important;
+  }
+
+  #chiffres, #chiffres-2 {
+    width: 70%;
+    background-color: $green-agrisud !important;
+    .chiffres {
+      font-size: 1.5rem !important;
+      font-weight: bold;
+    }
+
+    .chiffres-desc {
+      font-size: 1rem;
+      text-transform: uppercase;
+    }
+
+    .chiffre-item {
+      padding: 0;
+      img {
+        display: none;
+      }
+    }
+  }
+
+  #chiffres-2-container {
+    padding: 0 !important;
+    background-color: #afca0b !important;
+    #chiffres-2 {
+      background-color: #afca0b !important;
+    }
+  }
+  #chiffres-year {
+    margin-left: 15%;
+    padding-top: 0.3rem;
+    color: $white !important;
+    h3 {
+      color: $white !important;
+      font-weight: bold;
+      font-size: 1.3rem !important;
+    }
+  }
+}
+
+#block-messagenousconnaitre {
+  /*margin: 0 25% 7%;
+  width: 50%;*/
+  width: 60%;
+  margin: 3rem 20% 20%;
+  margin-bottom: 3rem;
+  font-size: 2rem;
+  line-height: 1.4;
+  text-align: center;
+  h2 {
+    line-height: 2;
+  }
+}
+
+// CT Acrualité
+.node--type-actualite.node--view-mode-full.ds-1col, .node--type-evenement.node--view-mode-full.ds-1col {
+  text-align: center !important;
+
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 5rem !important;
+  }
+
+  #liens-utils {
+    text-align: left !important;
+    margin-top: 3rem !important;
+  }
+
+  #date-actu, #type-actu {
+    float: left !important;
+    margin-left: 1rem;
+  }
+
+  .clearBoth {
+    clear: both;
+  }
+
+  .field--name-field-actualite-image {
+    margin-top: 3rem !important;
+
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+}
+
+//.node--type-actualite.node--view-mode-teaser.ds-2col
+.node--view-mode-teaser.ds-2col {
+  margin-top: 2rem !important;
+  text-align: center !important;
+
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 1rem !important;
+  }
+
+  #date-actu, #type-actu {
+    float: left !important;
+    margin-left: 1rem;
+  }
+
+  .clearBoth {
+    clear: both;
+  }
+
+  .field--name-field-actualite-image {
+    margin-top: 3rem !important;
+
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+
+  .group-left {
+    width: 20% !important;
+    margin: 0 1rem !important;
+  }
+
+  .group-right {
+    width: 75% !important;
+  }
+
+}
+
+//CT action
+.node--type-action.node--view-mode-teaser.ds-2col {
+  text-align: center !important;
+  .field--name-field-action-date, .field--name-field-action-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 1rem !important;
+  }
+
+  .clearBoth { clear:both; }
+  .field--name-field-image {
+    margin-top: 3rem !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+
+  .group-left {
+    width: 20% !important;
+    margin: 0 1rem !important;
+  }
+  .group-right {
+    width: 75% !important;
+  }
+  //managing three fields pays, programme, Statut
+  .field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
+    float: left !important;
+    margin-left: 1rem;
+    .field__label, .field__item {
+      display: inline !important;
+    }
+  }
+  .field--type-text-with-summary {
+    display: inline-block !important;
+  }
+
+}
+
+.node--type-action.node--view-mode-full.ds-1col {
+  text-align: center;
+  .field--name-field-programme, .field--name-field-pays, .field--name-field-statut{
+
+    .field__label, .field__item {
+      float:left !important;
+    }
+    .field__item {
+      margin-left: 0.5rem !important;
+      a {
+        color: inherit !important;
+      }
+    }
+    .field__label {
+      margin-left: 2rem !important;
+    }
+  }
+  .field--name-body {
+    text-align: justify !important;
+  }
+  #liens-utils {
+    text-align: left !important;
+    margin-top: 3rem !important;
+  }
+
+  .list-localization {
+    margin: 5rem 0 3rem 0 !important;
+    text-align: left;
+    color: $white;
+    .desc-item {
+      display: inline-flex;
+    }
+    .details {
+      padding-right: 1rem;
+
+      ul {
+        background-color: grey;
+        padding-left: 1rem;
+        li.list-group-item {
+            padding: 0.3rem 0.2rem !important;
+            margin-bottom: 0 !important;
+            border: none !important;
+            border-bottom: 1px solid $light-grey !important;
+            background-color: grey !important;
+        }
+        li.last {
+          border: none !important;
+        }
+      }
+    }
+    .soutenir {
+      background-color: $red-agrisud;
+      text-align: center;
+      display: table;
+      a, i {
+        font-size: 2rem;
+        color: white;
+        display: table-cell;
+        vertical-align: middle;
+        line-height: 1.1;
+        font-weight: bold;
+      }
+      i {
+        font-size: 4rem;
+      }
+    }
+  }
+
+  .clearBoth { clear:both; }
+  .field--name-field-image {
+    text-align: center;
+    margin-top: 5rem !important;
+    display: inline-block !important;
+    img {
+      border-top-left-radius: 1.25rem !important;
+      border-bottom-right-radius: 1.25rem !important;
+    }
+  }
+}
+
+#views-bootstrap-programmes-multi-pays-block-1 {
+  margin: 0 10rem;
+  .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+    background-color: #fff !important;
+    padding: 3rem !important;
+    img {
+      margin-right: 1rem !important;
+    }
+  }
+}
+
+.path-nos-actualites {
+  #page-title {
+    text-align: center;
+    padding: 5rem;
+    max-height: 512px;
+   // background-image: url("images/bg_actualites-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    h1 {
+      color: $light-grey;
+      font-size: 5rem;
+      font-weight: bold;
+    }
+  }
+}
+
+#block-views-block-evenement-block-1 {
+  #views-bootstrap-evenement-block-1 {
+   /* width: 50%;
+    margin-left: 25%;*/
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+      background-color: #fff !important;
+      padding: 2rem !important;
+      img {
+        margin-right: 1rem !important;
+      }
+    }
+  }
+}
+
+//pagination
+.pager {
+  text-align: center !important;
+  margin-top: 3rem !important;
+
+  ul.pager__items {
+    display: inline-block !important;
+
+    li {
+      display: inline !important;
+    }
+
+    li > a, li > span {
+      position: relative !important;
+      float: left !important;;
+      padding: 6px 12px !important;;
+      line-height: 1.42857 !important;;
+      text-decoration: none !important;;
+      color: $green-agrisud !important;;
+      background-color: #fff !important;;
+      border: 1px solid #ddd !important;;
+      margin-left: -1px !important;;
+    }
+  }
+}
+
+a.more-link {
+  display: table;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: white;
+  padding: 0.3rem 3rem;
+  border: 1px solid $green-agrisud;
+  background-color: $green-agrisud;
+  font-weight: 600;
+}
+a.more-link:hover{
+  color: $white;
+}
+
+//responsive management
+
+//mobile and small devices
+@media (max-width: 767px) {
+  .path-frontpage {
+    #midwidget {
+      background-position: right, top;
+    }
+    #chiffres-container {
+      padding: 0;
+      background-size: cover;
+    }
+
+    .front-svg {
+      padding: 3rem 10rem;
+    }
+
+    .updates {
+      padding: 0 !important;
+    }
+  }
+
+  //page de liste des actualités
+  .node--type-actualite.node--view-mode-teaser.ds-2col {
+    .group-left {
+      width: 100% !important;
+      margin: 0 1rem;
+    }
+
+    .group-right {
+      width: 100% !important;
+    }
+  }
+
+  //page de liste des actions
+  .node--type-action.node--view-mode-teaser.ds-2col {
+    .group-left {
+      width: 100% !important;
+      margin: 0 1rem;
+    }
+    .group-right {
+      width: 100% !important;
+    }
+  }
+
+  #block-message {
+    margin: 0% 15% 10% !important;
+    text-align: center;
+    font-size: 1.1rem !important;
+    line-height: 1.7;
+
+    h2 {
+      line-height: 2;
+    }
+  }
+
+  //page nos actions : programme multi-pays
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1  {
+    .field--name-field-image {
+      text-align: center;
+    }
+    margin: 0 !important;
+    .text-justify {
+      margin-bottom: 2rem !important;
+    }
+  }
+
+  #block-carte {
+    margin-top: 3rem;
+  }
+
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+    visibility: hidden;
+  }
+  #views-bootstrap-evenement-block-1 {
+    width: 80% !important;
+  }
+}
+
+//tablettes
+@media (max-width: 992px) {
+  .path-frontpage {
+    .front-svg {
+      padding: 3rem 0 !important;
+    }
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1200px) {
+
+  .path-frontpage {
+    .flexslider {
+      .slides img {
+        min-height: 650px;
+      }
+      .slider-caption {
+        font-size: 3rem !important;
+        font-weight: bold !important;
+        text-transform: uppercase !important;
+      }
+    }
+
+    .flex-active-slide {
+      .slider-caption {
+        top: 5% !important;
+      }
+    }
+
+    #block-message {
+      margin: 0 10% 7%;
+      width: 80% !important;
+      text-align: center;
+
+      h2 {
+        line-height: 2;
+      }
+    }
+  }
+
+  //page nos actions : programme multi-pays
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
+    .field--name-field-image {
+      text-align: center;
+    }
+    margin: 0 !important;
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+      .group-left {
+        width: 100%;
+        text-align: center;
+      }
+      .group-right {
+        width: 100%;
+      }
+    }
+  }
+
+  #views-bootstrap-evenement-block-1 {
+    margin-left: 10% !important;
+    width: 80% !important;
+  }
+
+  .facets-widget-links {
+    width: 60%;
+    margin-left: 15%;
+  }
+}
+//tablettes
+@media (max-width: 992px) {
+  //page nos actions : programme multi-pays
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
+      .group-left {
+        width: 100%;
+      }
+      .group-right {
+        width: 100%;
+      }
+    }
+  }
+}
+.updates, .midwidget, .main-content {
+  h1, .h1,
+  h2, .h2,
+  h3, .h3,
+  h4, .h4 {
+    color: $green-agrisud !important;
+    font-weight: 400;
+    margin: 10px 0;
+    line-height: 120%;
+  }
+
+  .carousel-caption {
+    h3, p {
+      color: $green-agrisud !important;
+    }
+  }
+}
+
+//footer style
+#footer{
+  background: #FFFFFF;
+  .menu ul li a {
+    color: $grey-agrisud !important;
+    font-size: 0.8rem !important;
+  }
+  .container-fluid {
+    padding: 0 15rem 0 15rem;
+  }
+}
+.block-a-propos-nous {
+  background-image: url("images/bg_pied_page.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
+#footer-icons {
+  color: $red-agrisud !important;
+  display: table;
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: xx-large;
+  }
+}
+#block-pieddepage {
+  color: $grey-agrisud !important;
+}
+
+ // map svg
+  //path[class="country"] {
+  //  stroke-width: 1;
+  //  stroke: #951915;
+  //  stroke-linecap: round;
+  //  stroke-linejoin: round;
+  //}
+  //
+  path[class~="country"]:hover{
+    fill: #226432 !important;
+  }
+
+  // visual update
+.btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
+  background: $green-agrisud !important;
+}
+
+div.more-link {
+  float: right !important;
+}
+
+collab-icon{
+  background-image: url("images/picto-collaborateurs.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 5rem 0;
+}
+.flexslider .slides li:after {
+  background: none !important;
+}
+.flexslider .flex-direction-nav a.flex-next:before {
+  color: $green-agrisud !important;
+}
+.flexslider .flex-direction-nav li {
+  list-style: none;
+  vertical-align: middle;
+  display: inline-block;
+  background: $green-agrisud !important;
+}
+.path-liste-actions {
+  #liste-actions{
+      background-image: url("images/actualite-background.png");
+      background-color: rgba(255, 255, 255, 0.8);
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      padding : 5em;
+    #block-carte {
+      background-color: $light-grey !important;
+      margin-top: -1rem !important;
+    }
+
+    .views-element-container {
+      padding-top: 5rem;
+    }
+  }
+  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
+    background: $white;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem 0 1rem;
+  }
+
+  #block-views-block-temoignage-block-2 {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    width: 60% !important;
+    margin-left: 20% !important;
+  }
+  .custom-title {
+    margin-top: 7rem !important;
+  }
+}
+
+.path-nos-actualites {
+  #views-bootstrap-nos-actualites-view-page-1 {
+    background-image: url("images/actualite-background.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    padding : 5em;
+  }
+  /*.content_layout .views-element-container .contextual-region {
+      background-image: url("images/actualite-background.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      padding : 5em;
+    }*/
+  #views-bootstrap-nos-actualites-view-page-1 .node--type-actualite.node--view-mode-teaser.ds-2col{
+    background: $white;
+    margin-bottom: 0em;
+    padding: 2rem 1rem 0rem 1rem;
+    }
+}
+
+.chiffre-item {
+  img {
+    max-width: 6rem;
+  }
+}
+
+.region-primary-menu li a{
+ color :#343534 !important;
+}
+
+#block-views-block-liste-actions-block-1, #views-bootstrap-bloc-actualities-block-1{
+  h2>a, h3>a {
+    color: $green-agrisud !important;
+  }
+  h3>a:hover{
+    color: $red-agrisud !important;
+  }
+  header {
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+}
+.liste-actions.views-row, #views-bootstrap-programmes-multi-pays-block-1{
+  a.more-link {
+    color: $red-agrisud !important;
+    border: 1px solid $red-agrisud !important;
+  }
+  h3,h2{
+    color: $green-agrisud !important;
+  }
+
+  div[class="field field--name-node-link field--type-ds field--label-hidden field__item"]{
+    float: right;
+    display: table;
+    margin-top: -19px;
+    margin-bottom: -6px;
+    text-align: center;
+    padding: 5px 60px;
+    border: 1px solid $green-agrisud !important;
+    background-color: $green-agrisud;
+    font-weight: 600;
+    border-bottom-left-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    a{
+      color: #d3522f !important;
+    }
+  }
+//managing three fields pays, programme, Statut
+.field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
+  text-align: left;
+  float:left !important;
+  margin-right: 1em;
+  text-decoration: none !important;
+  .field__label, .field__item {
+    display: inline !important;
+    font-weight: normal !important;
+  }
+}
+  .field--name-body.field--type-text-with-summary {
+    float:left !important;
+  }
+}
+
+  h2>a, span.field--name-title {
+    color: $green-agrisud !important;
+  }
+  #liens-utils ul a {
+    color: $grey-agrisud !important;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+.node-programme {
+  .field--type-image {
+    margin: 3rem 0;
+    text-align: center;
+  }
+  text-align: justify;
+}
+
+.path-user {
+  div.main-content{
+    background-image: url(images/connexion-agrisud.png);
+    background-repeat: no-repeat;
+    background-position: unset;
+    background-size: cover;
+    position: relative;
+    bottom: 12.3em;
+    padding: 10em;
+    margin-bottom: -18em;
+  }
+  ul.tabs.primary {
+    display: none;
+  }
+
+  .region-page-title h1 {
+    margin: 30px 0;
+    text-align: center;
+    padding-top: 2em;
+  }
+
+  #edit-submit{
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgba(220, 0, 0, 1);
+    background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+    inset -2px -2px 3px rgba(0, 0, 0, .6);
+    width: 100%;
+  }
+
+  label.js-form-required.form-required {
+    color: $green-agrisud;
+  }
+
+  #block-norsys-base-page-title {
+    h1{
+      text-transform: uppercase;
+      color: $grey-agrisud;
+    }
+  }
+
+  .user-login-form {
+    border-radius: 25px;
+  }
+}
+

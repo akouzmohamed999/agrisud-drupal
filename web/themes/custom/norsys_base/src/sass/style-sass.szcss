@@ -1,0 +1,255 @@
+$green-agrisud: #286839;
+$red-agrisud: #ff5e14;
+$grey-agrisud: #343534;
+$light-grey: #f7f7fa;
+$light-green: #afca0b;
+$white: #fff;
+
+@import "variables-and-mixins";
+/*@import "base";*/
+@import "typhography";
+@import "global-styles";
+@import "home.scss";
+//@import "header";
+@import "slider";
+/*@import "menu";*/
+@import "pages";
+
+//************************************************ Start of Global elements*****************************************************
+.page-node-type-reseaux-et-partenaires {
+  .main-content {
+    padding-top: 0 !important;
+  }
+}
+
+//working on sticky buttons for 'Donate' and 'Press'
+.sticky-elements {
+  .sticky {
+    color: #fff !important;
+    background: #c83e2c !important;
+    position: fixed;
+    background: $green-agrisud !important;
+    right: 0;
+    z-index: 10;
+  }
+
+  #bouton-sticky {
+    top: 85%;
+  }
+
+  #bouton-sticky-presse {
+    top: 90%;
+  }
+
+  #presse-key {
+    font-size: 1.3rem !important;
+  }
+}
+
+.header {
+  .region.region-header {
+    background-color: $white !important;
+    padding: 12px !important;
+
+    img {
+      width: 254px !important;
+    }
+  }
+
+  .region-search {
+    display: inline-flex;
+    width: 30%;
+    margin-right: 1rem !important;
+
+    #block-norsys-base-search {
+      width: 50%;
+      margin-right: 1rem !important;
+    }
+
+    ul.links {
+      margin-bottom: 0 !important;
+
+      li.fr {
+        list-style-image: url('images/france-icone.png') !important;
+      }
+
+      li.en {
+        list-style-image: url('images/english-icone.png') !important;
+      }
+
+      a {
+        color: $grey-agrisud;
+      }
+    }
+  }
+}
+
+.main-content {
+  @include headersInBlocksViews();
+
+  .block-content.block-content--type-block-message {
+    width: 80%;
+    margin: 0 10% 0;
+    text-align: center;
+    @include lead();
+  }
+}
+
+#updates {
+  .custom-title h2 {
+    color: $green-agrisud !important;
+  }
+  @include blocksChiffres();
+}
+
+#midwidget {
+  @include headersInBlocksViews();
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+    @include blockTemoignage();
+  }
+  #block-views-block-bloc-actualities-block-1 {
+    @include cardsInBlock();
+  }
+}
+
+#clients {
+  //Block temoignage in page liste-actions
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+    width: 60% !important;
+    left: 20% !important;
+    @include blockTemoignage();
+  }
+  #block-views-block-liste-actions-block-1 {
+    @include cardsInBlock();
+  }
+
+  background: none !important;
+  color: $grey-agrisud !important;
+  @include headersInBlocksViews();
+
+  .node--view-mode-accroche-2.ds-1col {
+    .field--name-node-title {
+      height: 6rem !important;
+    }
+    background: #fff !important;
+    position: relative;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-bottom: 4px solid $red-agrisud;
+    text-align: center !important;
+    height: 35rem !important;
+  }
+
+  #block-views-block-partenaires-block-1 {
+    padding: 0 5rem !important;
+    .image-style-thumbnail:hover{
+      -moz-transform:scale(1.25);
+    }
+  }
+}
+
+//pied de page
+.block-a-propos-nous {
+  background-image: url("images/bg_pied_page.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 0 2rem;
+  text-align: justify;
+}
+
+#footer.footer {
+  background: $white;
+  .menu ul li a {
+    color: $grey-agrisud !important;
+    font-size: 0.8rem !important;
+  }
+
+  #footer-icons {
+    color: $red-agrisud !important;
+    display: table;
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: xx-large;
+    }
+  }
+}
+
+#highlighted-partner {
+  width: 30% !important;
+  left: 35% !important;
+}
+@include designPageTitle();
+
+//pagination
+@include pagination();
+
+.features {
+  background: none !important;
+}
+div.more-link {
+  float: right;
+  @include btnReadMore();
+}
+
+@include blockImage();
+@include blockLinksOrButtons();
+
+#block-views-block-partenaires-block-1 {
+  padding: 0 5rem !important;
+  .image-style-thumbnail:hover{
+    -moz-transform:scale(1.25);
+  }
+}
+@include blockTaxonomyPartenaires();
+@include designFicheProjet();
+@include designFicheActualite();
+
+@include mainMenu();
+@include blockAgenda();
+//************************************************ End of Global elements*****************************************************
+
+@include blockEvent();
+
+#block-views-block-evenement-block-2 {
+  background-color: white !important;
+ /* display: flex;
+  flex-direction: row;*/
+  .title {
+    padding: 0.3rem 0.2rem;
+  }
+  table {
+    .views-field-field-actualite-date {
+      padding: 0.3rem 2rem !important;
+      max-width: 6rem !important;
+      font-size: 1.5rem !important;
+    }
+  }
+}
+
+@include breadcrumb();
+#custom-bottom-widget {
+  padding: $grid-gutter;
+}
+.features, #custom-bottom-widget {
+  background-image: url("images/symbole-agrisud-300.png") !important;
+  //background-image: url("images/symbole-agrisud-2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: inherit !important;
+}
+
+.highlited-link {
+    background-color: red !important;
+    color: white !important;
+    padding: 0.2rem 0.5rem !important;
+}
+//Small Blocks image de la page 'nous connaitres
+@include blocksImagesSmall();
+h2.custom-block-title {
+  color: $green-agrisud !important;
+  font-weight: bold !important;
+  margin-bottom: $grid-gutter/3 !important;
+}

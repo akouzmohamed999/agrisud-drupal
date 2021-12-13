@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.partenaire.body
     - field.field.node.partenaire.field_image_partenaire
+    - field.field.node.partenaire.field_type_de_partenaire
     - image.style.thumbnail
     - node.type.partenaire
   module:
@@ -39,6 +40,16 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
+  field_type_de_partenaire:
+    weight: 123
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
     region: content
   langcode:
     type: language_select
@@ -82,6 +93,11 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  translation:
+    weight: 10
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   uid:
     type: entity_reference_autocomplete
     weight: 5

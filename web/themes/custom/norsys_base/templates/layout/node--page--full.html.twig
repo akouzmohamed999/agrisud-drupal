@@ -58,10 +58,11 @@
  */
 #}
 
+
 <!-- Start: Header -->
 <div class="header">
   <div class="container-">
-    <div class="row align-items-center">
+    <div class="row">
 
       <div class="navbar-header col-md-3">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
@@ -71,22 +72,21 @@
           {{ page.header }}
         {% endif %}
       </div>
+
       {% if page.primary_menu or page.search %}
-        <div class="col-md-9 menu-wrap">
-          {% if page.search %}
-            {{ page.search }}
-          {% endif %}
+        <div class="col-md-9 col-lg-9 menu-wrap">
           {% if page.primary_menu %}
             {{ page.primary_menu }}
           {% endif %}
+          {% if page.search %}
+            {{ page.search }}
+          {% endif %}
         </div>
       {% endif %}
-
     </div>
   </div>
 </div>
 <!-- End: Header -->
-
 
 <!-- Start: Slides -->
 {% if is_front and show_slideshow %}
@@ -191,6 +191,7 @@
             </div>
           {% endif %}
           <!--End: Breadcrumb -->
+          aaaaaaaaaaaa999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
 
           {{ page.content }}
 

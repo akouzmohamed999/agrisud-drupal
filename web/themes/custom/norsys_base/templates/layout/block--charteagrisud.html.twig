@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Theme override to display a block.
+ * Default theme implementation to display a block.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -23,24 +23,19 @@
  *   displayed after the main title tag that appears in the template.
  *
  * @see template_preprocess_block()
+ *
+ * @ingroup themeable
  */
 #}
-{%
-  set classes = [
-  'block',
-  'block-' ~ configuration.provider|clean_class,
-  'block-' ~ plugin_id|clean_class,
-]
-%}
-<div{{ attributes.addClass(classes) }}>
-  {{ title_prefix }}
-  {% if label %}
-    <h2{{ title_attributes }} class="soutenir-feature-title">{{ label }}</h2>
-  {% endif %}
-  {{ title_suffix }}
-  {% block content %}
-    <div class="content soutenir-feature-content">
-      {{ content }}
-    </div>
-  {% endblock %}
+
+<div {{ attributes.addClass('block-nos-demarches', 'container') }}>
+    {{ title_prefix }}
+    {% if label %}
+        <div class="custom-title container"><h2{{ title_attributes }}>{{ label }}</h2></div>
+    {% endif %}
+    {{ title_suffix }}
+    {% block content %}
+        {{ content }}
+    {% endblock %}
 </div>
+

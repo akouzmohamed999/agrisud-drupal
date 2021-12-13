@@ -1,0 +1,61 @@
+uuid: 0c0a0558-67ee-4085-af8b-3e9d512b0268
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image_partenaire
+    - field.storage.node.field_type_de_partenaire
+    - search_api.server.partenaires
+  module:
+    - node
+    - search_api
+id: partenaires_index2
+name: Partenaires-index
+description: ''
+read_only: false
+field_settings:
+  field_image_partenaire:
+    label: image
+    datasource_id: 'entity:node'
+    property_path: field_image_partenaire
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_image_partenaire
+  field_type_de_partenaire:
+    label: 'Type de partenaire'
+    datasource_id: 'entity:node'
+    property_path: field_type_de_partenaire
+    type: integer
+    dependencies:
+      config:
+        - field.storage.node.field_type_de_partenaire
+  title:
+    label: Titre
+    datasource_id: 'entity:node'
+    property_path: title
+    type: string
+    dependencies:
+      module:
+        - node
+datasource_settings:
+  'entity:node':
+    bundles:
+      default: false
+      selected:
+        - partenaire
+    languages:
+      default: true
+      selected: {  }
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  index_directly: true
+  cron_limit: 50
+server: partenaires

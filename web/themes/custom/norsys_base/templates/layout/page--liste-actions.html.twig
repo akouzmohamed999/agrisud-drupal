@@ -75,26 +75,19 @@
       </div>
 
       {% if page.primary_menu or page.search %}
-        <div class="col-md-9 menu-wrap">
+        <div class="col-md-10 menu-wrap">
           {% if page.primary_menu %}
             {{ page.primary_menu }}
           {% endif %}
-
-        </div>
-      {% endif %}
-      {% if page.search %}
-        <div id="language" class="col-md-1 menu-wrap">
           {% if page.search %}
             {{ page.search }}
           {% endif %}
         </div>
       {% endif %}
-
     </div>
   </div>
 </div>
 <!-- End: Header -->
-
 
 <!-- Start: Slides -->
 {% if is_front and show_slideshow %}
@@ -162,7 +155,8 @@
 
 <!--Start: Title -->
 {%  if page.page_title and not is_front %}
-  <div id="page-title">
+  {% set file_url = file_url(banner) %}
+  <div id="page-title" {% if banner %} style="background-image: url({{ (file_url) }})" {% endif %}>
     <div id="page-title-inner">
       <div class="container">
         {{ page.page_title }}
@@ -191,7 +185,6 @@
         {% if page.content %}
           <div id="liste-actions" class={{contentlayout}} style="padding: 0 !important">
             <div class="content_layout">
-
               <!--Start: Breadcrumb -->
               {% if not is_front %}
                 <div class="row">
@@ -387,35 +380,35 @@
 {% endif %}
 <!--End: Clients -->
 <div class="bg-white row text-align-center">
-  <div class="col-lg-4  col-md-6 row col-sm-12 col-12">
-    <div class="col-lg-9 col-md-10 col-sm-12 col-12 py-3 text-align-right">
+  <div id="highlighted-partner" class="col-lg-4  col-md-6 row col-sm-12 col-12">
+    <div class="col-lg-10 col-md-10 col-sm-12 col-12 py-3 text-align-right">
       <span class="m-0">Agrisud fait partie des associations agréées en France</span>
     </div>
-    <div class="col-lg-3 col-md-2 col-sm-12 col-12 text-align-left px-0 pt-2">
-        <img src="/web/themes/custom/norsys_base/images/Membre_HorizontalLogo_Color.jpg"/>
+    <div class="col-lg-2 col-md-2 col-sm-12 col-12 text-align-left px-0 pt-2">
+      <img src="/web/themes/custom/norsys_base/images/Membre_HorizontalLogo_Color.jpg"/>
     </div>
   </div>
 </div>
 <div class="block-a-propos-nous">
-<div class="container py-5">
-  <div class="row py-5">
-  <div class="">
-    <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
-    <p class="text-white">Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et<br> dans les Caraïbes
-      Son action vise à promouvoir un développement économique durable <br>dans le secteur agricole
-      Avec ses partenaires, ell e forme et accompagne des hommes et des <br>femmes dans la maîtrise de
-      leurs activités et met en place des projets multi-acteurs pour des <br>territoires socialement équitables
-      économiquement viables et écologiquement responsables.
-    </p>
+  <div class="container py-5">
+    <div class="row">
+      <div class="col col-lg-9 col-md-9">
+        <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
+        <p class="text-white">Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et<br> dans les Caraïbes
+          Son action vise à promouvoir un développement économique durable <br>dans le secteur agricole
+          Avec ses partenaires, ell e forme et accompagne des hommes et des <br>femmes dans la maîtrise de
+          leurs activités et met en place des projets multi-acteurs pour des <br>territoires socialement équitables
+          économiquement viables et écologiquement responsables.
+        </p>
+      </div>
+      <div class="col col-lg-3 col-md-3">
+        <h5 class="text-white font-weight-bold">CONTACTEZ-NOUS</h5>
+        <p class="text-white">7, avenue du Maréchal Foch - 33500 Libourne</p>
+        <p class="text-white">Tel :<br>+33 (0)5 57 25 17 06</p>
+        <p class="text-white">Fax:<br>+33 (0)5 57 25 17 06</p>
+      </div>
+    </div>
   </div>
-  <div class="">
-    <h5 class="text-white font-weight-bold">CONTACTEZ-NOUS</h5>
-    <p class="text-white">7, avenue du Maréchal Foch - 33500 Libourne</p>
-    <p class="text-white">Tel :<br>+33 (0)5 57 25 17 06</p>
-    <p class="text-white">Fax:<br>+33 (0)5 57 25 17 06</p>
-  </div>
-  </div>
-</div>
 </div>
 <!-- Start: Footer widgets -->
 {% if page.footer_first or page.footer_second or page.footer_third %}
@@ -450,15 +443,14 @@
 
 
 <!-- Start: Copyright -->
-<div class="text-align-center bg-white">
+<div class="text-align-center bg-white copyright">
   <div class="container">
-    <span> © {{ "now"|date("Y") }} Agrisud. All rights reserved.</span>
-        <p class="social-media">
-            <a href="{{ facebook_url }}"  class="facebook" target="_blank" ><i class="fab fa-facebook-f"></i></a>
-            <a href="{{ instagram_url }}" class="instagram" target="_blank" ><i class="fab fa-youtube"></i></a>
-            <a href="{{ twitter_url }}" class="twitter" target="_blank" ><i class="fab fa-twitter"></i></a>
-            <a href="{{ linkedin_url }}" class="linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-        </p>
+    <p>Agrisud International est une association à but
+      non lucratif reconnue de bienfaisance - N° SIRET 390 364 776 00034 -
+      ©Agrisud International 2022 - Tous droits réservés
+    </p>
+    <span><a href="#">Crédits et Mentions légales</a> - <a href="#">Données personnelles</a>
+      - <a href="#">Cookies</a> - <a href="#"> du site</a></span>
   </div>
 </div>
 <!-- End: Copyright -->
