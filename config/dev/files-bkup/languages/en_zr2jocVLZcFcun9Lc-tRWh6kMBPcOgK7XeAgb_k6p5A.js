@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"Bonjour":"Hello"}}};
