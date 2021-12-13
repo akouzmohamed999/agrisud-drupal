@@ -13,6 +13,12 @@ jQuery(document).ready(function ($) {
     $("#donate-link").animate({width:'toggle'},350);
     $("#presse-link").animate({width:'toggle'},350);
 
+    // Managing redirection onclick on taxonomy terms in page 'nos réseaux et partenaires'
+  $("#views-bootstrap-liste-type-partenaires-block-1 .views-field a").on("click", function (e) {
+    e.preventDefault();
+    window.location.href = baseUrl + "/liste-partenaires?f%5B0%5D=type_de_partenaire%3A"+this.href.substring(this.href.lastIndexOf('/') + 1);
+  });
+
   $("#donate-key").on("click", function (e) {
       $("#donate-link").animate({width:'toggle'},350);
     });
@@ -31,7 +37,7 @@ jQuery(document).ready(function ($) {
 
         $("#" + value).on("click", function (e) {
             index = index + 1;
-            window.location.href = baseUrl + "/liste-actions?5B05D=pays%3A#block-actions";
+            window.location.href = baseUrl + "/liste-actions?field_pays="+index+"#block-actions";
         });
     });
 });

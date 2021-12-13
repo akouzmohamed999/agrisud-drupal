@@ -10,7 +10,25 @@
  */
 #}
 <{{ ds_content_wrapper }}{{ attributes.addClass('ds-1col', 'clearfix', 'container') }} id="overridden-ds-1-col-template">
-
 {{ title_suffix.contextual_links }}
-{{ ds_content }}
+{{ ds_content.field_image }}
+<div class="list-localization row">
+  <div class="details col-lg-9">
+    <ul class="list-unstyled list-group">
+      <li class="list-group-item">
+        <div class="desc-item"><i class="fa fa-map-marker" aria-hidden="true"></i>
+          {{ ds_content.field_actualite_date}} </div>
+      </li>
+      <li class="list-group-item">
+        <div class="desc-item"><i class="fa fa-file" aria-hidden="true"></i>
+          {{ ds_content.field_actualite_type }}</div></li>
+    </ul>
+  </div>
+  <div class="soutenir col-lg-3">
+    <i class="fa fa-heart" aria-hidden="true"></i>
+    <a href="#">Agir <br> avec nous</a>
+  </div>
+
+</div>
+{{ ds_content.body }}
 </{{ ds_content_wrapper }}>

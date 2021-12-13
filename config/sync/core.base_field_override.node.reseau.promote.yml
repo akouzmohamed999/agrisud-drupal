@@ -1,0 +1,22 @@
+uuid: 05006177-c4ea-4952-85ca-ce8d15180e0e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.reseau
+id: node.reseau.promote
+field_name: promote
+entity_type: node
+bundle: reseau
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

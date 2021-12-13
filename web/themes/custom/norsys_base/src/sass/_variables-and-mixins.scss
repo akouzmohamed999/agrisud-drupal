@@ -1,0 +1,746 @@
+// Variables
+$green-agrisud: #286839;
+$light-green-agrisud: #226432;
+$red-agrisud: #ff5e14;
+$grey-green: #acc8b3;
+$grey-agrisud: #343534;
+$light-grey: #f7f7fa;
+$light-green: #afca0b;
+$white: #fff;
+
+$fontFamily: 'Roboto';
+$titleFontFamily: "Roboto";
+$baseFontSize: 18px;
+$bodyBGColor: $light-grey;
+$baseFontColor: $grey-agrisud;
+$h2Size-heading: 2.3rem;
+$linkColor: $green-agrisud;
+$linkColorHover: $light-green;
+
+// Header
+$headerBGColor: #000;
+$headerTextColor: #fff;
+
+$secColor: #fc466b;
+
+$desktopMenuColor: #001659;
+$desktopMenuHover: $light-green;
+$desktopMenuDropDownBG: #fff;
+$desktopMenuDropDownText: #001659;
+$desktopMenuDropDownHover: #ff5e14;
+
+$mobileMenuBg: rgba(0, 0, 0, 0.80);
+$mobileMenuColor: #fff;
+$mobileMenuHover: #fff;
+$mobileMenuDropDownBG: '';
+$mobileMenuDropDownText: '';
+$mobileMenuDropDownHover: '';
+
+$borderColor: #e8e8e8;
+$grid-gutter: 3rem;
+
+// Mixin
+@mixin globalButton(){
+  background-color: $green-agrisud !important;
+  cursor: pointer;
+  color: $white;
+  border: 0;
+  padding: 14px 30px;
+  line-height: 100%;
+  margin-right: 2px;
+  display: inline-block;
+}
+
+@mixin globalButtonHover(){
+  background-color: $light-green-agrisud !important;
+  color: $white;
+}
+
+@mixin lead() {
+  font-family: "Roboto", Arial, sans-serif !important;
+  font-weight: 100 !important;
+  font-size: 2rem !important;
+  line-height: 1.5 !important;
+  margin-top: 2rem !important;
+  padding: 2rem !important;
+  margin-bottom: 6rem !important;
+}
+
+// h2, h3 in blocks and h2>a
+@mixin headersInBlocksViews() {
+  h2, h3 {
+    font-family: "Roboto" !important;
+    font-weight: bold !important;
+    margin-bottom: $grid-gutter/2 !important;
+    color: $green-agrisud !important;
+    a {
+      color: $green-agrisud !important;
+      font-size: 1.7rem !important;
+      font-family: "Roboto Condensed" !important;
+      margin: 1rem;
+      font-weight: 400 !important;
+    }
+  }
+}
+
+// same style as blocks 'actualites' 'nos actions à soutenir' existing in homepage
+@mixin cardsInBlock() {
+  @include headersInBlocksViews();
+  // .elpacho used for search results using servers drupal
+  .elpacho {
+    position: relative;
+    background: $white;
+    padding: 20px 20px;
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-bottom: 4px solid $red-agrisud;
+    text-align: center !important;
+  }
+}
+
+@mixin blockTemoignage() {
+  // margin: 0 10% 15% 10%;
+  // margin: 0 10% 0 10%;
+  .title {
+    font-weight: bold !important;
+    font-size: $h2Size-heading !important;
+  }
+  .carousel-caption.d-none.d-md-block{
+    position: fixed;
+    top :-4em;
+    padding-left: 10em;
+  }
+
+  #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2, #views-bootstrap-temoignage-block-4 {
+    a {
+      color: $grey-agrisud !important;
+    }
+    a.more-link{
+      color: $red-agrisud !important;
+      border: 1px solid $red-agrisud !important;
+    }
+    //slider of views
+    .carousel-inner {
+      overflow: inherit !important;
+    }
+    .carousel-caption {
+      background: none !important;
+      width: 100% !important;
+      text-align: justify;
+      p {
+        color: $grey-agrisud !important;
+      }
+    }
+    .carousel-item .col-md-3 {
+      padding: 1rem 0;
+    }
+    a.carousel-control-prev {
+      left: -10%;
+      span.carousel-control-prev-icon {
+        background-color: $green-agrisud !important;
+      }
+    }
+    a.carousel-control-next {
+      left: 100%;
+      span.carousel-control-next-icon {
+        background-color: $green-agrisud !important;
+      }
+    }
+    ol li {
+      list-style-type: circle;
+    }
+    ol li.active {
+      list-style-type: disc;
+    }
+    .title {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
+
+@mixin designActualitesFields() {
+  .field--name-field-actualite-date, .field--name-field-actualite-type {
+    display: flex !important;
+    text-align: left !important;
+  }
+  .field--name-body {
+    text-align: justify !important;
+    margin-top: 1rem !important;
+  }
+  #date-actu, #type-actu {
+    float: left !important;
+    margin-left: 1rem;
+  }
+  .clearBoth {
+    clear: both;
+  }
+  .field--name-field-actualite-image {
+    img {
+
+    }
+  }
+}
+
+@mixin viewsListds2() {
+  #views-bootstrap-nos-actualites-view-page-1, #views-bootstrap-liste-actions-page-1, .views-row {
+  //  padding-top : 2*$grid-gutter;
+    .node--type-actualite.node--view-mode-teaser.ds-2col, .node--type-action.node--view-mode-teaser.ds-2col,
+    .node--type-evenement.node--view-mode-teaser.ds-2col, .node--type-temoignage.node--view-mode-teaser.ds-2col {
+      background: $white;
+      padding: 0  !important;
+     // margin-bottom: 0;
+     // padding: 2rem 1rem 0 1rem;
+      margin-bottom: 2*$grid-gutter/3;
+      .group-left {
+        width: 25% !important;
+        margin: 0 !important;
+        img {
+          display: table-cell;
+          vertical-align: middle;
+          padding: 0 !important;
+        }
+      }
+      .group-right {
+        width: 75% !important;
+        max-height: 320px !important;
+        text-align: justify !important;
+        .field {
+          padding: 0 !important;
+          margin: 0 1rem !important;
+        }
+        .field--name-body.field--type-text-with-summary {
+          margin-top: 1.5rem !important;
+        }
+        #lieu-event, #periode-event {
+          i {
+            margin-right: 0.5rem !important;
+          }
+          margin: 0 1rem !important;
+        }
+        .field--name-node-title {
+          h2 {
+            margin-bottom: 0.5rem !important;
+            margin-top: 1rem !important;
+          }
+          a{
+            margin-left: 0 !important;
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+@mixin designPageTitle() {
+  #page-title {
+    background-image: url("images/bg_actualites-min.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    #page-title-inner {
+      text-align: center;
+      padding: 7% 0;
+      h1 {
+        color: $light-grey !important;
+        font-weight: bold !important;
+        font-size: 4rem !important;
+      }
+    }
+  }
+}
+
+@mixin btnReadMore {
+  a.more-link {
+    display: table;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+    padding: 0.3rem 3rem;
+    border: 1px solid $green-agrisud;
+    background-color: $green-agrisud;
+    font-weight: 600;
+  }
+  a.more-link:hover{
+    color: $white;
+  }
+}
+
+@mixin pagination() {
+  .pager {
+    text-align: center !important;
+    margin-top: $grid-gutter !important;
+    ul.pager__items {
+      display: inline-block !important;
+      li {
+        display: inline !important;
+      }
+      li > a, li > span {
+        position: relative !important;
+        float: left !important;;
+        padding: 6px 12px !important;;
+        line-height: 1.42857 !important;;
+        text-decoration: none !important;;
+        color: $green-agrisud !important;;
+        background-color: #fff !important;;
+        border: 1px solid #ddd !important;;
+        margin-left: -1px !important;;
+      }
+    }
+  }
+}
+
+@mixin designActionsFields() {
+  //managing three fields pays, programme, Statut
+  .field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
+    text-align: left;
+    float:left !important;
+    margin-right: 1em;
+    text-decoration: none !important;
+    .field__label, .field__item {
+      display: inline !important;
+      font-weight: normal !important;
+    }
+  }
+  .field--name-body.field--type-text-with-summary {
+    float:left !important;
+    margin-top: 1rem !important;
+  }
+}
+
+@mixin blocksChiffres() {
+  #chiffres-container {
+    padding: 0;
+    #chiffres-year {
+      display: none;
+    }
+    #list-items {
+      align-items: center !important;
+      img {
+        width: 50%;
+      }
+      .chiffres {
+        font-size: 3rem !important;
+      }
+      .chiffres-desc {
+        font-size: 1.7rem !important;
+      }
+    }
+  }
+}
+
+@mixin blocksChiffresPageNousConnaitre() {
+  .current-year-title {
+    display: none !important;
+  }
+
+  #chiffres-container {
+    padding: 1rem 0 0 0!important;
+    #chiffres {
+      padding-top: 0 !important;
+    }
+    #title-chiffres-2 {
+      display: none !important;
+    }
+    .chiffre-item {
+      .chiffres {
+        font-size: 3rem !important;
+      }
+      div {
+        display: none !important;
+      }
+    }
+    #chiffres-year {
+      display: block !important;
+      margin-left: 5%;
+    }
+  }
+  #chiffres-container.since-year {
+    background-color: $green-agrisud !important;
+    #chiffres-year {
+      h3 {
+        color: $white !important;
+        margin-top: 0 !important;
+      }
+    }
+    margin-bottom: 0 !important;
+  }
+  #chiffres-container.current-year {
+    padding-top: 1rem !important;
+    background-color: $light-green !important;
+    #chiffres {
+      background-color: $light-green !important;
+    }
+    #chiffres-year {
+      h3 {
+        color: $white !important;
+        margin-top: 0 !important;
+      }
+    }
+  }
+}
+
+/*@mixin blockImage() {
+  .block-content.block-content--type-block-image.block-content--view-mode-full.ds-2col {
+    background-color: white;
+    .group-left {
+      width: 30% !important;
+      background: #444;
+      margin: 0 auto;
+      img.wide {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+      }
+      img.tall {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+      }
+    }
+    .group-right {
+      width: 70% !important;
+      text-align: justify;
+      padding: 2rem !important;
+      .field--name-body.field {
+        a {
+          display: table;
+          margin-top: 15px;
+          margin-bottom: 30px;
+          text-align: center;
+          color: white;
+          padding: 0.3rem 3rem;
+          border: 1px solid $green-agrisud;
+          background-color: $green-agrisud;
+          font-weight: 600;
+          float: right;
+        }
+      }
+    }
+  }
+}*/
+@mixin blockImage() {
+  .block-content.block-content--type-block-image.block-content--view-mode-full.ds-2col {
+    background-color: white;
+    .group-left {
+      width: 30% !important;
+      img {
+        display: table-cell !important;
+        vertical-align: middle !important;
+        height: 325px !important;
+      }
+     // background: #444;
+     // margin: 0 auto;
+     /* img.wide {
+        max-width: 100%;
+        max-height: 100%;
+        height: auto;
+      }
+      img.tall {
+        max-height: 100%;
+        max-width: 100%;
+        width: auto;
+      }*/
+    }
+    .group-right {
+      width: 70% !important;
+      text-align: justify;
+     // padding: 2rem !important;
+      .field--name-body.field {
+        padding: 0 2rem !important;
+        margin-top: 2rem !important;
+        a {
+          display: table;
+       /*   margin-top: 15px;
+          margin-bottom: 30px;*/
+          text-align: center;
+          color: white;
+          padding: 0.3rem 3rem;
+          border: 1px solid $green-agrisud;
+          background-color: $green-agrisud;
+          font-weight: 600;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+
+@mixin blockLinksOrButtons() {
+  #bottom-widget {
+    h2.custom-block-title {
+      color: $green-agrisud !important;
+      font-weight: bold !important;
+      margin-bottom: $grid-gutter !important;
+    }
+  }
+  .block-content.block-content--type-block-links.block-content--view-mode-full.ds-1col {
+    text-align: center;
+    margin: 5rem 0;
+    .field--name-body.field a {
+      text-align: center;
+      color: white;
+      padding: 2rem 3rem;
+      border: 1px solid #afca0b;
+      background-color: #afca0b;
+      font-weight: 400;
+      margin: 1rem 1rem;
+    }
+  }
+}
+
+@mixin blockTaxonomyPartenaires() {
+  #views-bootstrap-liste-type-partenaires-block-1 {
+    .row {
+      .views-field.views-field-name {
+        background-color: $white;
+        padding: $grid-gutter/3;
+        text-align: center;
+        height: 5rem;
+        a {
+          color: $light-green;
+          text-transform: uppercase;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+@mixin designFieldsDSColFicheNode() {
+  .field__label, .field__item {
+    float: left !important;
+  }
+  .field__item {
+    margin-left: 0.5rem !important;
+
+    a {
+      color: inherit !important;
+    }
+  }
+  .field__label {
+    margin-left: 2rem !important;
+  }
+}
+
+@mixin designSoutenir() {
+  .soutenir {
+    background-color: $red-agrisud;
+    text-align: center;
+    display: table;
+    a, i {
+      font-size: 2rem;
+      color: white;
+      display: table-cell;
+      vertical-align: middle;
+      line-height: 1.1;
+      font-weight: bold;
+    }
+    i {
+      font-size: 4rem;
+    }
+  }
+}
+
+@mixin designZoneLocalisation() {
+  .list-localization {
+    margin-bottom: $grid-gutter !important;
+    margin-top: 2*$grid-gutter !important;
+    text-align: left;
+    color: $white;
+    .desc-item {
+      display: inline-flex;
+    }
+    .details {
+      padding-right: 1rem;
+
+      ul {
+        background-color: grey;
+        padding-left: 1rem;
+        li.list-group-item {
+          padding: 0.3rem 0.2rem !important;
+          margin-bottom: 0 !important;
+          border: none !important;
+          border-bottom: 1px solid $light-grey !important;
+          background-color: grey !important;
+        }
+        li.last {
+          border: none !important;
+        }
+      }
+    }
+    @include designSoutenir();
+  }
+}
+@mixin designFicheProjet() {
+  .node--type-action.node--view-mode-full.ds-1col {
+    text-align: center;
+    .field--name-field-programme, .field--name-field-pays, .field--name-field-statut{
+      @include designFieldsDSColFicheNode();
+    }
+    .field--name-body {
+      text-align: justify !important;
+    }
+    @include designZoneLocalisation();
+    .clearBoth { clear:both; }
+  }
+}
+@mixin designFicheActualite() {
+  .node--type-actualite.node--view-mode-full.ds-1col {
+    text-align: center;
+    .field--name-field-actualite-date, .field--name-field-actualite-type {
+      @include designFieldsDSColFicheNode();
+    }
+    .field--name-body {
+      text-align: justify !important;
+    }
+    #date-actu, #type-actu {
+      float: left !important;
+      margin-left: 1rem;
+    }
+    @include designZoneLocalisation();
+    .clearBoth { clear:both; }
+  }
+}
+
+@mixin blockAgenda() {
+  #block-views-block-evenement-block-2 {
+    .title {
+      background-color: $green-agrisud !important;
+      color: $white !important;
+      font-size: 2.5rem !important;
+      text-align: center !important;
+    }
+    .views-field-field-actualite-date {
+      background-color: $grey-green !important;
+    }
+    .views-field-title {
+      a {
+        color: $grey-agrisud !important;
+        font-weight: bold !important;
+      }
+    }
+  }
+}
+
+@mixin blockEvent() {
+  #block-views-block-evenement-block-1 {
+    background-color: white !important;
+    max-height: 325px !important;
+    .row div {
+      padding: 0 !important;
+      margin: 0 !important;
+      .node--type-evenement.node--view-mode-teaser.ds-2col {
+        padding: 0 !important;
+      }
+    }
+
+    .group-left {
+      width: 40% !important;
+      img {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 325px !important;
+      }
+    }
+    .group-right {
+      width: 60% !important;
+      h2 {
+        font-family: "Roboto Condensed" !important;
+        color: $green-agrisud !important;
+        margin-top: 1rem !important;
+      }
+      .field {
+        margin-left: 1rem !important;
+      }
+      #periode-event {
+        margin-top: 1.5rem !important;
+        margin-top: $grid-gutter/3;
+      }
+      i {
+        margin-left: 1rem !important;
+        margin-right: 0.3rem;
+      }
+      .field--name-body.field--type-text-with-summary {
+        margin-right: 1rem !important;
+        margin-top: 1rem !important;
+      }
+    }
+  }
+}
+
+@mixin mainMenu() {
+  #main-menu {
+    .has-submenu:hover, a.highlighted {
+      color: black !important;
+    }
+    a:hover {
+      color: black !important;
+      background: $light-grey !important;
+    }
+  }
+}
+
+@mixin breadcrumb() {
+  #block-norsys-base-breadcrumbs, #block-breadcrumbs {
+   @extend .container;
+    margin-bottom: 3rem !important;
+    padding-top: 0.5rem !important;
+    .breadcrumb {
+      background: none !important;
+      li > a, li {
+        font-size: 1rem !important;
+        color: $grey-agrisud !important;
+      }
+    }
+  }
+
+}
+
+//Small Blocks image de la page 'nous connaitres
+@mixin  blocksImagesSmall() {
+  #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
+    background-color: white !important;
+    max-height: 325px !important;
+    padding: 0 !important;
+    .row div {
+      padding: 0 !important;
+      margin: 0 !important;
+      .node--type-evenement.node--view-mode-teaser.ds-2col {
+        padding: 0 !important;
+      }
+    }
+
+    .group-left {
+      width: 40% !important;
+      img {
+        display: table-cell;
+        vertical-align: middle;
+        margin: 0 !important;
+        padding: 0 !important;
+        height: 325px !important;
+      }
+    }
+    .group-right {
+      width: 60% !important;
+      h2 {
+        font-family: "Roboto Condensed" !important;
+        color: $green-agrisud !important;
+        margin-top: 1rem !important;
+      }
+      .field {
+        margin-left: 1rem !important;
+      }
+
+      .field--name-body {
+        margin-right: 1rem !important;
+        margin-top: 1rem !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}

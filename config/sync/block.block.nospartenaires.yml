@@ -1,0 +1,33 @@
+uuid: 255296bb-2685-426f-992e-0d14c642bf0e
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:02559265-548c-461c-a2be-1cf89057df41'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: nospartenaires
+theme: norsys_base
+region: content
+weight: -16
+provider: null
+plugin: 'block_content:02559265-548c-461c-a2be-1cf89057df41'
+settings:
+  id: 'block_content:02559265-548c-461c-a2be-1cf89057df41'
+  label: 'Nos partenaires'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      reseaux_et_partenaires: reseaux_et_partenaires
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,11 @@
+uuid: 1954c0e8-fd63-4a03-82ba-a6e4965cd2c5
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.reseaux_et_partenaires
+id: node.reseaux_et_partenaires
+target_entity_type_id: node
+target_bundle: reseaux_et_partenaires
+default_langcode: site_default
+language_alterable: false

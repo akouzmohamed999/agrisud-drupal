@@ -1,0 +1,38 @@
+uuid: ed67125f-e358-4430-aafb-3eac36bd62e6
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_icone
+    - taxonomy.vocabulary.type_partenaire
+  module:
+    - image
+id: taxonomy_term.type_partenaire.field_icone
+field_name: field_icone
+entity_type: taxonomy_term
+bundle: type_partenaire
+label: Icone
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 1ef8b8b0-4c5d-489d-99bc-151cf6c07f30
+    alt: ''
+    title: ''
+    width: 791
+    height: 946
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,11 @@
+uuid: b9b445ef-7242-4caf-a553-2dc336f86e73
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.type_partenaire
+id: taxonomy_term.type_partenaire
+target_entity_type_id: taxonomy_term
+target_bundle: type_partenaire
+default_langcode: site_default
+language_alterable: false

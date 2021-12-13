@@ -1,0 +1,8 @@
+uuid: 5ebe54a8-597b-494a-84a6-3e366a88355c
+langcode: fr
+status: true
+dependencies: {  }
+name: 'Type partenaire'
+vid: type_partenaire
+description: ''
+weight: 0

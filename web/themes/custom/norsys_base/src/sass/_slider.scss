@@ -1,0 +1,71 @@
+
+// Flexslider
+.flexslider {
+  .flex-viewport {
+    height: 650px !important;
+  }
+  .slider-caption{
+    top: 20% !important;
+  }
+  .slider-title{
+    font-family: $titleFontFamily !important;
+    font-size: 3.5rem !important;
+    font-weight: bold !important;
+  }
+
+  .slider-description{
+    @extend .h2;
+    @extend .slider-title;
+    font-family: $titleFontFamily !important;
+    color: $white !important;
+    text-transform: uppercase;
+    line-height: 1.1;
+    margin-bottom: 3rem !important;
+  }
+
+  .slides{
+    li{
+      background: none !important;
+    }
+  }
+
+  .flex-direction-nav{
+
+    li{
+      list-style: none;
+      vertical-align: middle;
+      display: inline-block;
+      background: $green-agrisud !important;
+    }
+
+    a{
+      &.flex-prev{
+        left: 0;
+      }
+
+      &.flex-next{
+        background: $grey-agrisud;
+        &:before{
+          color: $green-agrisud !important;
+        }
+      }
+
+      &:before,
+      &:after{
+        font-size: 26px;
+        color: $grey-agrisud;
+      }
+    }
+  }
+
+  .flex-control-nav{
+
+    &.flex-active{
+
+    }
+
+    li{
+
+    }
+  }
+}

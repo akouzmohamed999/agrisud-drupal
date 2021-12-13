@@ -1,0 +1,9 @@
+uuid: 7a91c836-7d85-4655-a15a-cf312e8a5052
+langcode: fr
+status: true
+dependencies: {  }
+id: search_api__views_page__liste_partenaires__page_1
+name: 'search_api:views_page__liste_partenaires__page_1'
+filter_key: null
+url_processor: query_string
+breadcrumb: {  }

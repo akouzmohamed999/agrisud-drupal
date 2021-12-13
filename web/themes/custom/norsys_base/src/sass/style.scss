@@ -1,77 +1,133 @@
-$green-agrisud : #286839;
-$red-agrisud : #ff5e14;
+$green-agrisud: #286839;
+$red-agrisud: #ff5e14;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
+$light-green: #afca0b;
 $white: #fff;
 
-.clients, .header, .flexslider, .container, .container-fluid {
-  *:not(i) {
-    font-family: "Roboto" !important;
+@import "variables-and-mixins";
+/*@import "base";*/
+@import "typhography";
+@import "global-styles";
+@import "home.scss";
+//@import "header";
+@import "slider";
+/*@import "menu";*/
+@import "pages";
+@import "media";
+
+//************************************************ Start of Global elements*****************************************************
+.page-node-type-reseaux-et-partenaires {
+  .main-content {
+    padding-top: 0 !important;
+  }
+}
+
+//working on sticky buttons for 'Donate' and 'Press'
+.sticky-elements {
+  .sticky {
+    color: #fff !important;
+    background: #c83e2c !important;
+    position: fixed;
+    background: $green-agrisud !important;
+    right: 0;
+    z-index: 10;
+  }
+
+  #bouton-sticky {
+    top: 85%;
+  }
+
+  #bouton-sticky-presse {
+    top: 90%;
+  }
+
+  #presse-key {
+    font-size: 1.3rem !important;
   }
 }
 
 .header {
-  border-bottom: none !important;
-  width: 100%;
-  z-index: 1;
-  .fas.fa-bars {
-    color: $grey-agrisud !important;
-  }
-  .header-marge{
-    margin-top: 1rem;
-  }
+  .region.region-header {
+    background-color: $white !important;
+    padding: 12px !important;
 
-  .sm.menu-base-theme {
-    background-color: $white;
+    img {
+      width: 254px !important;
+    }
   }
 
-  #language {
-    .region-search {
-      width: 100%;
+  .region-search {
+    display: inline-flex;
+    width: 30%;
+    margin-right: 1rem !important;
+  }
+    #block-norsys-base-search {
+      width: 15%;
+    }
 
-      ul.links {
-        margin-bottom: 0 !important;
-        li.fr {
-          list-style-image: url('images/france-icone.png');
-        }
-        li.en {
-          list-style-image: url('images/english-icone.png');
-        }
-        a {
-          color: $grey-agrisud;
-        }
+    ul.links {
+      margin-bottom: 0 !important;
+
+      li.fr {
+        list-style-image: url('images/france-icone.png') !important;
+      }
+
+      li.en {
+        list-style-image: url('images/english-icone.png') !important;
+      }
+
+      a {
+        color: $grey-agrisud;
       }
     }
+}
+
+.main-content {
+  @include headersInBlocksViews();
+
+  .block-content.block-content--type-block-message {
+    width: 80%;
+    margin: 0 10% 0;
+    text-align: center;
+    @include lead();
   }
 }
 
-.container, .container-fluid {
-  #block-norsys-base-branding img {
-    width: 43px;
+#updates {
+  .custom-title h2 {
+    color: $green-agrisud !important;
+    font-size: $h2Size-heading !important;
   }
-  .custom-title {
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    h2 {
-      font-weight: 600 !important;
-    }
-  }
-  h1.page-header {
-    text-align: center;
-    color: #fff;
-    margin: 0;
-    padding: 6rem 1rem;
-    font-size: 4em;
-    font-weight: bold;
-  }
+  @include blocksChiffres();
+}
 
+#midwidget {
+  @include headersInBlocksViews();
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+    @include blockTemoignage();
+  }
+  #block-views-block-bloc-actualities-block-1 {
+    @include cardsInBlock();
+  }
 }
 
 #clients {
-  background: none !important;
-  h2 {
-    color: $green-agrisud !important;
+  //Block temoignage in page liste-actions
+  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
+    width: 60% !important;
+    left: 20% !important;
+    @include blockTemoignage();
   }
+  #block-views-block-liste-actions-block-1 {
+    @include cardsInBlock();
+  }
+
+  background: none !important;
+  color: $grey-agrisud !important;
+  padding-top: 0 !important;
+  @include headersInBlocksViews();
+
   .node--view-mode-accroche-2.ds-1col {
     .field--name-node-title {
       height: 6rem !important;
@@ -85,739 +141,16 @@ $white: #fff;
     text-align: center !important;
     height: 35rem !important;
   }
-}
-//for front pages
-.path-frontpage {
-  .main-content {
-    //background-image: url("images/fond-phrase-accroche.png");
-    background-image: url("images/symbole-agrisud-2.png");
-    background-repeat: no-repeat;
-    background-position: unset;
-    background-size: inherit;
-  }
-  .region {
-      background: none !important;
-  }
-  #chiffres-container {
-    background-color: $green-agrisud !important;
-  }
-
-  #chiffres {
-    margin-top: 1rem;
-    background-color: $green-agrisud !important;
-    .chiffres {
-      font-size: 4rem !important;
-      font-weight: bold;
-    }
-
-    .chiffres-desc {
-      font-size: 1.1rem;
-      text-transform: uppercase;
-    }
-
-    .chiffre-item {
-      padding: 2rem;
-    }
-  }
-
-  .updates {
-    padding: 0 !important;
-
-    .region {
-      padding: 0 !important;
-    }
-  }
-
-
-  /*.carte-svg {
-    padding: 5rem 0;
-  }*/
-
-  .front-svg {
-    padding: 3rem 10rem;
-  }
-
-  #midwidget {
-    background-image: url("images/symbole-agrisud-2.png"), url("images/fermier-rescaled.png");
-    background-repeat: no-repeat;
-    background-position: right, top;
-    background-size: inherit;
-    /*.region-midwidget-forth {
-      margin-left: 10% !important;
-      margin-right: -10% !important;
-    }
-*/
-    .elpacho {
-      position: relative;
-      background: #fff;
-      padding: 20px 20px;
-      margin-bottom: 30px;
-      border: 1px solid #eee;
-      border-bottom: 4px solid $red-agrisud;
-      text-align: center !important;
-    }
-  }
-
-  #clients {
-    h2 {
-      color: $green-agrisud !important;
-    }
-    #block-views-block-liste-actions-block-1 {
-      //margin-top: -20rem !important;
-    }
-    background-image: url("images/images/fermier-rescaled.png") !important;
-    //background-repeat: no-repeat;
-    background-position: top;
-    background-size: inherit;
-    background-repeat: repeat-y !important;
-    .node--view-mode-accroche-2.ds-1col {
-      .field--name-node-title {
-        height: 6rem !important;
-      }
-      position: relative;
-      background: #fff;
-      padding: 20px 20px;
-      margin-bottom: 30px;
-      border: 1px solid #eee;
-      border-bottom: 4px solid $red-agrisud;
-      text-align: center !important;
-      height: 35rem !important;
-    }
-  }
-  #block-message {
-    /*margin: 0 25% 7%;
-    width: 50%;*/
-    width: 70%;
-    margin: 8% 15% 20%;
-    font-size: 2rem;
-    line-height: 1.4;
-    text-align: center;
-    h2 {
-      line-height: 2;
-    }
-  }
-
-  .sticky {
-    color: #fff !important;
-    background: $green-agrisud !important;
-    position: fixed;
-    top: 85%;
-    /*background-image: url("images/hand-holding-heart-solid.svg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;*/
-    right: 0;
-    z-index: 9999;
-  }
 
   #block-views-block-partenaires-block-1 {
     padding: 0 5rem !important;
-    .image-style-_50x150:hover{
-      transform:scale(1.25);
-    }
-  }
-
-  .flexslider {
-    .slider-caption {
-      .slider-title, .slider-description{
-        font-size: 3rem !important;
-        font-weight: bold !important;
-        text-transform: uppercase !important;
-        line-height: 1.5;
-      }
-     /* font-size: 3rem !important;
-      font-weight: bold !important;
-      text-transform: uppercase !important;*/
+    .image-style-thumbnail:hover{
+      -moz-transform:scale(1.25);
     }
   }
 }
 
-//////////////////////////sticky buttons in all pages
-.sticky {
-  color: #fff !important;
-  background: #c83e2c !important;
-  position:fixed;
-  background: $green-agrisud !important;
-  right: 0;
-  z-index: 9999;
-}
-
-#bouton-sticky {
-  top: 85%;
-}
-
-#bouton-sticky-presse {
-  top: 90%;
-}
-
-#presse-key {
-  font-size: 1.3rem !important;
-}
-
-//////////////////////////////////slider!!!!!!!!!
-#block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
-  margin: 0 10% 15% 10%;
- // margin: 0 10% 0 10%;
-  .title {
-    margin-top: 5rem;
-    margin-bottom: 2rem;
-    font-weight: bold;
-  }
-
-  .carousel-caption.d-none.d-md-block{
-    position: fixed;
-    top :-4em;
-    padding-left: 10em;
-  }
-
-  #views-bootstrap-temoignage-block-1, #views-bootstrap-temoignage-block-2 {
-    a {
-      color: $grey-agrisud !important;
-    }
-    a.more-link{
-      color: $red-agrisud !important;
-      border: 1px solid $red-agrisud !important;
-    }
-    //slider of views
-    .carousel-inner {
-      overflow: inherit !important;
-    }
-
-    .carousel-caption {
-      background: none !important;
-      width: 100% !important;
-      bottom: auto;
-      padding-top: 5rem;
-      text-align: justify;
-      p {
-        color: $grey-agrisud !important;
-      }
-    }
-
-    .carousel-item .col-md-3 {
-      padding: 1rem 0;
-    }
-
-    a.carousel-control-prev {
-      left: -10%;
-      span.carousel-control-prev-icon {
-        background-color: $green-agrisud !important;
-      }
-    }
-
-    a.carousel-control-next {
-      left: 100%;
-      span.carousel-control-next-icon {
-        background-color: $green-agrisud !important;
-      }
-    }
-
-    ol li {
-      list-style-type: circle;
-    }
-
-    ol li.active {
-      list-style-type: disc;
-    }
-  }
-}
-
-//Global scss
-.region.region-header {
-  background-color: #fff !important;
-  padding: 0 !important;
-  img {
-    width: 14rem !important;
-    margin-top: 0rem;
-  }
-}
-
-.menu-wrap{
-  padding-left: 0;
-  margin-top: 1rem;
-}
-
-.facets-widget-links {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 25px 0 25px 0;
-  width: 40%;
-  margin-left: 30%;
-}
-
-.facet-item {
-  padding: 10px;
-}
-
-.facet-item a {
-  color: $green-agrisud;
-  font-weight: 400;
-  line-height: 120%;
-}
-
-.facet-item__value-active {
-  color: $red-agrisud;
-}
-
-.facet-item__bottom-horizontal-line {
-  width: 80%;
-  margin-top: 5px;
-  margin-bottom: 1px;
-  border-top: 2px solid $red-agrisud;
-  text-align: center;
-}
-
-.row {
-  justify-content: space-evenly !important;
-}
-
-.breadcrumb {
-  background: none !important;
-  li > a, li {
-    color: $grey-agrisud !important;
-  }
-}
-
-// CT Acrualité
-.node--type-actualite.node--view-mode-full.ds-1col, .node--type-evenement.node--view-mode-full.ds-1col {
-  text-align: center !important;
-
-  .field--name-field-actualite-date, .field--name-field-actualite-type {
-    display: flex !important;
-    text-align: left !important;
-  }
-
-  .field--name-body {
-    text-align: justify !important;
-    margin-top: 5rem !important;
-  }
-
-  #liens-utils {
-    text-align: left !important;
-    margin-top: 3rem !important;
-  }
-
-  #date-actu, #type-actu {
-    float: left !important;
-    margin-left: 1rem;
-  }
-
-  .clearBoth {
-    clear: both;
-  }
-
-  .field--name-field-actualite-image {
-    margin-top: 3rem !important;
-
-    img {
-      border-top-left-radius: 1.25rem !important;
-      border-bottom-right-radius: 1.25rem !important;
-    }
-  }
-}
-
-.node--type-actualite.node--view-mode-teaser.ds-2col {
-  margin-top: 2rem !important;
-  text-align: center !important;
-
-  .field--name-field-actualite-date, .field--name-field-actualite-type {
-    display: flex !important;
-    text-align: left !important;
-  }
-
-  .field--name-body {
-    text-align: justify !important;
-    margin-top: 1rem !important;
-  }
-
-  #date-actu, #type-actu {
-    float: left !important;
-    margin-left: 1rem;
-  }
-
-  .clearBoth {
-    clear: both;
-  }
-
-  .field--name-field-actualite-image {
-    margin-top: 3rem !important;
-
-    img {
-      border-top-left-radius: 1.25rem !important;
-      border-bottom-right-radius: 1.25rem !important;
-    }
-  }
-
-  .group-left {
-    width: 20% !important;
-    margin: 0 1rem !important;
-  }
-
-  .group-right {
-    width: 75% !important;
-  }
-
-}
-
-//CT action
-.node--type-action.node--view-mode-teaser.ds-2col {
-  text-align: center !important;
-  .field--name-field-action-date, .field--name-field-action-type {
-    display: flex !important;
-    text-align: left !important;
-  }
-  .field--name-body {
-    text-align: justify !important;
-    margin-top: 1rem !important;
-  }
-
-  .clearBoth { clear:both; }
-  .field--name-field-image {
-    margin-top: 3rem !important;
-    img {
-      border-top-left-radius: 1.25rem !important;
-      border-bottom-right-radius: 1.25rem !important;
-    }
-  }
-
-  .group-left {
-    width: 20% !important;
-    margin: 0 1rem !important;
-  }
-  .group-right {
-    width: 75% !important;
-  }
-  //managing three fields pays, programme, Statut
-  .field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
-    float: left !important;
-    margin-left: 1rem;
-    .field__label, .field__item {
-      display: inline !important;
-    }
-  }
-  .field--type-text-with-summary {
-    display: inline-block !important;
-  }
-
-}
-
-.node--type-action.node--view-mode-full.ds-1col {
-  text-align: center;
-  .field--name-field-programme, .field--name-field-pays, .field--name-field-statut{
-
-    .field__label, .field__item {
-      float:left !important;
-    }
-    .field__item {
-      margin-left: 0.5rem !important;
-      a {
-        color: inherit !important;
-      }
-    }
-    .field__label {
-      margin-left: 2rem !important;
-    }
-  }
-  .field--name-body {
-    text-align: justify !important;
-  }
-  #liens-utils {
-    text-align: left !important;
-    margin-top: 3rem !important;
-  }
-
-  .list-localization {
-    margin-top: 5rem !important;
-    display: table !important;
-    text-align: left;
-    .desc-item {
-      display: inline-flex;
-    }
-  }
-
-  .clearBoth { clear:both; }
-  .field--name-field-image {
-    text-align: center;
-    margin-top: 5rem !important;
-    display: inline-block !important;
-    img {
-      border-top-left-radius: 1.25rem !important;
-      border-bottom-right-radius: 1.25rem !important;
-    }
-  }
-}
-
-#views-bootstrap-programmes-multi-pays-block-1 {
-  margin: 0 10rem;
-  .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
-    background-color: #fff !important;
-    padding: 3rem !important;
-    img {
-      margin-right: 1rem !important;
-    }
-  }
-}
-
-.path-nos-actualites {
-  #page-title {
-    text-align: center;
-    padding: 10rem;
-    background-image: url("images/bg_actualites-min.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    h1 {
-      color: $light-grey;
-      font-size: 5rem;
-      font-weight: bold;
-    }
-  }
-}
-
-#block-views-block-evenement-block-1 {
-  #views-bootstrap-evenement-block-1 {
-    width: 50%;
-    margin-left: 25%;
-    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
-      background-color: #fff !important;
-      padding: 3rem !important;
-      img {
-        margin-right: 1rem !important;
-      }
-    }
-  }
-}
-
-//pagination
-.pager {
-  text-align: center !important;
-  margin-top: 3rem !important;
-
-  ul.pager__items {
-    display: inline-block !important;
-
-    li {
-      display: inline !important;
-    }
-
-    li > a, li > span {
-      position: relative !important;
-      float: left !important;;
-      padding: 6px 12px !important;;
-      line-height: 1.42857 !important;;
-      text-decoration: none !important;;
-      color: $green-agrisud !important;;
-      background-color: #fff !important;;
-      border: 1px solid #ddd !important;;
-      margin-left: -1px !important;;
-    }
-  }
-}
-
-a.more-link {
-  display: table;
-  margin-top: 15px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: white;
-  padding: 0.3rem 3rem;
-  border: 1px solid $green-agrisud;
-  background-color: $green-agrisud;
-  font-weight: 600;
-}
-a.more-link:hover{
-  color: $white;
-}
-
-//responsive management
-
-//mobile and small devices
-@media (max-width: 767px) {
-  .path-frontpage {
-    #midwidget {
-      background-position: right, top;
-    }
-    #chiffres-container {
-      padding: 0;
-      background-size: cover;
-    }
-
-    .front-svg {
-      padding: 3rem 10rem;
-    }
-
-    .updates {
-      padding: 0 !important;
-    }
-  }
-
-  //page de liste des actualités
-  .node--type-actualite.node--view-mode-teaser.ds-2col {
-    .group-left {
-      width: 100% !important;
-      margin: 0 1rem;
-    }
-
-    .group-right {
-      width: 100% !important;
-    }
-  }
-
-  //page de liste des actions
-  .node--type-action.node--view-mode-teaser.ds-2col {
-    .group-left {
-      width: 100% !important;
-      margin: 0 1rem;
-    }
-    .group-right {
-      width: 100% !important;
-    }
-  }
-
-  #block-message {
-    margin: 0% 15% 10% !important;
-    text-align: center;
-    font-size: 1.1rem !important;
-    line-height: 1.7;
-
-    h2 {
-      line-height: 2;
-    }
-  }
-
-  //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1  {
-    .field--name-field-image {
-      text-align: center;
-    }
-    margin: 0 !important;
-    .text-justify {
-      margin-bottom: 2rem !important;
-    }
-  }
-
-  #block-carte {
-    margin-top: 3rem;
-  }
-
-  #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
-    visibility: hidden;
-  }
-  #views-bootstrap-evenement-block-1 {
-    width: 80% !important;
-  }
-}
-
-//tablettes
-@media (max-width: 992px) {
-  .path-frontpage {
-    .front-svg {
-      padding: 3rem 0 !important;
-    }
-  }
-}
-
-@media screen and (min-width: 767px) and (max-width: 1200px) {
-
-  .path-frontpage {
-    .flexslider {
-      .slides img {
-        min-height: 650px;
-      }
-      .slider-caption {
-        font-size: 3rem !important;
-        font-weight: bold !important;
-        text-transform: uppercase !important;
-      }
-    }
-
-    .flex-active-slide {
-      .slider-caption {
-        top: 5% !important;
-      }
-    }
-
-    #block-message {
-      margin: 0 10% 7%;
-      width: 80% !important;
-      text-align: center;
-
-      h2 {
-        line-height: 2;
-      }
-    }
-  }
-
-  //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
-    .field--name-field-image {
-      text-align: center;
-    }
-    margin: 0 !important;
-    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
-      .group-left {
-        width: 100%;
-        text-align: center;
-      }
-      .group-right {
-        width: 100%;
-      }
-    }
-  }
-
-  #views-bootstrap-evenement-block-1 {
-    margin-left: 10% !important;
-    width: 80% !important;
-  }
-
-  .facets-widget-links {
-    width: 60%;
-    margin-left: 15%;
-  }
-}
-//tablettes
-@media (max-width: 992px) {
-  //page nos actions : programme multi-pays
-  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-evenement-block-1 {
-    .node--type-programme.node--view-mode-teaser.ds-2col, .node--type-evenement.node--view-mode-teaser.ds-2col {
-      .group-left {
-        width: 100%;
-      }
-      .group-right {
-        width: 100%;
-      }
-    }
-  }
-}
-.updates, .midwidget, .main-content {
-  h1, .h1,
-  h2, .h2,
-  h3, .h3,
-  h4, .h4 {
-    color: $green-agrisud !important;
-    font-weight: 400;
-    margin: 10px 0;
-    line-height: 120%;
-  }
-
-  .carousel-caption {
-    h3, p {
-      color: $green-agrisud !important;
-    }
-  }
-}
-
-//footer style
-#footer{
-  background: #FFFFFF;
-  .menu ul li a {
-    color: $grey-agrisud !important;
-    font-size: 0.8rem !important;
-  }
-  .container-fluid {
-    padding: 0 15rem 0 15rem;
-  }
-}
+//pied de page
 .block-a-propos-nous {
   background-image: url("images/bg_pied_page.png");
   background-repeat: no-repeat;
@@ -827,276 +160,297 @@ a.more-link:hover{
   text-align: justify;
 }
 
-#footer-icons {
-  color: $red-agrisud !important;
-  display: table;
-  a {
-    display: table-cell;
-    vertical-align: middle;
-    font-size: xx-large;
-  }
-}
-#block-pieddepage {
-  color: $grey-agrisud !important;
-}
-
- // map svg
-  //path[class="country"] {
-  //  stroke-width: 1;
-  //  stroke: #951915;
-  //  stroke-linecap: round;
-  //  stroke-linejoin: round;
-  //}
-  //
-  path[class~="country"]:hover{
-    fill: #226432 !important;
+#footer.footer {
+  line-height: 1.3 !important;
+  background: $white;
+  .menu ul li a {
+    color: $grey-agrisud !important;
+    font-size: 0.8rem !important;
   }
 
-  // visual update
-.btn, .node-readmore a, .flexslider .more-link, input[type="submit"]{
-  background: $green-agrisud !important;
+  #footer-icons {
+    color: $red-agrisud !important;
+    display: table;
+    a {
+      display: table-cell;
+      vertical-align: middle;
+      font-size: xx-large;
+    }
+  }
 }
 
-div.more-link {
-  float: right !important;
+#highlighted-partner {
+  width: 40% !important;
+  left: 30% !important;
 }
+@include designPageTitle();
 
-collab-icon{
-  background-image: url("images/picto-collaborateurs.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 5rem 0;
-}
-.flexslider .slides li:after {
+//pagination
+@include pagination();
+
+.features {
   background: none !important;
 }
-.flexslider .flex-direction-nav a.flex-next:before {
-  color: $green-agrisud !important;
+div.more-link {
+  float: right;
+  @include btnReadMore();
 }
-.flexslider .flex-direction-nav li {
-  list-style: none;
-  vertical-align: middle;
-  display: inline-block;
-  background: $green-agrisud !important;
-}
-.path-liste-actions {
-  #liste-actions{
-      background-image: url("images/actualite-background.png");
-      background-color: rgba(255, 255, 255, 0.8);
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      padding : 5em;
-    #block-carte {
-      background-color: $light-grey !important;
-      margin-top: -1rem !important;
-    }
 
-    .views-element-container {
-      padding-top: 5rem;
+@include blockImage();
+@include blockLinksOrButtons();
+
+#block-views-block-partenaires-block-1 {
+  padding: 0 5rem !important;
+  .image-style-thumbnail:hover{
+    -moz-transform:scale(1.25);
+  }
+}
+@include blockTaxonomyPartenaires();
+@include designFicheProjet();
+@include designFicheActualite();
+
+@include mainMenu();
+@include blockAgenda();
+//************************************************ End of Global elements*****************************************************
+
+@include blockEvent();
+
+#block-views-block-evenement-block-2 {
+  background-color: white !important;
+ /* display: flex;
+  flex-direction: row;*/
+  .title {
+    padding: 0.3rem 0.2rem;
+  }
+  table {
+    .views-field-field-actualite-date {
+      padding: 0.3rem 2rem !important;
+      max-width: 6rem !important;
+      font-size: 1.5rem !important;
     }
   }
-  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
-    background: $white;
-    margin-bottom: 2rem;
-    padding: 2rem 1rem 0 1rem;
+}
+#block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
+  background-color: white !important;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1rem;
+  .group-left {
+    width: 40% !important;
   }
-
-  #bottom-widget {
-    width: 50% !important;
-    background: none !important;
-    h2.title, .content * {
+  .group-right {
+    width: 60% !important;
+    padding: 0 1rem !important;
+    h2 {
+      font-family: "Roboto Condensed" !important;
       color: $green-agrisud !important;
+      font-size: 1.7rem !important;
     }
+    #periode-event {
+      margin-top: $grid-gutter/3;
+    }
+    i {
+      margin-right: 0.3rem;
+    }
+  }
+}
+
+@include breadcrumb();
+#custom-bottom-widget {
+  padding: $grid-gutter;
+}
+.features, #custom-bottom-widget {
+  background-image: url("images/symbole-agrisud-300.png") !important;
+  //background-image: url("images/symbole-agrisud-2.png") !important;
+  background-repeat: no-repeat !important;
+  background-position: right !important;
+  background-size: inherit !important;
+}
+
+.highlited-link {
+    background-color: red !important;
+    color: white !important;
+    padding: 0.2rem 0.5rem !important;
+}
+//Small Blocks image de la page 'nous connaitres
+@include blocksImagesSmall();
+
+
+.custom-title {
+  padding-left: 0 !important;
+}
+
+.region-primary-menu {
+  margin: 0 !important;
+  position: absolute !important;
+  top: 50% !important;
+  width: 95% !important;
+  -ms-transform: translateY(-50%) !important;
+  transform: translateY(-50%) !important;
+  left: 0% !important;
+  li>a {
+    color: $grey-agrisud !important;
+  }
+  li:last-of-type a{
+    border: none !important;
+  }
+}
+
+body {
+  font-weight: normal !important;
+}
+
+.copyright {
+  font-size: 12px !important;
+  line-height: 0 !important;
+  a {
+    color: $grey-agrisud !important;
+    text-decoration: underline !important;
+  }
+}
+.main-content {
+  background-image: url("images/symbole-agrisud-2.png"), linear-gradient(#eff3f0, white);
+  background-repeat: no-repeat;
+  background-position: unset;
+  background-size: inherit;
+}
+
+.node--view-mode-full.ds-1col {
+  .field--name-body {
+    text-align: justify;
+  }
+}
+
+#block-views-block-equipe-block-1, #block-views-block-equipe-block-2, #block-views-block-equipe-block-3 {
+  margin-bottom: 3rem !important;
+  .ligne-view {
+    margin-bottom: 1rem !important;
+    .field {
+      text-align: center !important;
+      p {
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+    }
+  }
+}
+
+.page-node-type-agir-avec-nous {
+  #block-messageagiravecnous {
+    height: auto !important;
+  }
+
+  #block-ladeductionfiscaledevotredon, #block-faireundonc, #block-donationsetlegues {
+    text-align: justify;
     h2.custom-block-title {
+      color: $green-agrisud !important;
       font-weight: bold !important;
-      margin-bottom: 2rem;
+      margin-bottom: $grid-gutter !important;
+    }
+    h3 {
+      color: $grey-agrisud !important;
+      font-weight: bold !important;
+      margin-bottom: $grid-gutter !important;
+    }
+    p a {
+      text-align: center;
+      color: white;
+      padding: 1rem 1rem;
+      border: 1px solid #afca0b;
+      background-color: #afca0b;
+      font-weight: 400;
+      margin: 1rem 1rem;
+      margin-left: 20% !important;
+    }
+  }
+  #block-donationsetlegues {
+    .field--name-body {
+      background-color: white;
+      padding: 1rem 2rem;
     }
     a {
-      padding: 2rem;
-      width: 20rem;
-      font-size: 1.5rem;
-      position: relative;
-      background: #fff !important;
-      border: 1px solid #eee;
-      border-bottom: 4px solid #ff5e14;
-      text-align: center !important;
-      color: $green-agrisud;
+      float: right;
     }
   }
-  #block-views-block-temoignage-block-2 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    width: 60% !important;
-    margin-left: 20% !important;
-  }
-  .custom-title {
-    margin-top: 7rem !important;
-  }
-}
+  @include blockTemoignage();
 
-.path-nos-actualites {
-  #views-bootstrap-nos-actualites-view-page-1 {
-    background-image: url("images/actualite-background.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    padding : 5em;
-  }
-  /*.content_layout .views-element-container .contextual-region {
-      background-image: url("images/actualite-background.png");
-      background-repeat: no-repeat;
-      background-position: top;
-      background-size: cover;
-      padding : 5em;
-    }*/
-  #views-bootstrap-nos-actualites-view-page-1 .node--type-actualite.node--view-mode-teaser.ds-2col{
-    background: $white;
-    margin-bottom: 0em;
-    padding: 2rem 1rem 0rem 1rem;
+  #bottom-widget {
+    h2.title, .content a {
+      color: $light-green !important;
     }
-  .pager {
-    text-align: center !important;
-    margin-top: -3.5rem !important;
-  }
-}
+    a {
+      & {
+        background-color: $white;
+        padding: $grid-gutter/3;
+        text-align: center;
+        height: 5rem;
+      }
 
-.chiffre-item {
-  img {
-    max-width: 6rem;
-  }
-}
-
-.region-primary-menu li a{
- color :#343534 !important;
-}
-
-#block-views-block-liste-actions-block-1, #views-bootstrap-bloc-actualities-block-1{
-  h2>a, h3>a {
-    color: $green-agrisud !important;
-  }
-  h3>a:hover{
-    color: $red-agrisud !important;
-  }
-  header {
-    font-size: 1.1rem;
-    margin: 1rem;
-  }
-}
-.liste-actions.views-row, #views-bootstrap-programmes-multi-pays-block-1{
-  a.more-link {
-    color: $red-agrisud !important;
-    border: 1px solid $red-agrisud !important;
-  }
-  h3,h2{
-    color: $green-agrisud !important;
-  }
-
-  div[class="field field--name-node-link field--type-ds field--label-hidden field__item"]{
-    float: right;
-    display: table;
-    margin-top: -19px;
-    margin-bottom: -6px;
-    text-align: center;
-    padding: 5px 60px;
-    border: 1px solid $green-agrisud !important;
-    background-color: $green-agrisud;
-    font-weight: 600;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-    a{
-      color: #d3522f !important;
-    }
-  }
-//managing three fields pays, programme, Statut
-.field--name-field-pays, .field--name-field-programme, .field--name-field-statut {
-  text-align: left;
-  float:left !important;
-  margin-right: 1em;
-  text-decoration: none !important;
-  .field__label, .field__item {
-    display: inline !important;
-    font-weight: normal !important;
-  }
-}
-  .field--name-body.field--type-text-with-summary {
-    float:left !important;
-  }
-}
-
-  h2>a, span.field--name-title {
-    color: $green-agrisud !important;
-  }
-  #liens-utils ul a {
-    color: $grey-agrisud !important;
-    font-weight: bold;
-    text-decoration: underline;
-  }
-
-.node-programme {
-  .field--type-image {
-    margin: 3rem 0;
-    text-align: center;
-  }
-  text-align: justify;
-}
-
-.path-user {
-  div.main-content{
-    background-image: url(images/connexion-agrisud.png);
-    background-repeat: no-repeat;
-    background-position: unset;
-    background-size: cover;
-    position: relative;
-    bottom: 12.3em;
-    padding: 10em;
-    margin-bottom: -18em;
-  }
-  ul.tabs.primary {
-    display: none;
-  }
-
-  .region-page-title h1 {
-    margin: 30px 0;
-    text-align: center;
-    padding-top: 2em;
-  }
-
-  #edit-submit{
-    border: 0;
-    line-height: 2.5;
-    padding: 0 20px;
-    font-size: 1rem;
-    text-align: center;
-    color: #fff;
-    text-shadow: 1px 1px 1px #000;
-    border-radius: 10px;
-    background-color: rgba(220, 0, 0, 1);
-    background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-    inset -2px -2px 3px rgba(0, 0, 0, .6);
-    width: 100%;
-  }
-
-  label.js-form-required.form-required {
-    color: $green-agrisud;
-  }
-
-  #block-norsys-base-page-title {
-    h1{
+      display: block !important;
+      font-size: 1.3rem !important;
       text-transform: uppercase;
-      color: $grey-agrisud;
+      font-weight: bold;
     }
-  }
 
-  .user-login-form {
-    border-radius: 25px;
+    figcaption {
+      & {
+        background-color: $white;
+        padding: 0.7rem !important;
+        text-align: center;
+        height: 5rem;
+      }
+
+      display: block !important;
+      font-size: 1rem !important;
+      color: $grey-agrisud !important;
+    }
   }
 }
 
+h2 {
+  font-size: 2.3rem !important;
+}
+
+.region.region-primary-menu {
+  display: flex !important;
+  width: 100% !important;
+  a {
+    padding-right: 28px !important;
+  }
+  #search-block-form {
+    width: 90% !important;
+  }
+}
+
+#block-messageagiravecnous, #block-messagenousconnaitre {
+  width: 80%;
+  margin: 0 10% 0;
+}
+
+////
+/*#search-block-form {
+   input[type=search] {
+     //width: 130px;
+     float: right !important;
+     width: 2% !important;
+     box-sizing: border-box;
+     border: 2px solid #ccc;
+     border-radius: 4px;
+     font-size: 16px;
+     background-color: white;
+     background-image: url('searchicon.png');
+     background-position: 10px 10px;
+     background-repeat: no-repeat;
+     padding: 12px 20px 12px 40px;
+     -webkit-transition: width 0.4s ease-in-out;
+     transition: width 0.4s ease-in-out;
+   }
+
+   input[type=search]:focus {
+     width: 100% !important;
+   }
+ }*/
+
+#views-exposed-form-nos-actualites-view-page-1 {
+  display: none !important;
+}

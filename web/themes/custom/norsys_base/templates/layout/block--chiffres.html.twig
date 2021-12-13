@@ -1,13 +1,14 @@
 {{ title_prefix }}
 {% if label %}
-    <div class="custom-title container mb-5"><h2{{ title_attributes.addClass('font-weight-bold') }}>{{ label }}</h2></div>
+    <div class="custom-title container mb-5 current-year-title"><h2{{ title_attributes.addClass('font-weight-bold') }}>{{ label }}</h2></div>
 {% endif %}
 {{ title_suffix }}
 
-<div id="chiffres-container" class="container-fluid">
-    <div id="chiffres" class="container-fluid bottom-widget">
-        <div class="row text-center">
-            <div class="chiffre-item col-sm-4 col-md-2 col-lg-2">
+<div id="chiffres-container" class="container-fluid block current-year">
+  <div id="chiffres-year" class=""><h3>En 2020</h3></div>
+  <div id="chiffres" class="container-fluid bottom-widget">
+        <div id="list-items" class="row text-center">
+            <div class="chiffre-item offset-1 col-sm-4 col-md-2 col-lg-2">
               <div>
                 <img src="/web/themes/custom/norsys_base/images/picto-collaborateurs.png" alt="collab icon"/>
               </div>
@@ -19,7 +20,7 @@
                 <img src="/web/themes/custom/norsys_base/images/picto-partenaires.png" alt="patenaire icon"/>
               </div>
               <br>
-              <span class="chiffres">66</span> <br> <span class="chiffres-desc">Partenaires operationnels</span>
+              <span class="chiffres">66</span> <br> <span class="chiffres-desc">Partenaires <br>operationnels</span>
             </div>
             <div class="chiffre-item col-sm-4 col-md-2 col-lg-2">
               <div>

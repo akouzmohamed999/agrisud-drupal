@@ -1,0 +1,22 @@
+uuid: 8d73c8c6-5287-42c4-8d87-9ee948c873b0
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.reseaux_et_partenaires
+id: node.reseaux_et_partenaires.promote
+field_name: promote
+entity_type: node
+bundle: reseaux_et_partenaires
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

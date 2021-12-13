@@ -1,0 +1,33 @@
+uuid: 207799f7-6bae-4809-912d-2e2c51e31150
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_type_de_partenaire
+    - node.type.partenaire
+    - taxonomy.vocabulary.type_partenaire
+  content:
+    - 'taxonomy_term:type_partenaire:c3139824-bcc1-4d92-8718-0321fcf6ef62'
+id: node.partenaire.field_type_de_partenaire
+field_name: field_type_de_partenaire
+entity_type: node
+bundle: partenaire
+label: 'Type de partenaire'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: c3139824-bcc1-4d92-8718-0321fcf6ef62
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      type_partenaire: type_partenaire
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

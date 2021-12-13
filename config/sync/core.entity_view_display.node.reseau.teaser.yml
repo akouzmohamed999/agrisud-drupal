@@ -1,0 +1,34 @@
+uuid: 3ab2212c-2aed-4871-aafd-8a79ec70499f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.reseau.body
+    - field.field.node.reseau.field_image_partenaire
+    - node.type.reseau
+  module:
+    - text
+    - user
+id: node.reseau.teaser
+targetEntityType: node
+bundle: reseau
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_image_partenaire: true
+  langcode: true
+  search_api_excerpt: true
