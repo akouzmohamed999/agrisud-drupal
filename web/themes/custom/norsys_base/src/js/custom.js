@@ -8,6 +8,15 @@
  **/
 
 jQuery(document).ready(function ($) {
+  $("#search-block-form .form-item").hide();
+
+  //manage language
+  var urlElements = (location.pathname).split("/");
+  if ("en" == urlElements[2] || urlElements[1] == "en") {
+    $('#language-select').val("en");
+  } else {
+    $('#language-select').val("fr");
+  }
     $(".slider-caption a").text("Découvrir");
     $(".slider-caption a").addClass("more-link");
     $("#donate-link").animate({width:'toggle'},350);
@@ -40,4 +49,19 @@ jQuery(document).ready(function ($) {
             window.location.href = baseUrl + "/liste-actions?field_pays="+index+"#block-actions";
         });
     });
+
+    //manage language change
+  $('#language-select').on('change', function() {
+    var getUrl = window.location;
+    window.location.href = baseUrl + "/" + this.value;
+  });
+
+  //Managing search button
+  $("#edit-submit").on("click", function (e) {
+    if ($("#search-block-form .form-item").css("display") == "none") {
+      e.preventDefault();
+      $("#search-block-form .form-item").css("display", "inline");
+      $("#search-block-form .form-item").show();
+    }
+  });
 });
