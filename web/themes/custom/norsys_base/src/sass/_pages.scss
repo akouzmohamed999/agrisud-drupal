@@ -1,5 +1,6 @@
 .path-frontpage {
   font-weight: normal !important;
+
   .main-content {
     background-image: url("images/symbole-agrisud-2.png"), linear-gradient(#eff3f0, white);
 
@@ -7,6 +8,7 @@
     background-repeat: no-repeat;
     background-position: unset;
     background-size: inherit;
+
     #block-messageaccueil {
       width: 80% !important;
       margin: 0 10% 0 !important;
@@ -15,6 +17,7 @@
       text-align: center;
     }
   }
+
   #midwidget {
     background-image: url("images/symbole-agrisud-2.png"), url("images/fermier-rescaled.png");
     background-repeat: no-repeat;
@@ -33,10 +36,12 @@
       text-align: center !important;
     }
   }
+
   //****Start block chiffres
   .region.region-updates-first {
     padding: 0 !important;
   }
+
   //***** End block chiffres
   h2 {
     font-size: $h2Size-heading !important;
@@ -49,6 +54,7 @@
 
 .path-nos-actualites {
   font-weight: normal !important;
+
   .region-content {
     background-image: url("images/arriere-plan-page-actualites.jpg");
     //background-image: url("images/actualite-background-90.png");
@@ -57,14 +63,17 @@
     //background-size: cover;
     margin-bottom: 0 !important;
   }
+
   //.node--type-actualite.node--view-mode-teaser.ds-2col
   @include viewsListds2();
   @include designActualitesFields();
+
   h2.custom-block-title {
     color: $green-agrisud !important;
     font-weight: bold !important;
     margin-bottom: $grid-gutter !important;
   }
+
   .features {
     margin-top: 2*$grid-gutter !important;
     background-image: url("images/symbole-agrisud-300.png") !important;
@@ -74,6 +83,7 @@
     //height: 700px !important;
     background-size: inherit !important;
   }
+
   #bottom-widget {
     margin-bottom: $grid-gutter !important;
   }
@@ -81,13 +91,16 @@
 
 .path-liste-actions {
   font-weight: normal !important;
+
   #block-carte {
     margin-top: 2*$grid-gutter !important;
   }
+
   #page-title {
     background: none !important;
     height: 0 !important;
   }
+
   @include viewsListds2();
   @include designActionsFields;
 }
@@ -101,6 +114,7 @@
   h2.title, .content * {
     color: $green-agrisud !important;
   }
+
   /*  h2.custom-block-title {
       font-weight: bold !important;
       margin-bottom: 2rem;
@@ -123,47 +137,53 @@
   .block-content.block-content--type-block-links.block-content--view-mode-full.ds-1col,
   .block-content.block-content--type-block-bouton.block-content--view-mode-full.ds-1col {
     text-align: center;
+
     .field--name-body.field a {
       text-align: center;
       color: white !important;
-      padding: 2rem 3rem;
+      padding: 2rem 2rem;
       border: 1px solid $light-green !important;
       background-color: $light-green !important;
       font-weight: 400;
       display: block;
       font-size: 1.3rem !important;
       margin: 1rem 1rem;
-     // width: 20rem;
+      // width: 20rem;
       //margin-top: 0 !important;
-/*
-      text-align: center;
-      color: white;
-      padding: 2rem 3rem;
-      border: 1px solid #afca0b;
-      background-color: #afca0b;
-      font-weight: 400;
-      margin: 1rem 1rem;*/
+      /*
+            text-align: center;
+            color: white;
+            padding: 2rem 2rem;
+            border: 1px solid #afca0b;
+            background-color: #afca0b;
+            font-weight: 400;
+            margin: 1rem 1rem;*/
     }
   }
+
   .region-bottom-third {
     .block {
       margin: 0 !important;
     }
+
     .block-content.block-content--type-block-links.block-content--view-mode-full.ds-1col,
     .block-content.block-content--type-block-bouton.block-content--view-mode-full.ds-1col {
       float: left;
     }
   }
+
   .region-bottom-second {
     .block {
       margin: 0 !important;
     }
+
     .block-content.block-content--type-block-links.block-content--view-mode-full.ds-1col,
     .block-content.block-content--type-block-bouton.block-content--view-mode-full.ds-1col {
       float: right;
     }
   }
 }
+
 .page-node-type-nous-connaitre {
   font-weight: normal !important;
 
@@ -172,8 +192,10 @@
     @include blocksChiffres();
     @include blocksChiffresPageNousConnaitre();
   }
+
   #block-phrasecharteagrisud {
     margin-bottom: 3rem !important;
+
     .block-content.block-content--type-block-message {
       width: 70%;
       margin: 0 15% 0;
@@ -192,13 +214,14 @@
 .path-liste-actions {
   font-weight: normal !important;
 
-  #liste-actions{
+  #liste-actions {
     background-image: url("images/arriere-plan-page-actions.jpg");
     background-color: rgba(255, 255, 255, 0.8);
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-    padding : 5em;
+    padding: 5em;
+
     #block-carte {
       background-color: $light-grey !important;
       margin-bottom: 0 !important;
@@ -206,11 +229,12 @@
       padding-top: 2*$grid-gutter !important;
     }
 
-/*    .views-element-container {
-      padding-top: 5rem;
-    }*/
+    /*    .views-element-container {
+          padding-top: 5rem;
+        }*/
   }
-  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page{
+
+  .node.node--type-action.node--view-mode-teaser.ds-2col.clearfix.container.action-view-page {
     background: $white;
     margin-bottom: 2rem;
     padding: 2rem 1rem 0 1rem;
@@ -220,15 +244,15 @@
     margin-top: $grid-gutter !important;
   }
 
- /* #block-views-block-temoignage-block-2 {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    width: 60% !important;
-    margin-left: 20% !important;
-  }*/
-/*  .custom-title {
-    margin-top: 7rem !important;
-  }*/
+  /* #block-views-block-temoignage-block-2 {
+     margin-top: 0 !important;
+     margin-bottom: 0 !important;
+     width: 60% !important;
+     margin-left: 20% !important;
+   }*/
+  /*  .custom-title {
+      margin-top: 7rem !important;
+    }*/
 }
 
 .page-node-type-reseaux-et-partenaires {
@@ -238,6 +262,7 @@
     text-align: justify;
     margin-bottom: 2*$grid-gutter !important;
   }
+
   header, #block-nospartenaires {
     margin-bottom: $grid-gutter !important;
     text-align: justify !important;
