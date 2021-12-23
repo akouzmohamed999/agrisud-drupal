@@ -9,18 +9,21 @@
 .products,
 .features,
 .copyright,
-.clients{
+.clients {
   *:not(i) {
     font-family: $fontFamily !important;
   }
+
   .block {
     margin-bottom: 2*$grid-gutter !important;
+
     header {
       margin-bottom: $grid-gutter !important;
     }
   }
 
 }
+
 .header {
 
   .region-primary-menu ul, ul.links {
@@ -29,64 +32,65 @@
       font-size: 1rem !important;
     }
   }
+
   padding-bottom: 1rem !important;
 }
 
 // Bottom Widgets
-.bottom-widget{
+.bottom-widget {
   background: $green-agrisud !important;
   text-align: center;
 
-  h2.title, *{
+  h2.title, * {
     color: $white;
     font-size: $h2Size-heading !important;
   }
 }
 
 
-.main-content{
+.main-content {
   padding: 0 0 50px 0;
 }
 
 .top-message,
-.services{
+.services {
   text-align: center;
 }
 
 // Front Page
-.path-frontpage .feed-icon{
+.path-frontpage .feed-icon {
   display: none;
 }
 
-.updates{
-  .region{
+.updates {
+  .region {
     background: none !important;
   }
 }
 
-.features{
+.features {
   background-color: #fff2e0;
   background: url('../images/bg-features.jpg');
   background-size: cover;
 }
 
-.footer{
+.footer {
   tbody tr:hover, tbody tr:focus {
     background: none;
   }
 }
 
-.clients{
+.clients {
   background: #eee;
 
-  .region{
+  .region {
     ul {
-      li{
+      li {
         display: inline-block;
         width: 100%;
         text-align: center;
 
-        img{
+        img {
           max-width: 200px;
         }
       }
@@ -95,7 +99,7 @@
 }
 
 // Testimonials
-.testimonials-wrap{
+.testimonials-wrap {
   background: #fafafa;
   border-top: solid 1px #e3e3e3;
   border-bottom: solid 1px #e3e3e3;
@@ -105,12 +109,12 @@
   line-height: 160%;
 }
 
-.region-testimonials{
+.region-testimonials {
   max-width: 600px;
   margin: 0 auto;
 }
 
-.testimonials-pic{
+.testimonials-pic {
   width: 40px;
   height: 40px;
   display: inline-block;
@@ -118,18 +122,19 @@
   margin-right: 10px;
 }
 
-.testimonials-author{
+.testimonials-author {
   padding: 0 5px;
   font-size: .75em;
   color: #555;
 }
 
 // Price
-.price-table{
-  .card-header{
+.price-table {
+  .card-header {
     border: 0;
     padding: 20px 0;
   }
+
   ul li {
     list-style: none;
     border-bottom: 1px solid #eee;
@@ -139,9 +144,9 @@
 }
 
 // Team
-.team{
-  .team-list{
-    .region{
+.team {
+  .team-list {
+    .region {
       background: #efefef;
       overflow: hidden;
       padding: 10px;
