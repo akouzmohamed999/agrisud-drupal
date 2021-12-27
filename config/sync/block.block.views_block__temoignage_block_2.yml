@@ -12,19 +12,19 @@ dependencies:
 id: views_block__temoignage_block_2
 theme: norsys_base
 region: clients
-weight: -11
+weight: -20
 provider: null
 plugin: 'views_block:temoignage-block_2'
 settings:
   id: 'views_block:temoignage-block_2'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: /liste-actions
     negate: false
     context_mapping: {  }
+    pages: /liste-actions

@@ -1,0 +1,18 @@
+uuid: afe2114c-74da-49ea-9601-99c2c66f1938
+langcode: fr
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.temoignage
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.temoignage
+target_entity_type_id: taxonomy_term
+target_bundle: temoignage
+default_langcode: site_default
+language_alterable: true

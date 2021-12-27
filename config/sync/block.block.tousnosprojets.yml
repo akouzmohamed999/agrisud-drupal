@@ -1,9 +1,9 @@
-uuid: 0871fdac-6189-43e2-9938-74025d46a1fc
+uuid: 69e33329-d55f-4c1b-9692-9fa9d9f8c1e8
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:basic:c6be64fe-23ec-4795-9807-1fa6d6eab0cb'
+    - 'block_content:block_bouton:1ac51dfc-6d74-4ef7-b460-e311eaec8910'
   module:
     - block_content
     - system
@@ -12,20 +12,20 @@ dependencies:
 id: tousnosprojets
 theme: norsys_base
 region: bottom_third
-weight: -17
+weight: -25
 provider: null
-plugin: 'block_content:c6be64fe-23ec-4795-9807-1fa6d6eab0cb'
+plugin: 'block_content:1ac51dfc-6d74-4ef7-b460-e311eaec8910'
 settings:
-  id: 'block_content:c6be64fe-23ec-4795-9807-1fa6d6eab0cb'
+  id: 'block_content:1ac51dfc-6d74-4ef7-b460-e311eaec8910'
   label: 'Tous nos projets'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /liste-actions
     negate: false
     context_mapping: {  }
+    pages: "/liste-actions\r\n/réseaux-et-partenaires"

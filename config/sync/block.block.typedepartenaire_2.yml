@@ -1,0 +1,29 @@
+uuid: d701815e-9c7e-4fbc-bc76-9b084a17be4a
+langcode: fr
+status: false
+dependencies:
+  config:
+    - facets.facet.type_de_partenaire
+  module:
+    - facets
+    - system
+  theme:
+    - norsys_base
+id: typedepartenaire_2
+theme: norsys_base
+region: content
+weight: -7
+provider: null
+plugin: 'facet_block:type_de_partenaire'
+settings:
+  id: 'facet_block:type_de_partenaire'
+  label: 'Type de partenaire'
+  label_display: visible
+  provider: facets
+  block_id: typedepartenaire_2
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /liste-partenaires

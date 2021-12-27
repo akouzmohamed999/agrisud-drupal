@@ -1,0 +1,31 @@
+uuid: f5593e78-e970-4faf-8e44-29797993b21d
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_message:c1097137-0ca8-4017-b2cd-c7b7065e5dde'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: phrasecharteagrisud
+theme: norsys_base
+region: content
+weight: -21
+provider: null
+plugin: 'block_content:c1097137-0ca8-4017-b2cd-c7b7065e5dde'
+settings:
+  id: 'block_content:c1097137-0ca8-4017-b2cd-c7b7065e5dde'
+  label: 'Phrase charte Agrisud'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /nous-connaitre

@@ -2,30 +2,27 @@ uuid: 3c4ea04a-3c2a-46ea-b446-d9a09e582424
 langcode: en
 status: true
 dependencies:
-  content:
-    - 'block_content:basic:90bfa4ed-5c7e-449c-80d8-5900c7ad775d'
   module:
-    - block_content
     - system
   theme:
     - norsys_base
 id: soutenirintroduction
 theme: norsys_base
 region: content
-weight: 0
+weight: -23
 provider: null
 plugin: 'block_content:90bfa4ed-5c7e-449c-80d8-5900c7ad775d'
 settings:
   id: 'block_content:90bfa4ed-5c7e-449c-80d8-5900c7ad775d'
   label: 'Soutenir introduction'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /soutenir
     negate: false
     context_mapping: {  }
+    pages: /soutenir

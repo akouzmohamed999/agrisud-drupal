@@ -1,0 +1,8 @@
+uuid: c78aac30-96ca-401c-9620-e49cdefa2b86
+langcode: fr
+status: true
+dependencies: {  }
+id: block_bouton
+label: 'Block bouton'
+revision: 0
+description: ''

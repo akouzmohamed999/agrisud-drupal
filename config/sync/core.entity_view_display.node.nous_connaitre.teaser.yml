@@ -1,0 +1,34 @@
+uuid: 11a40fc0-8bf2-4339-9d87-2382f06f4c07
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.nous_connaitre.body
+    - field.field.node.nous_connaitre.field_image
+    - node.type.nous_connaitre
+  module:
+    - text
+    - user
+id: node.nous_connaitre.teaser
+targetEntityType: node
+bundle: nous_connaitre
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image: true
+  langcode: true
+  search_api_excerpt: true

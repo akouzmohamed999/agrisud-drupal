@@ -1,5 +1,7 @@
 <?php
 use Drupal\image\Entity\ImageStyle;
+use Drupal\media\Entity\Media;
+use Drupal\file\Entity\File;
 
 /**
  * @param $variables
@@ -31,7 +33,42 @@ function norsys_base_preprocess_page(&$variables) {
   }
   $variables['banner'] = empty($imageUrl) ? $default : $imageUrl;
 
+  if ($variables['is_front']) {
+      if (theme_get_setting('show_slideshow','norsys_base') == 1) {
+        $variables['show_slideshow'] = 1;
+        $variables['slider_content'] = norsys_base_get_slider_content();
+      }
+  }
+
   return $variables;
+}
+
+/**
+ * Slider
+ * Implements custom function for get slider content.
+ */
+function norsys_base_get_slider_content() {
+  $slider_content = array();
+  for ($i = 1; $i <= theme_get_setting('no_of_slides'); $i++) {
+    $fid = theme_get_setting('slide_image_path'.$i,'norsys_base');
+    if (!empty($fid)) {
+      $file = File::load($fid[0]);
+      $url = $file->createFileUrl();
+      $path = $file->createFileUrl();
+    }
+    else {
+      $path = base_path() . drupal_get_path('theme', 'norsys_base') . theme_get_setting('slide_image_path_' . $i, 'norsys_base');
+    }
+    $slider_content[$i] = '<li>
+      <img src="' . $path . '" alt="Slider Banner" />
+      <div class="slider-caption">
+        <h2 class="slider-title">' . t(theme_get_setting('slide_title_' . $i, 'norsys_base')).'</h2>
+        <div class="clearfix"><p class="slider-description">' . t(theme_get_setting('slide_description_' . $i, 'construction_zymphonies_theme')).'</p></div>
+        <a href=' . theme_get_setting('slide_url_' . $i, 'norsys_base') . ' class="more-link">Read more</a>
+      </div>
+    </li>';
+  }
+  return $slider_content;
 }
 
 /**

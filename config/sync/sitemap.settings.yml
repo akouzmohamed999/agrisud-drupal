@@ -1,0 +1,174 @@
+_core:
+  default_config_hash: xu0yG13sSQJcXrOJJqsn44W_hUWAIFHVlphrzxT2ycU
+langcode: fr
+page_title: Sitemap
+message:
+  value: ''
+  format: plain_text
+plugins:
+  frontpage:
+    enabled: true
+    weight: 0
+    settings:
+      title: 'Front page'
+      rss: /rss.xml
+  book:
+    enabled: false
+    weight: 0
+  'vocabulary:equipe':
+    enabled: false
+    weight: 0
+    settings:
+      title: Equipe
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:pays':
+    enabled: false
+    weight: 0
+    settings:
+      title: Pays
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:programme':
+    enabled: false
+    weight: 0
+    settings:
+      title: Programme
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:statut':
+    enabled: false
+    weight: 0
+    settings:
+      title: Statut
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:tags':
+    enabled: false
+    weight: 0
+    settings:
+      title: Étiquettes
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:temoignage':
+    enabled: false
+    weight: 0
+    settings:
+      title: Témoignage
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:type_action':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Type action'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'vocabulary:type_partenaire':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Type partenaire'
+      show_description: false
+      show_count: false
+      term_depth: 9
+      term_count_threshold: 0
+      customize_link: false
+      term_link: entity.taxonomy_term.canonical|taxonomy_term
+      always_link: false
+      enable_rss: false
+      rss_link: view.taxonomy_term.feed_1|arg_0
+      rss_depth: 9
+  'menu:account':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'User account menu'
+      show_disabled: false
+  'menu:admin':
+    enabled: false
+    weight: 0
+    settings:
+      title: Administration
+      show_disabled: false
+  'menu:devel':
+    enabled: false
+    weight: 0
+    settings:
+      title: Development
+      show_disabled: false
+  'menu:footer':
+    enabled: false
+    weight: 0
+    settings:
+      title: 'Pied de page'
+      show_disabled: false
+  'menu:main':
+    enabled: true
+    weight: 0
+    settings:
+      title: 'Main navigation'
+      show_disabled: false
+  'menu:tools':
+    enabled: false
+    weight: 0
+    settings:
+      title: Outils
+      show_disabled: false
+include_css: true

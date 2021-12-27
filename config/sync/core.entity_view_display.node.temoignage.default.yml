@@ -4,12 +4,12 @@ status: true
 dependencies:
   config:
     - field.field.node.temoignage.body
+    - field.field.node.temoignage.field_classification_temoignage
     - field.field.node.temoignage.field_image_temoignage
     - field.field.node.temoignage.field_type
     - node.type.temoignage
   module:
     - ds
-    - svg_image
     - text
     - user
 third_party_settings:
@@ -20,58 +20,50 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       ds_content:
-        - body
         - field_type
-        - links
+        - body
 id: node.temoignage.default
 targetEntityType: node
 bundle: temoignage
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 0
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 1
     region: ds_content
-  field_image_temoignage:
-    weight: 3
+  field_classification_temoignage:
+    type: entity_reference_label
     label: above
     settings:
-      svg_attributes:
-        width: null
-        height: null
-      svg_render_as_image: true
-      image_style: ''
-      image_link: ''
+      link: true
     third_party_settings: {  }
-    type: image
+    weight: 2
     region: content
   field_type:
-    weight: 1
-    label: above
+    type: string
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    type: string
+    weight: 0
     region: ds_content
-  links:
-    weight: 2
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  field_image_temoignage: true
   langcode: true
+  links: true
   search_api_excerpt: true

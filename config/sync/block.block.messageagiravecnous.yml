@@ -1,0 +1,33 @@
+uuid: d6d9cad6-a5c4-45a5-9b23-e9594a838b5c
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_message:11e8d929-3262-4e5e-a58c-4e975c1d3710'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: messageagiravecnous
+theme: norsys_base
+region: content
+weight: -14
+provider: null
+plugin: 'block_content:11e8d929-3262-4e5e-a58c-4e975c1d3710'
+settings:
+  id: 'block_content:11e8d929-3262-4e5e-a58c-4e975c1d3710'
+  label: 'Message agir avec nous'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      agir_avec_nous: agir_avec_nous

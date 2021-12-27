@@ -21,7 +21,8 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
         wrappers:
           left: div
           right: div
@@ -29,8 +30,7 @@ third_party_settings:
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       left:
         - field_image
@@ -44,47 +44,47 @@ third_party_settings:
         label: hidden
         formatter: default
         settings:
+          link: false
           'link class': ''
           wrapper: h3
           class: ''
-          link: false
 id: node.programme.teaser
 targetEntityType: node
 bundle: programme
 mode: teaser
 content:
   body:
-    label: hidden
     type: smart_trim
-    weight: 2
+    label: hidden
     settings:
       trim_length: 250
       trim_type: chars
       trim_suffix: ''
+      wrap_output: false
       wrap_class: trimmed
       more_link: true
-      more_text: Découvrir
       more_class: more-link
+      more_text: Découvrir
       summary_handler: full
-      wrap_output: false
       trim_options:
         text: false
         trim_zero: false
     third_party_settings: {  }
+    weight: 2
     region: right
   field_image:
     type: image
-    weight: 0
-    region: left
     label: hidden
     settings:
-      image_style: medium
       image_link: content
-      svg_render_as_image: true
+      image_style: medium
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings: {  }
+    weight: 0
+    region: left
 hidden:
   langcode: true
   links: true

@@ -1,0 +1,23 @@
+uuid: 19cedf1e-6c26-4794-9621-95a3c5832f58
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.nous_connaitre
+  module:
+    - text
+id: node.nous_connaitre.body
+field_name: body
+entity_type: node
+bundle: nous_connaitre
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

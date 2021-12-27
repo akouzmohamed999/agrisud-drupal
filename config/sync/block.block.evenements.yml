@@ -1,0 +1,31 @@
+uuid: ae3496ee-7440-4f3d-901a-edaa21f861bc
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fbea3be7-3824-4f7a-95c8-0caad19ad2a8'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: evenements
+theme: norsys_base
+region: updates_title
+weight: 0
+provider: null
+plugin: 'block_content:fbea3be7-3824-4f7a-95c8-0caad19ad2a8'
+settings:
+  id: 'block_content:fbea3be7-3824-4f7a-95c8-0caad19ad2a8'
+  label: Evénements
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /nos-actualites

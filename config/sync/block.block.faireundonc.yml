@@ -1,0 +1,33 @@
+uuid: c2b3ffc3-4bac-4211-9fae-9d41deb7f639
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:512200d9-a080-465a-bb8f-78d10215278e'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: faireundonc
+theme: norsys_base
+region: features_third
+weight: 0
+provider: null
+plugin: 'block_content:512200d9-a080-465a-bb8f-78d10215278e'
+settings:
+  id: 'block_content:512200d9-a080-465a-bb8f-78d10215278e'
+  label: 'Faire un don'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      agir_avec_nous: agir_avec_nous

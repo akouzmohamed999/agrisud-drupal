@@ -18,14 +18,14 @@ plugin: 'facet_block:facet_actualite_type'
 settings:
   id: 'facet_block:facet_actualite_type'
   label: 'Facet Actualité Type'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: facetactualitetype
 visibility:
   language:
     id: language
-    langcodes:
-      fr: fr
     negate: false
     context_mapping:
       language: '@language.current_language_context:language_interface'
+    langcodes:
+      fr: fr

@@ -1,0 +1,23 @@
+uuid: 54a43720-7284-471d-a203-684caba95410
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.liste_equipe
+  module:
+    - text
+id: node.liste_equipe.body
+field_name: body
+entity_type: node
+bundle: liste_equipe
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

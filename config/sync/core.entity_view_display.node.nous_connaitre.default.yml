@@ -1,0 +1,62 @@
+uuid: b7e8deda-3ee5-46ad-a796-bc35f7ec9755
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.nous_connaitre.body
+    - field.field.node.nous_connaitre.field_image
+    - node.type.nous_connaitre
+  module:
+    - ds
+    - svg_image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - body
+        - langcode
+        - field_image
+id: node.nous_connaitre.default
+targetEntityType: node
+bundle: nous_connaitre
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: ''
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true
+  links: true
+  search_api_excerpt: true

@@ -1,0 +1,32 @@
+uuid: 2f085093-dfc0-49a7-a29f-1c27115b3d0f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.equipe
+  module:
+    - node
+    - views
+  theme:
+    - norsys_base
+id: views_block__equipe_block_1
+theme: norsys_base
+region: content
+weight: -17
+provider: null
+plugin: 'views_block:equipe-block_1'
+settings:
+  id: 'views_block:equipe-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      liste_equipe: liste_equipe

@@ -6,6 +6,7 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.partenaire.body
     - field.field.node.partenaire.field_image_partenaire
+    - field.field.node.partenaire.field_lien_partenaire
     - field.field.node.partenaire.field_type_de_partenaire
     - node.type.partenaire
   module:
@@ -17,20 +18,21 @@ bundle: partenaire
 mode: teaser
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 101
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 101
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   field_image_partenaire: true
+  field_lien_partenaire: true
   field_type_de_partenaire: true
   langcode: true
   search_api_excerpt: true

@@ -1,0 +1,33 @@
+uuid: 515970b0-2cd9-4f77-a2aa-5ee34b7c53e8
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cfc9b017-b8a7-4dee-8da0-78f422fd44ff'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: faireundonparticulier
+theme: norsys_base
+region: content
+weight: -13
+provider: null
+plugin: 'block_content:cfc9b017-b8a7-4dee-8da0-78f422fd44ff'
+settings:
+  id: 'block_content:cfc9b017-b8a7-4dee-8da0-78f422fd44ff'
+  label: 'Soutenir nos actions'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      agir_avec_nous: agir_avec_nous

@@ -5,14 +5,15 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.temoignage.body
+    - field.field.node.temoignage.field_classification_temoignage
     - field.field.node.temoignage.field_image_temoignage
     - field.field.node.temoignage.field_type
-    - image.style.medium
+    - image.style.large
     - node.type.temoignage
   module:
     - ds
+    - smart_trim
     - svg_image
-    - text
     - user
 third_party_settings:
   ds:
@@ -22,7 +23,10 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
         wrappers:
           left: div
           right: div
@@ -30,8 +34,7 @@ third_party_settings:
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       left:
         - field_image_temoignage
@@ -50,27 +53,39 @@ bundle: temoignage
 mode: teaser
 content:
   body:
+    type: smart_trim
     label: hidden
-    type: text_summary_or_trimmed
-    weight: 2
     settings:
       trim_length: 600
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: true
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: false
+        trim_zero: false
     third_party_settings: {  }
+    weight: 2
     region: right
   field_image_temoignage:
     type: image
-    weight: 0
-    region: left
     label: hidden
     settings:
-      image_style: medium
       image_link: content
-      svg_render_as_image: true
+      image_style: large
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings: {  }
+    weight: 0
+    region: left
 hidden:
+  field_classification_temoignage: true
   field_type: true
   langcode: true
   links: true

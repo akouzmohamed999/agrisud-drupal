@@ -1,0 +1,33 @@
+uuid: 54f46f42-fad5-4fa2-a04f-3f583d9c1f72
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_links:813a23d3-847e-4d14-9b26-cdef30983ea0'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: telechargerrapports
+theme: norsys_base
+region: clients
+weight: 0
+provider: null
+plugin: 'block_content:813a23d3-847e-4d14-9b26-cdef30983ea0'
+settings:
+  id: 'block_content:813a23d3-847e-4d14-9b26-cdef30983ea0'
+  label: 'Télécharger rapports'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      nous_connaitre: nous_connaitre

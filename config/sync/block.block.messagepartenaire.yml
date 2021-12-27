@@ -1,0 +1,31 @@
+uuid: c95ac3da-dd79-41d7-9041-cc09ea576659
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_message:a6b23944-dd35-45e3-9b8d-e0759280a524'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: messagepartenaire
+theme: norsys_base
+region: content
+weight: -18
+provider: null
+plugin: 'block_content:a6b23944-dd35-45e3-9b8d-e0759280a524'
+settings:
+  id: 'block_content:a6b23944-dd35-45e3-9b8d-e0759280a524'
+  label: 'Message partenaire'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /liste-partenaires

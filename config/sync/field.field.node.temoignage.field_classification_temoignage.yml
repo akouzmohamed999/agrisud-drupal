@@ -1,0 +1,29 @@
+uuid: fe5bc4dd-ea61-4a41-957d-225d90132a5e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_classification_temoignage
+    - node.type.temoignage
+    - taxonomy.vocabulary.temoignage
+id: node.temoignage.field_classification_temoignage
+field_name: field_classification_temoignage
+entity_type: node
+bundle: temoignage
+label: 'Classification de témoignage'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      temoignage: temoignage
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

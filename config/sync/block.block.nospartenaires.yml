@@ -12,22 +12,22 @@ dependencies:
 id: nospartenaires
 theme: norsys_base
 region: content
-weight: -16
+weight: -25
 provider: null
 plugin: 'block_content:02559265-548c-461c-a2be-1cf89057df41'
 settings:
   id: 'block_content:02559265-548c-461c-a2be-1cf89057df41'
   label: 'Nos partenaires'
-  provider: block_content
   label_display: visible
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      reseaux_et_partenaires: reseaux_et_partenaires
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'
+    bundles:
+      reseaux_et_partenaires: reseaux_et_partenaires

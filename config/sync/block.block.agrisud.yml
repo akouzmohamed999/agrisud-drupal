@@ -1,0 +1,33 @@
+uuid: 4bc84491-e354-4b5c-9e88-1e59d12784f1
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_bouton:5ef28309-104e-48a3-a347-38984076b322'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: agrisud
+theme: norsys_base
+region: bottom_second
+weight: -26
+provider: null
+plugin: 'block_content:5ef28309-104e-48a3-a347-38984076b322'
+settings:
+  id: 'block_content:5ef28309-104e-48a3-a347-38984076b322'
+  label: Agrisud
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      action: action

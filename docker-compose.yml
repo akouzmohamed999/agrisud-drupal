@@ -11,6 +11,7 @@ services:
             - ./:/var/www/html
         links:
             - db
+            - mailcatcher
         restart: always
         networks:
             - php
@@ -39,6 +40,10 @@ services:
             - ./web/themes/custom/norsys_base/package.json:/home/node/app/package.json
         networks:
             - php
+    mailcatcher:
+      image: droptica/mailcatcher
+      networks:
+        - php
 networks:
     php:
 

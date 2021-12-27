@@ -1,0 +1,31 @@
+uuid: e6ebde50-5232-4f7a-b260-1b597e62ee3e
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_message:fd36251b-2ac3-4db4-8f29-b208d2e30e46'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: messagenousconnaitre
+theme: norsys_base
+region: content
+weight: -29
+provider: null
+plugin: 'block_content:fd36251b-2ac3-4db4-8f29-b208d2e30e46'
+settings:
+  id: 'block_content:fd36251b-2ac3-4db4-8f29-b208d2e30e46'
+  label: 'Message nous connaitre'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /nous-connaitre

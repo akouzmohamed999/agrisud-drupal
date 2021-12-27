@@ -1,0 +1,31 @@
+uuid: 2cdd1096-a480-4e44-b0ab-dec7f5664670
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.taxonomy_term
+  module:
+    - system
+    - views
+  theme:
+    - norsys_base
+id: views_block__taxonomy_term_block_1
+theme: norsys_base
+region: content
+weight: -12
+provider: null
+plugin: 'views_block:taxonomy_term-block_1'
+settings:
+  id: 'views_block:taxonomy_term-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  context_mapping: {  }
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /liste-partenaires

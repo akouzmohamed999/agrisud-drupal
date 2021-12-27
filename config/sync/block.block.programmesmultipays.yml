@@ -1,9 +1,9 @@
-uuid: 57a10243-0089-4704-86a7-9fc0c9ad03ed
+uuid: c5c4776a-dd02-42da-b5fa-0ff275c482f0
 langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:basic:4272b3a5-d8dc-443d-8740-4eb86b7e06a7'
+    - 'block_content:block_bouton:5a338aa1-762d-4ec8-bf34-66ee592f82f2'
   module:
     - block_content
     - system
@@ -12,20 +12,20 @@ dependencies:
 id: programmesmultipays
 theme: norsys_base
 region: bottom_second
-weight: -17
+weight: -27
 provider: null
-plugin: 'block_content:4272b3a5-d8dc-443d-8740-4eb86b7e06a7'
+plugin: 'block_content:5a338aa1-762d-4ec8-bf34-66ee592f82f2'
 settings:
-  id: 'block_content:4272b3a5-d8dc-443d-8740-4eb86b7e06a7'
+  id: 'block_content:5a338aa1-762d-4ec8-bf34-66ee592f82f2'
   label: 'Programmes multi-pays'
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full
 visibility:
   request_path:
     id: request_path
-    pages: /liste-actions
     negate: false
     context_mapping: {  }
+    pages: /liste-actions

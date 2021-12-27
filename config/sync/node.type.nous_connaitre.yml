@@ -1,0 +1,18 @@
+uuid: 7cb4cb76-2264-4d61-9d4c-f4931a6b5c32
+langcode: fr
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Nous connaître'
+type: nous_connaitre
+description: ''
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

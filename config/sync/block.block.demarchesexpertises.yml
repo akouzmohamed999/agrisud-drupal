@@ -1,0 +1,33 @@
+uuid: 1f1faede-673b-40b8-a6ab-c8cf5f96e22e
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_image:aefdc9ac-784d-412c-804c-48a4602b5e40'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: demarchesexpertises
+theme: norsys_base
+region: content
+weight: -22
+provider: null
+plugin: 'block_content:aefdc9ac-784d-412c-804c-48a4602b5e40'
+settings:
+  id: 'block_content:aefdc9ac-784d-412c-804c-48a4602b5e40'
+  label: 'Démarches & expertises'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      nous_connaitre: nous_connaitre

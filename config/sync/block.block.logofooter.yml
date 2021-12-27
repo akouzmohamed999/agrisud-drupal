@@ -17,8 +17,8 @@ plugin: 'block_content:35c85e65-f3a4-4809-bb28-7385cae15a7b'
 settings:
   id: 'block_content:35c85e65-f3a4-4809-bb28-7385cae15a7b'
   label: Logo-footer
-  provider: block_content
   label_display: '0'
+  provider: block_content
   status: true
   info: ''
   view_mode: full

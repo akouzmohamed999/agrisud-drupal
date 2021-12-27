@@ -5,10 +5,13 @@ dependencies:
   config:
     - field.field.node.partenaire.body
     - field.field.node.partenaire.field_image_partenaire
+    - field.field.node.partenaire.field_lien_partenaire
     - field.field.node.partenaire.field_type_de_partenaire
+    - image.style.medium
     - node.type.partenaire
   module:
     - ds
+    - link
     - svg_image
     - text
     - user
@@ -20,67 +23,67 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       ds_content:
-        - langcode
-        - links
-        - body
         - field_image_partenaire
+        - field_type_de_partenaire
+        - body
 id: node.partenaire.default
 targetEntityType: node
 bundle: partenaire
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 2
     region: ds_content
   field_image_partenaire:
-    weight: 102
+    type: image
     label: hidden
     settings:
+      image_link: ''
+      image_style: medium
       svg_attributes:
         width: null
         height: null
       svg_render_as_image: true
-      image_style: ''
-      image_link: ''
     third_party_settings: {  }
-    type: image
+    weight: 0
     region: ds_content
+  field_lien_partenaire:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 3
+    region: content
   field_type_de_partenaire:
-    weight: 103
+    type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  langcode:
-    type: language
-    weight: 0
+    weight: 1
     region: ds_content
-    label: above
-    settings:
-      link_to_entity: false
-      native_language: false
-    third_party_settings: {  }
-  links:
-    weight: 100
-    region: ds_content
-    settings: {  }
-    third_party_settings: {  }
 hidden:
+  langcode: true
+  links: true
   search_api_excerpt: true

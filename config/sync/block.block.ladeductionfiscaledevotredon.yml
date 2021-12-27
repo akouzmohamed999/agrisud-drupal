@@ -1,31 +1,33 @@
-uuid: 1119b5b6-b5a3-4337-82b5-bb4250be22ac
-langcode: en
+uuid: fd68190e-c5d1-459f-9440-51075d39b815
+langcode: fr
 status: true
 dependencies:
   content:
-    - 'block_content:basic:1ec1f12e-079f-43e9-b517-e00e98e9b703'
+    - 'block_content:basic:db0b7dc8-ab3c-4461-9f5d-bdf2a97e763f'
   module:
     - block_content
-    - system
+    - node
   theme:
     - norsys_base
 id: ladeductionfiscaledevotredon
 theme: norsys_base
-region: features_first
-weight: -15
+region: features_second
+weight: 0
 provider: null
-plugin: 'block_content:1ec1f12e-079f-43e9-b517-e00e98e9b703'
+plugin: 'block_content:db0b7dc8-ab3c-4461-9f5d-bdf2a97e763f'
 settings:
-  id: 'block_content:1ec1f12e-079f-43e9-b517-e00e98e9b703'
+  id: 'block_content:db0b7dc8-ab3c-4461-9f5d-bdf2a97e763f'
   label: 'La déduction fiscale de votre don'
+  label_display: '0'
   provider: block_content
-  label_display: visible
   status: true
   info: ''
   view_mode: full
 visibility:
-  request_path:
-    id: request_path
-    pages: /soutenir
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
     negate: false
-    context_mapping: {  }
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      agir_avec_nous: agir_avec_nous

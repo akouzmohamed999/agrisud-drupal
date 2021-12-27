@@ -1,0 +1,46 @@
+uuid: b6b0a48d-bcd4-4490-9a49-3aa3a9e7b394
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_message
+    - field.field.block_content.block_message.body
+  module:
+    - ds
+    - text
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - body
+id: block_content.block_message.default
+targetEntityType: block_content
+bundle: block_message
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: ds_content
+hidden:
+  langcode: true
+  search_api_excerpt: true

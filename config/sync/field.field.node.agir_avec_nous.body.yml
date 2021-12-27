@@ -1,0 +1,23 @@
+uuid: 9921d850-8e2d-4c86-9e3a-5b2bedde3a78
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.agir_avec_nous
+  module:
+    - text
+id: node.agir_avec_nous.body
+field_name: body
+entity_type: node
+bundle: agir_avec_nous
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

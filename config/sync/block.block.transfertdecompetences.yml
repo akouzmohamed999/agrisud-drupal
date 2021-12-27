@@ -1,0 +1,31 @@
+uuid: ec4efa19-07a9-44d9-8d03-65e82b01a038
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_bouton:a27bac43-296b-4cbc-9065-3b7751bbee24'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: transfertdecompetences
+theme: norsys_base
+region: bottom_second
+weight: -25
+provider: null
+plugin: 'block_content:a27bac43-296b-4cbc-9065-3b7751bbee24'
+settings:
+  id: 'block_content:a27bac43-296b-4cbc-9065-3b7751bbee24'
+  label: "Transfert de compétences\t"
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: "/nos-actualites\r\n"

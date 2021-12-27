@@ -1,0 +1,33 @@
+uuid: 215dceaa-a969-4fcc-ad9f-bb334bd6a898
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:7cd24725-1f1f-4484-8d76-5fd070687fd9'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: donationsetlegues
+theme: norsys_base
+region: updates_first
+weight: 0
+provider: null
+plugin: 'block_content:7cd24725-1f1f-4484-8d76-5fd070687fd9'
+settings:
+  id: 'block_content:7cd24725-1f1f-4484-8d76-5fd070687fd9'
+  label: 'Donations et Legues'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      agir_avec_nous: agir_avec_nous

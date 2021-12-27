@@ -1,0 +1,8 @@
+uuid: f62aa55f-5158-457c-87be-360af2c1f8ba
+langcode: fr
+status: true
+dependencies: {  }
+id: block_image_small
+label: 'Block image small'
+revision: 0
+description: ''

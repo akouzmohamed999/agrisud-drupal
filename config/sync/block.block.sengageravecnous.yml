@@ -1,0 +1,31 @@
+uuid: acd93323-c480-4071-8a10-de8ce511bc3c
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_bouton:eac40e8b-3833-4850-af8f-0963149cd4e2'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: sengageravecnous
+theme: norsys_base
+region: bottom_second
+weight: -24
+provider: null
+plugin: 'block_content:eac40e8b-3833-4850-af8f-0963149cd4e2'
+settings:
+  id: 'block_content:eac40e8b-3833-4850-af8f-0963149cd4e2'
+  label: 'S''engager avec nous'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /réseaux-et-partenaires

@@ -1,57 +1,15 @@
 blocks:
   -
-    info: 'S''engager avec nous 2'
+    info: 'Sensibilisationet plaidoyer'
     langcode: fr
-    uuid: b9450f59-9056-4171-8985-1cbd27161efe
+    uuid: 9b121afd-d92a-435e-aea4-e6cec3143e9a
     bundle: basic
     revision_id: null
     rev_id_current: null
     fields:
       body:
         -
-          value: "<p><a class=\"btn btn-light\" href=\"#\">S'engager avec nous</a></p>\r\n"
-          summary: ''
-          format: basic_html
-      field_logo: {  }
-  -
-    info: 'Nos actions2'
-    langcode: fr
-    uuid: ad63112a-5b84-473f-99db-889878944558
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p><a class=\"btn btn-light\" href=\"#\">Nos actions</a></p>\r\n"
-          summary: ''
-          format: basic_html
-      field_logo: {  }
-  -
-    info: 'Transfert de compétences'
-    langcode: fr
-    uuid: f12d667e-67b5-47cf-b2ae-9e81d28ce0dc
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p><a class=\"btn btn-light\" href=\"#\">Transfert de compétences</a></p>\r\n"
-          summary: ''
-          format: full_html
-      field_logo: {  }
-  -
-    info: 'Programmes multi-pays'
-    langcode: fr
-    uuid: 4272b3a5-d8dc-443d-8740-4eb86b7e06a7
-    bundle: basic
-    revision_id: null
-    rev_id_current: null
-    fields:
-      body:
-        -
-          value: "<p><a class=\"btn btn-light\" href=\"#\">Programmes multi-pays</a></p>\r\n"
+          value: "<p><a class=\"btn btn-light\" href=\"#\">Sensibilisation et plaidoyer</a></p>\r\n"
           summary: ''
           format: full_html
       field_logo: {  }
@@ -70,32 +28,32 @@ blocks:
           format: full_html
       field_logo: {  }
   -
-    info: 'Sensibilisationet plaidoyer'
+    info: 'Programmes multi-pays'
     langcode: fr
-    uuid: 9b121afd-d92a-435e-aea4-e6cec3143e9a
+    uuid: 4272b3a5-d8dc-443d-8740-4eb86b7e06a7
     bundle: basic
     revision_id: null
     rev_id_current: null
     fields:
       body:
         -
-          value: "<p><a class=\"btn btn-light\" href=\"#\">Sensibilisation et plaidoyer</a></p>\r\n"
+          value: "<p><a class=\"btn btn-light\" href=\"#\">Programmes multi-pays</a></p>\r\n"
           summary: ''
           format: full_html
       field_logo: {  }
   -
-    info: 'Nos partenaires'
+    info: 'Transfert de compétences'
     langcode: fr
-    uuid: 02559265-548c-461c-a2be-1cf89057df41
+    uuid: f12d667e-67b5-47cf-b2ae-9e81d28ce0dc
     bundle: basic
     revision_id: null
     rev_id_current: null
     fields:
       body:
         -
-          value: "<p>merci de nous indiquer les textes qui ne sont pas contribuables (= que nous ne pourront pas changer ensuite nous-même) afin que nous décidions des termes exacts.&nbsp;merci de nous indiquer les textes qui ne sont pas contribuables (= que nous ne pourront pas changer ensuite nous-même) afin que nous décidions des termes exacts.&nbsp;merci de nous indiquer les textes qui ne sont pas contribuables (= que nous ne pourront pas changer ensuite nous-même) afin que nous décidions des termes exacts.&nbsp;</p>\r\n"
+          value: "<p><a class=\"btn btn-light\" href=\"#\">Transfert de compétences</a></p>\r\n"
           summary: ''
-          format: basic_html
+          format: full_html
       field_logo: {  }
   -
     info: Logo-footer

@@ -4,12 +4,14 @@ status: true
 dependencies:
   config:
     - field.field.node.evenement.body
+    - field.field.node.evenement.field_actualite_date
     - field.field.node.evenement.field_actualite_image
-    - image.style.large
+    - field.field.node.evenement.field_lieu
+    - field.field.node.evenement.field_periode
     - node.type.evenement
   module:
+    - datetime
     - ds
-    - svg_image
     - text
     - user
 third_party_settings:
@@ -20,50 +22,61 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       ds_content:
-        - field_actualite_image
+        - field_periode
+        - field_actualite_date
+        - field_lieu
         - body
-        - links
 id: node.evenement.default
 targetEntityType: node
 bundle: evenement
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 3
     region: ds_content
-  field_actualite_image:
-    weight: 0
+  field_actualite_date:
+    type: datetime_default
     label: hidden
     settings:
-      image_style: large
-      image_link: ''
-      svg_render_as_image: true
-      svg_attributes:
-        width: null
-        height: null
+      timezone_override: ''
+      format_type: medium
     third_party_settings: {  }
-    type: image
+    weight: 1
     region: ds_content
-  links:
+  field_lieu:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
     weight: 2
     region: ds_content
-    settings: {  }
+  field_periode:
+    type: string
+    label: above
+    settings:
+      link_to_entity: false
     third_party_settings: {  }
+    weight: 0
+    region: ds_content
 hidden:
+  field_actualite_image: true
   langcode: true
+  links: true
   search_api_excerpt: true

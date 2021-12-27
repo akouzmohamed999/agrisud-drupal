@@ -1,0 +1,32 @@
+uuid: c877bc73-3b3d-472c-ae92-22ce8f46b1a8
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.temoignage
+  module:
+    - node
+    - views
+  theme:
+    - norsys_base
+id: views_block__temoignage_block_4
+theme: norsys_base
+region: midwidget_first
+weight: 0
+provider: null
+plugin: 'views_block:temoignage-block_4'
+settings:
+  id: 'views_block:temoignage-block_4'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      agir_avec_nous: agir_avec_nous

@@ -14,7 +14,6 @@ dependencies:
   module:
     - ds
     - options
-    - svg_image_responsive
     - text
     - user
 third_party_settings:
@@ -25,21 +24,21 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       ds_content:
         - field_titre
         - field_pays
         - field_region
-        - field_image
         - field_programme
         - field_statut
         - node_post_date
@@ -48,7 +47,7 @@ third_party_settings:
     fields:
       node_post_date:
         plugin_id: node_post_date
-        weight: 6
+        weight: 5
         label: hidden
         formatter: ds_post_date_long
 id: node.action.default
@@ -57,68 +56,56 @@ bundle: action
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 7
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 6
     region: ds_content
-  field_image:
-    type: responsive_image
-    weight: 3
-    region: ds_content
-    label: hidden
-    settings:
-      svg_attributes:
-        width: ''
-        height: ''
-      svg_render_as_image: true
-      responsive_image_style: ''
-      image_link: ''
-    third_party_settings: {  }
   field_pays:
-    weight: 1
+    type: entity_reference_label
     label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 1
     region: ds_content
   field_programme:
-    weight: 4
+    type: entity_reference_label
     label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 3
     region: ds_content
   field_region:
-    weight: 2
+    type: list_default
     label: visually_hidden
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 2
     region: ds_content
   field_statut:
-    weight: 5
+    type: entity_reference_label
     label: visually_hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
+    weight: 4
     region: ds_content
   field_titre:
-    weight: 0
+    type: list_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    type: list_default
+    weight: 0
     region: ds_content
   links:
-    weight: 8
-    region: ds_content
     settings: {  }
     third_party_settings: {  }
+    weight: 7
+    region: ds_content
 hidden:
+  field_image: true
   langcode: true
   search_api_excerpt: true

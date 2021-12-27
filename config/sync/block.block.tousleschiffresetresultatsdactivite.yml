@@ -1,0 +1,33 @@
+uuid: d3360f99-9c2f-4dcd-a1aa-c532eb24486e
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_image:7221e043-f295-49c9-abe3-e6a9e6033722'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: tousleschiffresetresultatsdactivite
+theme: norsys_base
+region: midwidget_first
+weight: 0
+provider: null
+plugin: 'block_content:7221e043-f295-49c9-abe3-e6a9e6033722'
+settings:
+  id: 'block_content:7221e043-f295-49c9-abe3-e6a9e6033722'
+  label: 'Tous les chiffres et résultats d''activité'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      nous_connaitre: nous_connaitre

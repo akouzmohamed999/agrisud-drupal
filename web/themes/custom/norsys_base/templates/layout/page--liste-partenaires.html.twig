@@ -63,8 +63,7 @@
 <div class="header">
   <div class="container-">
     <div class="row">
-
-      <div class="navbar-header col-md-4">
+      <div class="navbar-header col-md-4 col-lg-2">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navigation">
           <i class="fas fa-bars"></i>
         </button>
@@ -88,10 +87,11 @@
 </div>
 <!-- End: Header -->
 
+
 <!-- Start: Slides -->
 {% if is_front and show_slideshow %}
   <div class="container-">
-    <div class="flexslider">
+    <div class="flexslider d-none d-sm-block">
       <ul class="slides">
         {% for slider_contents in slider_content %}
           {{ slider_contents | raw }}
@@ -383,7 +383,7 @@
 <div class="bg-white row">
   <div id="highlighted-partner" class="col-lg-4  col-md-12 row col-sm-12 col-12">
     <div class="col-lg-10 col-md-8 col-sm-12 col-12 py-3 text-align-right">
-      <span class="m-0">Agrisud fait partie des associations agréées en France</span>
+      <span class="m-0">{{ "Agrisud fait partie des associations agréées en France"|trans }}</span>
     </div>
     <div class="col-lg-2 col-md-4 col-sm-12 col-12 text-align-left px-0 pt-2">
       <img src="/web/themes/custom/norsys_base/images/Membre_HorizontalLogo_Color.jpg"/>
@@ -394,19 +394,19 @@
   <div class="container py-5">
     <div class="row">
       <div class="col col-lg-9 col-md-8">
-        <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
-        <p class="text-white">Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et dans les Caraïbes
+        <h5 class="text-white font-weight-bold">{{ "A PROPOS DE NOUS" }} </h5>
+        <p class="text-white">{{  "Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et dans les Caraïbes
           Son action vise à promouvoir un développement économique durable dans le secteur agricole
           Avec ses partenaires, ell e forme et accompagne des hommes et des femmes dans la maîtrise de
           leurs activités et met en place des projets multi-acteurs pour des territoires socialement équitables
-          économiquement viables et écologiquement responsables.
+          économiquement viables et écologiquement responsables."|trans }}
         </p>
       </div>
       <div class="col col-lg-3 col-md-4">
-        <h5 class="text-white font-weight-bold">CONTACTEZ-NOUS</h5>
-        <p class="text-white">7, avenue du Maréchal Foch - 33500 Libourne</p>
-        <p class="text-white">Tel : +33 (0)5 57 25 17 06</p>
-        <p class="text-white">Fax: +33 (0)5 57 25 17 06</p>
+        <h5 class="text-white font-weight-bold">{{ "CONTACTEZ-NOUS" }}</h5>
+        <p class="text-white">{{ "7, avenue du Maréchal Foch - 33500 Libourne"|trans }} </p>
+        <p class="text-white">{{  "Tel"|trans }} : +33 (0)5 57 25 17 06</p>
+        <p class="text-white">{{ "Fax"|trans }} : +33 (0)5 57 25 17 06</p>
       </div>
     </div>
   </div>
@@ -446,12 +446,12 @@
 <!-- Start: Copyright -->
 <div class="text-align-center bg-white copyright">
   <div class="container">
-    <p>Agrisud International est une association à but
+    <p>{{ "Agrisud International est une association à but
       non lucratif reconnue de bienfaisance - N° SIRET 390 364 776 00034 -
-      ©Agrisud International 2022 - Tous droits réservés
+      ©Agrisud International 2022 - Tous droits réservés"|trans }}
     </p>
-    <span><a href="#">Crédits et Mentions légales</a> - <a href="#">Données personnelles</a>
-      - <a href="#">Cookies</a> - <a href="#"> du site</a></span>
+    <span><a href="/mentions-legales">{{ "Crédits et Mentions légales"|trans }} </a> - <a href="/donnees-personnelles">{{ "Données personnelles"|trans }} </a>
+      - <a href="#">{{ "Cookies"|trans }} </a> - <a href="/sitemap"> {{ "Plan du site"|trans }} </a></span>
   </div>
 </div>
 <!-- End: Copyright -->

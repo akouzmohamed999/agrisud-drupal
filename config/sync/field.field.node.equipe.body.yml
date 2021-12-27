@@ -1,0 +1,23 @@
+uuid: 38189e83-b190-4b1b-83f8-b791a7ebf8ba
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.equipe
+  module:
+    - text
+id: node.equipe.body
+field_name: body
+entity_type: node
+bundle: equipe
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

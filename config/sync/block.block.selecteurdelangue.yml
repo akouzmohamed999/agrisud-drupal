@@ -8,13 +8,13 @@ dependencies:
     - norsys_base
 id: selecteurdelangue
 theme: norsys_base
-region: search
-weight: -13
+region: primary_menu
+weight: -33
 provider: null
 plugin: 'language_block:language_interface'
 settings:
   id: 'language_block:language_interface'
   label: 'Sélecteur de langue'
-  provider: language
   label_display: '0'
+  provider: language
 visibility: {  }

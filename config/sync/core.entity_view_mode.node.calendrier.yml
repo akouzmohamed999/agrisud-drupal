@@ -1,0 +1,10 @@
+uuid: ad180dc5-9ba3-4c22-8c4b-91f8bb6fe79b
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+id: node.calendrier
+label: calendrier
+targetEntityType: node
+cache: true

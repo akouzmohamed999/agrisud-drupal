@@ -17,6 +17,12 @@ settings:
         -
           name: Formatting
           items:
+            - Underline
+            - Strike
+            - Subscript
+            - RemoveFormat
+            - Superscript
+            - JustifyLeft
             - Bold
             - Italic
         -
@@ -29,6 +35,7 @@ settings:
           items:
             - BulletedList
             - NumberedList
+            - Table
         -
           name: Media
           items:
@@ -38,18 +45,27 @@ settings:
           name: 'Block Formatting'
           items:
             - Format
+            - Outdent
+            - Indent
+            - JustifyRight
+            - JustifyCenter
+            - JustifyBlock
         -
           name: Tools
           items:
             - Source
+            - ShowBlocks
+            - Maximize
   plugins:
     stylescombo:
       styles: ''
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
   directory: inline-images
   max_size: ''
   max_dimensions:
-    width: 0
-    height: 0
+    width: null
+    height: null

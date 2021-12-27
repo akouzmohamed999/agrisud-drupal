@@ -1,0 +1,19 @@
+uuid: df1feeb6-0c5d-4299-aa6b-2b76766769aa
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_personne
+    - node.type.equipe
+id: node.equipe.field_personne
+field_name: field_personne
+entity_type: node
+bundle: equipe
+label: Personne
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

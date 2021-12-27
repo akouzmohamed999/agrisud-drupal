@@ -7,38 +7,60 @@ dependencies:
     - field.field.node.reseau.field_image_partenaire
     - node.type.reseau
   module:
+    - ds
     - svg_image
     - text
     - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+    regions:
+      ds_content:
+        - langcode
+        - links
+        - body
+        - field_image_partenaire
 id: node.reseau.default
 targetEntityType: node
 bundle: reseau
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 101
+    label: hidden
     settings: {  }
     third_party_settings: {  }
+    weight: 101
     region: content
   field_image_partenaire:
-    weight: 102
+    type: image
     label: above
     settings:
+      image_link: ''
+      image_style: ''
       svg_attributes:
         width: null
         height: null
       svg_render_as_image: true
-      image_style: ''
-      image_link: ''
     third_party_settings: {  }
-    type: image
+    weight: 102
     region: content
   links:
-    weight: 100
     settings: {  }
     third_party_settings: {  }
+    weight: 100
     region: content
 hidden:
   langcode: true

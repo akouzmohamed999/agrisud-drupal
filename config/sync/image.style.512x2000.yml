@@ -1,0 +1,14 @@
+uuid: 2251bf3a-a609-41f6-8b94-7a896c4f7e37
+langcode: fr
+status: true
+dependencies: {  }
+name: 512x2000
+label: 512x2000
+effects:
+  8f98a342-633b-4807-afab-8fce290fb8c9:
+    uuid: 8f98a342-633b-4807-afab-8fce290fb8c9
+    id: image_resize
+    weight: 1
+    data:
+      width: 1800
+      height: 512

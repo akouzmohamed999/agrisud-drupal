@@ -12,19 +12,19 @@ dependencies:
 id: views_block__partenaires_block_1
 theme: norsys_base
 region: clients
-weight: -9
+weight: -18
 provider: null
 plugin: 'views_block:partenaires-block_1'
 settings:
   id: 'views_block:partenaires-block_1'
   label: ''
-  provider: views
   label_display: visible
+  provider: views
   views_label: ''
   items_per_page: none
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: false
     context_mapping: {  }
+    pages: '<front>'

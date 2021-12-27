@@ -1,0 +1,33 @@
+uuid: 5b3d8318-a228-4215-8c69-fe0e0a8744fe
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_image:e8d9f682-4b89-4393-8e68-bea3761fb6c7'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: equipesgouvernances
+theme: norsys_base
+region: content
+weight: -19
+provider: null
+plugin: 'block_content:e8d9f682-4b89-4393-8e68-bea3761fb6c7'
+settings:
+  id: 'block_content:e8d9f682-4b89-4393-8e68-bea3761fb6c7'
+  label: 'Equipes & Gouvernances'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      nous_connaitre: nous_connaitre
