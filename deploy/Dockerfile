@@ -20,7 +20,7 @@ COPY --chown=www-data:www-data --chmod=775 . /var/www/html/
 RUN apt-get update
 
 # >> start of drupal recommanded configurations
-RUN apt-get install default-mysql-client -y
+RUN apt-get install default-mysql-client git -y
 
 # install the PHP extensions we need
 RUN set -eux; \
