@@ -1,0 +1,18 @@
+uuid: 9ba18eb6-9eca-4452-97c5-6517dabe375b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_bouton
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.block_bouton
+target_entity_type_id: block_content
+target_bundle: block_bouton
+default_langcode: site_default
+language_alterable: true

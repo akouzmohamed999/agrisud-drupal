@@ -1,0 +1,33 @@
+uuid: 513a41ed-420d-4e68-843b-bac958cedff3
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_links:ef8fe958-2f90-41f1-a8a1-e9fbfe13f2de'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: downloads
+theme: norsys_base
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:ef8fe958-2f90-41f1-a8a1-e9fbfe13f2de'
+settings:
+  id: 'block_content:ef8fe958-2f90-41f1-a8a1-e9fbfe13f2de'
+  label: Downloads
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      nous_connaitre: nous_connaitre

@@ -1,0 +1,8 @@
+uuid: f1c4f030-2e8a-416f-89fc-eb29f99aaad4
+langcode: fr
+status: true
+dependencies: {  }
+name: Témoignage
+vid: temoignage
+description: 'Classification des témoignages'
+weight: 0

@@ -1,0 +1,25 @@
+uuid: 42425cba-1459-4c0a-ad71-00f13d00ba54
+langcode: fr
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - norsys_base
+id: breadcrumbs
+theme: norsys_base
+region: content
+weight: -31
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Breadcrumbs(Toutes les pages)'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: "/liste-actions\r\n<front>"

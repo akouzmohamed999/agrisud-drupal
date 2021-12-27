@@ -5,7 +5,7 @@ features:
   favicon: 0
 logo:
   use_default: 0
-  path: 'public://logo-agrisud-20X8-cmjn-HD_0_0.jpg'
+  path: 'public://logo-agrisud-cropped.jpg'
 favicon:
   use_default: 0
   path: ''
@@ -19,12 +19,22 @@ show_credit_link: 0
 no_of_slides: '4'
 show_slideshow: 1
 slide_image_path1:
-  - '2'
-slide_title_1: 'The Easiest Way to Get suitable Property'
-slide_description_1: 'Find Flats, Apartments & Real Estate'
+  - '25'
+slide_title_1: 'Entreprendre '
+slide_description_1: 'contre la Pauvreté'
 slide_url_1: '#'
 slide_image_path2:
-  - '3'
-slide_title_2: 'Make a Difference in Your Career Track'
-slide_description_2: 'Find Jobs, Employment & Career Opportunities'
+  - '21'
+slide_title_2: 'Entreprendre '
+slide_description_2: 'pour des systèmes agricoles performants et durables'
 slide_url_2: '#'
+slide_image_path3:
+  - '22'
+slide_title_3: 'Entreprendre '
+slide_description_3: 'pour un développement économique équitable'
+slide_url_3: '#'
+slide_image_path4:
+  - '23'
+slide_title_4: 'Entreprendre '
+slide_description_4: 'pour la transition agro-écologique des territoires '
+slide_url_4: '#'

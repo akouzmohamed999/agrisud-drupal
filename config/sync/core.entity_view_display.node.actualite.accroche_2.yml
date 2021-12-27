@@ -18,8 +18,8 @@ dependencies:
     - user
 third_party_settings:
   layout_builder:
-    allow_custom: false
     enabled: false
+    allow_custom: false
   ds:
     layout:
       id: ds_1col
@@ -27,15 +27,15 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       ds_content:
         - field_actualite_image
@@ -58,17 +58,17 @@ mode: accroche_2
 content:
   field_actualite_image:
     type: image
-    weight: 0
-    region: ds_content
     label: hidden
     settings:
-      image_style: max_325x325
       image_link: ''
-      svg_render_as_image: true
+      image_style: max_325x325
       svg_attributes:
         width: null
         height: null
+      svg_render_as_image: true
     third_party_settings: {  }
+    weight: 0
+    region: ds_content
 hidden:
   body: true
   field_actualite_date: true

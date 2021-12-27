@@ -1,0 +1,28 @@
+uuid: 2fdffadd-aaee-4ea1-b044-f2fdc412d444
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.field.node.agir_avec_nous.body
+    - field.field.node.agir_avec_nous.field_actualite_image
+    - node.type.agir_avec_nous
+  module:
+    - text
+    - user
+id: node.agir_avec_nous.default
+targetEntityType: node
+bundle: agir_avec_nous
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_actualite_image: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

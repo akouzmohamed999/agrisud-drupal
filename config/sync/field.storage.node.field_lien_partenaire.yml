@@ -1,0 +1,19 @@
+uuid: 42f434f4-14c5-462f-8c13-133c8c5af558
+langcode: fr
+status: true
+dependencies:
+  module:
+    - link
+    - node
+id: node.field_lien_partenaire
+field_name: field_lien_partenaire
+entity_type: node
+type: link
+settings: {  }
+module: link
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

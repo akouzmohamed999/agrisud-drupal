@@ -1,0 +1,119 @@
+uuid: e4033f43-1e75-4e1f-a1d1-3757e3dcbf8f
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.accroche_2
+    - field.field.node.evenement.body
+    - field.field.node.evenement.field_actualite_date
+    - field.field.node.evenement.field_actualite_image
+    - field.field.node.evenement.field_lieu
+    - field.field.node.evenement.field_periode
+    - image.style.large
+    - node.type.evenement
+  module:
+    - ds
+    - layout_builder
+    - smart_trim
+    - svg_image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_2col
+      library: ds/ds_2col
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+          left: {  }
+          right: {  }
+        wrappers:
+          left: div
+          right: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      left:
+        - field_actualite_image
+      right:
+        - node_title
+        - field_periode
+        - field_lieu
+        - body
+    fields:
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          'link class': ''
+          wrapper: h2
+          class: ''
+  layout_builder:
+    enabled: false
+    allow_custom: false
+id: node.evenement.accroche_2
+targetEntityType: node
+bundle: evenement
+mode: accroche_2
+content:
+  body:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 50
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: true
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 4
+    region: right
+  field_actualite_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: large
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: left
+  field_lieu:
+    type: string
+    label: inline
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: right
+  field_periode:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: right
+hidden:
+  field_actualite_date: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

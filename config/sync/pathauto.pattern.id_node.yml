@@ -1,0 +1,45 @@
+uuid: 1f24ff44-9474-4036-825a-eeb5943dc6c9
+langcode: fr
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: id_node
+label: '[node:type]'
+type: 'canonical_entities:node'
+pattern: '[node:title]'
+selection_criteria:
+  b47c09ad-bc7e-4130-998d-2961e8b88aab:
+    id: node_type
+    negate: false
+    uuid: b47c09ad-bc7e-4130-998d-2961e8b88aab
+    context_mapping:
+      node: node
+    bundles:
+      action: action
+      actualite: actualite
+      agir_avec_nous: agir_avec_nous
+      evenement: evenement
+      liste_equipe: liste_equipe
+      nous_connaitre: nous_connaitre
+      page: page
+      partenaire: partenaire
+      programme: programme
+      reseau: reseau
+      reseaux_et_partenaires: reseaux_et_partenaires
+      temoignage: temoignage
+  bec6e893-94f9-48a9-a33d-4b018b7c5533:
+    id: language
+    negate: false
+    uuid: bec6e893-94f9-48a9-a33d-4b018b7c5533
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      fr: fr
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Langue

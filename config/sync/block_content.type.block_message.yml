@@ -1,0 +1,8 @@
+uuid: 35755228-c62b-4c8c-addd-56a314b05255
+langcode: fr
+status: true
+dependencies: {  }
+id: block_message
+label: 'Block message'
+revision: 0
+description: ''

@@ -1,0 +1,20 @@
+uuid: 8290a87c-9184-4d4c-adc9-094682d03c3a
+langcode: fr
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_classification_temoignage
+field_name: field_classification_temoignage
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

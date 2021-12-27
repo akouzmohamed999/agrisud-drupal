@@ -23,6 +23,9 @@ settings:
     -
       value: lire_voir
       label: 'À lire et à voir'
+    -
+      value: presse
+      label: Presse
   allowed_values_function: ''
 module: options
 locked: false

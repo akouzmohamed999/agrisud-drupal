@@ -1,6 +1,6 @@
 uuid: 65705273-0fe8-4d31-9f38-b3899342ca90
 langcode: fr
-status: true
+status: false
 dependencies:
   config:
     - facets.facet.type_de_partenaire
@@ -12,18 +12,18 @@ dependencies:
 id: typedepartenaire
 theme: norsys_base
 region: content
-weight: -13
+weight: -10
 provider: null
 plugin: 'facet_block:type_de_partenaire'
 settings:
   id: 'facet_block:type_de_partenaire'
   label: 'Type de partenaire'
-  provider: facets
   label_display: visible
+  provider: facets
   block_id: typedepartenaire
 visibility:
   request_path:
     id: request_path
-    pages: /liste-partenaires
     negate: false
     context_mapping: {  }
+    pages: /liste-partenaires

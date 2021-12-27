@@ -11,6 +11,9 @@ field_name: field_image_temoignage
 entity_type: node
 type: image
 settings:
+  target_type: file
+  display_field: false
+  display_default: false
   uri_scheme: public
   default_image:
     uuid: c2af42a1-7fec-4917-82cd-c76e47a280f3
@@ -18,9 +21,6 @@ settings:
     title: ''
     width: 591
     height: 591
-  target_type: file
-  display_field: false
-  display_default: false
 module: image
 locked: false
 cardinality: 1

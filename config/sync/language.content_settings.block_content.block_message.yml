@@ -1,0 +1,18 @@
+uuid: acb93d76-dd0c-4ddb-b275-5788725642ac
+langcode: fr
+status: true
+dependencies:
+  config:
+    - block_content.type.block_message
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: block_content.block_message
+target_entity_type_id: block_content
+target_bundle: block_message
+default_langcode: site_default
+language_alterable: true

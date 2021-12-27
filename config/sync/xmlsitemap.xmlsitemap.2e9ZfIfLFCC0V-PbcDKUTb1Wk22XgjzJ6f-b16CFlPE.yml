@@ -1,0 +1,8 @@
+uuid: 66693039-9722-4ae5-9875-d27882835df7
+langcode: fr
+status: true
+dependencies: {  }
+id: 2e9ZfIfLFCC0V-PbcDKUTb1Wk22XgjzJ6f-b16CFlPE
+label: 'http://localhost:8081/web'
+context:
+  language: fr

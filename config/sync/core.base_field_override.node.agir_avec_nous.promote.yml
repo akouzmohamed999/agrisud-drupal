@@ -1,0 +1,22 @@
+uuid: 902a4db4-56bc-4a02-86c7-88ace9bc4f7e
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.agir_avec_nous
+id: node.agir_avec_nous.promote
+field_name: promote
+entity_type: node
+bundle: agir_avec_nous
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

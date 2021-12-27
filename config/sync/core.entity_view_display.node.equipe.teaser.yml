@@ -1,0 +1,103 @@
+uuid: 2962cd69-09cb-4abc-acd0-cfb49f330e49
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.equipe.body
+    - field.field.node.equipe.field_classification
+    - field.field.node.equipe.field_image_equipe
+    - field.field.node.equipe.field_metier
+    - field.field.node.equipe.field_personne
+    - image.style.150x150
+    - node.type.equipe
+  module:
+    - ds
+    - smart_trim
+    - svg_image
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: ds_1col
+      library: null
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        classes:
+          layout_class: {  }
+          ds_content: {  }
+        wrappers:
+          ds_content: div
+        outer_wrapper: div
+        attributes: ''
+        link_attribute: ''
+        link_custom: ''
+        label: ''
+    regions:
+      ds_content:
+        - field_image_equipe
+        - field_personne
+        - field_metier
+id: node.equipe.teaser
+targetEntityType: node
+bundle: equipe
+mode: teaser
+content:
+  field_image_equipe:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: 150x150
+      svg_attributes:
+        width: null
+        height: null
+      svg_render_as_image: true
+    third_party_settings: {  }
+    weight: 0
+    region: ds_content
+  field_metier:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 15
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 2
+    region: ds_content
+  field_personne:
+    type: smart_trim
+    label: hidden
+    settings:
+      trim_length: 15
+      trim_type: chars
+      trim_suffix: ''
+      wrap_output: false
+      wrap_class: trimmed
+      more_link: false
+      more_class: more-link
+      more_text: More
+      summary_handler: full
+      trim_options:
+        text: false
+        trim_zero: false
+    third_party_settings: {  }
+    weight: 1
+    region: ds_content
+hidden:
+  body: true
+  field_classification: true
+  langcode: true
+  links: true
+  search_api_excerpt: true

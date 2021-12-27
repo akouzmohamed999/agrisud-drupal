@@ -1,0 +1,30 @@
+uuid: cc57e754-ebd0-45bb-8394-597863a55b31
+langcode: fr
+status: true
+dependencies:
+  config:
+    - views.view.evenement
+  module:
+    - system
+    - views
+  theme:
+    - norsys_base
+id: views_block__evenement_block_2
+theme: norsys_base
+region: features_first
+weight: -17
+provider: null
+plugin: 'views_block:evenement-block_2'
+settings:
+  id: 'views_block:evenement-block_2'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /nos-actualites

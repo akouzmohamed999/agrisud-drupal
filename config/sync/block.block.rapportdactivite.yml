@@ -1,0 +1,33 @@
+uuid: 6d307b7a-a4d5-41a9-97d6-8f74671b186e
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_image:6c9dc629-0131-4371-883d-c228d3f019de'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: rapportdactivite
+theme: norsys_base
+region: clients
+weight: 0
+provider: null
+plugin: 'block_content:6c9dc629-0131-4371-883d-c228d3f019de'
+settings:
+  id: 'block_content:6c9dc629-0131-4371-883d-c228d3f019de'
+  label: 'Rapport d''activité'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      nous_connaitre: nous_connaitre

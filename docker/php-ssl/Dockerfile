@@ -53,6 +53,12 @@ RUN set -eux; \
 	apt-get purge -y --auto-remove -o APT::AutoRemove::RecommendsImportant=false; \
 	rm -rf /var/lib/apt/lists/*
 
+## installing git for composer commands
+RUN set -eux; \
+    	\
+     apt-get update; \
+     apt-get install -y git;
+
 # set recommended PHP.ini settings
 # see https://secure.php.net/manual/en/opcache.installation.php
 RUN { \

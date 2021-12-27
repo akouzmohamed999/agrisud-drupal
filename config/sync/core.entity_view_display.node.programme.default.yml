@@ -5,11 +5,9 @@ dependencies:
   config:
     - field.field.node.programme.body
     - field.field.node.programme.field_image
-    - image.style.large
     - node.type.programme
   module:
     - ds
-    - svg_image
     - text
     - user
 third_party_settings:
@@ -20,18 +18,18 @@ third_party_settings:
       disable_css: false
       entity_classes: all_classes
       settings:
-        label: ''
+        classes:
+          layout_class: {  }
+          ds_content: {  }
         wrappers:
           ds_content: div
         outer_wrapper: div
         attributes: ''
         link_attribute: ''
         link_custom: ''
-        classes:
-          layout_class: {  }
+        label: ''
     regions:
       ds_content:
-        - field_image
         - body
 id: node.programme.default
 targetEntityType: node
@@ -39,26 +37,14 @@ bundle: programme
 mode: default
 content:
   body:
-    label: hidden
     type: text_default
-    weight: 1
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    region: ds_content
-  field_image:
     weight: 0
-    label: hidden
-    settings:
-      image_style: large
-      image_link: content
-      svg_render_as_image: true
-      svg_attributes:
-        width: null
-        height: null
-    third_party_settings: {  }
-    type: image
     region: ds_content
 hidden:
+  field_image: true
   langcode: true
   links: true
   search_api_excerpt: true

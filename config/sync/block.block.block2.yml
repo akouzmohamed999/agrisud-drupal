@@ -1,0 +1,33 @@
+uuid: f47c4562-11e0-4fa7-96e7-40e7fe247e49
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:d2b8c6c0-6504-48a0-a4d0-59a980dd4be5'
+  module:
+    - block_content
+    - node
+  theme:
+    - norsys_base
+id: block2
+theme: norsys_base
+region: bottom_second
+weight: 0
+provider: null
+plugin: 'block_content:d2b8c6c0-6504-48a0-a4d0-59a980dd4be5'
+settings:
+  id: 'block_content:d2b8c6c0-6504-48a0-a4d0-59a980dd4be5'
+  label: 'Block 2'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      agir_avec_nous: agir_avec_nous

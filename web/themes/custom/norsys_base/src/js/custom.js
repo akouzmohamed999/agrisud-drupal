@@ -12,13 +12,13 @@ jQuery(document).ready(function ($) {
 
   //manage language
   var urlElements = (location.pathname).split("/");
-  if ("en" == urlElements[2] || urlElements[1] == "en") {
+  /*if ("en" == urlElements[2] || urlElements[1] == "en") {
     $('#language-select').val("en");
   } else {
     $('#language-select').val("fr");
-  }
+  }*/
   if ($(window).width() > 600) {
-    $(".slider-caption a").text("Découvrir");
+    $(".slider-caption a").text(Drupal.t("Découvrir"));
     $(".slider-caption a").addClass("more-link");
   }
   $("#donate-link").animate({width: 'toggle'}, 350);
@@ -53,10 +53,10 @@ jQuery(document).ready(function ($) {
   });
 
   //manage language change
-  $('#language-select').on('change', function () {
+ /* $('#language-select').on('change', function () {
     var getUrl = window.location;
     window.location.href = baseUrl + "/" + this.value;
-  });
+  });*/
 
   //Managing search button
   $("#edit-submit").on("click", function (e) {
@@ -73,9 +73,11 @@ jQuery(document).ready(function ($) {
       if (index == 1 || $(window).width() < 600) {
         caractersCount = 82;
       }
+      if ( $(window).width() < 580) {
+        caractersCount = 0;
+      }
       $(value).each(function () {
-        console.log($(this).text().substring(0, 100));
-        var lastElements = $(this).html().slice(-125);
+        var lastElements = $(this).find(".more-link").eq(0).html();
         console.log(lastElements);
         $(this).text($(this).text().substring(0, caractersCount));
         $(this).html($(this).html() + lastElements);

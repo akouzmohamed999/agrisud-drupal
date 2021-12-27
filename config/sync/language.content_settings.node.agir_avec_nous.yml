@@ -1,0 +1,18 @@
+uuid: 36fef9b2-bc84-445b-97cf-dbe9af68f46c
+langcode: fr
+status: true
+dependencies:
+  config:
+    - node.type.agir_avec_nous
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: node.agir_avec_nous
+target_entity_type_id: node
+target_bundle: agir_avec_nous
+default_langcode: site_default
+language_alterable: true

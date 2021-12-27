@@ -15,7 +15,7 @@ bundle: partenaire
 label: 'Type de partenaire'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     target_uuid: c3139824-bcc1-4d92-8718-0321fcf6ef62

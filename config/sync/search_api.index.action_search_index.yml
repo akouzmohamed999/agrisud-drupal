@@ -65,6 +65,7 @@ tracker_settings:
   default:
     indexing_order: lifo
 options:
-  index_directly: true
   cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
 server: action_search_server

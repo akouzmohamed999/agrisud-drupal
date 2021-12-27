@@ -1,0 +1,19 @@
+uuid: a639dfeb-51f5-41d4-be19-03ef61379c25
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_metier
+    - node.type.equipe
+id: node.equipe.field_metier
+field_name: field_metier
+entity_type: node
+bundle: equipe
+label: Métier
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

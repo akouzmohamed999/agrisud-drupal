@@ -74,7 +74,10 @@ $white: #fff;
 
   ul.links {
     margin-bottom: 0 !important;
-
+    display: flex;
+    li {
+      margin-left: 2rem;
+    }
     li.fr {
       list-style-image: url('images/france-icone.png') !important;
     }
@@ -93,10 +96,17 @@ $white: #fff;
   @include headersInBlocksViews();
 
   .block-content.block-content--type-block-message {
-    width: 80%;
-    margin: 0 10% 0;
+    width: 100%;
+    //margin: 0 10% 0;
     text-align: center;
     @include lead();
+  }
+
+  #block-messageaccueil {
+    width: 80% !important;
+    margin: 0 10% 0 !important;
+    margin-bottom: 6rem !important;
+    text-align: center;
   }
 }
 
@@ -126,7 +136,7 @@ $white: #fff;
   #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
     width: 60% !important;
     left: 20% !important;
-    margin-left: 20% !important;
+   // margin-left: 20% !important;
     @include blockTemoignage();
   }
 
@@ -210,8 +220,8 @@ $white: #fff;
 
 div.more-link {
   float: right;
-  @include btnReadMore();
 }
+@include btnReadMore();
 
 @include blockImage();
 @include blockLinksOrButtons();
@@ -332,8 +342,10 @@ body {
 
 .copyright {
   font-size: 12px !important;
-  line-height: 0 !important;
-
+  line-height: 0.3 !important;
+  p, span {
+    line-height: 1.3;
+  }
   a {
     color: $grey-agrisud !important;
     text-decoration: underline !important;
@@ -519,6 +531,11 @@ h2 {
   right: 0 !important;
   left: unset;
   background: none !important;
+/*
+  margin-top: 1rem !important;
+  text-align: right;
+  padding-right: 1rem;
+  display: block !important;*/
 
   li {
     list-style: none !important;
@@ -549,6 +566,10 @@ h2 {
   border: none !important;
 }
 
+#element-menu {
+  padding-left: 0 !important;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .region-primary-menu nav {
     background-color: transparent;
@@ -559,15 +580,12 @@ h2 {
   }
 
 }
-
-#element-menu {
-  padding-left: 0 !important;
-}
-
 @media (max-width: 992px) {
   .region-primary-menu nav {
     background-color: white;
     opacity: 0.98;
+    display: initial;
+    margin-bottom: 1rem !important;
   }
   .path-frontpage {
     .flexslider {
@@ -597,7 +615,7 @@ h2 {
       }
 
       .more-link {
-        margin-left: 50% !important;
+        margin-left: 10% !important;
       }
     }
 
@@ -615,7 +633,15 @@ h2 {
     .carousel-caption.d-none.d-md-block {
       top: 0 !important;
     }
-
+    .updates {
+      padding: unset !important;
+      #chiffres-container {
+        #list-items {
+          width: unset !important;
+          margin-left: unset !important;
+        }
+      }
+    }
     #views-bootstrap-bloc-actualities-block-1 {
       .row {
         width: 100% !important;
@@ -628,7 +654,7 @@ h2 {
         }
 
         .elpacho:last-of-type {
-          display: none !important;
+          //display: none !important;
         }
       }
     }
@@ -656,6 +682,10 @@ h2 {
 
           .field--name-node-title a {
             font-size: 1.5rem !important;
+          }
+          a.more-link {
+            float: right !important;
+            margin-top: 1rem;
           }
         }
       }
@@ -751,9 +781,33 @@ h2 {
     width: 100% !important;
     left: 0 !important;
   }
+  #page-title #page-title-inner h1 {
+    font-size: 3rem !important;
+  }
+  .sticky-elements {
+    #bouton-sticky {
+      top: 74%;
+    }
+    #bouton-sticky-presse {
+      top: 80%;
+    }
+  }
 }
+@media only screen and (max-width: 992px) and (min-width: 768px) {
 
-@media only screen and (max-width: 600px) {
+  .region.region-primary-menu {
+    margin-top: 1rem !important;
+    text-align: right;
+    padding-right: 1rem;
+    display: block !important;
+  }
+
+}
+@media only screen and (max-width: 768px) {
+  nav.navbar {
+    left: 1rem;
+  }
+
   .path-frontpage {
     .slider-caption {
       .more-link {
@@ -768,15 +822,47 @@ h2 {
         }
       }
     }*/
+
+    .main-content {
+      .block-content.block-content--type-block-message {
+        width: 100% !important;
+        margin: 0 !important;
+        margin-bottom: 6rem !important;
+      }
+    }
+    .updates {
+      padding: unset !important;
+      #chiffres-container {
+        #list-items {
+         /* width: 50% !important;
+          margin-left: 25% !important;*/
+        }
+      }
+    }
+    #midwidget {
+      padding: unset !important;
+      padding-top: 6rem !important;
+      .midwidget-list #views-bootstrap-bloc-actualities-block-1 {
+        width: 86%;
+        margin-left: 7% !important;
+      }
+      #block-views-block-bloc-actualities-block-1 {
+        .elpacho {
+          margin-bottom: 1rem !important;
+        }
+      }
+    }
+
+    #clients .node--view-mode-accroche-2.ds-1col .field--name-node-title {
+      margin-bottom: 0.5rem !important;
+    }
   }
-  #chiffres-container {
-    width: 50% !important;
-  }
+  //.path-liste-actions #views-bootstrap-liste-actions-page-1
 
   .path-nos-actualites, .path-liste-actions {
     #views-bootstrap-nos-actualites-view-page-1, #views-bootstrap-liste-actions-page-1 {
-      padding-left: 2rem;
-      padding-right: 2rem;
+      width: 76%;
+      margin-left: 12%;
 
       .node--type-actualite.node--view-mode-teaser.ds-2col, .node--type-action.node--view-mode-teaser.ds-2col {
         padding-top: 1rem !important;
@@ -800,6 +886,10 @@ h2 {
           .field--name-node-title a {
             font-size: 1.5rem !important;
           }
+          a.more-link {
+            float: right !important;
+            margin-top: 2rem;
+          }
         }
       }
     }
@@ -820,6 +910,7 @@ h2 {
     #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
       .group-right {
         width: 100% !important;
+        margin-bottom: 1rem;
       }
 
       .group-left {
@@ -834,11 +925,8 @@ h2 {
       padding-top: 1rem !important;
 
       .group-left {
-        width: 75% !important;
-
-        img {
-          margin-left: 15% !important;
-        }
+        width: 100% !important;
+        text-align: center;
       }
 
       .group-right {
@@ -858,5 +946,48 @@ h2 {
     #midwidget {
       margin-bottom: 15rem !important;
     }
+  }
+  #bottom-widget .region-bottom-second, .region-bottom-third {
+    .block-content.block-content--type-block-bouton.block-content--view-mode-full.ds-1col {
+      width: 65%;
+      margin: auto !important;
+      float: unset !important;
+      display: grid;
+    }
+  }
+}
+@media only screen and (max-width: 580px) {
+  .path-nos-actualites, .path-liste-actions {
+    #views-bootstrap-nos-actualites-view-page-1, #views-bootstrap-liste-actions-page-1 {
+      .node--type-actualite.node--view-mode-teaser.ds-2col, .node--type-action.node--view-mode-teaser.ds-2col {
+        .group-right {
+          .field--name-body.field--type-text-with-summary {
+            margin-top: 1rem !important;
+            float: right !important;
+          }
+
+          a.more-link {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+    #clients .node--view-mode-accroche-2.ds-1col .field--name-node-title {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  .path-frontpage #clients .node--view-mode-accroche-2.ds-1col .field--name-node-title {
+    margin-bottom: 0 !important;
+  }
+
+}
+
+.path-frontpage {
+  @extend .container;
+}
+.page-node-type-reseaux-et-partenaires {
+  .block {
+    margin-bottom: 0 !important;
   }
 }

@@ -1,0 +1,147 @@
+uuid: f5c59e06-9e96-4e02-b61c-3bfb003fbedd
+langcode: fr
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+    - node.type.action
+    - node.type.actualite
+    - node.type.agir_avec_nous
+    - node.type.article
+    - node.type.equipe
+    - node.type.evenement
+    - node.type.liste_equipe
+    - node.type.nous_connaitre
+    - node.type.page
+    - node.type.partenaire
+    - node.type.programme
+    - node.type.reseau
+    - node.type.reseaux_et_partenaires
+    - node.type.temoignage
+    - taxonomy.vocabulary.equipe
+    - taxonomy.vocabulary.pays
+    - taxonomy.vocabulary.programme
+    - taxonomy.vocabulary.statut
+    - taxonomy.vocabulary.tags
+    - taxonomy.vocabulary.temoignage
+    - taxonomy.vocabulary.type_action
+    - taxonomy.vocabulary.type_partenaire
+  module:
+    - admin_toolbar_search
+    - block_content
+    - content_translation
+    - filter
+    - menu_link_content
+    - node
+    - redirect
+    - system
+    - taxonomy
+id: contributeur
+label: contributeur
+weight: 3
+is_admin: null
+permissions:
+  - 'access administration pages'
+  - 'access content overview'
+  - 'access site in maintenance mode'
+  - 'access site reports'
+  - 'administer menu'
+  - 'administer redirects'
+  - 'administer themes'
+  - 'create action content'
+  - 'create actualite content'
+  - 'create agir_avec_nous content'
+  - 'create article content'
+  - 'create content translations'
+  - 'create equipe content'
+  - 'create evenement content'
+  - 'create liste_equipe content'
+  - 'create nous_connaitre content'
+  - 'create page content'
+  - 'create partenaire content'
+  - 'create programme content'
+  - 'create reseau content'
+  - 'create reseaux_et_partenaires content'
+  - 'create terms in equipe'
+  - 'create terms in pays'
+  - 'create terms in programme'
+  - 'create terms in statut'
+  - 'create terms in tags'
+  - 'create terms in temoignage'
+  - 'create terms in type_action'
+  - 'create terms in type_partenaire'
+  - 'delete content translations'
+  - 'delete own action content'
+  - 'delete own actualite content'
+  - 'delete own agir_avec_nous content'
+  - 'delete own article content'
+  - 'delete own equipe content'
+  - 'delete own evenement content'
+  - 'delete own liste_equipe content'
+  - 'delete own nous_connaitre content'
+  - 'delete own page content'
+  - 'delete own partenaire content'
+  - 'delete own programme content'
+  - 'delete own reseau content'
+  - 'delete own reseaux_et_partenaires content'
+  - 'delete own temoignage content'
+  - 'delete terms in equipe'
+  - 'delete terms in pays'
+  - 'delete terms in programme'
+  - 'delete terms in statut'
+  - 'delete terms in tags'
+  - 'delete terms in temoignage'
+  - 'delete terms in type_action'
+  - 'delete terms in type_partenaire'
+  - 'edit own action content'
+  - 'edit own actualite content'
+  - 'edit own agir_avec_nous content'
+  - 'edit own article content'
+  - 'edit own equipe content'
+  - 'edit own evenement content'
+  - 'edit own liste_equipe content'
+  - 'edit own nous_connaitre content'
+  - 'edit own page content'
+  - 'edit own partenaire content'
+  - 'edit own programme content'
+  - 'edit own reseau content'
+  - 'edit own reseaux_et_partenaires content'
+  - 'edit own temoignage content'
+  - 'edit terms in equipe'
+  - 'edit terms in pays'
+  - 'edit terms in programme'
+  - 'edit terms in statut'
+  - 'edit terms in temoignage'
+  - 'edit terms in type_action'
+  - 'edit terms in type_partenaire'
+  - 'translate action node'
+  - 'translate actualite node'
+  - 'translate agir_avec_nous node'
+  - 'translate any entity'
+  - 'translate article node'
+  - 'translate block_content'
+  - 'translate editable entities'
+  - 'translate equipe node'
+  - 'translate equipe taxonomy_term'
+  - 'translate evenement node'
+  - 'translate liste_equipe node'
+  - 'translate menu_link_content'
+  - 'translate nous_connaitre node'
+  - 'translate page node'
+  - 'translate partenaire node'
+  - 'translate pays taxonomy_term'
+  - 'translate programme node'
+  - 'translate programme taxonomy_term'
+  - 'translate reseau node'
+  - 'translate reseaux_et_partenaires node'
+  - 'translate statut taxonomy_term'
+  - 'translate tags taxonomy_term'
+  - 'translate temoignage node'
+  - 'translate temoignage taxonomy_term'
+  - 'translate type_action taxonomy_term'
+  - 'translate type_partenaire taxonomy_term'
+  - 'update content translations'
+  - 'use admin toolbar search'
+  - 'use text format basic_html'
+  - 'view own unpublished content'
+  - 'view the administration theme'

@@ -1,0 +1,31 @@
+uuid: e3f6d1bd-94f2-4686-83fd-56be880c7d26
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_bouton:881142b7-b419-4712-baf9-35522d1cada1'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: souteniruneaction
+theme: norsys_base
+region: bottom_second
+weight: 0
+provider: null
+plugin: 'block_content:881142b7-b419-4712-baf9-35522d1cada1'
+settings:
+  id: 'block_content:881142b7-b419-4712-baf9-35522d1cada1'
+  label: 'Soutenir une action'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: /liste-partenaires

@@ -1,0 +1,10 @@
+uuid: 82a74395-6567-4dfa-8945-8f8d23da1273
+langcode: fr
+status: true
+dependencies:
+  module:
+    - path_alias
+id: path_alias.token
+label: 'Jeton (token)'
+targetEntityType: path_alias
+cache: true

@@ -1,0 +1,31 @@
+uuid: ce57afdb-ef73-4046-ae42-e5398966fa3a
+langcode: fr
+status: true
+dependencies:
+  content:
+    - 'block_content:block_message:f732d0cc-0e8e-4def-af41-afc7737bdc99'
+  module:
+    - block_content
+    - system
+  theme:
+    - norsys_base
+id: messageaccueil
+theme: norsys_base
+region: content
+weight: -30
+provider: null
+plugin: 'block_content:f732d0cc-0e8e-4def-af41-afc7737bdc99'
+settings:
+  id: 'block_content:f732d0cc-0e8e-4def-af41-afc7737bdc99'
+  label: 'Message Accueil'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    context_mapping: {  }
+    pages: '<front>'

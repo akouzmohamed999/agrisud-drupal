@@ -7,28 +7,7 @@ dependencies:
     - field.field.block_content.basic.body
     - field.field.block_content.basic.field_logo
   module:
-    - ds
     - text
-third_party_settings:
-  ds:
-    layout:
-      id: ds_1col
-      library: null
-      disable_css: false
-      entity_classes: all_classes
-      settings:
-        label: ''
-        wrappers:
-          ds_content: div
-        outer_wrapper: div
-        attributes: ''
-        link_attribute: ''
-        link_custom: ''
-        classes:
-          layout_class: {  }
-    regions:
-      ds_content:
-        - body
 _core:
   default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
 id: block_content.basic.default
@@ -37,13 +16,13 @@ bundle: basic
 mode: default
 content:
   body:
-    label: hidden
     type: text_summary_or_trimmed
-    weight: 0
-    region: ds_content
+    label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
+    weight: 0
+    region: content
 hidden:
   field_logo: true
   langcode: true

@@ -11,17 +11,17 @@ _core:
 id: norsys_base_content
 theme: norsys_base
 region: bottom_third
-weight: -9
+weight: -24
 provider: null
 plugin: system_main_block
 settings:
   id: system_main_block
   label: 'Main page content'
-  provider: system
   label_display: '0'
+  provider: system
 visibility:
   request_path:
     id: request_path
-    pages: '<front>'
     negate: true
     context_mapping: {  }
+    pages: '<front>'

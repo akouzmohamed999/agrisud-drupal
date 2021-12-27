@@ -1,0 +1,19 @@
+uuid: cbc51c53-450b-421f-bc90-f9a342a40654
+langcode: fr
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_lieu
+    - node.type.evenement
+id: node.evenement.field_lieu
+field_name: field_lieu
+entity_type: node
+bundle: evenement
+label: Lieu
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

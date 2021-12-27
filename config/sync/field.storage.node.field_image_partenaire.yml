@@ -11,6 +11,9 @@ field_name: field_image_partenaire
 entity_type: node
 type: image
 settings:
+  target_type: file
+  display_field: false
+  display_default: false
   uri_scheme: public
   default_image:
     uuid: 2ad6c66d-ee23-427f-a861-344588850e70
@@ -18,9 +21,6 @@ settings:
     title: ''
     width: 300
     height: 300
-  target_type: file
-  display_field: false
-  display_default: false
 module: image
 locked: false
 cardinality: 1

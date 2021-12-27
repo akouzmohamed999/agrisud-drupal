@@ -10,8 +10,8 @@
     background-size: inherit;
 
     #block-messageaccueil {
-      width: 80% !important;
-      margin: 0 10% 0 !important;
+      width: 66% !important;
+      margin: 0 17% 0 !important;
       //padding: 2rem !important;
       margin-bottom: 6rem !important;
       text-align: center;
@@ -168,7 +168,8 @@
 
     .block-content.block-content--type-block-links.block-content--view-mode-full.ds-1col,
     .block-content.block-content--type-block-bouton.block-content--view-mode-full.ds-1col {
-      float: left;
+      display: grid;
+      margin: auto;
     }
   }
 
@@ -179,7 +180,8 @@
 
     .block-content.block-content--type-block-links.block-content--view-mode-full.ds-1col,
     .block-content.block-content--type-block-bouton.block-content--view-mode-full.ds-1col {
-      float: right;
+      display: grid;
+      margin: auto;
     }
   }
 }
