@@ -32,20 +32,21 @@
  * @see template_preprocess_links()
  */
 #}
+
 {% if links -%}
   <div class="header__switch-lang links">
-    <select id="language-select">
+    <ul{{ attributes }}>
       {%- for key, item in links -%}
-        <option {{ item.attributes.addClass(key|clean_class) }}>
+        <li{{ item.attributes.addClass(key|clean_class) }}>
           {%- if item.link -%}
             {{ item.link }}
           {%- elseif item.text_attributes -%}
-            <a{{ item.text_attributes }}>{{ item.text }}</a>
+            <span{{ item.text_attributes }}>{{ item.text }}</span>
           {%- else -%}
             {{ item.text }}
           {%- endif -%}
-        </option>
+        </li>
       {%- endfor -%}
-    </select>
+    </ul>
   </div>
 {%- endif %}

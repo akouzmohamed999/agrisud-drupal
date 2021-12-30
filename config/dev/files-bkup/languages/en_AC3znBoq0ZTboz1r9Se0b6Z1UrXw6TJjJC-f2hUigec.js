@@ -1,0 +1,1 @@
+window.drupalTranslations = {"strings":{"":{"D\u00e9couvrir":"Discover"}}};

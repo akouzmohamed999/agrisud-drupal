@@ -28,6 +28,9 @@
     li {
       background: none !important;
     }
+    li::after {
+      background: none !important;
+    }
   }
 
   .flex-direction-nav {

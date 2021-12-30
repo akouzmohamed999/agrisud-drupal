@@ -7,8 +7,21 @@
  info@zymphonies.com
  **/
 
+/*jQuery(document).on("scroll", function($) {
+  console.log('rrr');
+  $("#toTop").show();
+});*/
+/*jQuery(this).on("scroll", function($) {
+  //alert(1);
+  $("#toTop").hide();
+});*/
+
 jQuery(document).ready(function ($) {
   $("#search-block-form .form-item").hide();
+  $("#toTop").hide();
+  $("#toTop").on("click", function (e) {
+    $("html, body").animate({scrollTop: 0}, 'slow');
+  });
 
   //manage language
   var urlElements = (location.pathname).split("/");
@@ -86,4 +99,19 @@ jQuery(document).ready(function ($) {
   }
 
 
+});
+jQuery(document).scroll(function($) {
+  //alert(1);
+  $("#toTop").hide();
+});
+
+jQuery(window).scroll(function() {
+  var $el = jQuery('#toTop');
+  if (jQuery(this).scrollTop() >= 200) {
+    $el.fadeIn();
+  } else {
+    $el.fadeOut();
+  }
+  /*if(jQuery(this).scrollTop() >= 200) $el.addClass('shown');
+  else $el.removeClass('shown');*/
 });
