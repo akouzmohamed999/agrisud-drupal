@@ -76,18 +76,28 @@ $white: #fff;
     margin-bottom: 0 !important;
     display: flex;
     li {
-      margin-left: 2rem;
+      margin-left: 1rem;
+      list-style: none;
     }
     li.fr {
-      list-style-image: url('images/france-icone.png') !important;
+      list-style-image: none;
+      a {
+        background-image : url('images/languageFrançais.png') !important;
+      }
     }
 
     li.en {
-      list-style-image: url('images/english-icone.png') !important;
+      list-style-image: none;
+      a {
+        background-image : url('images/languageEnglish.png') !important;
+      }
     }
 
     a {
-      color: $grey-agrisud;
+      padding: 0.2rem 0.7rem;
+      color: transparent;
+      background-repeat: no-repeat;
+      background-size: contain;
     }
   }
 }
@@ -135,7 +145,7 @@ $white: #fff;
   //Block temoignage in page liste-actions
   #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {
     width: 60% !important;
-    left: 20% !important;
+    margin-left: 20% !important;
    // margin-left: 20% !important;
     @include blockTemoignage();
   }
@@ -193,10 +203,11 @@ $white: #fff;
   }
 
   #footer-icons {
-    color: $red-agrisud !important;
+
     display: table;
 
     a {
+      color: $red-agrisud !important;
       display: table-cell;
       vertical-align: middle;
       font-size: xx-large;
@@ -305,7 +316,7 @@ div.more-link {
 }
 
 .highlited-link {
-  background-color: red !important;
+  background-color: $red-agrisud !important;
   color: white !important;
   padding: 0.2rem 0.5rem !important;
 }
@@ -568,6 +579,30 @@ h2 {
 
 #element-menu {
   padding-left: 0 !important;
+}
+
+.breadcrumb ul li:after, .breadcrumb ol li:after{
+  content: '/' !important;
+}
+
+#block-views-block-programmes-multi-pays-block-1, #block-views-block-diffuser-et-promouvoir-block-1 {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 {
+    background: none !important;
+    .row .view-element {
+      padding-right: 1rem !important;
+    }
+    .node--type-programme.node--view-mode-teaser.ds-2col, .node.node--type-demarche.node--view-mode-teaser.ds-2col {
+      background-color: white !important;
+    }
+    .group-left {
+      padding-right: 0 !important;
+      .field--name-field-image {
+        padding-right: 0 !important;
+      }
+    }
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1200px) {
@@ -990,4 +1025,28 @@ h2 {
   .block {
     margin-bottom: 0 !important;
   }
+}
+
+.scrolltop {
+  position: fixed;
+  top: 30px;
+ // display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  right: 10px;
+  //bottom: 10px;
+  width: 44px;
+  height: 44px;
+  background: $green-agrisud;
+  color: #fff;
+  border-radius: 50%;
+  z-index: 20;
+  cursor: pointer;
+  -webkit-transition: background 0.3s ease;
+  transition: background 0.3s ease;
+  text-align: center;
 }

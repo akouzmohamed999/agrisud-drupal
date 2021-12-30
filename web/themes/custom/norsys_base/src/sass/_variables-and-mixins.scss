@@ -1,7 +1,7 @@
 // Variables
 $green-agrisud: #286839;
 $light-green-agrisud: #226432;
-$red-agrisud: #ff5e14;
+$red-agrisud: #c8341f;//ff5e14
 $grey-green: #acc8b3;
 $grey-agrisud: #343534;
 $light-grey: #f7f7fa;
@@ -789,7 +789,8 @@ $grid-gutter: 3rem;
 
 //Small Blocks image de la page 'nous connaitres
 @mixin blocksImagesSmall() {
-  #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
+  #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers, #views-bootstrap-programmes-multi-pays-block-1,
+  #views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 {
     background-color: white !important;
     max-height: 325px !important;
     padding: 0 !important;
