@@ -604,7 +604,17 @@ h2 {
     }
   }
 }
-
+#views-bootstrap-temoignage-block-1, #block-views-block-temoignage-block-2 {
+  .group-img {
+    margin: auto !important;
+    text-align: center !important;
+  }
+  .group-desc {
+    h3.group-title {
+      margin: 0 !important;
+    }
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .region-primary-menu nav {
     background-color: transparent;
@@ -661,13 +671,13 @@ h2 {
       }
     }
 
-    .carousel-caption p {
+    /*.carousel-caption p {
       display: none !important;
     }
 
     .carousel-caption.d-none.d-md-block {
       top: 0 !important;
-    }
+    }*/
     .updates {
       padding: unset !important;
       #chiffres-container {
@@ -783,14 +793,19 @@ h2 {
     }
   }
   #views-bootstrap-temoignage-block-1, #block-views-block-temoignage-block-2 {
-    .carousel-item.active {
+    .group-desc {
+      h3.group-title {
+        margin: 0 !important;
+      }
+    }
+    /*.carousel-item.active {
       display: inline-block !important;
 
       div {
         display: inline !important;
         padding-top: 0 !important;
       }
-    }
+    }*/
   }
 
   #clients #block-views-block-temoignage-block-2 {
@@ -930,7 +945,7 @@ h2 {
     }
   }
   #block-views-block-temoignage-block-2, #block-views-block-temoignage-block-1 {
-    display: none !important;
+   // display: none !important;
   }
   #block-logofooter {
     margin-bottom: 1rem !important;

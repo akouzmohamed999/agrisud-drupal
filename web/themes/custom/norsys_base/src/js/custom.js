@@ -79,31 +79,40 @@ jQuery(document).ready(function ($) {
       $("#search-block-form .form-item").show();
     }
   });
-  var listPages = ["#views-bootstrap-nos-actualites-view-page-1 .field--name-body", "#views-bootstrap-liste-actions-page-1 .field--name-body"];
+  var listPages = ["#views-bootstrap-nos-actualites-view-page-1 .field--name-body",
+    "#views-bootstrap-liste-actions-page-1 .field--name-body",
+    "#views-bootstrap-temoignage-block-1 .group-desc .custom-body"];
   var caractersCount = 175;
   if ($(window).width() < 992 || $(window).width() < 600) {
     $.each(listPages, function (index, value) {
-      if (index == 1 || $(window).width() < 600) {
-        caractersCount = 82;
+      if (index == 0 || index == 1) {
+        if (index == 1 || $(window).width() < 600) {
+          caractersCount = 82;
+        }
+        if ( $(window).width() < 580) {
+          caractersCount = 0;
+        }
+        $(value).each(function () {
+          var lastElements = $(this).find(".more-link").eq(0).html();
+          $(this).text($(this).text().substring(0, caractersCount));
+          $(this).html($(this).html() + lastElements);
+        });
+      } else {
+        $(value).each(function () {
+          $(this).text($(this).text().substring(0, 260));
+          console.log($(this).html());
+          $(this).html($(this).html());
+        });
       }
-      if ( $(window).width() < 580) {
-        caractersCount = 0;
-      }
-      $(value).each(function () {
-        var lastElements = $(this).find(".more-link").eq(0).html();
-        console.log(lastElements);
-        $(this).text($(this).text().substring(0, caractersCount));
-        $(this).html($(this).html() + lastElements);
-      });
     });
   }
 
 
 });
-jQuery(document).scroll(function($) {
+/*jQuery(document).scroll(function($) {
   //alert(1);
   $("#toTop").hide();
-});
+});*/
 
 jQuery(window).scroll(function() {
   var $el = jQuery('#toTop');
