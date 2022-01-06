@@ -1,0 +1,13 @@
+<div {{ attributes.addClass('block-particuliers', 'container', 'text-center', 'block') }}>
+  {{ title_prefix }}
+  {% if label %}
+    <div class="custom-title container"><h2{{ title_attributes }}>{{ label }}</h2></div>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <iframe width="760" height="427.5" src="https://www.youtube.com/embed/w60Dv90eiKw" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+  {% endblock %}
+</div>
