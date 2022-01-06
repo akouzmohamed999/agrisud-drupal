@@ -213,6 +213,7 @@ $grid-gutter: 3rem;
           display: table-cell;
           vertical-align: middle;
           padding: 0 !important;
+          height: 320px !important;
         }
       }
 
@@ -247,6 +248,12 @@ $grid-gutter: 3rem;
           a {
             margin-left: 0 !important;
             margin-bottom: 0 !important;
+            font-weight: bold !important;
+          }
+          h3 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
       }
@@ -279,10 +286,10 @@ $grid-gutter: 3rem;
   a.more-link {
     display: table;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     text-align: center;
     color: white;
-    padding: 0.3rem 3rem;
+    padding: 0.1rem 2rem;
     border: 1px solid $green-agrisud;
     background-color: $green-agrisud;
     font-weight: 600;
@@ -326,10 +333,11 @@ $grid-gutter: 3rem;
     float: left !important;
     margin-right: 1em;
     text-decoration: none !important;
+    font-weight: bold !important;
 
     .field__label, .field__item {
       display: inline !important;
-      font-weight: normal !important;
+      font-weight: bold !important;
     }
   }
   .field--name-body.field--type-text-with-summary {
@@ -355,6 +363,7 @@ $grid-gutter: 3rem;
 
       .chiffres {
         font-size: 3rem !important;
+        font-weight: bold;
       }
 
       .chiffres-desc {
@@ -402,7 +411,11 @@ $grid-gutter: 3rem;
       h3 {
         color: $white !important;
         margin-top: 0 !important;
+        font-weight: bold !important;
       }
+    }
+    .chiffres {
+      font-weight: bold !important;
     }
 
     margin-bottom: 0 !important;
@@ -414,11 +427,14 @@ $grid-gutter: 3rem;
     #chiffres {
       background-color: $light-green !important;
     }
-
+    .chiffres {
+      font-weight: bold !important;
+    }
     #chiffres-year {
       h3 {
         color: $white !important;
         margin-top: 0 !important;
+        font-weight: bold !important;
       }
     }
   }
@@ -496,12 +512,10 @@ $grid-gutter: 3rem;
       // padding: 2rem !important;
       .field--name-body.field {
         padding: 0 2rem !important;
-        margin-top: 2rem !important;
+        margin-top: 10% !important;
 
         a {
           display: table;
-          /*   margin-top: 15px;
-             margin-bottom: 30px;*/
           text-align: center;
           color: white;
           padding: 0.3rem 3rem;
@@ -509,6 +523,18 @@ $grid-gutter: 3rem;
           background-color: $green-agrisud;
           font-weight: 600;
           float: right;
+        }
+      }
+    }
+  }
+  #block-rapportdactivite {
+    .group-right {
+      .field--name-body.field {
+        a {
+          text-transform: uppercase;
+          display: inline-flex;
+          max-width: 20rem;
+          float: initial;
         }
       }
     }
@@ -536,6 +562,9 @@ $grid-gutter: 3rem;
       background-color: #afca0b;
       font-weight: 400;
       margin: 1rem 1rem;
+      display: inline-flex;
+      text-transform: uppercase;
+
     }
   }
 }
@@ -580,6 +609,11 @@ $grid-gutter: 3rem;
     background-color: $red-agrisud;
     text-align: center;
     display: table;
+    background-image: url("images/PICTO-soutenir-un-projet-4.png");
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position-y: 50%;
+    padding-left: 8%;
 
     a, i {
       font-size: 2rem;
@@ -805,7 +839,7 @@ $grid-gutter: 3rem;
     }
 
     .group-left {
-      width: 40% !important;
+      width: 35% !important;
 
       img {
         display: table-cell;
@@ -817,8 +851,8 @@ $grid-gutter: 3rem;
     }
 
     .group-right {
-      width: 60% !important;
-
+      width: 65% !important;
+      padding: 0 !important;
       h2 {
         font-family: "Roboto" !important;
         color: $green-agrisud !important;

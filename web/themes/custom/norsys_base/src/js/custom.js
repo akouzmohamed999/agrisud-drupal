@@ -31,7 +31,7 @@ jQuery(document).ready(function ($) {
     $('#language-select').val("fr");
   }*/
   if ($(window).width() > 600) {
-    $(".slider-caption a").text(Drupal.t("Découvrir"));
+    $(".slider-caption a").text(Drupal.t("En savoir plus"));
     $(".slider-caption a").addClass("more-link");
   }
   $("#donate-link").animate({width: 'toggle'}, 350);
@@ -50,18 +50,18 @@ jQuery(document).ready(function ($) {
     $("#presse-link").animate({width: 'toggle'}, 350);
   });
   $("#block-views-block-block-nos-partenaires-block-1 .content div").eq(1).addClass("row");
-  var pays = ["maroc", "bresil", "france", "senegal", "guinee-bissau", "malaisie", "cambodge", "laos", "vietnam", "chine",
-    "mayotte", "maurice", "madagascar", "rd-congo", "seychelles", "Indonesie", "mozambique", "gabon", "sao-tome",
-    "niger-2", "benin", "cote-ivoire", "haiti", "inde"];
+  var pays = {"maroc" : 1, "bresil" : 2 , "france" : 34, "senegal" : 35, "guinee-bissau" : 36, "malaisie" : 37, "cambodge" : 30, "laos" : 33, "vietnam" : 38, "chine" : 39,
+    "mayotte" : 40, "maurice" : 41, "madagascar" : 42, "rd-congo" : 43, "seychelles" : 44, "Indonesie" : 45, "mozambique" : 46, "gabon" : 47, "sao-tome" : 48,
+    "niger-2" : 11, "benin" : 49, "cote-ivoire" : 50, "haiti" : 32, "inde" : 51};
+
   var getUrl = window.location;
   var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
   $.each(pays, function (index, value) {
-    $("#" + value).attr('title', $("#" + value).attr('inkscape:label'));
-    $("#" + value).tooltip();
+    $("#" + index).attr('title', $("#" + index).attr('inkscape:label'));
+    $("#" + index).tooltip();
 
     $("#" + value).on("click", function (e) {
-      index = index + 1;
-      window.location.href = baseUrl + "/liste-actions?field_pays=" + index + "#block-actions";
+      window.location.href = baseUrl + "/liste-actions?field_pays=" + value + "#block-actions";
     });
   });
 

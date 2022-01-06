@@ -87,6 +87,22 @@
   #bottom-widget {
     margin-bottom: $grid-gutter !important;
   }
+
+  .region.region-features-second {
+    display: flex;
+    #block-views-block-evenement-block-2 {
+      width: 48%;
+      margin: 0;
+      margin-right: 2%;
+      table {
+        background-color: white !important;
+      }
+    }
+    #block-views-block-evenement-block-1 {
+      width: 50%;
+      margin: 0;
+    }
+  }
 }
 
 .path-liste-actions {
@@ -268,6 +284,17 @@
   header, #block-nospartenaires {
     margin-bottom: $grid-gutter !important;
     text-align: justify !important;
+  }
+  .custom-title .container {
+    padding: 0 !important;
+  }
+  .block-reseaux-partenaires {
+    margin-bottom: 6rem !important;
+  }
+  #views-bootstrap-liste-reseau-block-1 {
+    .views-field-title {
+      line-height: 1.3;
+    }
   }
 }
 

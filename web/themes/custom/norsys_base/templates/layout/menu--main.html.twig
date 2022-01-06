@@ -25,7 +25,11 @@ We call a macro which calls itself to render the full tree.
         <a class="nav-link dropdown-toggle" href="{{ item.url }}" data-toggle="dropdown" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
       {% else %}
         <li data-pos="if-is-expendable-else" class="nav-item">
-        <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+        {% if item.title in ['E-learning', 'Médiathèque', 'Media library'] %}
+          <a href="{{ item.url }}" class="nav-link highlited-main-link">{{ item.title }}</a>
+        {% else %}
+          <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+        {% endif %}
       {% endif %}
       {% if item.below %}
       <div class="dropdown-menu" aria-labelledby="navbarDropdown">

@@ -110,6 +110,9 @@ $white: #fff;
     //margin: 0 10% 0;
     text-align: center;
     @include lead();
+    img {
+      margin-top: 2rem !important;
+    }
   }
 
   #block-messageaccueil {
@@ -256,7 +259,6 @@ div.more-link {
 @include blockEvent();
 
 #block-views-block-evenement-block-2 {
-  background-color: white !important;
   /* display: flex;
    flex-direction: row;*/
   .title {
@@ -345,6 +347,10 @@ div.more-link {
   li:last-of-type a {
     border: none !important;
   }
+  li > a.highlited-main-link {
+    color: $green-agrisud !important;
+    font-weight: bold !important;
+  }
 }
 
 body {
@@ -364,7 +370,7 @@ body {
 }
 
 .main-content {
-  background-image: url("images/symbole-agrisud-2.png"), linear-gradient(#eff3f0, white);
+//  background-image: url("images/symbole-agrisud-2.png"), linear-gradient(#eff3f0, white);
   background-repeat: no-repeat;
   background-position: unset;
   background-size: inherit;
@@ -439,6 +445,12 @@ body {
   @include blockTemoignage();
 
   #bottom-widget {
+    .block-externe-agir {
+      display: flex;
+      img {
+        height: auto;
+      }
+    }
     h2.title, .content a {
       color: $light-green !important;
     }
@@ -450,7 +462,7 @@ body {
         text-align: center;
         height: 5rem;
       }
-
+      color: #afca0b;
       display: block !important;
       font-size: 1.3rem !important;
       text-transform: uppercase;
@@ -492,6 +504,14 @@ h2 {
 #block-messageagiravecnous, #block-messagenousconnaitre {
   width: 80%;
   margin: 0 10% 0;
+}
+
+#block-messagenousconnaitre {
+  width: 100%;
+  margin: 0 !important;
+  .block-content--type-block-message {
+    margin-bottom: 0 !important;
+  }
 }
 
 ////
@@ -602,6 +622,10 @@ h2 {
         padding-right: 0 !important;
       }
     }
+    h3 {
+      font-size: 1.3rem !important;
+      margin: 1rem 1rem 0 0;
+    }
   }
 }
 #views-bootstrap-temoignage-block-1, #block-views-block-temoignage-block-2 {
@@ -612,6 +636,76 @@ h2 {
   .group-desc {
     h3.group-title {
       margin: 0 !important;
+    }
+  }
+}
+.page-node-type-nous-connaitre{
+  #block-demarchesexpertises {
+    .field--name-body {
+      margin-top: 10% !important;
+    }
+  }
+
+  #block-messagenousconnaitre2 {
+    margin-bottom: 0 !important;
+    .block-content--type-block-message {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  #block-downloads {
+    .block-content--type-block-links {
+      margin-top: 0 !important;
+    }
+  }
+}
+
+.block-a-propos-nous {
+  h5 {
+    margin-bottom: 1rem !important;
+  }
+  p {
+    margin-bottom: 0 !important;
+    #contact-link {
+      color: white !important;
+      font-weight: bold;
+      text-decoration: underline;
+      margin-top: 1rem;
+    }
+  }
+}
+.path-frontpage {
+  .views-field-field-lien-partenaire {
+    a {
+      color: $red-agrisud !important;
+    }
+  }
+}
+.sticky-elements #bouton-sticky {
+  top: 84% !important;
+  #donate-key {
+    background: url("images/PICTO-faire-un-don.png");
+    padding: 10px 21px;
+    i {
+      font-size: xx-large !important;
+    }
+  }
+}
+.page-node-type-nous-connaitre {
+  .region.region-midwidget-first {
+    margin-bottom: 6rem !important;
+    display: flex !important;
+  }
+}
+.page-node-type-action, .page-node-type-actualite, .page-node-type-programme, .page-node-type-demarche,
+.page-node-type-evenement, .page-node-type-temoignage {
+  #page-title {
+    #page-title-inner {
+      padding: 14% 0 0;
+      h1 {
+        text-align: left;
+        font-weight: 500 !important;
+      }
     }
   }
 }
@@ -958,9 +1052,12 @@ h2 {
 
   .page-node-type-nous-connaitre {
     #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
+      max-height: unset !important;
       .group-right {
+        background-color: blue !important;
         width: 100% !important;
         margin-bottom: 1rem;
+        padding: 0 !important;
       }
 
       .group-left {
@@ -968,9 +1065,7 @@ h2 {
         margin-left: 10% !important;
       }
     }
-    #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
-      max-height: unset !important;
-    }
+
     .block-content.block-content--type-block-image.block-content--view-mode-full.ds-2col {
       padding-top: 1rem !important;
 
