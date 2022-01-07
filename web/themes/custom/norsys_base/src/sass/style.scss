@@ -188,7 +188,8 @@ $white: #fff;
 
 //pied de page
 .block-a-propos-nous {
-  background-image: url("images/bg_pied_page.png");
+  background-image: url("images/accueil-footer.jpg");
+//  background-image: url("images/bg_pied_page.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -420,6 +421,7 @@ body {
     }
 
     p a {
+      float: right;
       text-align: center;
       color: white;
       padding: 1rem 1rem;
@@ -431,7 +433,7 @@ body {
     }
   }
 
-  #block-donationsetlegues {
+  #block-donationsetlegues, #block-faireundonc {
     .field--name-body {
       background-color: white;
       padding: 1rem 2rem;

@@ -52,58 +52,60 @@
   }
 }
 
-.path-nos-actualites {
-  font-weight: normal !important;
+  .path-nos-actualites {
+    font-weight: normal !important;
 
-  .region-content {
-    background-image: url("images/arriere-plan-page-actualites.jpg");
-    //background-image: url("images/actualite-background-90.png");
-    background-repeat: no-repeat;
-    background-position: top;
-    //background-size: cover;
-    margin-bottom: 0 !important;
-  }
+    .region-content {
+      background-image: url("images/arriere-plan-page-actualites.jpg");
+      //background-image: url("images/actualite-background-90.png");
+      background-repeat: no-repeat;
+      background-position: top;
+      //background-size: cover;
+      margin-bottom: 0 !important;
+    }
 
-  //.node--type-actualite.node--view-mode-teaser.ds-2col
-  @include viewsListds2();
-  @include designActualitesFields();
+    //.node--type-actualite.node--view-mode-teaser.ds-2col
+    @include viewsListds2();
+    @include designActualitesFields();
+    #date-actu, #type-actu {
+      font-weight: bold;
+    }
+    h2.custom-block-title {
+      color: $green-agrisud !important;
+      font-weight: bold !important;
+      margin-bottom: $grid-gutter !important;
+    }
 
-  h2.custom-block-title {
-    color: $green-agrisud !important;
-    font-weight: bold !important;
-    margin-bottom: $grid-gutter !important;
-  }
+    .features {
+      margin-top: 2*$grid-gutter !important;
+      background-image: url("images/symbole-agrisud-300.png") !important;
+      background-repeat: no-repeat !important;
+      background-position: right !important;
+      background-position-y: bottom !important;
+      //height: 700px !important;
+      background-size: inherit !important;
+    }
 
-  .features {
-    margin-top: 2*$grid-gutter !important;
-    background-image: url("images/symbole-agrisud-300.png") !important;
-    background-repeat: no-repeat !important;
-    background-position: right !important;
-    background-position-y: bottom !important;
-    //height: 700px !important;
-    background-size: inherit !important;
-  }
+    #bottom-widget {
+      margin-bottom: $grid-gutter !important;
+    }
 
-  #bottom-widget {
-    margin-bottom: $grid-gutter !important;
-  }
-
-  .region.region-features-second {
-    display: flex;
-    #block-views-block-evenement-block-2 {
-      width: 48%;
-      margin: 0;
-      margin-right: 2%;
-      table {
-        background-color: white !important;
+    .region.region-features-second {
+      display: flex;
+      #block-views-block-evenement-block-2 {
+        width: 48%;
+        margin: 0;
+        margin-right: 2%;
+        table {
+          background-color: white !important;
+        }
+      }
+      #block-views-block-evenement-block-1 {
+        width: 50%;
+        margin: 0;
       }
     }
-    #block-views-block-evenement-block-1 {
-      width: 50%;
-      margin: 0;
-    }
   }
-}
 
 .path-liste-actions {
   font-weight: normal !important;
