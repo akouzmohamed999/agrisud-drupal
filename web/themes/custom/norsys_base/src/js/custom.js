@@ -60,7 +60,7 @@ jQuery(document).ready(function ($) {
     $("#" + index).attr('title', $("#" + index).attr('inkscape:label'));
     $("#" + index).tooltip();
 
-    $("#" + value).on("click", function (e) {
+    $("#" + index).on("click", function (e) {
       window.location.href = baseUrl + "/liste-actions?field_pays=" + value + "#block-actions";
     });
   });
