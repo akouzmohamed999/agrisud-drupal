@@ -101,7 +101,6 @@
 {% endif %}
 <!-- End: Slides -->
 
-
 <!--Start: Top Message -->
 {% if page.top_message %}
   <div class="top-message">
@@ -123,17 +122,17 @@
         </div>
       {% endif %}
 
-        <div class="row topwidget-list clearfix">
-          {% if page.topwidget_first %}
-            <div class = {{ topwidget_class }}>{{ page.topwidget_first }}</div>
-          {% endif %}
-          {% if page.topwidget_second %}
-            <div class = {{ topwidget_class }}>{{ page.topwidget_second }}</div>
-          {% endif %}
-          {% if page.topwidget_third %}
-            <div class = {{ topwidget_class }}>{{ page.topwidget_third }}</div>
-          {% endif %}
-        </div>
+      <div class="row topwidget-list clearfix">
+        {% if page.topwidget_first %}
+          <div class = {{ topwidget_class }}>{{ page.topwidget_first }}</div>
+        {% endif %}
+        {% if page.topwidget_second %}
+          <div class = {{ topwidget_class }}>{{ page.topwidget_second }}</div>
+        {% endif %}
+        {% if page.topwidget_third %}
+          <div class = {{ topwidget_class }}>{{ page.topwidget_third }}</div>
+        {% endif %}
+      </div>
     </div>
   </div>
 {% endif %}
@@ -164,10 +163,10 @@
 {% endif %}
 <!--End: Title -->
 
-
 <div class="main-content">
-  <div class="front-svg container-fluid">
+  <div class="front-svg container">
     <div class="">
+
       <div class="row layout">
         <!--- Start: Left SideBar -->
         {% if page.sidebar_first %}
@@ -181,8 +180,9 @@
 
         <!--- Start Content -->
         {% if page.content %}
-          <div id="liste-actions" class={{contentlayout}} style="padding: 0 !important">
+          <div class={{contentlayout}}>
             <div class="content_layout">
+
               <!--Start: Breadcrumb -->
               {% if not is_front %}
                 <div class="row">
@@ -192,6 +192,7 @@
               <!--End: Breadcrumb -->
 
               {{ page.content }}
+
             </div>
           </div>
         {% endif %}
@@ -341,24 +342,27 @@
     </div>
   </div>
 {% endif %}
-<!--End: Clients -->
 
 <!-- Start: Bottom widgets -->
 {% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
+  <div class="container-fluid" id="custom-bottom-widget">
   <div class="bottom-widget container" id="bottom-widget">
     <div class="container">
+
       <h2 class="custom-block-title" >
         {{ "En savoir plus"|trans }}
       </h2>
+
       <div class="row bottom-widget-list">
         {% if page.bottom_first %}
           <div class = {{ bottom_class }}>
             {{ page.bottom_first }}
           </div>
         {% endif %}
-        {% if page.bottom_second %}
+        {% if page.bottom_second or linkAgrisudInCountry %}
           <div class = {{ bottom_class }}>
             {{ page.bottom_second }}
+            {{ linkAgrisudInCountry }}
           </div>
         {% endif %}
         {% if page.bottom_third %}
@@ -374,9 +378,11 @@
       </div>
     </div>
   </div>
+  </div>
 {% endif %}
 <!--End: Bottom widgets -->
 
+<!--End: Clients -->
 <div class="bg-white row">
   <div id="highlighted-partner" class="col-lg-4  col-md-12 row col-sm-12 col-12">
     <div class="col-lg-10 col-md-8 col-sm-12 col-12 py-3 text-align-right">
@@ -445,10 +451,11 @@ Avec ses partenaires, elle forme et accompagne des hommes et des femmes en préc
       non lucratif reconnue de bienfaisance - N° SIRET 390 364 776 00034 -
       ©Agrisud International 2022 - Tous droits réservés"|trans }}
     </p>
-    <span><a href="#">{{ "Crédits et Mentions légales"|trans }} </a> - <a href="#">{{ "Données personnelles" |trans }} </a>
-      - <a href="#">{{ "Cookies"|trans }} </a> - <a href="#"> {{ "Plan du site"|trans }} </a></span>
+    <span><a href="/mentions-legales">{{ "Crédits et Mentions légales"|trans }} </a> - <a href="/donnees-personnelles">{{ "Données personnelles"|trans }} </a>
+      - <a href="#">{{ "Cookies"|trans }} </a> - <a href="/sitemap"> {{ "Plan du site"|trans }} </a></span>
   </div>
 </div>
+
 <!-- End: Copyright -->
 
 
