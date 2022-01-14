@@ -226,7 +226,11 @@ $grid-gutter: 3rem;
           padding: 0 !important;
           margin: 0 1rem !important;
         }
-
+        .field--name-field-actualite-date, .field--name-field-pays,
+        .field--name-field-programme {
+          padding-right: 2rem !important;
+          border-right: 1px solid $grey-agrisud;
+        }
         .field--name-body.field--type-text-with-summary {
           margin-top: 1.5rem !important;
         }
@@ -609,11 +613,11 @@ $grid-gutter: 3rem;
     background-color: $red-agrisud;
     text-align: center;
     display: table;
-    background-image: url("images/PICTO-soutenir-un-projet-4.png");
-    background-repeat: no-repeat;
-    background-size: inherit;
-    background-position-y: 50%;
-    padding-left: 8%;
+    //background-image: url("images/PICTO-soutenir-un-projet-4.png");
+    //background-repeat: no-repeat;
+    //background-size: inherit;
+    //background-position-y: 50%;
+    //padding-left: 8%;
 
     a, i {
       font-size: 2rem;
@@ -846,7 +850,9 @@ $grid-gutter: 3rem;
         vertical-align: middle;
         margin: 0 !important;
         padding: 0 !important;
-        height: 325px !important;
+        //height: 325px !important;
+        height: 100% !important;
+        width: 100% !important;
       }
     }
 

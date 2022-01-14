@@ -331,6 +331,20 @@
 <!--End: Middle widgets -->
 
 
+<!-- Start: Clients -->
+{% if page.clients %}
+  <div class="clients" id="clients">
+    <div class="container">
+      <h2{{ title_attributes.addClass('custom-block-title') }}>{{ "Nos dernières publications"|trans }}</h2>
+    </div>
+
+    <div class="container">
+      {{ page.clients }}
+    </div>
+  </div>
+{% endif %}
+<!--End: Clients -->
+
 <!-- Start: Bottom widgets -->
 {% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
   <div class="bottom-widget" id="bottom-widget">
@@ -368,20 +382,6 @@
 <!--End: Bottom widgets -->
 
 
-<!-- Start: Clients -->
-{% if page.clients %}
-  <div class="clients" id="clients">
-    {% if page.clients_title %}
-      <h2 class="custom-block-title" >
-        {{ page.clients_title }}
-      </h2>
-    {% endif %}
-    <div class="container-fluid">
-      {{ page.clients }}
-    </div>
-  </div>
-{% endif %}
-<!--End: Clients -->
 <div class="bg-white row">
   <div id="highlighted-partner" class="col-lg-4  col-md-12 row col-sm-12 col-12">
     <div class="col-lg-10 col-md-8 col-sm-12 col-12 py-3 text-align-right">
