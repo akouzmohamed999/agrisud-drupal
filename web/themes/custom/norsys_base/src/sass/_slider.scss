@@ -1,7 +1,7 @@
 // Flexslider
 .flexslider {
   .flex-viewport {
-    height: 650px !important;
+    height: 700px !important;
   }
 
   .slider-caption {
@@ -12,6 +12,7 @@
     font-family: $titleFontFamily !important;
     font-size: 3.5rem !important;
     font-weight: bold !important;
+    margin-bottom: 15px !important;
   }
 
   .slider-description {
@@ -20,7 +21,7 @@
     font-family: $titleFontFamily !important;
     color: $white !important;
     text-transform: uppercase;
-    line-height: 1.1;
+    line-height: 1.5 !important;
     margin-bottom: 3rem !important;
   }
 
