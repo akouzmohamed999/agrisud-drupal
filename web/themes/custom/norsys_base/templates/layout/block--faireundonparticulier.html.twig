@@ -35,7 +35,10 @@
   {% endif %}
   {{ title_suffix }}
   {% block content %}
-    <h1>Ajouter le Formulaire propre à Agrisud ===> Généré à partir du compte Agrisud dans Hello Asso </h1>
+    <iframe id="haWidget"  scrolling="no" allowtransparency="true"
+            src="https://www.helloasso.com/associations/agrisud-international/formulaires/1/widget"
+            style="width:100%;height:750px;border:none;" onload="window.scroll(0, this.offsetTop)"></iframe>
+
     <div style="width:100%;text-align:center;">Propulsé par <a href="https://www.helloasso.com"
                                                                rel="nofollow">HelloAsso</a></div>
   {% endblock %}

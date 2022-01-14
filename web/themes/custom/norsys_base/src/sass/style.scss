@@ -627,6 +627,7 @@ h2 {
     h3 {
       font-size: 1.3rem !important;
       margin: 1rem 1rem 0 0;
+      text-align: left !important;
     }
   }
 }
@@ -711,6 +712,11 @@ h2 {
     }
   }
 }
+#block-faireundonparticulier {
+  iframe {
+    height: 950px !important;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
   .region-primary-menu nav {
@@ -720,7 +726,6 @@ h2 {
     font-size: 0.8rem !important;
     padding: 0 0.5rem !important;
   }
-
 }
 @media (max-width: 992px) {
   .region-primary-menu nav {

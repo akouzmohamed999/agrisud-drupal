@@ -1,0 +1,42 @@
+<div {{ attributes.addClass('block-externe-agir') }}>
+  {{ title_prefix }}
+  {% if label %}
+    <div class="custom-title container"><h2{{ title_attributes }}>{{ "Nos dernières publications"|trans }}</h2></div>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+  <div class="col-12 col-sm-6 col-md-4">
+    <a href="#">{{ "Guide"|trans }}</a>
+
+
+    <figure role="group" class="caption caption-img align-center"><img alt="Notre offre de services"
+                                                                       data-entity-type="file"
+                                                                       data-entity-uuid="346811cd-b14d-475c-bbf8-9f24d5848994"
+                                                                       src="/web/sites/default/files/inline-images/paniers-solidaires-club-med_2.png"
+                                                                       width="660" height="480" loading="lazy">
+      <figcaption>{{ "Agriculture durable et dynamiques de territoires"|trans }}</figcaption>
+    </figure></div>
+  <div class="col-12 col-sm-6 col-md-4"><a href="#">{{ "Rapport"|trans }}</a>
+
+
+    <figure role="group" class="caption caption-img align-center"><img alt="Notre offre de services"
+                                                                       data-entity-type="file"
+                                                                       data-entity-uuid="346811cd-b14d-475c-bbf8-9f24d5848994"
+                                                                       src="/web/sites/default/files/inline-images/paniers-solidaires-club-med_2.png"
+                                                                       width="660" height="480" loading="lazy">
+      <figcaption>{{ "Agriculture durable et dynamiques de territoires"|trans }}</figcaption>
+    </figure></div>
+  <div class="col-12 col-sm-6 col-md-4"><a href="#">{{ "Diagnostique"|trans }}</a>
+
+
+    <figure role="group" class="caption caption-img align-center"><img alt="Notre offre de services"
+                                                                       data-entity-type="file"
+                                                                       data-entity-uuid="346811cd-b14d-475c-bbf8-9f24d5848994"
+                                                                       src="/web/sites/default/files/inline-images/paniers-solidaires-club-med_2.png"
+                                                                       width="660" height="480" loading="lazy">
+      <figcaption>{{ "Évaluation socio-économique de l'aire protégée nationale de Nakai-Nal Theun et de sa zone d'impact périphérique"|trans }}</figcaption>
+    </figure></div>
+</div>
+{% endblock %}
+</div>
+
