@@ -9,7 +9,7 @@ pipeline {
    stages {
       stage('Docker Build and Tag') {
          steps {
-            sh("docker build -f deploy/Dockerfile -t ${dockerImageName} .")
+            sh("docker build -f deploy/Dockerfile --no-cache -t ${dockerImageName} .")
          }
       }
       stage('Push') {
