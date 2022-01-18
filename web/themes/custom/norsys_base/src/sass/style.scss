@@ -615,8 +615,8 @@ h2 {
   margin-bottom: 6rem;
   #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 {
     background: none !important;
-    .row .view-element {
-      padding-right: 1rem !important;
+    .row div.view-element:last-of-type {
+      padding-left: 1rem !important;
     }
     .node--type-programme.node--view-mode-teaser.ds-2col, .node.node--type-demarche.node--view-mode-teaser.ds-2col {
       background-color: white !important;
@@ -720,6 +720,13 @@ h2 {
     height: 950px !important;
   }
 }
+header {
+  #actions-views-intro {
+    font-size: 1.3rem;
+    font-weight: 600 !important;
+  }
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
   .region-primary-menu nav {
