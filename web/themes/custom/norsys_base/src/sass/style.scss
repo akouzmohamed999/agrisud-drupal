@@ -232,7 +232,9 @@ $white: #fff;
 .features {
   background: none !important;
 }
-
+.node--type-actualite div.more-link{
+  margin-top: 0;
+}
 div.more-link {
   float: right;
   margin-top: 2rem;
