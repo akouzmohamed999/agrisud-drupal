@@ -52,12 +52,6 @@
   }
 
   #clients #block-views-block-liste-actions-block-1 {
-    header {
-      #actions-views-intro {
-        font-size: 1.3rem;
-        font-weight: 600 !important;
-      }
-    }
     h3 {
       margin-top: 0 !important;
       a {
@@ -93,7 +87,7 @@
     }
 
     .features {
-      margin-top: 2*$grid-gutter !important;
+      //margin-top: 2*$grid-gutter !important;
       background-image: url("images/symbole-agrisud-300.png") !important;
       background-repeat: no-repeat !important;
       background-position: right !important;
@@ -123,6 +117,12 @@
     }
     #clients {
       .block-externe-agir {
+        div.col-12:first-of-type {
+          padding-left: 0 !important;
+        }
+        div:last-of-type {
+          padding-right: 0 !important;
+        }
         display: flex;
         img {
           height: auto;
