@@ -386,18 +386,44 @@ body {
   }
 }
 
-#block-views-block-equipe-block-1, #block-views-block-equipe-block-2, #block-views-block-equipe-block-3 {
+#block-views-block-equipe-block-1, #block-views-block-equipe-block-2, #block-views-block-equipe-block-3, #block-views-block-equipe-block-4 {
   margin-bottom: 3rem !important;
 
   .ligne-view {
     margin-bottom: 1rem !important;
 
     .field {
-      text-align: center !important;
+      text-align: left !important;
 
       p {
         margin: 0 !important;
         padding: 0 !important;
+      }
+    }
+
+    .field--name-field-personne {
+      p {
+        font-weight: 600 !important;
+      }
+    }
+
+    .field--name-field-metier {
+
+    }
+  }
+}
+
+#block-views-block-equipe-block-1 {
+  .ligne-view {
+    .field--name-field-personne, .field--name-field-metier {
+      color: $green-agrisud !important;
+      p {
+        color: $green-agrisud !important;
+      }
+    }
+    .field--name-field-personne {
+      p {
+        font-weight: 600 !important;
       }
     }
   }
