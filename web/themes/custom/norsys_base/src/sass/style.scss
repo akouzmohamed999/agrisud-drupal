@@ -516,6 +516,11 @@ body {
       color: $grey-agrisud !important;
     }
   }
+  #bottom-widget {
+    a {
+      height: unset !important;
+    }
+  }
 }
 
 h2 {
