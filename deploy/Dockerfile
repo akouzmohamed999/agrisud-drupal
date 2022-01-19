@@ -94,6 +94,8 @@ COPY --from=gulp /home/node/app/src/css /var/www/html/web/themes/custom/norsys_b
 
 RUN mkdir -p /var/www/html/web/sites/default/translations
 
+RUN mkdir -p /var/www/html/web/sites/default/files
+
 COPY --chown=www-data:www-data --chmod=444 ./web/sites/default/settings.example.php /var/www/html/web/sites/default/settings.php
 
 COPY --chown=www-data:www-data --chmod=775 ./web/sites/default/slider-images/* /var/www/html/web/sites/default/files
