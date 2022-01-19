@@ -220,11 +220,11 @@
   <div class="features">
     <div class="container">
       <h2 class="custom-block-title" >
-        {{ "Événements"|trans }}
+        {{ "Évènements"|trans }}
       </h2>
       {% if page.features_title %}
         <h2 class="custom-block-title" >
-          {{ "Événements"|trans }}
+          {{ "Évènements"|trans }}
         </h2>
       {% endif %}
 
@@ -335,7 +335,7 @@
 {% if page.clients %}
   <div class="clients" id="clients">
     <div class="container">
-      <h2{{ title_attributes.addClass('custom-block-title') }}>{{ "Nos dernières publications"|trans }}</h2>
+      <h2{{ title_attributes.addClass('custom-block-title') }}>{{ "À lire / À voir"|trans }}</h2>
     </div>
 
     <div class="container">
@@ -450,8 +450,8 @@ Avec ses partenaires, elle forme et accompagne des hommes et des femmes en préc
       non lucratif reconnue de bienfaisance - N° SIRET 390 364 776 00034 -
       ©Agrisud International 2022 - Tous droits réservés"|trans }}
     </p>
-    <span><a href="/mentions-legales">{{ "Crédits et Mentions légales"|trans }} </a> - <a href="/donnees-personnelles">{{ "Données personnelles"|trans }} </a>
-      - <a href="#">{{ "Cookies"|trans }} </a> - <a href="/sitemap"> {{ "Plan du site"|trans }} </a></span>
+    <span><a href="{{ base_path }}mentions-legales">{{ "Crédits et Mentions légales"|trans }} </a> - <a href="{{ base_path }}donnees-personnelles">{{ "Données personnelles"|trans }} </a>
+      - <a href="{{ base_path }}cookies">{{ "Cookies"|trans }} </a> - <a href="{{ base_path }}sitemap"> {{ "Plan du site"|trans }} </a></span>
   </div>
 </div>
 <!-- End: Copyright -->

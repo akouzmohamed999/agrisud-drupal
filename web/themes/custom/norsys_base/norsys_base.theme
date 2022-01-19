@@ -23,7 +23,7 @@ function norsys_base_preprocess_block(&$variables) {
 function norsys_base_preprocess_page(&$variables) {
   $default = '/web/themes/custom/norsys_base/src/css/images/page-nos-partenaires.jpg';
   $imageUrl = '';
-//  dump($variables);
+  //dump($variables);
   if ($variables['node']) {
     if (in_array($variables['node']->getType(), ['action', 'programme']) && $variables['node']->get('field_image')) {
       $imageUrl = $variables['node']->get('field_image')->entity->uri->value;
