@@ -760,7 +760,13 @@ header {
     font-weight: 600 !important;
   }
 }
-
+.node--type-actualite .node--type-action, .node--type-evenement {
+  .field--name-body {
+    img {
+      margin: 1rem !important;
+    }
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
   .region-primary-menu nav {
