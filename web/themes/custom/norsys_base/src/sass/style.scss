@@ -383,6 +383,11 @@ body {
 .node--view-mode-full.ds-1col {
   .field--name-body {
     text-align: justify;
+    p {
+      img {
+        margin: 1rem !important;
+      }
+    }
   }
 }
 
