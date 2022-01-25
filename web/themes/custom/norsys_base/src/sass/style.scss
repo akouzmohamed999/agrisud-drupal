@@ -100,6 +100,12 @@ $white: #fff;
       background-size: contain;
     }
   }
+  .sub-menu-agrid{
+    display:contents!important;
+    ul{
+      margin-left: 2rem;
+    }
+  }
 }
 
 .main-content {

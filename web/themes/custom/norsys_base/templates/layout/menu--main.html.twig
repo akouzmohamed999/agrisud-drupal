@@ -20,7 +20,7 @@ We call a macro which calls itself to render the full tree.
   <ul data-pos="second-ul" class="navbar-nav mr-auto second-ul-menus">
     {% endif %}
     {% for item in items %}
-      {% if menu_level == 0 and item.is_expanded %}
+      {% if item.is_expanded %}
         <li data-pos="if-is-expendable"  class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="{{ item.url }}" data-toggle="dropdown" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ item.title }}</a>
       {% else %}
