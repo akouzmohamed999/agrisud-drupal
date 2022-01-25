@@ -277,7 +277,13 @@ div.more-link {
     }
   }
 }
+#views-bootstrap-programmes-multi-pays-block-1,#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1,
+#views-bootstrap-bloc-actualities-block-1{
+  .row{
+    margin-left: 0;
+  }
 
+}
 #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
   background-color: white !important;
   display: flex;
