@@ -82,14 +82,14 @@ $white: #fff;
     li.fr {
       list-style-image: none;
       a {
-        background-image : url('images/languageFrançais.svg') !important;
+        background-image : url('images/fr.drapeau.svg') !important;
       }
     }
 
     li.en {
       list-style-image: none;
       a {
-        background-image : url('images/languageEnglish.svg') !important;
+        background-image : url('images/gb.drapeau.svg') !important;
       }
     }
 
@@ -99,6 +99,11 @@ $white: #fff;
       background-repeat: no-repeat;
       background-size: contain;
     }
+  .is-active .language-link{
+    padding-bottom: 1px;
+    border-bottom: 2px groove;
+    border-color: rgba(12,190,12,.6784313725490196);
+  }
   }
 }
 
