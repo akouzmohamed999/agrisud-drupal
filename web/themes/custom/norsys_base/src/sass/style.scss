@@ -193,7 +193,9 @@ $white: #fff;
     }
   }
 }
-
+.liste_nos_actualites_post a img{
+  margin: 0 auto;
+}
 //pied de page
 .block-a-propos-nous {
   background-image: url("images/accueil-footer.jpg");
@@ -886,7 +888,7 @@ header {
 
       .node--type-actualite.node--view-mode-teaser.ds-2col, .node--type-action.node--view-mode-teaser.ds-2col {
         .group-left {
-          width: 35% !important;
+          width: 90% !important;
         }
 
         .group-right {
@@ -1028,9 +1030,7 @@ header {
   .actu-sm-clear-both{
     clear: both;
   }
-  .actu-sm-width{
-    width: 100% !important;
-  }
+
 }
 @media only screen and (max-width: 768px) {
   nav.navbar {
