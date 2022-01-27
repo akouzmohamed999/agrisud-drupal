@@ -107,12 +107,8 @@ jQuery(document).ready(function ($) {
     });
   }
 
-
+$(".path-nos-actualites .features .features-list div:first").addClass('row');
 });
-/*jQuery(document).scroll(function($) {
-  //alert(1);
-  $("#toTop").hide();
-});*/
 
 jQuery(window).scroll(function() {
   var $el = jQuery('#toTop');

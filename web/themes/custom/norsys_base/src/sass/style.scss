@@ -23,6 +23,9 @@ $white: #fff;
   }
 }
 
+.d-contents{
+  display: contents!important;
+}
 //working on sticky buttons for 'Donate' and 'Press'
 .sticky-elements {
   .sticky {
@@ -1019,12 +1022,26 @@ header {
     padding-right: 1rem;
     display: block !important;
   }
+  .actu-d-sm-contents{
+    display: contents!important;
+  }
+  .actu-sm-clear-both{
+    clear: both;
+  }
+  .actu-sm-width{
+    width: 100% !important;
+  }
 }
 @media only screen and (max-width: 768px) {
   nav.navbar {
     left: 1rem;
   }
-
+  .actu-d-sm-contents{
+    display: contents!important;
+  }
+  .actu-sm-clear-both{
+    clear: both;
+  }
   .path-frontpage {
     .slider-caption {
       .more-link {
