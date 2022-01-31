@@ -108,6 +108,12 @@ $white: #fff;
     border-color: rgba(12,190,12,.6784313725490196);
   }
   }
+  .sub-menu-agrid{
+    display:contents!important;
+    ul{
+      margin-left: 2rem;
+    }
+  }
 }
 
 .main-content {
