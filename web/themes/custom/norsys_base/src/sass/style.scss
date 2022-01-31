@@ -154,7 +154,9 @@ $white: #fff;
     @include cardsInBlock();
   }
 }
-
+.title_d_content{
+  display: contents;
+}
 #clients {
   //Block temoignage in page liste-actions
   #block-views-block-temoignage-block-1, #block-views-block-temoignage-block-2 {

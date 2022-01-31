@@ -108,6 +108,9 @@ jQuery(document).ready(function ($) {
   }
 
   $( "#navbarSupportedContent li div div" ).addClass("show sub-menu-agrid");
+  $( ".block-actions-accueil .block1_title_action h3" ).addClass("title_d_content");
+  $( ".block-actions-accueil .block1_title_action h3 a" ).addClass("title_d_content");
+  $( "#views-bootstrap-liste-actions-page-1 .liste-actions" ).addClass("title_d_content");
 });
 /*jQuery(document).scroll(function($) {
   //alert(1);
