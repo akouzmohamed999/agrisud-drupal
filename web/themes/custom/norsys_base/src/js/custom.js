@@ -107,7 +107,7 @@ jQuery(document).ready(function ($) {
     });
   }
 
-
+  $( "#navbarSupportedContent li div div" ).addClass("show sub-menu-agrid");
 });
 /*jQuery(document).scroll(function($) {
   //alert(1);
