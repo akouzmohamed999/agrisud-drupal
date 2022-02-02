@@ -15,9 +15,9 @@ We call a macro which calls itself to render the full tree.
   {% import _self as menus %}
   {% if items %}
     {% if menu_level == 0 %}
-<ul class="collapse navbar-collapse" id="navbarSupportedContent" data-pos="first-ul">
+<ul class="collapse navbar-collapse bg-white" id="navbarSupportedContent" data-pos="first-ul">
   {% else %}
-  <ul data-pos="second-ul" class="navbar-nav mr-auto second-ul-menus">
+  <ul data-pos="second-ul" class="navbar-nav mr-auto second-ul-menus bg-white">
     {% endif %}
     {% for item in items %}
       {% if item.is_expanded %}
