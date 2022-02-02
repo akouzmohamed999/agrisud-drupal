@@ -1,7 +1,7 @@
 {#
 /**
  * @file
- * Default theme implementation to display a block.
+ * Theme override to display a block.
  *
  * Available variables:
  * - plugin_id: The ID of the block implementation.
@@ -23,20 +23,24 @@
  *   displayed after the main title tag that appears in the template.
  *
  * @see template_preprocess_block()
- *
- * @ingroup themeable
  */
 #}
-<div {{ attributes.addClass('block-evenement', 'container-fluid  col-12 col-sm-12 col-md-6 col-lg-6') }}>
-    {{ title_prefix }}
-    {% if label %}
-        <div class="container">
-        <h2{{ title_attributes.addClass('container', 'font-weight-bold') }}>{{ label }}</h2>
-        </div>
-    {% endif %}
-    {{ title_suffix }}
-    {% block content %}
-        {{ content }}
-    {% endblock %}
+{%
+  set classes = [
+    'block',
+    'block-' ~ configuration.provider|clean_class,
+    'block-' ~ plugin_id|clean_class,
+  ]
+%}
+<div{{ attributes.addClass(classes,'col-12 col-sm-12 col-md-6 col-lg-6 d-block') }}>
+  {{ title_prefix }}
+  {% if label %}
+    <h2{{ title_attributes }} class="title">{{ label }}</h2>
+  {% endif %}
+  {{ title_suffix }}
+  {% block content %}
+    <div class="content">
+      {{ content }}
+    </div>
+  {% endblock %}
 </div>
-

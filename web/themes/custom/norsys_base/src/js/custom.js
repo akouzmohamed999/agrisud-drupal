@@ -108,6 +108,7 @@ jQuery(document).ready(function ($) {
   }
 
   $( "#navbarSupportedContent li div div" ).addClass("show sub-menu-agrid");
+$(".path-nos-actualites .features .features-list div:first").addClass('row');
   $( ".block-actions-accueil .block1_title_action h3" ).addClass("title_d_content");
   $( ".block-actions-accueil .block1_title_action h3 a" ).addClass("title_d_content");
   $( "#views-bootstrap-liste-actions-page-1 .liste-actions" ).addClass("title_d_content");
@@ -116,10 +117,6 @@ jQuery(document).ready(function ($) {
   $( "#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 .row" ).addClass("d-block");
   }
 });
-/*jQuery(document).scroll(function($) {
-  //alert(1);
-  $("#toTop").hide();
-});*/
 
 jQuery(window).scroll(function() {
   var $el = jQuery('#toTop');

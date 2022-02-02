@@ -23,6 +23,9 @@ $white: #fff;
   }
 }
 
+.d-contents{
+  display: contents!important;
+}
 //working on sticky buttons for 'Donate' and 'Press'
 .sticky-elements {
   .sticky {
@@ -198,7 +201,9 @@ $white: #fff;
     }
   }
 }
-
+.liste_nos_actualites_post a img{
+  margin: 0 auto;
+}
 //pied de page
 .block-a-propos-nous {
   background-image: url("images/accueil-footer.jpg");
@@ -891,7 +896,7 @@ header {
 
       .node--type-actualite.node--view-mode-teaser.ds-2col, .node--type-action.node--view-mode-teaser.ds-2col {
         .group-left {
-          width: 35% !important;
+          width: 90% !important;
         }
 
         .group-right {
@@ -1027,12 +1032,24 @@ header {
     padding-right: 1rem;
     display: block !important;
   }
+  .actu-d-sm-contents{
+    display: contents!important;
+  }
+  .actu-sm-clear-both{
+    clear: both;
+  }
+
 }
 @media only screen and (max-width: 768px) {
   nav.navbar {
     left: 1rem;
   }
-
+  .actu-d-sm-contents{
+    display: contents!important;
+  }
+  .actu-sm-clear-both{
+    clear: both;
+  }
   .path-frontpage {
     .slider-caption {
       .more-link {
