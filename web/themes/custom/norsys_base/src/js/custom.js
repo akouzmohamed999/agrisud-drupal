@@ -111,6 +111,10 @@ jQuery(document).ready(function ($) {
   $( ".block-actions-accueil .block1_title_action h3" ).addClass("title_d_content");
   $( ".block-actions-accueil .block1_title_action h3 a" ).addClass("title_d_content");
   $( "#views-bootstrap-liste-actions-page-1 .liste-actions" ).addClass("title_d_content");
+  if ($(window).width() <= 767 ) {
+  $( "#views-bootstrap-programmes-multi-pays-block-1 .row" ).addClass("d-block");
+  $( "#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 .row" ).addClass("d-block");
+  }
 });
 /*jQuery(document).scroll(function($) {
   //alert(1);
