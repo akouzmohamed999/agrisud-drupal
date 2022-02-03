@@ -26,6 +26,9 @@ $white: #fff;
 .d-contents{
   display: contents!important;
 }
+.agrisud-y-scroll {
+  overflow-y: scroll;
+}
 //working on sticky buttons for 'Donate' and 'Press'
 .sticky-elements {
   .sticky {
@@ -927,10 +930,6 @@ header {
         margin-left: 10% !important;
       }
     }
-
-    #midwidget {
-      margin-bottom: 15rem !important;
-    }
   }
 
   .page-node-type-reseaux-et-partenaires {
@@ -1150,7 +1149,6 @@ header {
     #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers {
       max-height: unset !important;
       .group-right {
-        background-color: blue !important;
         width: 100% !important;
         margin-bottom: 1rem;
         padding: 0 !important;
@@ -1184,9 +1182,6 @@ header {
       }
     }
 
-    #midwidget {
-      margin-bottom: 15rem !important;
-    }
   }
   #bottom-widget .region-bottom-second, .region-bottom-third {
     .block-content.block-content--type-block-bouton.block-content--view-mode-full.ds-1col {
