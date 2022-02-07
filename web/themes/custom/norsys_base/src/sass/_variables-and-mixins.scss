@@ -599,7 +599,7 @@ $grid-gutter: 3rem;
         background-color: $white;
         padding: $grid-gutter/3;
         text-align: center;
-        height: 5rem;
+        min-height: 5rem;
 
         a {
           color: $light-green;

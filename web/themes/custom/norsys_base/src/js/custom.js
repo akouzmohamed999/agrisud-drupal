@@ -109,6 +109,17 @@ jQuery(document).ready(function ($) {
 
   $( "#navbarSupportedContent li div div" ).addClass("show sub-menu-agrid");
 $(".path-nos-actualites .features .features-list div:first").addClass('row');
+  if ( $(window).width() <= 575) {
+    $("#block-block1.block-externe-agir").addClass('row');
+  }
+  if ( $(window).width() < 1008) {
+    $("#block-accederauxelementsfinanciers .block-content").addClass('d-contents');
+    $("#block-accederauxelementsfinanciers").addClass('agrisud-y-scroll');
+    $("#block-tousleschiffresetresultatsdactivite .block-content").addClass('d-contents');
+    $("#block-tousleschiffresetresultatsdactivite").addClass('agrisud-y-scroll');
+    $(".block-resultat-tpe-finance").addClass('row');
+    $(".block-resultat-tpe-finance #block-tousleschiffresetresultatsdactivite").removeClass('mr-5');
+  }
   $( ".block-actions-accueil .block1_title_action h3" ).addClass("title_d_content");
   $( ".block-actions-accueil .block1_title_action h3 a" ).addClass("title_d_content");
   $( "#views-bootstrap-liste-actions-page-1 .liste-actions" ).addClass("title_d_content");
