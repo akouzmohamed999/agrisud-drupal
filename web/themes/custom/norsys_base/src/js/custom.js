@@ -112,6 +112,14 @@ $(".path-nos-actualites .features .features-list div:first").addClass('row');
   if ( $(window).width() <= 575) {
     $("#block-block1.block-externe-agir").addClass('row');
   }
+  if ( $(window).width() < 1008) {
+    $("#block-accederauxelementsfinanciers .block-content").addClass('d-contents');
+    $("#block-accederauxelementsfinanciers").addClass('agrisud-y-scroll');
+    $("#block-tousleschiffresetresultatsdactivite .block-content").addClass('d-contents');
+    $("#block-tousleschiffresetresultatsdactivite").addClass('agrisud-y-scroll');
+    $(".block-resultat-tpe-finance").addClass('row');
+    $(".block-resultat-tpe-finance #block-tousleschiffresetresultatsdactivite").removeClass('mr-5');
+  }
 });
 
 jQuery(window).scroll(function() {
