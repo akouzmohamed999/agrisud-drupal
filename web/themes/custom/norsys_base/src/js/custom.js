@@ -109,6 +109,9 @@ jQuery(document).ready(function ($) {
 
   $( "#navbarSupportedContent li div div" ).addClass("show sub-menu-agrid");
 $(".path-nos-actualites .features .features-list div:first").addClass('row');
+  if ( $(window).width() <= 575) {
+    $("#block-block1.block-externe-agir").addClass('row');
+  }
   if ( $(window).width() < 1008) {
     $("#block-accederauxelementsfinanciers .block-content").addClass('d-contents');
     $("#block-accederauxelementsfinanciers").addClass('agrisud-y-scroll');
