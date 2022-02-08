@@ -1258,3 +1258,15 @@ header {
   transition: background 0.3s ease;
   text-align: center;
 }
+
+.form-required::after {
+  content: '';
+  vertical-align: super;
+  display: inline-block;
+  background-image: url("images/required-icon-20.jpg");
+  background-repeat: no-repeat;
+  background-size: 7px 7px;
+  width: 7px;
+  height: 7px;
+  margin: 0 0.3em;
+}
