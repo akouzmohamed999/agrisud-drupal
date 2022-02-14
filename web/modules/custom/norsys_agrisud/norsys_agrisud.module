@@ -3,13 +3,6 @@
 use Drupal\views\ViewExecutable;
 
 /**
- * Implements hook_views_pre_render().
- */
-function norsys_agrisud_views_pre_render(ViewExecutable $view) {
-  return $view;
-}
-
-/**
  * Implements hook_preprocess_page_title().
  */
 function norsys_agrisud_preprocess_page_title(&$variables) {
@@ -20,5 +13,24 @@ function norsys_agrisud_preprocess_page_title(&$variables) {
     $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($taxonomyTerm[1]);
     $value = $term->name->value;
     $variables['title'] = t("Les " . $value);
+  }
+}
+
+/**
+ * Implements hook_views_pre_render().
+ */
+function norsys_agrisud_views_pre_render(&$view) {
+  global $base_url;
+  if ($view->id() == 'equipe' && $view->current_display == 'block_2') {
+    foreach ($view->result as $i => $row) {
+      //ksm($row->_entity->get('field_messagerie')->getValue());
+      if($row->_entity->get('field_messagerie')->getValue()[0]['value']){
+        $adress_mail = $row->_entity->get('field_messagerie')->getValue()[0]['value'];
+        $messagerie =  t('<a href="mailto:'.$adress_mail.'"><img src="'.$base_url.'/themes/custom/norsys_base/images/messagerie.png" alt='.$adress_mail.' ></a>');
+        $row->_entity->set('field_messagerie', $messagerie);
+
+      }
+
+    }
   }
 }

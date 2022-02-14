@@ -49,7 +49,8 @@
         "drupal/views_bootstrap": "^4.3",
         "drupal/views_slideshow": "^4.6",
         "drupal/xmlsitemap": "^1.2",
-        "drush/drush": "^10.0.0"
+        "drush/drush": "^10.0.0",
+        "kint-php/kint": "^4.1"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -57,7 +58,13 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true
+        }
     },
     "extra": {
         "drupal-scaffold": {
