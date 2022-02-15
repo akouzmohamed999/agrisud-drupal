@@ -21,7 +21,7 @@ function norsys_agrisud_preprocess_page_title(&$variables) {
  */
 function norsys_agrisud_views_pre_render(&$view) {
   global $base_url;
-  if ($view->id() == 'equipe' && $view->current_display == 'block_2') {
+  if ($view->id() == 'equipe' && ($view->current_display == 'block_2' || $view->current_display == 'block_3')) {
     foreach ($view->result as $i => $row) {
       //ksm($row->_entity->get('field_messagerie')->getValue());
       if($row->_entity->get('field_messagerie')->getValue()[0]['value']){
