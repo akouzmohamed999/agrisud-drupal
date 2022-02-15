@@ -157,9 +157,23 @@ var $j = 0; // initialisation de deux compteurs
   $( ".block-actions-accueil .block1_title_action h3" ).addClass("title_d_content");
   $( ".block-actions-accueil .block1_title_action h3 a" ).addClass("title_d_content");
   $( "#views-bootstrap-liste-actions-page-1 .liste-actions" ).addClass("title_d_content");
+
   if ($(window).width() <= 767 ) {
   $( "#views-bootstrap-programmes-multi-pays-block-1 .row" ).addClass("d-block");
   $( "#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 .row" ).addClass("d-block");
+  }
+
+  if ($(window).width() <= 520 ) {
+  $("#views-bootstrap-equipe-block-1 .row .ligne-view" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-2 .row:first" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-2 .row .ligne-view" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-3 .row:first" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-3 .row .ligne-view" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-4 .row .ligne-view" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-4 .row .ligne-view .node--view-mode-conseil-d-orientation" ).addClass("w-100");
+  $("#views-bootstrap-equipe-block-5 .row .ligne-view" ).addClass("d-contents");
+  $("#views-bootstrap-equipe-block-5 .row " ).addClass("px-3");
+
   }
 });
 

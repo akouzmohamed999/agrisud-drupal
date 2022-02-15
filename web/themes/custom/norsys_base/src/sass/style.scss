@@ -441,12 +441,14 @@ body {
   }
 }
 
-#block-views-block-equipe-block-4 {
+#block-views-block-equipe-block-4,#views-bootstrap-equipe-block-1,#views-bootstrap-equipe-block-5 {
   .field--name-field-personne {
     font-weight: bold;
     font-size: 1.4rem;
   }
-
+  .field--name-field-metier{
+    font-weight: bold;
+  }
   .node--view-mode-conseil-d-orientation.ds-1col {
     background-color: $white;
     min-height: 100%;
@@ -457,7 +459,10 @@ body {
 #block-views-block-equipe-block-2,#block-views-block-equipe-block-3 {
   .views-field-field-personne {
     font-weight: bold;
-    font-size: 1.3rem;
+    font-size: 1.4rem;
+  }
+  .views-field-field-metier,.views-field-field-pays{
+    font-weight: bold;
   }
   .views-field-field-linkedin,.views-field-field-messagerie{
 width: 20%;
