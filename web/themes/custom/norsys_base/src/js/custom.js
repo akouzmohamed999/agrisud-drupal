@@ -141,6 +141,8 @@ var $j = 0; // initialisation de deux compteurs
     $j++;
   });
 
+  //ajout de class au lien pays
+  $('#block-views-block-equipe-block-3 .views-field-field-pays a').addClass("text-danger");
   if ( $(window).width() <= 575) {
     $("#block-block1.block-externe-agir").addClass('row');
   }
