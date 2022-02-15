@@ -110,6 +110,37 @@ jQuery(document).ready(function ($) {
   $( "#navbarSupportedContent li div div" ).addClass("show sub-menu-agrid");
 $(".path-nos-actualites .features .features-list div:first").addClass('row');
 $("#views-bootstrap-equipe-block-5 div.row:first").addClass('justify-content-center');
+
+//intégration des icones pour les RS
+var $j = 0; // initialisation de deux compteurs
+
+//partie direction générale
+  $('#block-views-block-equipe-block-2 .views-field-field-linkedin').each(function(){
+    $(this).addClass("dg-views-field-field-messagerie"+$j);
+    $j++;
+  });
+
+  $j=0;
+  $('#block-views-block-equipe-block-2 .views-field-field-messagerie').each(function(){
+    $(this).addClass("dg-views-field-field-messagerie"+$j);
+    $('.dg-views-field-field-messagerie'+$j).wrapAll('<div class="row px-3 mt-3"></div>');
+    $j++;
+  });
+
+  //représentant pays
+  $j=0;
+  $('#block-views-block-equipe-block-3 .views-field-field-linkedin').each(function(){
+    $(this).addClass("rp-views-field-field-messagerie"+$j);
+    $j++;
+  });
+
+  $j=0;
+  $('#block-views-block-equipe-block-3 .views-field-field-messagerie').each(function(){
+    $(this).addClass("rp-views-field-field-messagerie"+$j);
+    $('.rp-views-field-field-messagerie'+$j).wrapAll('<div class="row px-3 mt-3"></div>');
+    $j++;
+  });
+
   if ( $(window).width() <= 575) {
     $("#block-block1.block-externe-agir").addClass('row');
   }
