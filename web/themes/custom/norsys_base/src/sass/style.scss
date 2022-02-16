@@ -52,6 +52,12 @@ $white: #fff;
 
   #presse-key {
     font-size: 1.3rem !important;
+    background: url("images/picto-presse-ok.png") no-repeat;
+    padding: 10px 21px;
+
+    i {
+      font-size: xx-large !important;
+    }
   }
 }
 
@@ -833,7 +839,7 @@ h2 {
   top: 84% !important;
 
   #donate-key {
-    background: url("images/PICTO-faire-un-don.png");
+    background: url("images/picto-don-ok.png") no-repeat;
     padding: 10px 21px;
 
     i {
