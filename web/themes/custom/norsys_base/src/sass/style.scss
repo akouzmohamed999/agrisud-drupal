@@ -855,6 +855,24 @@ h2 {
   }
 }
 
+#block-views-block-accueil-chiffres-cles-block-1 {
+  background-color: $green-agrisud !important;
+  color: $white;
+  h2{
+    color: $white !important;
+    margin-top: 0 !important;
+    font-weight: bold !important;
+  }
+  .views-field-field-chiffres{
+    font-size: 3rem !important;
+    font-weight: bold !important;
+    margin: 0.5rem;
+  }
+  .views-field-field-description .field-content{
+    color: $white;
+    font-size: 1.7rem !important;
+  }
+}
 .page-node-type-action, .page-node-type-actualite, .page-node-type-programme, .page-node-type-demarche,
 .page-node-type-evenement, .page-node-type-temoignage {
   #page-title {
