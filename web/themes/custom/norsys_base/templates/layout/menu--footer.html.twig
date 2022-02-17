@@ -55,8 +55,18 @@ We call a macro which calls itself to render the full tree.
                   <a class="font-weight-bold">{{ item.title }}</a>
                 {% endif %}
               {% else %}
+
+                {% if item.title =='Contenu-a-propos-de-nous' %}
+                <li{{ item.attributes.addClass(classes,'text-justify') }}>
+                  <a>{{'ONG française, Agrisud intervient depuis 1992 en Afrique et dans l’Océan Indien, en Asie, en Amérique Latine et dans les Caraïbes.
+                    Avec ses partenaires, elle lutte contre la précarité par le développement d’activités économiques durables.
+                    Elle soutient des systèmes agricoles basés sur des exploitations familiales, valorisant les ressources locales,
+                    protégeant la biodiversité et résilients face au dérèglement climatique. Elle met en place des projets pour
+                    des territoires socialement équitables, économiquement viables et écologiquement responsables.' |trans}}</a>
+                {% else %}
                 <li{{ item.attributes.addClass(classes) }}>
                 {{ link(item.title, item.url) }}
+              {% endif %}
               {% endif %}
               {% if item.below %}
                 {{ menus.menu_links(item.below, attributes, menu_level + 1) }}
