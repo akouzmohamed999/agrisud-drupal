@@ -117,20 +117,20 @@
   <div class="topwidget" id="topwidget">
     <div class="container">
       {% if page.topwidget_title %}
-        <div class="custom-block-title" >
+        <div class="custom-block-title">
           {{ page.topwidget_title }}
         </div>
       {% endif %}
 
       <div class="row topwidget-list clearfix">
         {% if page.topwidget_first %}
-          <div class = {{ topwidget_class }}>{{ page.topwidget_first }}</div>
+          <div class= {{ topwidget_class }}>{{ page.topwidget_first }}</div>
         {% endif %}
         {% if page.topwidget_second %}
-          <div class = {{ topwidget_class }}>{{ page.topwidget_second }}</div>
+          <div class= {{ topwidget_class }}>{{ page.topwidget_second }}</div>
         {% endif %}
         {% if page.topwidget_third %}
-          <div class = {{ topwidget_class }}>{{ page.topwidget_third }}</div>
+          <div class= {{ topwidget_class }}>{{ page.topwidget_third }}</div>
         {% endif %}
       </div>
     </div>
@@ -151,7 +151,7 @@
 
 
 <!--Start: Title -->
-{%  if page.page_title and not is_front %}
+{% if page.page_title and not is_front %}
   {% set file_url = file_url(banner) %}
   <div id="page-title" {% if banner %} style="background-image: url({{ (file_url) }})" {% endif %}>
     <div id="page-title-inner">
@@ -170,7 +170,7 @@
       <div class="row layout">
         <!--- Start: Left SideBar -->
         {% if page.sidebar_first %}
-          <div class={{sidebarfirst}}>
+          <div class={{ sidebarfirst }}>
             <div class="sidebar">
               {{ page.sidebar_first }}
             </div>
@@ -180,7 +180,7 @@
 
         <!--- Start Content -->
         {% if page.content %}
-          <div class={{contentlayout}}>
+          <div class={{ contentlayout }}>
             <div class="content_layout">
 
               <!--Start: Breadcrumb -->
@@ -200,7 +200,7 @@
 
         <!-- Start: Right SideBar -->
         {% if page.sidebar_second %}
-          <div class={{sidebarsecond}}>
+          <div class={{ sidebarsecond }}>
             <div class="sidebar">
               {{ page.sidebar_second }}
             </div>
@@ -222,24 +222,24 @@
     <div class="container">
 
       {% if page.features_title %}
-        <h2 class="custom-block-title" >
+        <h2 class="custom-block-title">
           {{ page.features_title }}
         </h2>
       {% endif %}
 
       <div class="row features-list">
         {% if page.features_first %}
-          <div class = {{ features_first_class }}>
+          <div class= {{ features_first_class }}>
             {{ page.features_first }}
           </div>
         {% endif %}
         {% if page.features_second %}
-          <div class = {{ features_class }}>
+          <div class= {{ features_class }}>
             {{ page.features_second }}
           </div>
         {% endif %}
         {% if page.features_third %}
-          <div class = {{ features_class }}>
+          <div class= {{ features_class }}>
             {{ page.features_third }}
           </div>
         {% endif %}
@@ -257,29 +257,29 @@
     <div class="container-">
 
       {% if page.updates_title %}
-        <h2 class="custom-block-title" >
+        <h2 class="custom-block-title">
           {{ page.updates_title }}
         </h2>
       {% endif %}
 
       <div class="row updates-list">
         {% if page.updates_first %}
-          <div class = {{ updates_class }}>
+          <div class= {{ updates_class }}>
             {{ page.updates_first }}
           </div>
         {% endif %}
         {% if page.updates_second %}
-          <div class = {{ updates_class }}>
+          <div class= {{ updates_class }}>
             {{ page.updates_second }}
           </div>
         {% endif %}
         {% if page.updates_third %}
-          <div class = {{ updates_class }}>
+          <div class= {{ updates_class }}>
             {{ page.updates_third }}
           </div>
         {% endif %}
         {% if page.updates_forth %}
-          <div class = {{ updates_class }}>
+          <div class= {{ updates_class }}>
             {{ page.updates_forth }}
           </div>
         {% endif %}
@@ -296,29 +296,29 @@
     <div class="container">
 
       {% if page.midwidget_title %}
-        <h2 class="custom-block-title" >
+        <h2 class="custom-block-title">
           {{ page.midwidget_title }}
         </h2>
       {% endif %}
 
       <div class="row midwidget-list">
         {% if page.midwidget_first %}
-          <div class = {{ midwidget_class }}>
+          <div class= {{ midwidget_class }}>
             {{ page.midwidget_first }}
           </div>
         {% endif %}
         {% if page.midwidget_second %}
-          <div class = {{ midwidget_class }}>
+          <div class= {{ midwidget_class }}>
             {{ page.midwidget_second }}
           </div>
         {% endif %}
         {% if page.midwidget_third %}
-          <div class = {{ midwidget_class }}>
+          <div class= {{ midwidget_class }}>
             {{ page.midwidget_third }}
           </div>
         {% endif %}
         {% if page.midwidget_forth %}
-          <div class = {{ midwidget_class }}>
+          <div class= {{ midwidget_class }}>
             {{ page.midwidget_forth }}
           </div>
         {% endif %}
@@ -332,38 +332,38 @@
 <!-- Start: Bottom widgets -->
 {% if page.bottom_first or page.bottom_second or page.bottom_third or page.bottom_forth %}
   <div class="container-fluid" id="custom-bottom-widget">
-  <div class="bottom-widget container" id="bottom-widget">
-    <div class="container">
+    <div class="bottom-widget container" id="bottom-widget">
+      <div class="container">
 
-      <h2 class="custom-block-title" >
-        {{ "En savoir plus"|trans }}
-      </h2>
+        <h2 class="custom-block-title">
+          {{ "En savoir plus"|trans }}
+        </h2>
 
-      <div class="row bottom-widget-list">
-        {% if page.bottom_first %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_first }}
-          </div>
-        {% endif %}
-        {% if page.bottom_second or linkAgrisudInCountry %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_second }}
-            {{ linkAgrisudInCountry }}
-          </div>
-        {% endif %}
-        {% if page.bottom_third %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_third }}
-          </div>
-        {% endif %}
-        {% if page.bottom_forth %}
-          <div class = {{ bottom_class }}>
-            {{ page.bottom_forth }}
-          </div>
-        {% endif %}
+        <div class="row bottom-widget-list">
+          {% if page.bottom_first %}
+            <div class= {{ bottom_class }}>
+              {{ page.bottom_first }}
+            </div>
+          {% endif %}
+          {% if page.bottom_second or linkAgrisudInCountry %}
+            <div class= {{ bottom_class }}>
+              {{ page.bottom_second }}
+              {{ linkAgrisudInCountry }}
+            </div>
+          {% endif %}
+          {% if page.bottom_third %}
+            <div class= {{ bottom_class }}>
+              {{ page.bottom_third }}
+            </div>
+          {% endif %}
+          {% if page.bottom_forth %}
+            <div class= {{ bottom_class }}>
+              {{ page.bottom_forth }}
+            </div>
+          {% endif %}
+        </div>
       </div>
     </div>
-  </div>
   </div>
 {% endif %}
 <!--End: Bottom widgets -->
@@ -373,7 +373,7 @@
 {% if page.clients %}
   <div class="clients" id="clients">
     {% if page.clients_title %}
-      <h2 class="custom-block-title" >
+      <h2 class="custom-block-title">
         {{ page.clients_title }}
       </h2>
     {% endif %}
@@ -398,15 +398,18 @@
     <div class="row">
       <div class="col col-lg-9 col-md-8 pr-5">
         <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
-        <p class="text-white">{{ "ONG française, Agrisud intervient depuis 1992 en Afrique et dans l’Océan Indien, en Asie du Sud-Est, en Amérique Latine et dans les Caraïbes.<br>
-
-Avec ses partenaires, elle forme et accompagne des hommes et des femmes en précarité dans la maîtrise de leurs activités agricoles et met en place des projets multi-acteurs pour des territoires socialement équitables, économiquement viables et écologiquement responsables. "|trans }}
+        <p
+          class="text-white">{{ "ONG française, Agrisud intervient depuis 1992 en Afrique et dans l’Océan Indien, en Asie,
+          en Amérique Latine et dans les Caraïbes. Avec ses partenaires, elle lutte contre la précarité par le développement
+          d’activités économiques durables. Elle soutient des systèmes agricoles basés sur des exploitations familiales,
+          valorisant les ressources locales, protégeant la biodiversité et résilients face au dérèglement climatique.
+          Elle met en place des projets pour des territoires socialement équitables, économiquement viables et écologiquement responsables. "|trans }}
         </p>
       </div>
       <div class="col col-lg-3 col-md-4">
         <h5 class="text-white font-weight-bold">{{ "SIÈGE SOCIAL"|trans }}</h5>
         <p class="text-white">{{ "7, avenue du Maréchal Foch - 33500 Libourne"|trans }} </p><br>
-        <p class="text-white">{{  "Tel"|trans }} : +33 (0)5 57 25 17 06</p>
+        <p class="text-white">{{ "Tel"|trans }} : +33 (0)5 57 25 17 06</p>
         <p class="text-white"><a href="#" id="contact-link">{{ "contactez-nous"|trans }}</a></p>
       </div>
     </div>
@@ -417,23 +420,23 @@ Avec ses partenaires, elle forme et accompagne des hommes et des femmes en préc
   <div class="footer bg-white" id="footer">
     <div class="container">
       {% if page.footer_title %}
-        <h2 class="custom-block-title" >
+        <h2 class="custom-block-title">
           {{ page.footer_title }}
         </h2>
       {% endif %}
       <div class="row">
         {% if page.footer_first %}
-          <div class = {{ footer_class }}>
+          <div class= {{ footer_class }}>
             {{ page.footer_first }}
           </div>
         {% endif %}
         {% if page.footer_second %}
-          <div class = {{ footer_class }}>
+          <div class= {{ footer_class }}>
             {{ page.footer_second }}
           </div>
         {% endif %}
         {% if page.footer_third %}
-          <div class = {{ footer_class }}>
+          <div class= {{ footer_class }}>
             {{ page.footer_third }}
           </div>
         {% endif %}
@@ -451,8 +454,10 @@ Avec ses partenaires, elle forme et accompagne des hommes et des femmes en préc
       non lucratif reconnue de bienfaisance - N° SIRET 390 364 776 00034 -
       ©Agrisud International 2022 - Tous droits réservés"|trans }}
     </p>
-    <span><a href="{{ base_path }}mentions-legales">{{ "Crédits et Mentions légales"|trans }} </a> - <a href="{{ base_path }}donnees-personnelles">{{ "Données personnelles"|trans }} </a>
-      - <a href="{{ base_path }}cookies">{{ "Cookies"|trans }} </a> - <a href="{{ base_path }}sitemap"> {{ "Plan du site"|trans }} </a></span>
+    <span><a href="{{ base_path }}mentions-legales">{{ "Crédits et Mentions légales"|trans }} </a> - <a
+        href="{{ base_path }}donnees-personnelles">{{ "Données personnelles"|trans }} </a>
+      - <a href="{{ base_path }}cookies">{{ "Cookies"|trans }} </a> - <a
+        href="{{ base_path }}sitemap"> {{ "Plan du site"|trans }} </a></span>
   </div>
 </div>
 
