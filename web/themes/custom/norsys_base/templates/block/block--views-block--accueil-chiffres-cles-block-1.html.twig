@@ -32,13 +32,13 @@
     'block-' ~ plugin_id|clean_class,
   ]
 %}
-<div class="custom-title container mb-5"><h2 class="font-weight-bold">{{ 'Chiffres clés'|trans }}</h2></div>
-<div{{ attributes.addClass(classes,'px-5 py-2') }}>
+
   {{ title_prefix }}
   {% if label %}
-    <h2{{ title_attributes }} class="title">{{ label }}</h2>
+    <div class="custom-title container mb-5"><h2 class="font-weight-bold">{{ label }}</h2></div>
   {% endif %}
   {{ title_suffix }}
+<div{{ attributes.addClass(classes,'px-5 py-2') }}>
   {% block content %}
     <div class="content my-4">
       {{ content }}
