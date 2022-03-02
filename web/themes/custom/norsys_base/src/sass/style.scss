@@ -316,7 +316,7 @@ div.more-link {
   table {
     .views-field-field-actualite-date {
       padding: 0.3rem 2rem !important;
-      max-width: 6rem !important;
+     // max-width: 6rem !important;
       font-size: 1.5rem !important;
     }
   }
@@ -792,7 +792,7 @@ h2 {
 .page-node-type-nous-connaitre {
   #block-demarchesexpertises {
     .field--name-body {
-      margin-top: 10% !important;
+      margin-top: 3% !important;
     }
   }
 
@@ -912,6 +912,13 @@ header {
   }
 }
 
+body:not(.user-logged-in) {
+  .header {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
   .region-primary-menu nav {
