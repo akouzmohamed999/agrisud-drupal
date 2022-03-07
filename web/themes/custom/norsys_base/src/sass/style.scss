@@ -1020,7 +1020,7 @@ body:not(.user-logged-in) {
     }
   }
   .custom-title {
-    padding-left: 15px !important;
+    padding-left: 0 !important;
   }
 
   .path-nos-actualites, .path-liste-actions {
@@ -1154,6 +1154,18 @@ body:not(.user-logged-in) {
 
     #bouton-sticky-presse {
       top: 80%;
+    }
+  }
+  .page-node-type-agir-avec-nous {
+    #block-faireundonparticulier iframe {
+      height: 2415px !important;
+    }
+    #midwidget, #clients {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .sticky-elements .sticky {
+      width: 25%;
     }
   }
 }
