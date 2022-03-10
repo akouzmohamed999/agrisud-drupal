@@ -106,6 +106,9 @@
         margin: 0;
         table {
           background-color: white !important;
+          td, th {
+            padding: 0.55rem !important;
+          }
         }
       }
       #block-views-block-evenement-block-1 {

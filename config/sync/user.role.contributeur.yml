@@ -10,6 +10,7 @@ dependencies:
     - node.type.article
     - node.type.equipe
     - node.type.evenement
+    - node.type.lire_voir
     - node.type.liste_equipe
     - node.type.nous_connaitre
     - node.type.page
@@ -30,12 +31,15 @@ dependencies:
     - admin_toolbar_search
     - block_content
     - content_translation
+    - contextual
     - filter
     - menu_link_content
     - node
+    - quickedit
     - redirect
     - system
     - taxonomy
+    - toolbar
 id: contributeur
 label: contributeur
 weight: 3
@@ -43,8 +47,11 @@ is_admin: null
 permissions:
   - 'access administration pages'
   - 'access content overview'
+  - 'access contextual links'
+  - 'access in-place editing'
   - 'access site in maintenance mode'
   - 'access site reports'
+  - 'access toolbar'
   - 'administer menu'
   - 'administer redirects'
   - 'administer themes'
@@ -55,6 +62,7 @@ permissions:
   - 'create content translations'
   - 'create equipe content'
   - 'create evenement content'
+  - 'create lire_voir content'
   - 'create liste_equipe content'
   - 'create nous_connaitre content'
   - 'create page content'
@@ -77,6 +85,7 @@ permissions:
   - 'delete own article content'
   - 'delete own equipe content'
   - 'delete own evenement content'
+  - 'delete own lire_voir content'
   - 'delete own liste_equipe content'
   - 'delete own nous_connaitre content'
   - 'delete own page content'
@@ -93,12 +102,14 @@ permissions:
   - 'delete terms in temoignage'
   - 'delete terms in type_action'
   - 'delete terms in type_partenaire'
+  - 'edit any lire_voir content'
   - 'edit own action content'
   - 'edit own actualite content'
   - 'edit own agir_avec_nous content'
   - 'edit own article content'
   - 'edit own equipe content'
   - 'edit own evenement content'
+  - 'edit own lire_voir content'
   - 'edit own liste_equipe content'
   - 'edit own nous_connaitre content'
   - 'edit own page content'

@@ -1,0 +1,34 @@
+uuid: e7a08e1b-b7bf-4aea-b5c1-43f14bbfd20b
+langcode: fr
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.lire_voir.body
+    - field.field.node.lire_voir.field_image_lire_voir
+    - node.type.lire_voir
+  module:
+    - text
+    - user
+id: node.lire_voir.teaser
+targetEntityType: node
+bundle: lire_voir
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_image_lire_voir: true
+  langcode: true
+  search_api_excerpt: true

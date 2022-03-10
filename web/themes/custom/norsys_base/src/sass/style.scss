@@ -1419,3 +1419,26 @@ body:not(.user-logged-in) {
   height: 7px;
   margin: 0 0.3em;
 }
+
+.card {
+  border-left: 1px !important;
+}
+
+.card-group > .card:first-child {
+  margin-right: 1rem;
+}
+
+.card-group > .card:not(:first-child):not(:last-child):not(:only-child) {
+  margin-right: 1rem;
+}
+
+.card-header {
+  padding: 0 !important;
+  background-color: white !important;
+  border-bottom: none !important;
+
+  img {
+    width: 660px;
+    height: auto;
+  }
+}

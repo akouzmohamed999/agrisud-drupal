@@ -431,8 +431,9 @@ display:
         fields: false
       use_more: false
       use_more_always: true
-      use_more_text: more
-      display_extenders: {  }
+      use_more_text: 'En savoir <br>plus'
+      display_extenders:
+        simple_sitemap_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
@@ -503,7 +504,7 @@ display:
           type: datetime_custom
           settings:
             timezone_override: Europe/London
-            date_format: 'j <br> M'
+            date_format: 'j <br> M Y'
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -555,7 +556,7 @@ display:
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -564,9 +565,19 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: string
+          type: smart_trim
           settings:
-            link_to_entity: true
+            trim_length: 4
+            trim_type: words
+            trim_suffix: ...
+            wrap_output: false
+            wrap_class: trimmed
+            more_link: false
+            more_class: more-link
+            more_text: More
+            trim_options:
+              text: false
+              trim_zero: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -607,12 +618,12 @@ display:
           group_type: group
           admin_label: ''
           plugin_id: datetime
-          order: ASC
+          order: DESC
           expose:
             label: ''
             field_identifier: field_actualite_date_value
           exposed: false
-          granularity: month
+          granularity: year
       filters:
         status:
           id: status
@@ -702,7 +713,6 @@ display:
           columns:
             field_actualite_date: field_actualite_date
             title: title
-            body: body
           info:
             field_actualite_date:
               sortable: 0
@@ -712,13 +722,6 @@ display:
               empty_column: 0
               responsive: ''
             title:
-              sortable: 0
-              default_sort_order: asc
-              align: views-align-left
-              separator: ''
-              empty_column: 0
-              responsive: ''
-            body:
               sortable: 0
               default_sort_order: asc
               align: views-align-left
@@ -747,7 +750,8 @@ display:
         filters: false
         filter_groups: false
       display_description: ''
-      display_extenders: {  }
+      display_extenders:
+        simple_sitemap_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:
