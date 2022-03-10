@@ -1,0 +1,127 @@
+{#
+/**
+ * @file
+ * Default theme implementation for displaying a view as a bootstrap carousel.
+ *
+ * Available variables:
+ * - view: The view object.
+ * - rows: A list of the view's row items.
+ * - id: A valid HTML ID and guaranteed to be unique.
+ * - interval: The amount of time to delay between automatically cycling a
+ *   slide item. If false, carousel will not automatically cycle.
+ * - pause: Pauses the cycling of the carousel on mouseenter and
+ *   resumes the cycling of the carousel on mouseleave.
+ * - wrap: Whether the carousel should cycle continuously or have
+ *   hard stops.
+ *
+ * @see template_preprocess_views_bootstrap_carousel()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<div id="{{ id }}" class="carousel {{ effect }}"
+     data-interval="{{ interval }}"
+  {% if ride %} data-ride="carousel" {% endif %}
+     data-pause="{% if pause %}hover{% else %}false{% endif %}"
+>
+  {# Show indicators if set in view. #}
+  {%  if indicators %}
+    <ol class="carousel-indicators">
+      {% for key, row in rows %}
+        {% set indicator_classes = [loop.first ? 'active'] %}
+        <li class="{{ indicator_classes|join(' ') }}" data-target="#{{ id }}" data-slide-to="{{ key }}"></li>
+      {% endfor %}
+    </ol>
+  {% endif %}
+  {# Carousel body. #}
+
+  {# One carousel-item consist of 5 images, therefore we need to create from #}
+  {# one to (rows|length) combinations of images. #}
+  {# Generate combinations of indexes which will be used for creation of #}
+  {# combinations of images. #}
+
+  {% set combinations = [] %}
+  {% set max_index = (rows|length - 1) %}
+
+  {% for i in 0..max_index %}
+    {% set index = i %}
+    {% set combination = [index] %}
+    {% for j in 0..4  %}
+      {% set index = index + 1 %}
+      {% if index > max_index %}
+        {% set index = 0 %}
+      {% endif %}
+      {% set combination = combination|merge([index]) %}
+    {% endfor %}
+    {% set combinations = combinations|merge([combination]) %}
+  {% endfor %}
+
+  <div class="carousel-inner">
+    {# Create carousel-item for each combinations of 6 images. #}
+
+    {% for combination in combinations %}
+      {% set row_classes = ['carousel-item', loop.first ? 'active'] %}
+      <div class="{{ row_classes|join(' ') }}">
+        <div class="container">
+          <div class="row no-gutters">
+
+            <div class="col-2">
+              {{ rows[combination.0].image }}
+              <div class="image-title-carousel-desktop">
+                {{ rows[combination.0].title }}
+              </div>
+            </div>
+
+            <div class="col-2">
+              {{ rows[combination.1].image }}
+              <div class="image-title-carousel-desktop">
+                {{ rows[combination.1].title }}
+              </div>
+            </div>
+
+            <div class="col-2">
+              {{ rows[combination.2].image }}
+              <div class="image-title-carousel-desktop">
+                {{ rows[combination.2].title }}
+              </div>
+            </div>
+
+            <div class="col-2">
+              {{ rows[combination.3].image }}
+              <div class="image-title-carousel-desktop">
+                {{ rows[combination.3].title }}
+              </div>
+            </div>
+
+            <div class="col-2">
+              {{ rows[combination.4].image }}
+              <div class="image-title-carousel-desktop">
+                {{ rows[combination.4].title }}
+              </div>
+            </div>
+
+            <div class="col-2">
+              {{ rows[combination.5].image }}
+              <div class="image-title-carousel-desktop">
+                {{ rows[combination.5].title }}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  {# Controls #}
+  {% if navigation %}
+    <a class="carousel-control-prev" href="#{{ id }}" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">{{ 'Previous'|t }}</span>
+    </a>
+    <a class="carousel-control-next" href="#{{ id }}" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">{{ 'Next'|t }}</span>
+    </a>
+  {% endif %}
+</div>
