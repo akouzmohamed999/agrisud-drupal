@@ -7,6 +7,7 @@ dependencies:
     - field.field.node.evenement.body
     - field.field.node.evenement.field_actualite_date
     - field.field.node.evenement.field_actualite_image
+    - field.field.node.evenement.field_icone
     - field.field.node.evenement.field_lieu
     - field.field.node.evenement.field_periode
     - node.type.evenement
@@ -80,6 +81,7 @@ content:
     region: left
 hidden:
   field_actualite_image: true
+  field_icone: true
   field_lieu: true
   field_periode: true
   langcode: true
