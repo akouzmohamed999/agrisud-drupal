@@ -25,7 +25,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: 'Nos réseaux'
+      title: 'Les collectifs dont Agrisud International est membre'
       fields:
         field_image_partenaire:
           id: field_image_partenaire
@@ -40,9 +40,9 @@ display:
           alter:
             alter_text: false
             text: ''
-            make_link: false
-            path: ''
-            absolute: false
+            make_link: true
+            path: 'http://www.agrisud.org/en'
+            absolute: true
             external: false
             replace_spaces: false
             path_case: none
@@ -95,74 +95,10 @@ display:
           multi_type: separator
           separator: ', '
           field_api_classes: false
-        title:
-          id: title
-          table: node_field_data
-          field: title
-          relationship: none
-          group_type: group
-          admin_label: ''
-          plugin_id: field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: true
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: value
-          type: string
-          settings:
-            link_to_entity: true
-          group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
       pager:
-        type: some
+        type: none
         options:
           offset: 0
-          items_per_page: 6
       exposed_form:
         type: basic
         options:
@@ -182,22 +118,21 @@ display:
         options: {  }
       empty: {  }
       sorts:
-        created:
-          id: created
+        title:
+          id: title
           table: node_field_data
-          field: created
+          field: title
           relationship: none
           group_type: group
           admin_label: ''
           entity_type: node
-          entity_field: created
-          plugin_id: date
-          order: DESC
+          entity_field: title
+          plugin_id: standard
+          order: ASC
           expose:
             label: ''
-            field_identifier: created
+            field_identifier: ''
           exposed: false
-          granularity: second
       arguments: {  }
       filters:
         status:
@@ -226,16 +161,21 @@ display:
             operator_limit_selection: false
             operator_list: {  }
       style:
-        type: views_bootstrap_grid
+        type: views_bootstrap_carousel
         options:
           grouping: {  }
-          row_class: text-center
-          default_row_class: true
-          col_xs: none
-          col_sm: col-sm-3
-          col_md: col-md-2
-          col_lg: col-lg-2
-          col_xl: none
+          interval: '4000'
+          keyboard: 1
+          ride: 0
+          navigation: 1
+          indicators: 0
+          pause: 1
+          use_caption: 1
+          wrap: 1
+          effect: slide
+          image: field_image_partenaire
+          title: ''
+          description: ''
       row:
         type: fields
       query:
@@ -258,7 +198,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'merci de nous indiquer les textes qui ne sont pas contribuables (= que nous ne pourront pas changer ensuite nous-même) afin que nous décidions des termes exacts. merci de nous indiquer les textes qui ne sont pas contribuables (= que nous ne pourront pas changer ensuite nous-même) afin que nous décidions des termes exacts. merci de nous indiquer les textes qui ne sont pas contribuables (= que nous ne pourront pas changer ensuite nous-même) afin que nous décidions des termes exacts. '
+            value: 'Notre implication au sein de ces collectifs s’illustre de différentes manière : groupes de travail, actions de terrain ou événements publics... et contribue à faire évoluer les pratiques et les politiques de solidarité internationale.'
             format: basic_html
           tokenize: false
       footer: {  }
@@ -278,7 +218,8 @@ display:
     display_plugin: block
     position: 1
     display_options:
-      display_extenders: {  }
+      display_extenders:
+        simple_sitemap_display_extender: {  }
     cache_metadata:
       max-age: -1
       contexts:

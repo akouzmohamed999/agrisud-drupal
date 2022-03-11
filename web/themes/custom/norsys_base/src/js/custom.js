@@ -16,12 +16,33 @@
   $("#toTop").hide();
 });*/
 
+function agrisudCarousel(id,activeElement) {
+  jQuery(id).carousel('next').click(function () {
+    jQuery('.active').removeClass('active');
+    jQuery('.carousel-item:nth-child('+ activeElement +')').addClass('active');
+    activeElement = activeElement + 6;
+    if(activeElement > jQuery(id + ' .carousel-item').length){
+      activeElement = activeElement - jQuery(id + ' .carousel-item').length;
+    }
+  });
+}
+
 jQuery(document).ready(function ($) {
   $("#search-block-form .form-item").hide();
   $("#toTop").hide();
   $("#toTop").on("click", function (e) {
     $("html, body").animate({scrollTop: 0}, 'slow');
   });
+
+  //Custom carousel agrisud
+  var activeElement = 6
+  if($('.carousel .carousel-item').length <= 6){
+    $(".carousel-control-prev").hide()
+    $(".carousel-control-next").hide()
+  }
+  agrisudCarousel('#views-bootstrap-partenaires-block-1',activeElement);
+  agrisudCarousel('#views-bootstrap-liste-reseau-block-1',activeElement);
+  agrisudCarousel('#views-bootstrap-liste-partenaires-page-1',activeElement);
 
   //manage language
   var urlElements = (location.pathname).split("/");
