@@ -4,11 +4,9 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_image_partenaire
-    - field.storage.node.field_lien_partenaire
     - image.style.medium
     - search_api.index.partenaires_index2
   module:
-    - link
     - search_api
     - svg_image
     - views_bootstrap
@@ -105,81 +103,6 @@ display:
             use_highlighting: false
             multi_type: separator
             multi_separator: ', '
-        field_lien_partenaire:
-          id: field_lien_partenaire
-          table: search_api_datasource_partenaires_index2_entity_node
-          field: field_lien_partenaire
-          relationship: none
-          group_type: group
-          admin_label: ''
-          entity_type: node
-          plugin_id: search_api_field
-          label: ''
-          exclude: false
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: uri
-          type: link
-          settings:
-            trim_length: 80
-            url_only: false
-            url_plain: false
-            rel: nofollow
-            target: _blank
-          group_column: ''
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          field_rendering: true
-          fallback_handler: search_api
-          fallback_options:
-            link_to_item: false
-            use_highlighting: false
-            multi_type: separator
-            multi_separator: ', '
       pager:
         type: full
         options:
@@ -218,20 +141,38 @@ display:
         type: tag
         options: {  }
       empty: {  }
-      sorts: {  }
+      sorts:
+        title:
+          id: title
+          table: search_api_index_partenaires_index2
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          plugin_id: search_api
+          order: ASC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
       arguments: {  }
       filters: {  }
       style:
-        type: views_bootstrap_grid
+        type: views_bootstrap_carousel
         options:
           grouping: {  }
-          row_class: text-center
-          default_row_class: true
-          col_xs: col-3
-          col_sm: col-sm-3
-          col_md: col-md-3
-          col_lg: col-lg-3
-          col_xl: none
+          interval: '4000'
+          keyboard: 1
+          ride: 0
+          navigation: 1
+          indicators: 0
+          pause: 1
+          use_caption: 1
+          wrap: 1
+          effect: slide
+          image: field_image_partenaire
+          title: ''
+          description: ''
       row:
         type: fields
       query:
@@ -253,7 +194,6 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_image_partenaire'
-        - 'config:field.storage.node.field_lien_partenaire'
         - 'config:search_api.index.partenaires_index2'
   block_1:
     id: block_1
@@ -277,7 +217,6 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_image_partenaire'
-        - 'config:field.storage.node.field_lien_partenaire'
         - 'config:search_api.index.partenaires_index2'
   page_1:
     id: page_1
@@ -289,7 +228,8 @@ display:
         type: none
       defaults:
         cache: false
-      display_extenders: {  }
+      display_extenders:
+        simple_sitemap_display_extender: {  }
       path: liste-partenaires
     cache_metadata:
       max-age: -1
@@ -300,5 +240,4 @@ display:
         - 'user.node_grants:view'
       tags:
         - 'config:field.storage.node.field_image_partenaire'
-        - 'config:field.storage.node.field_lien_partenaire'
         - 'config:search_api.index.partenaires_index2'
