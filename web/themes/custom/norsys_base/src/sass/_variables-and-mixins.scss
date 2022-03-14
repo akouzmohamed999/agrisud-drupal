@@ -270,7 +270,7 @@ $grid-gutter: 3rem;
 
 @mixin designPageTitle() {
   #page-title {
-    background-image: url("images/page-nos-partenaires.jpg");
+  //  background-image: url("images/page-nos-partenaires.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -288,10 +288,10 @@ $grid-gutter: 3rem;
     }
   }
   #page-title.liste-actualites {
-    background-image: url("images/page-nos-actualites.jpg");
+   // background-image: url("images/page-nos-actualites.jpg");
   }
   #page-title.page-nous-connaitre {
-    background-image: url("images/page-nous-connaitre.jpg");
+   // background-image: url("images/page-nous-connaitre.jpg");
   }
 }
 
