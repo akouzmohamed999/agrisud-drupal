@@ -759,7 +759,7 @@ $grid-gutter: 3rem;
 @mixin blockEvent() {
   #block-views-block-evenement-block-1 {
     background-color: white !important;
-    max-height: 325px !important;
+    max-height: 350px !important;
 
     .row div {
       padding: 0 !important;
@@ -778,7 +778,7 @@ $grid-gutter: 3rem;
         vertical-align: middle;
         margin: 0 !important;
         padding: 0 !important;
-        height: 325px !important;
+        height: 350px !important;
       }
     }
 

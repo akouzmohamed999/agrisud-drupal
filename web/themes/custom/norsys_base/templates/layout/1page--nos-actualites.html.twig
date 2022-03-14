@@ -395,22 +395,23 @@
 </div>
 <div class="block-a-propos-nous">
 <div class="container py-5">
-  <div class="row py-5">
-  <div class="">
-    <h5 class="text-white font-weight-bold">A PROPOS DE NOUS</h5>
-    <p class="text-white">Agrisud est une OGN fraçaise qui intervient de 1992 en Afrique ,en Asie , en Amérique latine et<br> dans les Caraïbes
-      Son action vise à promouvoir un développement économique durable <br>dans le secteur agricole
-      Avec ses partenaires, ell e forme et accompagne des hommes et des <br>femmes dans la maîtrise de
-      leurs activités et met en place des projets multi-acteurs pour des <br>territoires socialement équitables
-      économiquement viables et écologiquement responsables.
-    </p>
-  </div>
-  <div class="">
-    <h5 class="text-white font-weight-bold">CONTACTEZ-NOUS</h5>
-    <p class="text-white">7, avenue du Maréchal Foch - 33500 Libourne</p>
-    <p class="text-white">Tel :<br>+33 (0)5 57 25 17 06</p>
-    <p class="text-white">Fax:<br>+33 (0)5 57 25 17 06</p>
-  </div>
+  <div class="row d-flex justify-content-between ml-5">
+    <div class="col col-lg-7 col-md-7">
+      <h5 class="text-white">À PROPOS DE NOUS</h5>
+      <p class="text-white mb-1" >{{ "ONG française, Agrisud intervient depuis 1992 en Afrique et dans l’Océan Indien, en Asie du Sud-Est, en Amérique Latine et dans les Caraïbes."|trans}}</p>
+
+      <p class="text-white">{{"Avec ses partenaires, elle lutte contre la précarité par le développement d’activités économiques durables.
+  Elle soutient des systèmes agricoles basés sur des exploitations familiales, valorisant les ressources locales,
+  protégeant la biodiversité et résilients face au dérèglement climatique.
+  Elle met en place des projets pour des territoires socialement équitables, économiquement viables et écologiquement responsables. "|trans }}
+      </p>
+    </div>
+    <div class="col col-lg-3 col-md-3">
+      <h5 class="text-white ">{{ "SIÈGE SOCIAL"|trans }}</h5>
+      <p class="text-white">{{ "7, avenue du Maréchal Foch "|trans }}<br>{{ "33500 Libourne"|trans }}</p>
+      <p class="text-white"> {{  "Tel"|trans }} : +33 (0)5 57 25 17 06 <br>
+        <a class="text-white h6" href="#" id="contact-link">{{ "Contactez-nous"|trans }}</a></p>
+    </div>
   </div>
 </div>
 </div>

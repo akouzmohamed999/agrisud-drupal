@@ -72,6 +72,7 @@
       background-position: top;
       //background-size: cover;
       margin-bottom: 0 !important;
+      background-size: cover;
     }
 
     //.node--type-actualite.node--view-mode-teaser.ds-2col
@@ -106,9 +107,9 @@
         margin: 0;
         table {
           background-color: white !important;
-          td, th {
+         /* td, th {
             padding: 0.55rem !important;
-          }
+          }*/
         }
       }
       #block-views-block-evenement-block-1 {
@@ -129,7 +130,7 @@
         }
       }
       h2.title, .content a {
-        color: $light-green !important;
+        color: $light-green ;
       }
 
       a {
