@@ -70,7 +70,6 @@
       //background-image: url("images/actualite-background-90.png");
       background-repeat: no-repeat;
       background-position: top;
-      //background-size: cover;
       margin-bottom: 0 !important;
       background-size: cover;
     }
@@ -138,7 +137,6 @@
           background-color: $white;
           padding: $grid-gutter/3;
           text-align: center;
-          height: 5rem;
         }
         color: #afca0b;
         display: block !important;
@@ -358,4 +356,9 @@
 .path-evenement, .path-temoignages {
   //background-color: blue !important;
   @include viewsListds2();
+}
+
+.path-contact .main-content {
+  background-image: url("images/arriere-plan-page-contact-1920px.jpg");
+  background-size: cover;
 }

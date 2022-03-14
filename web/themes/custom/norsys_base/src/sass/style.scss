@@ -319,6 +319,9 @@ div.more-link {
       max-width: 6rem !important;
       font-size: 1.5rem !important;
     }
+    td p {
+      margin: 10px 0 10px 0;
+    }
   }
 }
 
@@ -1456,6 +1459,13 @@ body:not(.user-logged-in) {
     height: auto;
   }
 }
+
 #block-views-block-lire-voir-block-1 h2.title{
   color: $green-agrisud !important;
+  margin-bottom: 3rem !important;
+}
+
+#views-bootstrap-chiffres-cles-pour-l-accueil-block-1{
+  background: $green-agrisud !important;
+  padding: 2rem 2rem 0;
 }
