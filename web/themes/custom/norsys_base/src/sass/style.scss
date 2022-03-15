@@ -568,6 +568,7 @@ width: 20%;
     .field--name-body {
       background-color: white;
       padding: 1rem 2rem;
+      height: 25rem;
     }
 
     a {
@@ -587,7 +588,7 @@ width: 20%;
     }
 
     h2.title, .content a {
-      color: $light-green !important;
+    //  color: $light-green !important;
     }
 
     a {
@@ -595,7 +596,7 @@ width: 20%;
         background-color: $white;
         padding: $grid-gutter/3;
         text-align: center;
-        height: 5rem;
+        height: 4rem;
       }
 
       color: #afca0b;
@@ -1439,6 +1440,7 @@ body:not(.user-logged-in) {
 
 .card {
   border-left: 1px !important;
+  border: none !important;
 }
 
 .card-group > .card:first-child {
@@ -1468,4 +1470,8 @@ body:not(.user-logged-in) {
 #views-bootstrap-chiffres-cles-pour-l-accueil-block-1{
   background: $green-agrisud !important;
   padding: 2rem 2rem 0;
+}
+
+#block-views-block-construction-block-1 h2.title{
+  margin-bottom: 3rem !important;
 }
