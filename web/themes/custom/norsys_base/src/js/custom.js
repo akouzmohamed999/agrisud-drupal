@@ -196,6 +196,18 @@ jQuery(document).ready(function ($) {
     $("#views-bootstrap-equipe-block-5 .row " ).addClass("px-3");
 
   }
+
+  // Managing the fixed header
+  var lastScrollTop = 1;
+  $(window).scroll(function(event) {
+    var st = $(window).scrollTop();
+    if (st > lastScrollTop) {
+      $("#header").addClass('fixed-top');
+    } else {
+      $("#header").removeClass('fixed-top');
+    }
+    lastScrollTop = st;
+  });
 });
 
 jQuery(window).scroll(function() {
@@ -205,7 +217,5 @@ jQuery(window).scroll(function() {
   } else {
     $el.fadeOut();
   }
-  /*if(jQuery(this).scrollTop() >= 200) $el.addClass('shown');
-  else $el.removeClass('shown');*/
 });
 

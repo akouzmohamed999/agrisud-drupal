@@ -918,13 +918,10 @@ header {
   }
 }
 
-body:not(.user-logged-in) {
-  .header {
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-  }
+.header {
+  width: 100%;
 }
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
 
   .region-primary-menu nav {
