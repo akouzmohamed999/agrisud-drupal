@@ -16,12 +16,33 @@
   $("#toTop").hide();
 });*/
 
+function agrisudCarousel(id,activeElement) {
+  jQuery(id).carousel('next').click(function () {
+    jQuery('.active').removeClass('active');
+    jQuery('.carousel-item:nth-child('+ activeElement +')').addClass('active');
+    activeElement = activeElement + 6;
+    if(activeElement > jQuery(id + ' .carousel-item').length){
+      activeElement = activeElement - jQuery(id + ' .carousel-item').length;
+    }
+  });
+}
+
 jQuery(document).ready(function ($) {
   $("#search-block-form .form-item").hide();
   $("#toTop").hide();
   $("#toTop").on("click", function (e) {
     $("html, body").animate({scrollTop: 0}, 'slow');
   });
+
+  //Custom carousel agrisud
+  var activeElement = 6
+  if($('.carousel .carousel-item').length <= 6){
+    $(".carousel-control-prev").hide()
+    $(".carousel-control-next").hide()
+  }
+  agrisudCarousel('#views-bootstrap-partenaires-block-1',activeElement);
+  agrisudCarousel('#views-bootstrap-liste-reseau-block-1',activeElement);
+  agrisudCarousel('#views-bootstrap-liste-partenaires-page-1',activeElement);
 
   //manage language
   var urlElements = (location.pathname).split("/");
@@ -66,10 +87,10 @@ jQuery(document).ready(function ($) {
   });
 
   //manage language change
- /* $('#language-select').on('change', function () {
-    var getUrl = window.location;
-    window.location.href = baseUrl + "/" + this.value;
-  });*/
+  /* $('#language-select').on('change', function () {
+     var getUrl = window.location;
+     window.location.href = baseUrl + "/" + this.value;
+   });*/
 
   //Managing search button
   $("#edit-submit").on("click", function (e) {
@@ -108,11 +129,11 @@ jQuery(document).ready(function ($) {
   }
 
   $( "#navbarSupportedContent li div div" ).addClass("show sub-menu-agrid");
-$(".path-nos-actualites .features .features-list div:first").addClass('row');
-$("#views-bootstrap-equipe-block-5 div.row:first").addClass('justify-content-center');
+  $(".path-nos-actualites .features .features-list div:first").addClass('row');
+  $("#views-bootstrap-equipe-block-5 div.row:first").addClass('justify-content-center');
 
 //intégration des icones pour les RS
-var $j = 0; // initialisation de deux compteurs
+  var $j = 0; // initialisation de deux compteurs
 
 //partie direction générale
   $('#block-views-block-equipe-block-2 .views-field-field-linkedin').each(function(){
@@ -159,20 +180,20 @@ var $j = 0; // initialisation de deux compteurs
   $( "#views-bootstrap-liste-actions-page-1 .liste-actions" ).addClass("title_d_content");
 
   if ($(window).width() <= 767 ) {
-  $( "#views-bootstrap-programmes-multi-pays-block-1 .row" ).addClass("d-block");
-  $( "#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 .row" ).addClass("d-block");
+    $( "#views-bootstrap-programmes-multi-pays-block-1 .row" ).addClass("d-block");
+    $( "#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 .row" ).addClass("d-block");
   }
 
   if ($(window).width() <= 520 ) {
-  $("#views-bootstrap-equipe-block-1 .row .ligne-view" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-1 .row .ligne-view" ).addClass("d-contents");
     $("#views-bootstrap-equipe-block-2 .row:first" ).addClass("d-contents");
     $("#views-bootstrap-equipe-block-2 .row .ligne-view" ).addClass("d-contents");
     $("#views-bootstrap-equipe-block-3 .row:first" ).addClass("d-contents");
     $("#views-bootstrap-equipe-block-3 .row .ligne-view" ).addClass("d-contents");
     $("#views-bootstrap-equipe-block-4 .row .ligne-view" ).addClass("d-contents");
     $("#views-bootstrap-equipe-block-4 .row .ligne-view .node--view-mode-conseil-d-orientation" ).addClass("w-100");
-  $("#views-bootstrap-equipe-block-5 .row .ligne-view" ).addClass("d-contents");
-  $("#views-bootstrap-equipe-block-5 .row " ).addClass("px-3");
+    $("#views-bootstrap-equipe-block-5 .row .ligne-view" ).addClass("d-contents");
+    $("#views-bootstrap-equipe-block-5 .row " ).addClass("px-3");
 
   }
 });
@@ -187,3 +208,4 @@ jQuery(window).scroll(function() {
   /*if(jQuery(this).scrollTop() >= 200) $el.addClass('shown');
   else $el.removeClass('shown');*/
 });
+
