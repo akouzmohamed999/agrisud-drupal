@@ -19,20 +19,96 @@
  * @ingroup themeable
  */
 #}
+
+{# ids des views concernées #}
+{% set custom_views_id = ['views-bootstrap-liste-reseau-block-1','views-bootstrap-partenaires-block-1','views-bootstrap-liste-partenaires-page-1'] %}
+
 <div id="{{ id }}" class="carousel {{ effect }} container-fluid"
      data-interval="{{ interval }}"
   {% if ride %} data-ride="carousel" {% endif %}
      data-pause="{% if pause %}hover{% else %}false{% endif %}">
   {# Carousel body. #}
-  <div class="carousel-inner">
-    {% for row in rows %}
-      {% set row_classes = ['carousel-item', loop.first ? 'active'] %}
-      <div class="{{ row_classes|join(' ') }}">
-        <div class="row">
-          <div class="group-img col-12 col-sm-12 col-md-3 col-lg-3 text-center">
-            {{ row.image }}
+  {# test si on est sur l'une des 3 views alors on fait le traitement custom #}
+  {% if id in custom_views_id %}
+    {% set combinations = [] %}
+    {% set max_index = (rows|length - 1) %}
+
+    {% for i in 0..max_index %}
+      {% set index = i %}
+      {% set combination = [index] %}
+      {% for j in 0..5  %}
+        {% set index = index + 1 %}
+        {% if index > max_index %}
+          {% set index = 0 %}
+        {% endif %}
+        {% set combination = combination|merge([index]) %}
+      {% endfor %}
+      {% set combinations = combinations|merge([combination]) %}
+    {% endfor %}
+    <div class="carousel-inner">
+      {# Create carousel-item for each combinations of 6 images. #}
+      {% for combination in combinations %}
+        {% set row_classes = ['carousel-item', loop.first ? 'active'] %}
+        <div class="{{ row_classes|join(' ') }}">
+          <div class="container">
+            <div class="row no-gutters">
+
+              <div class="col-md-2 col-sm-12">
+                {{ rows[combination.0].image }}
+                <div class="image-title-carousel-desktop">
+                  {{ rows[combination.0].title }}
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-12">
+                {{ rows[combination.1].image }}
+                <div class="image-title-carousel-desktop">
+                  {{ rows[combination.1].title }}
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-12">
+                {{ rows[combination.2].image }}
+                <div class="image-title-carousel-desktop">
+                  {{ rows[combination.2].title }}
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-12">
+                {{ rows[combination.3].image }}
+                <div class="image-title-carousel-desktop">
+                  {{ rows[combination.3].title }}
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-12">
+                {{ rows[combination.4].image }}
+                <div class="image-title-carousel-desktop">
+                  {{ rows[combination.4].title }}
+                </div>
+              </div>
+
+              <div class="col-md-2 col-sm-12">
+                {{ rows[combination.5].image }}
+                <div class="image-title-carousel-desktop">
+                  {{ rows[combination.5].title }}
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="group-desc col-12 col-sm-12 col-md-9 col-lg-9">
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="carousel-inner">
+      {% for row in rows %}
+        {% set row_classes = ['carousel-item', loop.first ? 'active'] %}
+        <div class="{{ row_classes|join(' ') }}">
+          <div class="row">
+            <div class="group-img col-12 col-sm-12 col-md-3 col-lg-3 text-center">
+              {{ row.image }}
+            </div>
+            <div class="group-desc col-12 col-sm-12 col-md-9 col-lg-9">
               {% if row.title %}
                 <h3 class="group-title">{{ row.title }}</h3>
               {% endif %}
@@ -41,11 +117,12 @@
                   <p>{{ row.description }}</p>
                 {% endif %}
               </div>
+            </div>
           </div>
         </div>
-      </div>
-    {% endfor %}
-  </div>
+      {% endfor %}
+    </div>
+  {% endif %}
   <a class="carousel-control-prev" href="#{{ id }}" role="button" data-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
