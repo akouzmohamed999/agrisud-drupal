@@ -73,7 +73,7 @@ jQuery(document).ready(function ($) {
   $("#block-views-block-block-nos-partenaires-block-1 .content div").eq(1).addClass("row");
   var pays = {"maroc" : 1, "bresil" : 2 , "france" : 34, "senegal" : 35, "guinee-bissau" : 36, "malaisie" : 37, "cambodge" : 30, "laos" : 33, "vietnam" : 38, "chine" : 39,
     "mayotte" : 40, "maurice" : 41, "madagascar" : 42, "rd-congo" : 43, "seychelles" : 44, "Indonesie" : 45, "mozambique" : 46, "gabon" : 47, "sao-tome" : 48,
-    "niger-2" : 11, "benin" : 49, "cote-ivoire" : 50, "haiti" : 32, "inde" : 51};
+    "niger-2" : 11, "benin" : 49, "cote-ivoire" : 50, "haiti" : 32, "inde" : 51, "bresil2" : 2};
 
   var getUrl = window.location;
   var baseUrl = getUrl.protocol + "//" + getUrl.host + "/" + getUrl.pathname.split('/')[1];
