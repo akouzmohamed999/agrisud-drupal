@@ -33,13 +33,6 @@ function norsys_base_preprocess_page(&$variables) {
   } elseif ($variables['page']['#title'] == 'Liste partenaires') {
       $imageUrl = '/web/themes/custom/norsys_base/src/css/images/page-nos-partenaires.jpg';
       $fullArgs = \Drupal::request()->query->all();
-      $taxonomyTerm = explode(':', $fullArgs['f'][0]);
-      if (isset($taxonomyTerm[1])) {
-        $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($taxonomyTerm[1]);
-        $value = $term->name->value;
-        $variables['title'] = t("Les " . $value);
-       $imageUrl = file_create_url($term->get('field_banner')->entity->getFileUri());
-      }
   }
 
   $variables['banner'] = empty($imageUrl) ? $default : $imageUrl;
