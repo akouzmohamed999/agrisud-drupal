@@ -153,7 +153,8 @@
 
 <!--Start: Title -->
 {% if page.page_title and not is_front %}
-  <div id="page-title">
+  {% set file_url = file_url(banner) %}
+  <div id="page-title" {% if banner %} style="background-image: url({{ (file_url) }})" {% endif %}>
     <div id="page-title-inner">
       <div class="container">
         {{ page.page_title }}
