@@ -3,20 +3,6 @@
 use Drupal\views\ViewExecutable;
 
 /**
- * Implements hook_preprocess_page_title().
- */
-function norsys_agrisud_preprocess_page_title(&$variables) {
-  $fullArgs = \Drupal::request()->query->all();
-  $taxonomyTerm = explode(':', $fullArgs['f'][0]);
-
-  if (isset($taxonomyTerm[1])) {
-    $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($taxonomyTerm[1]);
-    $value = $term->name->value;
-    $variables['title'] = t("Les " . $value);
-  }
-}
-
-/**
  * Implements hook_views_pre_render().
  */
 function norsys_agrisud_views_pre_render(&$view) {
