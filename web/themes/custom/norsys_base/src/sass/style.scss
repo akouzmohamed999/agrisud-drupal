@@ -462,6 +462,7 @@ body {
     background-color: $white;
     min-height: 100%;
     padding: 0.5rem;
+    height: 13rem;
   }
 }
 
@@ -1470,6 +1471,13 @@ body:not(.user-logged-in) {
 #views-bootstrap-chiffres-cles-pour-l-accueil-block-1{
   background: $green-agrisud !important;
   padding: 2rem 2rem 0;
+  & .views-field-field-chiffres p {
+    font-size: 3rem;
+  }
+  & .views-field-field-description p {
+    font-size: 1.7rem;
+    padding: 0 2rem 0 2rem;
+  }
 }
 
 [id^="views-bootstrap-chiffres-cles-pour-l-accueil-block-2"]{
