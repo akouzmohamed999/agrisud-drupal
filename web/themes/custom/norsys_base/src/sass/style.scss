@@ -1469,6 +1469,38 @@ header {
   padding: 2rem 2rem 0;
 }
 
+[id^="views-bootstrap-chiffres-cles-pour-l-accueil-block-2"]{
+  background: $green-agrisud !important;
+  padding: 2rem 2rem;
+}
+[id^="views-bootstrap-chiffres-cles-pour-l-accueil-block-3"]{
+  background: $light-green !important;
+  padding: 2rem 2rem;
+}
+
+#block-views-block-chiffres-cles-pour-l-accueil-block-2 {
+  margin-bottom: 0 !important;
+}
+
+#block-views-block-chiffres-cles-pour-l-accueil-block-2 h2.title, #block-views-block-chiffres-cles-pour-l-accueil-block-3 h2.title{
+  margin: 2rem !important;
+  margin-left: 24rem !important;
+  font-weight: bold !important;
+  color: $green-agrisud;
+}
+
+#block-views-block-chiffres-cles-pour-l-accueil-block-2 h3, #block-views-block-chiffres-cles-pour-l-accueil-block-3 h3 {
+  background-color: $green-agrisud;
+  color: white;
+  font-weight: bold !important;
+  padding: 1rem 0 0 3rem;
+  margin: 0 !important;
+}
+
+#block-views-block-chiffres-cles-pour-l-accueil-block-3 h3 {
+  background-color: $light-green;
+}
+
 #block-views-block-construction-block-1 h2.title{
   margin-bottom: 3rem !important;
 }
