@@ -31,6 +31,7 @@ function norsys_base_preprocess_page(&$variables) {
       $imageUrl = $variables['node']->get('field_actualite_image')->entity->uri->value;
     }
   } elseif ($variables['page']['#title'] == 'Liste partenaires') {
+      $imageUrl = '/web/themes/custom/norsys_base/src/css/images/page-nos-partenaires.jpg';
       $fullArgs = \Drupal::request()->query->all();
       $taxonomyTerm = explode(':', $fullArgs['f'][0]);
       if (isset($taxonomyTerm[1])) {

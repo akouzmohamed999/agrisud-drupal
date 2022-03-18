@@ -98,6 +98,7 @@
 
     #bottom-widget {
       margin-bottom: $grid-gutter !important;
+      padding: 0 !important;
     }
 
     .region.region-features-second {
@@ -180,6 +181,7 @@
   width: 50% !important;
   margin-left: 25%;
   background: none !important;
+  padding-top: 0 !important;
 
   //  margin-top: 3rem;
   h2.title, .content * {
