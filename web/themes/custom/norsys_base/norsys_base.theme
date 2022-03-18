@@ -39,7 +39,9 @@ function norsys_base_preprocess_page(&$variables) {
         $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($taxonomyTerm[1]);
         $value = $term->name->value;
         $variables['title'] = t("Les " . $value);
-        $imageUrl = file_create_url($term->get('field_banner')->entity->getFileUri());
+        if($term && null != $term->get('field_banner')->entity) {
+          $imageUrl = file_create_url($term->get('field_banner')->entity->getFileUri());
+        }
       }
   }
 
