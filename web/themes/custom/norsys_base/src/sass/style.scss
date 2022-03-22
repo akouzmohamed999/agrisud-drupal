@@ -1575,3 +1575,10 @@ header {
   background: url("images/arriere-plan-equipes-1920X4940.jpg") no-repeat;
   background-size: cover;
 }
+
+#views-bootstrap-liste-reseau-block-1 {
+  padding: 0;
+  .carousel-item div {
+    padding: 0;
+  }
+}
