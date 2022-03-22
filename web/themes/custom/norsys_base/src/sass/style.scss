@@ -1575,3 +1575,21 @@ header {
   background: url("images/arriere-plan-equipes-1920X4940.jpg") no-repeat;
   background-size: cover;
 }
+
+#views-bootstrap-programmes-multi-pays-block-1 {
+  .node--type-programme {
+    height: 332px;
+    .field--type-image {
+      height: 332px;
+    }
+  }
+}
+
+#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 {
+  .node--type-demarche {
+    height: 332px;
+    .field--type-image {
+      height: 332px;
+    }
+  }
+}
