@@ -19,10 +19,10 @@
   }
 
   #midwidget {
-    background-image: url("images/symbole-agrisud-2.png"), url("images/fermier-rescaled.png");
+    background-image: url("images/fermier-rescaled-symbole.png");
     background-repeat: no-repeat;
-    background-position: right, top;
-    background-size: inherit;
+    background-position: top;
+    background-size: cover;
     margin-top: -8rem;
     padding: 5rem;
 
