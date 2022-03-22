@@ -1524,3 +1524,15 @@ body:not(.user-logged-in) {
   background: url("images/arriere-plan-equipes-1920X4940.jpg") no-repeat;
   background-size: cover;
 }
+#block-tousleschiffresetresultatsdactivite{
+  height: 25rem !important;
+}
+
+#block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers{
+  background-color: white !important;
+  max-height: 25rem !important;
+  padding: 0 !important;
+  .group-left img {
+    height: 25rem !important;
+  }
+}
