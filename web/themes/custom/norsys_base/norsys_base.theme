@@ -24,7 +24,7 @@ function norsys_base_preprocess_page(&$variables) {
   $default = '/web/themes/custom/norsys_base/src/css/images/page-nos-partenaires.jpg';
   $imageUrl = '';
  // dump($variables);
-  if ($variables['node']) {
+  if (isset($variables['node'])) {
     if (in_array($variables['node']->getType(), ['action', 'programme', 'nous_connaitre']) && $variables['node']->get('field_image')) {
       $imageUrl = $variables['node']->get('field_image')->entity->uri->value;
     } elseif (in_array($variables['node']->getType(), ['actualite', 'evenement', 'agir_avec_nous', 'page', 'demarche', 'reseaux_et_partenaires']) && $variables['node']->get('field_actualite_image')) {
@@ -34,11 +34,14 @@ function norsys_base_preprocess_page(&$variables) {
       $imageUrl = '/web/themes/custom/norsys_base/src/css/images/page-nos-partenaires.jpg';
       $fullArgs = \Drupal::request()->query->all();
       $taxonomyTerm = explode(':', $fullArgs['f'][0]);
+
       if (isset($taxonomyTerm[1])) {
         $term = \Drupal::entityTypeManager()->getStorage('taxonomy_term')->load($taxonomyTerm[1]);
         $value = $term->name->value;
         $variables['title'] = t("Les " . $value);
-       $imageUrl = file_create_url($term->get('field_banner')->entity->getFileUri());
+        if($term && null != $term->get('field_banner')->entity) {
+          $imageUrl = file_create_url($term->get('field_banner')->entity->getFileUri());
+        }
       }
   }
 
