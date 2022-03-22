@@ -1587,3 +1587,10 @@ header {
     height: 25rem !important;
   }
 }
+
+#views-bootstrap-liste-reseau-block-1 {
+  padding: 0;
+  .carousel-item div {
+    padding: 0;
+  }
+}
