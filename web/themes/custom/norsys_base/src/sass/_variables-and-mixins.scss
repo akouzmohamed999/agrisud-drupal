@@ -505,7 +505,9 @@ $grid-gutter: 3rem;
         display: table-cell !important;
         vertical-align: middle !important;
         height: 325px !important;
-        margin: auto;
+        @media (max-width: 580px) {
+          width: 100%;
+        }
       }
 
       // background: #444;
