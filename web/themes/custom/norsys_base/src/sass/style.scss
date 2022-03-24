@@ -777,7 +777,9 @@ h2 {
 }
 
 #block-views-block-programmes-multi-pays-block-1, #block-views-block-diffuser-et-promouvoir-block-1 {
-  margin-top: 6rem;
+  @media (min-width: 580px) {
+    margin-top: 6rem;
+  }
   margin-bottom: 6rem;
 
   #views-bootstrap-programmes-multi-pays-block-1, #views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 {
@@ -824,6 +826,9 @@ h2 {
   #block-demarchesexpertises {
     .field--name-body {
       margin-top: 3% !important;
+      @media (max-width: 580px){
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -1293,9 +1298,15 @@ header {
 
         .group-left {
           width: 75% !important;
+          @media (max-width: 580px) {
+            width: 100% !important;
+          }
 
           img {
             margin-left: 15% !important;
+            @media (max-width: 580px) {
+              margin: auto !important;
+            }
           }
         }
 
@@ -1387,6 +1398,7 @@ header {
         .group-right {
           .field--name-body.field--type-text-with-summary {
             margin-top: 1rem !important;
+            margin-bottom: 1rem !important;
             float: right !important;
           }
 
@@ -1536,7 +1548,9 @@ header {
 
 #block-views-block-chiffres-cles-pour-l-accueil-block-2 h2.title, #block-views-block-chiffres-cles-pour-l-accueil-block-3 h2.title{
   margin: 2rem !important;
-  margin-left: 24rem !important;
+  @media (min-width: 580px){
+    margin-left: 24rem !important;
+  }
   font-weight: bold !important;
   color: $green-agrisud;
 }
@@ -1577,6 +1591,9 @@ header {
 }
 #block-tousleschiffresetresultatsdactivite{
   height: 25rem !important;
+  @media (max-width: 580px){
+    margin-bottom: 2rem;
+  }
 }
 
 #block-tousleschiffresetresultatsdactivite, #block-accederauxelementsfinanciers{
@@ -1590,11 +1607,18 @@ header {
 
 #views-bootstrap-programmes-multi-pays-block-1 {
   .node--type-programme {
+    @media (max-width: 400px) {
+      height: auto;
+    }
     height: 332px;
     .field--type-image {
+      @media (max-width: 400px) {
+        height: auto;
+      }
       height: 332px;
     }
   }
+
 }
 
 #views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 {
@@ -1615,4 +1639,48 @@ header {
 
 .block-actions-accueil {
   margin-top: 4rem;
+}
+
+.node--type-action.node--view-mode-teaser.ds-2col {
+  .group-left {
+    @media (max-width: 580px) {
+      width: 100% !important;
+    }
+  }
+}
+
+.block1_title_action {
+  .text-left {
+    @media (max-width: 580px) {
+      margin-top: 21rem !important;
+    }
+  }
+}
+
+.node--type-programme.node--view-mode-teaser.ds-2col, .node--type-demarche.node--view-mode-teaser.ds-2col {
+  @media (max-width: 580px) {
+    margin: 2rem 0 2rem 0 !important;
+    .group-right {
+      display: flex !important;
+      flex-wrap: wrap !important;
+      align-content: flex-end !important;
+      h3 {
+        font-size: 19px !important;
+      }
+      p {
+        font-size: 17px !important;
+      }
+      .more-link a {
+        margin-top: -3rem;
+      }
+    }
+  }
+}
+
+#views-bootstrap-diffuser-et-promouvoir-des-pratiques-durables-block-1 {
+  @media (max-width: 580px) {
+    .col-4 {
+      max-width: 100%;
+    }
+  }
 }

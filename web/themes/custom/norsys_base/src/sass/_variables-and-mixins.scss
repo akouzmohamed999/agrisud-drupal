@@ -258,9 +258,11 @@ $grid-gutter: 3rem;
             font-weight: bold !important;
           }
           h3 {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            @media (min-width: 580px){
+              white-space: nowrap;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
           }
         }
       }
@@ -503,6 +505,7 @@ $grid-gutter: 3rem;
         display: table-cell !important;
         vertical-align: middle !important;
         height: 325px !important;
+        margin: auto;
       }
 
       // background: #444;
@@ -537,6 +540,7 @@ $grid-gutter: 3rem;
           font-weight: 600;
           float: right;
           margin-top: 2rem !important;
+          margin-bottom: 1rem !important;
         }
       }
     }
@@ -558,6 +562,9 @@ $grid-gutter: 3rem;
       .field--name-body.field {
         a {
           margin-top: unset !important;
+          @media (max-width: 580px){
+            margin-bottom: 1rem;
+          }
         }
       }
     }
@@ -858,7 +865,9 @@ $grid-gutter: 3rem;
 
     .row div {
       padding: 0 !important;
-      margin: 0 !important;
+      @media (min-width: 580px) {
+        margin: 0 !important;
+      }
 
       .node--type-evenement.node--view-mode-teaser.ds-2col {
         padding: 0 !important;
